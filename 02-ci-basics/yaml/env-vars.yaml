@@ -1,0 +1,6 @@
+# Predefined variables (Environment Variables)
+# See https://docs.gitlab.com/ce/ci/variables/README.html
+
+test:
+  script:
+  - env | egrep 'CI|GITLAB'

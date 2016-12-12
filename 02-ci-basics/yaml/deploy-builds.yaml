@@ -1,0 +1,5 @@
+deploy_to_production:
+  stage: deploy
+  script:
+  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_prod" git push --force git@gitlab.gitlabtutorial.org:root/example4.git +HEAD:production
+  environment: production

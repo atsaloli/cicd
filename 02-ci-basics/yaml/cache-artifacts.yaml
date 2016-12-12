@@ -1,0 +1,13 @@
+cache:
+  untracked: true # cache all files not tracked by Git
+  key: "$CI_BUILD_REF"   # define the affinity of caching between jobs to cache per-commit
+
+build:
+  stage: build
+  script:
+  - touch touchme
+
+test:
+  stage: test
+  script:
+  - ls touchme
