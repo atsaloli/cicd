@@ -28,6 +28,19 @@ to type "yes" and add the GitLab host key to .ssh/known_hosts
 so that when we do git operations from cron, it doesn't ask
 whether to add the host key.
 
+Note: you can use SSH config to help it pick out which key to use, 
+e.g.:
+
+```
+root@33f495f9-868b-4587-f1f5-f7f6dae51ee1:~# cat .ssh/config
+Host            adamb.gitlabtutorial.org
+Hostname        adamb.gitlabtutorial.org
+IdentityFile    ~/.ssh/push_to_stg
+IdentitiesOnly yes
+root@33f495f9-868b-4587-f1f5-f7f6dae51ee1:~#
+```
+
+
 # PHP test
 
 On the GitLab-Runner machine:
