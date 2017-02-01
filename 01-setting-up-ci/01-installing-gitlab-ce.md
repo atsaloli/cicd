@@ -48,11 +48,17 @@ References:
 - https://docs.gitlab.com/runner/install/
 
 
+## Change host name
+
+Add DNS record (e.g. `alpha.gitlabtutorial.org`) so it's nicer to access the GitLab UI.
+
+Change hostname of your host before installing GitLab, since GitLab UI will pick up the hostname (e.g., in "git clone" URLs)
+
+
 ## Installing the Omnibus package
 
 Follow the download and installation instructions on https://about.gitlab.com/downloads/#ubuntu1604
 
-Add DNS record (e.g. `alpha.gitlabtutorial.org`) so it's nicer to access the GitLab UI
 
 You should now be able to login and set the password for the default Administrator user, `root`
 
