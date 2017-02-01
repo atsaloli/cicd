@@ -1,16 +1,18 @@
 # Installing GitLab
 
-## Creating a host
+## Creating a host 
 
-I start by running GitLab on one host.
+### Option 1 - GitLab only (no CI Runner)
 
-GitLab recommends using a separate machine for each GitLab Runner for CI, so we’ll create a Runner host later.
+GitLab recommends using a separate machine for each GitLab Runner for CI, so here's how to bring up a host if you want to follow that recommendation.
 
-We’ll use the official Omnibus GitLab package as recommended on https://about.gitlab.com/installation/.
+[For instructional purposes, in the training we'll just bring up one beefy VM and put both the GitLab UI and the GitLab CI Runner on it]
 
-We’ll bring up the VM in the Joyent public cloud because using the Joyent UI makes me happy. There are only two applications I say that about: Joyent and GitLab.
+Use the official Omnibus GitLab package as recommended on https://about.gitlab.com/installation/.
 
-GitLab recommends Ubuntu 16.04, so I provision an Ubuntu 16.04 instance that meets the hardware requirements (https://docs.gitlab.com/ce/install/requirements.html)  of 2 CPUs, 4 GB RAM and minimum of 2 GB of swap. 
+Bring up the VM in the Joyent public cloud because using the Joyent UI makes me happy. There are only two applications I say that about: Joyent and GitLab.
+
+GitLab recommends Ubuntu 16.04, so provision an Ubuntu 16.04 instance that meets the hardware requirements (https://docs.gitlab.com/ce/install/requirements.html)  of 2 CPUs, 4 GB RAM and minimum of 2 GB of swap. 
 In less than a minute, it’s ready:
 
 ```
@@ -28,24 +30,23 @@ _| |_ | .-. . . .-. :--. |-
 `-' https://docs.joyent.com/images/container-native-linux
 
 root@37ee111c-e115-487b-8b2c-aca1044cca18:~#
-```
 
 
-
-### Let's try bringing up GitLab and GitLab CI Runner on the same host.
+### Option 2 (Recommended) - GitLab and GitLab CI Runner on one host
 
 Note: GitLab recommends putting Runners on dedicated hosts but for instructional
-purposes (for convenience), let's try doing it on one host.
+purposes (for convenience), it's more convenient to just do it all on one host.
 
 Let's provision the host:
 
 - Data center: us-west-1 (closest to me)
 - Hardware Virtual Machine
-- Ubuntu 16 LTS 
+- Ubuntu 16 LTS (ubuntu-certified-16.04
 - High CPU with 8 GB of RAM
 
 References:
 - https://docs.gitlab.com/runner/install/
+
 
 ## Installing the Omnibus package
 
