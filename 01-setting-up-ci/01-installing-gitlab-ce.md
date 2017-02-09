@@ -1,51 +1,19 @@
+
+References:
+- https://docs.gitlab.com/runner/install/
+
 # Installing GitLab
 
 ## Creating a host 
 
-### Option 1 - GitLab only (no CI Runner)
+Note: GitLab recommends putting Runners on dedicated hosts but we'll put the UI and the Runner all on one host for the sake of convenience.
 
-GitLab recommends using a separate machine for each GitLab Runner for CI, so here's how to bring up a host if you want to follow that recommendation.
-
-[For instructional purposes, in the training we'll just bring up one beefy VM and put both the GitLab UI and the GitLab CI Runner on it]
-
-Use the official Omnibus GitLab package as recommended on https://about.gitlab.com/installation/.
-
-Bring up the VM in the Joyent public cloud because using the Joyent UI makes me happy. There are only two applications I say that about: Joyent and GitLab.
-
-GitLab recommends Ubuntu 16.04, so provision an Ubuntu 16.04 instance that meets the hardware requirements (https://docs.gitlab.com/ce/install/requirements.html)  of 2 CPUs, 4 GB RAM and minimum of 2 GB of swap. 
-In less than a minute, it’s ready:
-
-```
-root@localhost:~# ssh 165.225.137.71
-Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.3.0 x86_64)
-
-* Documentation: https://help.ubuntu.com
-* Management: https://landscape.canonical.com
-* Support: https://ubuntu.com/advantage
-__ . .
-_| |_ | .-. . . .-. :--. |-
-|_ _| ;| || |(.-' | | |
-|__| `--' `-' `;-| `-' ' ' `-'
-/ ; Instance (Ubuntu 16.04 20161004)
-`-' https://docs.joyent.com/images/container-native-linux
-
-root@37ee111c-e115-487b-8b2c-aca1044cca18:~#
-
-
-### Option 2 (Recommended) - GitLab and GitLab CI Runner on one host
-
-Note: GitLab recommends putting Runners on dedicated hosts but for instructional
-purposes (for convenience), it's more convenient to just do it all on one host.
-
-Let's provision the host:
+Let's provision the host on the Joyent public cloud (because using Joyent makes me happy):
 
 - Data center: us-west-1 (closest to me)
 - Hardware Virtual Machine
 - Ubuntu 16 LTS (ubuntu-certified-16.04
 - High CPU with 8 GB of RAM
-
-References:
-- https://docs.gitlab.com/runner/install/
 
 
 ## Change host name
@@ -56,6 +24,8 @@ Change hostname of your host before installing GitLab, since GitLab UI will pick
 
 
 ## Installing the Omnibus package
+
+Use the official Omnibus GitLab package as recommended on https://about.gitlab.com/installation/.
 
 Follow the download and installation instructions on https://about.gitlab.com/downloads/#ubuntu1604
 
