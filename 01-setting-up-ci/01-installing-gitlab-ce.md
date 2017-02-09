@@ -32,6 +32,7 @@ Follow the download and installation instructions on https://about.gitlab.com/do
 
 You should now be able to login and set the password for the default Administrator user, `root`
 
+
 ## Configure hostnames
 
 We are going to need a dedicated virtual host for Mattermost (chat), and a virtual host for the GitLab UI.

@@ -40,18 +40,31 @@ it easier to handle having 12 GitLab instances for 12 students in 1 class.)
 # Install Docker
 curl -sSL https://get.docker.com/ | sh
 
-# add yourself to the docker group
-usermod -aG docker <username>
-# Now log out and log back in.
 
 # confirm Docker works
-docker run ubuntu /bin/echo 'Hello world'
+docker run alpine /bin/echo 'Hello world'
+
+
+Example:
+```
+# docker run alpine /bin/echo 'Hello world'
+Unable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+0a8490d0dfd3: Pull complete
+Digest: sha256:dfbd4a3a8ebca874ebd2474f044a0b33600d4523d03b0df76e5c5986cb02d7e8
+Status: Downloaded newer image for alpine:latest
+Hello world
+#
+```
 
 # Add GitLab CI repo
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
 
 # Install GitLab Runner
 sudo apt-get install gitlab-ci-multi-runner
+
+# add gitlab-runner to the docker group
+usermod -aG docker gitlab-runner
 
 # Register the runner
 sudo gitlab-ci-multi-runner register
