@@ -4,6 +4,8 @@ my_build_job_1:
   - /bin/echo This is a mock build job
   - touch /tmp/build
   - ls -lh /tmp/build
+  tags:
+  - docker
 
 
 my_build_job_2:
@@ -13,6 +15,8 @@ my_build_job_2:
   - ls -lh /tmp/build
   - touch /tmp/test
   - ls -lh /tmp/test
+  tags:
+  - docker
 
 
 my_build_job_3:
@@ -20,3 +24,5 @@ my_build_job_3:
   script:
   - /bin/echo This is a mock deploy job
   - ls -lh /tmp/build /tmp/test
+  tags:
+  - docker
