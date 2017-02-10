@@ -1,4 +1,9 @@
-my_build_job_1:
+stages:
+  - build
+  - miketest
+  - deploy
+
+build_it:
   stage: build
   script:
   - /bin/echo This is a mock build job
@@ -6,17 +11,15 @@ my_build_job_1:
   - ls -lh /tmp/build
 
 
-my_build_job_2:
-  stage: test
+test_it:
+  stage: miketest
   script:
   - /bin/echo This is a mock test job
   - ls -lh /tmp/build
-  - touch /tmp/test
-  - ls -lh /tmp/test
 
 
-my_build_job_3:
+deploy_it:
   stage: deploy
   script:
   - /bin/echo This is a mock deploy job
-  - ls -lh /tmp/build /tmp/test
+  - ls -lh /tmp/build
