@@ -6,20 +6,19 @@ Continuous Integration (CI) is a development practice that requires developers t
 
 [Continuous Integration on ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
-## Pipelines
+## Jobs
 
-A pipeline is a group of builds that get executed in stages (batches). All of the builds in a stage are executed in parallel (if there are enough concurrent Runners), and if they all succeed, the pipeline moves on to the next stage. If one of the builds fails, the next stage is not (usually) executed.
-
-Pipelines are defined in `.gitlab-ci.yml` by specifying jobs that run in stages.
+`.gitlab-ci.yml` allows you to specify an unlimited number of jobs. Each job must have a unique name. A job is defined by a list of parameters that define the build behavior.
 
 ## Builds
 
 Builds are individual runs of jobs. Not to be confused with a build job or build stage.
 
+## Pipelines
 
-## Jobs
+A pipeline is a group of builds that get executed in stages (batches). All of the builds in a stage are executed in parallel (if there are enough concurrent Runners), and if they all succeed, the pipeline moves on to the next stage. If one of the builds fails, the next stage is not (usually) executed.
 
-`.gitlab-ci.yml` allows you to specify an unlimited number of jobs. Each job must have a unique name. A job is defined by a list of parameters that define the build behavior.
+Pipelines are defined in `.gitlab-ci.yml` by specifying jobs that run in stages.
 
 ## Environments
 
@@ -35,4 +34,4 @@ A "runner" is an abstraction. It's a way for GitLab to communicate with the gitl
 
 ## See also
 
-[Introduction to pipelines and builds](https://docs.gitlab.com/ce/ci/pipelines.html) says:
+[Introduction to pipelines and builds](https://docs.gitlab.com/ce/ci/pipelines.html)

@@ -1,0 +1,29 @@
+apple:
+  image: ubuntu
+  stage: build
+  script:
+  - touch build
+  - ls -lh build
+  artifacts:
+    paths:
+    - build
+  tags:
+  - docker
+
+
+my_build_job_2:
+  stage: test
+  script:
+  - /bin/echo This is a mock test job
+  - ls -lh build
+  tags:
+  - docker
+
+
+my_build_job_3:
+  stage: deploy
+  script:
+  - /bin/echo This is a mock deploy job
+  - ls -lh build
+  tags:
+  - docker
