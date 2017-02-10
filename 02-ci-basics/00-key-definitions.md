@@ -34,4 +34,4 @@ A "runner" is an abstraction. It's a way for GitLab to communicate with the gitl
 
 ## See also
 
-[Introduction to pipelines and builds](https://docs.gitlab.com/ce/ci/pipelines.html) says:
+[Introduction to pipelines and builds](https://docs.gitlab.com/ce/ci/pipelines.html)
