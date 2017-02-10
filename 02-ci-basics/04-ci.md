@@ -2,5 +2,5 @@
 
 ![3 stage pipeline](/images/3-stage-pipeline.png)
 
-[yaml](/ci/yaml/simple-3-stage-pipeline.yaml)
+[yaml](yaml/simple-3-stage-pipeline.yaml)
 
