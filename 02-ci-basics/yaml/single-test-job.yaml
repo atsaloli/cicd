@@ -1,2 +1,3 @@
 i_love_tests:
-  script: /bin/echo insert command to run test suite here
+
+  script: /bin/echo run tests
