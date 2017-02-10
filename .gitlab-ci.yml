@@ -1,3 +1,6 @@
 i_love_tests:
 
-  script: /bin/exit 1
+  script:
+  - date
+  - echo hello world
+  - exit 1
