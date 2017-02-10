@@ -1,6 +1,6 @@
 stages:
   - build
-  - test
+  - miketest
   - deploy
 
 build_it:
@@ -12,7 +12,7 @@ build_it:
 
 
 test_it:
-  stage: test
+  stage: miketest
   script:
   - /bin/echo This is a mock test job
   - ls -lh /tmp/build
