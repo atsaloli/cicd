@@ -1,4 +1,5 @@
-my_build_job_1:
+apple:
+  image: ubuntu
   stage: build
   script:
   - /bin/echo This is a mock build job
