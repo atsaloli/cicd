@@ -1,6 +1,27 @@
-i_love_tests:
+stages:
+  - build
+  - test
+  - deploy
 
+build_it:
+  stage: build
   script:
-  - date
-  - echo hello world
-  - exit 1
+  - /bin/echo This is a mock build job
+  - touch /tmp/build
+  - ls -lh /tmp/build
+
+
+test_it:
+  stage: test
+  script:
+  - /bin/echo This is a mock test job
+  - ls -lh /tmp/build
+  - touch /tmp/test
+  - ls -lh /tmp/test
+
+
+deploy_it:
+  stage: deploy
+  script:
+  - /bin/echo This is a mock deploy job
+  - ls -lh /tmp/build /tmp/test
