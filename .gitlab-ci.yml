@@ -5,7 +5,8 @@ apple:
   - touch build
   - ls -lh build
   artifacts:
-    paths: build
+    paths:
+    - build
   tags:
   - docker
 
