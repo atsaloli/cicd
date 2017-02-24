@@ -74,22 +74,40 @@ sudo gitlab-ci-multi-runner register
 ```
 
 Notes:
-- Use main GitLab URL when prompted for coordinator URL
-- Get the token from /admin/runners in GitLab, or from project Settings -> CI/CD Pipelines 
-- For description, put "Shell runner"
-- For tags, use "shell"
-- For executor, use "shell"
-- Say "true" on whether to pick up untagged jobs (we'll learn how to tag jobs later).
+- Use main GitLab URL when prompted for coordinator URL.
+- Get the registration token from Settings -> CI/CD Pipelines.
+- For description, put "Shell runner".
+- For executor, use "shell".
+- Don't put any tags (we'll learn later how to tag jobs to route them to specific runners).
+
+```
+
+You can also register a runner non-interactively:
+
+```
+sudo gitlab-runner register --non-interactive \
+                            --url https://gitlab.com/ \
+                            --registration-token <token> \
+			    --executor shell \
+                            --description "Shell Runner"
 
 ```
 
 ### List runners
 
-We should now see the Shell runner:
+You should now see the Shell runner on your GitLab CI server:
 
 ```
 gitlab-runner list
 ```
+
+And you should see it in your GitLab UI, under Settings -> CI/CD Pipelines.
+
+
+### Enable the shell runner for the "www" project
+
+In Settings -> CI/CD Pipelines -> Specific Runners, find our Shell executor and select "Enable for this project".
+
 
 
 # Examine pipeline
@@ -108,6 +126,24 @@ $ /bin/echo I am a pretend test suite
 I am a pretend test suite
 Build succeeded
 ```
+
+### Disable Shell runner
+
+Now disable the Shell runner for this project; we'll next bring up a Docker runner.
+
+### Unregistering runners
+
+If you should ever want to unregister a runner, run `gitlab-runner unregister` and
+supply GitLab URL and runner token which you can get from "gitlab-runner list`.
+
+Example:
+
+```
+gitlab-runner unregister --url https://gitlab.com/ --token 8fa8dbe717be4580f3e7ffd0d8514b
+```
+
+Note: the runner token is different from the registration token which you get from
+the GitLab UI.
 
 ## Register Docker runner
 
