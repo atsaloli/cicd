@@ -26,6 +26,8 @@ test_it:
   script: /bin/echo I am a pretend test suite
 ```
 
-There are no constraints, so this "test" job will run on every single commit, to test the new code revision.
+There are no constraints, so this "test" job will run on every single commit to test the new code revision.
 
-If we go to "Pipelines", we should see that the pipeline is pending.
+If we go to "Pipelines", you should see a pipeline in status "Pending" (waiting for a runner) or "Passed" if the test passes.
+
+### CI config lint
