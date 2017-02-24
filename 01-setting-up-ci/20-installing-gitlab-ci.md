@@ -48,7 +48,7 @@ Notes:
 - Use "shell" for Shell executor, that's the simplest, good to start with;
 or use "docker" for Docker executor to use ephemeral environments.
 
-# Confirm GitLab Runner service is running
+# Confirm GitLab Runner service is active (running)
 service gitlab-runner status
 
 # List runners
@@ -56,10 +56,11 @@ gitlab-runner list
 
 ```
 
-Now go back to my project, and observe that the Pipeline that was in "pending" before is now green checkmark "passed".  Yes!!
+If your Pipeline was in "Pending" status before, it should now be in "Passed".
 
-Let's examine the build output by selecting "passed" under Pipeline and then
-selecting "passed" again, and we should see something like this:
+# Examine pipeline job output
+
+Select "Passed" under Pipeline and then select the job ("test_it"), and you should see something like this:
 
 ```
 Running with gitlab-ci-multi-runner 1.7.1 (f896af7)
