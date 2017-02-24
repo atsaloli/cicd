@@ -1,10 +1,19 @@
-## Install a GitLab CI Runner
+# Disable GitLab.com Shared Runners
 
-Now let's install GitLab CI Runner as per [GitLab Runner install doc](https://docs.gitlab.com/runner/install/linux-repository.html)
+To better understand how GitLab CI works and how it fits in with GitLab, we will disable the GitLab.com Shared Runners (in the cloud) and will register our own GitLab CI runner provider and will register two runners, Shell and Docker.
 
-(The first time, I did this on a dedicated  hardware virtual machine from Joyent (high cpu 1.75).
-The second time, I put it on the same VM, even though that's not recommended, just to make 
-it easier to handle having 12 GitLab instances for 12 students in 1 class.)
+Go to project Settings -> CI/CD Pipelines -> Shared Runners -> Disable shared runners.
+
+
+# Installing GitLab CI Runner service
+
+Reference: [GitLab Runner install doc](https://docs.gitlab.com/runner/install/linux-repository.html)
+
+
+## Install Docker
+
+Install Docker so that our GitLab CI Runner service can run jobs in Docker containers in addition to Shell jobs.
+
 
 ```
 # Install Docker
@@ -28,37 +37,63 @@ Hello world
 #
 ```
 
-# Add GitLab CI repo
+## Install GitLab CI
+
+### Add GitLab CI repo
+```
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
+```
 
-# Install GitLab Runner
+### Install GitLab Runner
+```
 sudo apt-get install gitlab-ci-multi-runner
+```
 
-# Add gitlab-runner to the docker group
+### Add gitlab-runner to the docker group
+```
 usermod -aG docker gitlab-runner
+```
 
-# Register the runner
+### Confirm GitLab Runner service is active (running)
+```
+service gitlab-runner status
+```
+
+### List runners
+
+We haven't registered any runners yet, so there should not be any runners yet:
+
+```
+gitlab-runner list
+```
+
+### Register a Shell runner
+
+```
 sudo gitlab-ci-multi-runner register
+```
 
 Notes:
 - Use main GitLab URL when prompted for coordinator URL
-- Get the token from /admin/runners in GitLab. 
-- Accept the default (hostname) for the description
-- Leave tags blank
-- Use "shell" for Shell executor, that's the simplest, good to start with;
-or use "docker" for Docker executor to use ephemeral environments.
-
-# Confirm GitLab Runner service is active (running)
-service gitlab-runner status
-
-# List runners
-gitlab-runner list
+- Get the token from /admin/runners in GitLab, or from project Settings -> CI/CD Pipelines 
+- For description, put "Shell runner"
+- For tags, use "shell"
+- For executor, use "shell"
+- Say "true" on whether to pick up untagged jobs (we'll learn how to tag jobs later).
 
 ```
 
-If your Pipeline was in "Pending" status before, it should now be in "Passed".
+### List runners
 
-# Examine pipeline job output
+We should now see the Shell runner:
+
+```
+gitlab-runner list
+```
+
+
+# Examine pipeline
+If our Pipeline was in "Pending" status before, it should now be in "Passed".
 
 Select "Passed" under Pipeline and then select the build/job ("test_it"), and you should see something like this:
 
@@ -74,7 +109,7 @@ I am a pretend test suite
 Build succeeded
 ```
 
-## Test Docker runner
+## Register Docker runner
 
 Now let's pause that shell runner and register a Docker runner, to test CI with Docker.
 
