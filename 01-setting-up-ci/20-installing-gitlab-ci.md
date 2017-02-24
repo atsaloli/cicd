@@ -60,7 +60,7 @@ If your Pipeline was in "Pending" status before, it should now be in "Passed".
 
 # Examine pipeline job output
 
-Select "Passed" under Pipeline and then select the job ("test_it"), and you should see something like this:
+Select "Passed" under Pipeline and then select the build/job ("test_it"), and you should see something like this:
 
 ```
 Running with gitlab-ci-multi-runner 1.7.1 (f896af7)
@@ -69,8 +69,8 @@ Running on 06424d2a-3480-4b66-a52f-eb9a4af9708f...
 Cloning repository...
 Cloning into '/home/gitlab-runner/builds/927f01f2/0/root/www'...
 Checking out 28e875b6 as master...
-$ /bin/echo hello world
-hello world
+$ /bin/echo I am a pretend test suite
+I am a pretend test suite
 Build succeeded
 ```
 
