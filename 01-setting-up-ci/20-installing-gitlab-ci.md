@@ -133,17 +133,15 @@ Now disable the Shell runner for this project; we'll next bring up a Docker runn
 
 ### Unregistering runners
 
-If you should ever want to unregister a runner, run `gitlab-runner unregister` and
-supply GitLab URL and runner token which you can get from "gitlab-runner list`.
-
-Example:
+If you should ever want to unregister a runner, specify the runner you want to unregister:
 
 ```
-gitlab-runner unregister --url https://gitlab.com/ --token 8fa8dbe717be4580f3e7ffd0d8514b
+gitlab-runner unregister --name 'Shell Runner'
 ```
+You can also unregister a runner by token (the runner token is different from the
+registration token, you can get the token from `gitlab-runner list`.)
 
-Note: the runner token is different from the registration token which you get from
-the GitLab UI.
+Run `gitlab-runner help` to see other things you can do with `gitlab-runner`.
 
 ## Register Docker runner
 
