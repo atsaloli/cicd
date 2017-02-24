@@ -8,7 +8,7 @@ it easier to handle having 12 GitLab instances for 12 students in 1 class.)
 
 ```
 # Install Docker
-curl -sSL https://get.docker.com/ | sh
+curl -sSL https://get.docker.com/ | sudo sh
 
 
 # confirm Docker works
