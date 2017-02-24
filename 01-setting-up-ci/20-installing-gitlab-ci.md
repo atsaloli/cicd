@@ -15,7 +15,7 @@ curl -sSL https://get.docker.com/ | sudo sh
 docker run alpine /bin/echo 'Hello world'
 ```
 
-Example:
+Example of successful test:
 
 ```
 # docker run alpine /bin/echo 'Hello world'
@@ -34,18 +34,19 @@ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-
 # Install GitLab Runner
 sudo apt-get install gitlab-ci-multi-runner
 
-# add gitlab-runner to the docker group
+# Add gitlab-runner to the docker group
 usermod -aG docker gitlab-runner
 
 # Register the runner
 sudo gitlab-ci-multi-runner register
-# Notes:
-# - Use main GitLab URL (e.g. http://alpha-gitlab.gitlabtutorial.org` when prompted for coordinator URL
-# - Get the token from /admin/runners in GitLab. 
-# - Accept the default (hostname) for the description
-# - Leave tags blank
-# - Use "shell" for the executor, that's the simplest, good to start with
 
+Notes:
+- Use main GitLab URL when prompted for coordinator URL
+- Get the token from /admin/runners in GitLab. 
+- Accept the default (hostname) for the description
+- Leave tags blank
+- Use "shell" for Shell executor, that's the simplest, good to start with;
+or use "docker" for Docker executor to use ephemeral environments.
 
 # Confirm GitLab Runner service is running
 service gitlab-runner status
