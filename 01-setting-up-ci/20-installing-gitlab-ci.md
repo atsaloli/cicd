@@ -13,7 +13,7 @@ curl -sSL https://get.docker.com/ | sh
 
 # confirm Docker works
 docker run alpine /bin/echo 'Hello world'
-
+```
 
 Example:
 
