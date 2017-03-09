@@ -1,12 +1,14 @@
 # Infrastructure Setup
 
 ## Essentials
-10-installing-gitlab-ce.md
-15-initial-setup-of-CI-in-project.md
-20-installing-gitlab-ci.md
+- [Installing GitLab CE](10-installing-gitlab-ce.md)
+- [Disabling Public Runners](15-disabling-public-runners.md)
+- [Installing GitLab CI](20-installing-gitlab-ci.md)
+- [Setting up CI in your project](15-initial-setup-of-CI-in-project.md)
 
-## Bells and Whistles
-30-runners-admin.md
-40-paused-runner.md
-80-gitlab-mattermost-integration.md
-90-additional-infrastructure-setup.md
+## Runner administration
+- [Runner administration](80-runners-admin.md)
+- [Paused runner](90-paused-runner.md)
+
+## Misc
+- [Additional infrastructure setup](90-additional-infrastructure-setup.md)
