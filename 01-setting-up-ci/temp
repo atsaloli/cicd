@@ -1,8 +1,0 @@
-Qc5yLAYvjWYJs-bhXZUz
-
-
-root@ubuntu-xenial:~# gitlab-runner register --registration-token Qc5yLAYvjWYJs-bhXZUz --url https://git
-lab.com/ --executor shell -n
-
---description "Shell Runner"
-
