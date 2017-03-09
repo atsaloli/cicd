@@ -6,4 +6,3 @@
 2. [Setting up and testing your CI infrastructure](/01-setting-up-ci/)
 3. [GitLab CI basics](/02-ci-basics/)
 4. [GitLab CI intermediate topics](/03-ci-intermediate/)
-5. [Extras](/10-extras/)
