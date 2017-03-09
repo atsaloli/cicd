@@ -1,43 +1,12 @@
-# Disable GitLab.com Shared Runners
-
-To better understand how GitLab CI works and how it fits in with GitLab, we will disable the GitLab.com Shared Runners (in the cloud) and will register our own GitLab CI runner provider and will register two runners, Shell and Docker.
-
-Go to project Settings -> CI/CD Pipelines -> Shared Runners -> Disable shared runners.
-
-
 # Installing GitLab CI Runner service
 
-Reference: [GitLab Runner install doc](https://docs.gitlab.com/runner/install/linux-repository.html)
+Reference: [GitLab Runner installation documentation](https://docs.gitlab.com/runner/install/linux-repository.html)
 
 
-## Install Docker
-
-Install Docker so that our GitLab CI Runner service can run jobs in Docker containers in addition to Shell jobs.
+First, [install Docker](21-installing-docker.md) so our GitLab CI Runner can run repeatable tests in reproducible environments.
 
 
-```
-# Install Docker
-curl -sSL https://get.docker.com/ | sudo sh
-
-
-# confirm Docker works
-docker run alpine /bin/echo 'Hello world'
-```
-
-Example of successful test:
-
-```
-# docker run alpine /bin/echo 'Hello world'
-Unable to find image 'alpine:latest' locally
-latest: Pulling from library/alpine
-0a8490d0dfd3: Pull complete
-Digest: sha256:dfbd4a3a8ebca874ebd2474f044a0b33600d4523d03b0df76e5c5986cb02d7e8
-Status: Downloaded newer image for alpine:latest
-Hello world
-#
-```
-
-## Install GitLab CI
+## Installing GitLab CI
 
 ### Add GitLab CI repo
 ```
