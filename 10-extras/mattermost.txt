@@ -1,15 +1,16 @@
-Notes: GitLab comes up with http:// out of the box, no https://
+# Raw notes on GitLab/Mattermost integration
 
-root/xachapuri
+- GitLab comes up with http:// out of the box, no https://
 
------------
 
-# Enabling HTTPS on Mattermost
+
+## Enabling HTTPS on Mattermost
 
 Reference: https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04
 
-As per section "Running GitLab Mattermost with HTTPS" of https://docs.gitlab.com/omnibus/gitlab-mattermost/ let's
-place an SSL certificate and certificate key inside /etc/gitlab/ssl:
+As per section "Running GitLab Mattermost with HTTPS" of https://docs.gitlab.com/omnibus/gitlab-mattermost/
+let's place an SSL certificate and certificate key inside /etc/gitlab/ssl:
+
 
 ``` 
 root@37ee111c-e115-487b-8b2c-aca1044cca18:/etc/gitlab# mkdir ssl
@@ -41,17 +42,17 @@ Then edit gitlab.rb and reconfigure gitlab (per above-referenced "Running GitLab
 
 We can now access Mattermost through https://mattermost.example.com/
 
-# Enable incoming webhooks
+## Enable incoming webhooks
 
 Per "GitLab notifications in Mattermost" in "Administering GitLab Mattermost" in https://docs.gitlab.com/omnibus/gitlab-mattermost/, set
 mattermost['service_enable_incoming_webhooks'] = true
 and reconfigure GitLab.
 
-# enable outgoing webhooks
+## enable outgoing webhooks
 in gitlab.rb
 mattermost['service_enable_outgoing_webhooks'] = true
 
-# tell mattermost to trust our GitLab self-signed cert
+## tell mattermost to trust our GitLab self-signed cert
 
 Set "Enable Insecure Outgoing Connections" to true in Mattermost -> System Console -> Settings -> Security -> Connections
 
@@ -59,17 +60,17 @@ Set "Enable Insecure Outgoing Connections" to true in Mattermost -> System Conso
 mattermost['service_enable_commands'] = true
 
 
-# add an incoming webhook in Mattermost
+## add an incoming webhook in Mattermost
 
 settings -> Integrations -> Incoming Webhooks -> Add
 
 This will give you a URL you can put into GitLab (under project settings -> webhooks)
 
 
-# troubleshooting GitLab
+## troubleshooting GitLab
 The GitLab -> Mattermost integration did not work -- I would get HTTP 500 errors when testing the integration.
 
-I edited gitlab.rb to crank up "level" of logging on every line that would let me,
+Edit /etc/gitlab/gitlab.rb to crank up "level" of logging on every line that would let me,
 from INFO to DEBUG, and then used the following to find the relevant log file:
 ```
 cd /var/log/gitlab ; multitail -i mattermost/current mattermost/mattermost.log  gitlab-workhorse/current    $l/gitlab-rails/production.log
