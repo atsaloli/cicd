@@ -1,4 +1,8 @@
 # GitLab CI Features
+
+See https://about.gitlab.com/gitlab-ci/ to learn about Features and Architecture
+
+Learning more:
 - [Continuous integration shipped along and fully integrated in the GitLab interface](https://docs.gitlab.com/ce/ci/)
 - [Configure CI builds using a versioned, flexible build script](https://docs.gitlab.com/ce/ci/yaml/README.html)
 - [Power your CI with Docker](https://docs.gitlab.com/ce/ci/docker/using_docker_images.html)
