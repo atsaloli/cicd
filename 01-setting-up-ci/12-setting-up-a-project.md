@@ -1,10 +1,12 @@
-# Initial setup of CI
+# Setup a "www" project and enable CI
+
+We will use this project to explore GitLab CI functionality.
 
 ## Add a project
 
 Add a new project "www" 
 
-Add an SSH key (if needed) so you can commit to this project
+Add an SSH key (if needed) so you can commit to this project.
 
 Follow the steps in "Command Line Instructions -> Create a new repository"
 to add the first file, `README.md`.
@@ -26,8 +28,6 @@ test_it:
   script: /bin/echo I am a pretend test suite
 ```
 
-There are no constraints, so this "test" job will run on every single commit to test the new code revision.
+There are no constraints, so this "test" job will run on every single commit to test the new revision.
 
-If we go to "Pipelines", you should see a pipeline in status "Pending" (waiting for a runner) or "Passed" if the test passes.
-
-### CI config lint
+If we go to "Pipelines", you should see a pipeline in status "Passed" or "Pending" (waiting for a runner).
