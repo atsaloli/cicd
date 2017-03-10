@@ -3,7 +3,7 @@
 Change your `.gitlab-ci.yml` to display the Linux OS release id:
 
 ```yaml
-job1:
+test_it:
   script: cat /etc/*release
 ```
 
