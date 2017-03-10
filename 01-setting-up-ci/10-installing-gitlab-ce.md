@@ -1,11 +1,12 @@
 # Installing GitLab CE
 
-References:
-- https://docs.gitlab.com/runner/install/
+
+You can use GitLab.com (public GitLab) or spin up your own. The rest of this section
+deals with spinning up your own.
 
 ## Creating a host
 
-Note: GitLab recommends putting Runners on dedicated hosts. 
+Note: GitLab recommends install GitLab CI on dedicated hosts (separate from the GitLab instance itself).
 
 In this tutorial, I put CE and CI on the the same host for convenience.
 
