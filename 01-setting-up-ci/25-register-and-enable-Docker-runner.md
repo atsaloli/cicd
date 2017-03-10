@@ -3,7 +3,8 @@
 ## Register a Docker runner
 
 Run `sudo gitlab-ci-multi-runner register` using  `docker` for the executor;
-use `alpine` as the default docker image because it is lightweight.
+just add `--docker-image alpine` to specify default docker image
+(we use `alpine` as the default docker image because it is lightweight).
 
 ## Enable this runner
 
