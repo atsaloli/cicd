@@ -19,7 +19,7 @@ sudo apt-get install gitlab-ci-multi-runner
 
 ## Add gitlab-runner to the docker group
 ```
-usermod -aG docker gitlab-runner
+sudo usermod -aG docker gitlab-runner
 ```
 
 ## Confirm GitLab Runner service is active (running)
