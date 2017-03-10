@@ -15,7 +15,7 @@ sudo gitlab-ci-multi-runner register
 
 Notes:
 - Use main GitLab URL when prompted for coordinator URL.
-- Get the registration token from Settings -> CI/CD Pipelines.
+- Get the registration token from `Settings -> CI/CD Pipelines`.
 - For description, put "Shell runner".
 - For executor, use "shell".
 - Don't put any tags (we'll learn later how to tag jobs to route them to specific runners).
