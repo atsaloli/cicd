@@ -20,15 +20,14 @@ Notes:
 - For executor, use "shell".
 - Don't put any tags (we'll learn later how to tag jobs to route them to specific runners).
 
-```
 
 You can also register runners non-interactively:
 
 ```bash
-sudo gitlab-runner register --non-interactive \\
-                            --url https://gitlab.com/ \\
-                            --registration-token <token> \\
-			    --executor shell \\
+sudo gitlab-runner register --non-interactive \
+                            --url https://gitlab.com/ \
+                            --registration-token <token> \
+			    --executor shell \
                             --description "Shell Runner"
 ```
 
