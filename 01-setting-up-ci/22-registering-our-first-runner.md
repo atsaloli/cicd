@@ -27,7 +27,7 @@ You can also register runners non-interactively:
 sudo gitlab-runner register --non-interactive \
                             --url https://gitlab.com/ \
                             --registration-token <token> \
-			    --executor shell \
+                            --executor shell \
                             --description "Shell Runner"
 ```
 
