@@ -20,7 +20,3 @@ $ /bin/echo I am a pretend test suite
 I am a pretend test suite
 Build succeeded
 ```
-
-# Disable Shell runner
-
-Now disable the Shell runner for this project; we'll bring up a Docker runner instead.

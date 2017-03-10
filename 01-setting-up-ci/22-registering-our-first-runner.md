@@ -38,3 +38,5 @@ sudo gitlab-runner list
 ```
 
 You should also see it in the GitLab UI, under `Settings -> CI/CD Pipelines`.
+
+Click on the edit icon to see runner settings such as locking it to a specific project.
