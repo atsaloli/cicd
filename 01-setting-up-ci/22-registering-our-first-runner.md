@@ -24,7 +24,7 @@ Notes:
 
 You can also register runners non-interactively:
 
-```
+```bash
 sudo gitlab-runner register --non-interactive \\
                             --url https://gitlab.com/ \\
                             --registration-token <token> \\
@@ -36,7 +36,7 @@ sudo gitlab-runner register --non-interactive \\
 
 You should now see the Shell runner:
 
-```
+```bash
 sudo gitlab-runner list
 ```
 
