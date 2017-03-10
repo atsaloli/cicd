@@ -9,7 +9,7 @@ You can define an "executor" for each runner. The simplest executor is Shell:
 the job will run in a shell on the GitLab CI server.
 
 
-```
+```bash
 sudo gitlab-ci-multi-runner register
 ```
 
@@ -30,9 +30,7 @@ sudo gitlab-runner register --non-interactive \\
                             --registration-token <token> \\
 			    --executor shell \\
                             --description "Shell Runner"
-
 ```
-
 
 You should now see the Shell runner:
 
@@ -40,4 +38,4 @@ You should now see the Shell runner:
 sudo gitlab-runner list
 ```
 
-You should also see it in the GitLab UI, under Settings -> CI/CD Pipelines.
+You should also see it in the GitLab UI, under `Settings -> CI/CD Pipelines`.
