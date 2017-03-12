@@ -9,7 +9,7 @@ curl -sSL https://get.docker.com/ | sudo sh
 
 
 # confirm Docker works
-docker run alpine /bin/echo 'Hello world'
+sudo docker run alpine /bin/echo 'Hello world'
 ```
 
 Example of successful test:
