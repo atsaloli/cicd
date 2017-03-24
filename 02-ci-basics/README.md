@@ -1,3 +1,4 @@
+# CI Basics
 - [Definitions of Key Terms](00-key-definitions.md)
 - [CI config: setting up a test job](01-single-test-job.md)
 - [CI config: setting up a pipeline (Shell)](02-simple-3-stage-shell-pipeline.md)
@@ -11,4 +12,4 @@
 - [Continuous Deployment: manual deploy to production](50-manual-deploy-to-production.md)
 - [CI Config: Skipping builds](60-skipping-builds.md)
 - [CI Config: Debugging builds](90-debugging-builds.md)
-- [Practical exercise: setting up and using a CI pipeline](95-practical-exercise.md))
+- [Practical exercise: setting up and using a CI pipeline](95-practical-exercise.md)
