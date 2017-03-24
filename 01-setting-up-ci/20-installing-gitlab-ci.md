@@ -14,7 +14,7 @@ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-
 
 ## Install GitLab Runner
 ```
-sudo apt-get install gitlab-ci-multi-runner
+sudo apt-get install -y gitlab-ci-multi-runner
 ```
 
 ## Add gitlab-runner to the docker group
@@ -24,5 +24,5 @@ sudo usermod -aG docker gitlab-runner
 
 ## Confirm GitLab Runner service is active (running)
 ```
-service gitlab-runner status
+sudo service gitlab-runner status
 ```
