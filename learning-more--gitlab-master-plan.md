@@ -8,10 +8,6 @@
 
 3. Plan - Use [GitLab Issue Board](https://about.gitlab.com/solutions/issueboard/) to plan work.
 
-- [video 1](https://about.gitlab.com/solutions/issueboard/#video-explainer)
-
-- [video 2](https://youtu.be/UWsJ8tkHAa8)
-
 4. Code - Reduce developer spin-up time by using Web-based IDE [Koding](https://about.gitlab.com/2016/07/26/koding-and-gitlab-integrated/)
 
 5. Commit - commit code to GitLab repositories
