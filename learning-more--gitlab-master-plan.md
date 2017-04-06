@@ -18,9 +18,7 @@ and [GitLab Container Registry](https://about.gitlab.com/2016/05/23/gitlab-conta
 
 7. Code Review - making and handling GitLab Merge Requests; multiple conflict resolution within Gitlab UI.  See also [Review Apps](https://about.gitlab.com/2016/11/22/introducing-review-apps/)
 
-8. Continuous Delivery - deploying an app from GitLab to Docker Cloud (or elsewhere): manually (through GitLab UI or chat) and automatically via CI/CD pipeline.
-
-[GitLab Deploy](https://about.gitlab.com/2016/08/05/continuous-integration-delivery-and-deployment-with-gitlab/)
+8. Continuous Delivery - deploying an app from GitLab to Docker Cloud (or elsewhere) via [CI/CD pipeline](https://about.gitlab.com/2016/08/05/continuous-integration-delivery-and-deployment-with-gitlab/)
 
 9. Chatops - [Cog chatbot](https://gitlab.com/gitlab-org/omnibus-gitlab/issues/1412) has been integrated with GitLab 8.13
 
