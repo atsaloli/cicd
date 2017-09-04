@@ -46,7 +46,10 @@ See also: https://en.wikipedia.org/wiki/XUnit
 
 ## CI
 
-CI stands for Continuous Integration.
+See [Continuous Integration](#continuous-integration)
+
+## Continuous Integration
+
 
 > Continuous integration (CI) is the practice of merging all developer
 > working copies to a shared mainline several times a day.
