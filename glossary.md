@@ -61,6 +61,8 @@ References:
 
 ## CD
 
+https://en.wikipedia.org/wiki/Continuous_delivery
+
 ### Continuous Delivery vs. Continuous Deployment
 
 - https://www.quora.com/What-is-the-difference-between-continuous-delivery-and-continuous-deployment

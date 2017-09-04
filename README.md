@@ -19,10 +19,15 @@ CI/CD stands for Continuous Integration / Continuous Deployment
 
 -- [OxfordDictionaries.com](https://en.oxforddictionaries.com/definition/us/continuous)
 
-##### Continuous Integration
+##### Continuous Integration (CI)
 
+READ:
 
+[CI entry in course glossary](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#ci)
 
-Bibliography:
+##### Continuous Deployment (CD)
 
-Article [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server.
+READ:
+
+[CD entry in course glossary](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#cd)
+
