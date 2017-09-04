@@ -64,9 +64,11 @@ References:
 
 ## CD
 
-CD stands for Continuous Deployment or Continuous Delivery
+CD stands for:
+- [Continuous Deployment](#continuous-depoyment)
+- [Continuous Delivery](#continuous-delivery)
 
-### Continuous Deployment
+## Continuous Deployment
 
 > Continuous Deployment is closely related to Continuous Integration
 > and refers to the release into production of software that passes the
@@ -74,11 +76,27 @@ CD stands for Continuous Deployment or Continuous Delivery
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
-### Continuous Delivery
+## Continuous Delivery
 
 https://en.wikipedia.org/wiki/Continuous_delivery
 
-### Continuous Delivery vs. Continuous Deployment
+See also:
 
 - https://www.quora.com/What-is-the-difference-between-continuous-delivery-and-continuous-deployment
 
+## Pipeline
+
+> A linear sequence of specialized modules used for pipelining
+
+-- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/pipeline)
+
+> Pipelining: A form of computer organization in which successive steps of an instruction sequence are executed in turn by a sequence of modules able to operate concurrently, so that another instruction can be begun before the previous one is finished.
+
+-- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/pipelining)
+
+
+> A system through which something is conducted, especially as a means of supply: "Farther down the pipeline are three other approaches to vaccine development" (Boston Globe).
+
+-- [American Heritage Dictionary of the English Language](https://www.ahdictionary.com/word/search.html?q=pipeline)
+
+https://martinfowler.com/bliki/DeploymentPipeline.html
