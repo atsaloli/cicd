@@ -61,8 +61,21 @@ References:
 
 ## CD
 
+CD stands for Continuous Deployment or Continuous Delivery
+
+### Continuous Deployment
+
+> Continuous Deployment is closely related to Continuous Integration
+> and refers to the release into production of software that passes the
+> automated tests.
+
+-- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
+
+### Continuous Delivery
+
 https://en.wikipedia.org/wiki/Continuous_delivery
 
 ### Continuous Delivery vs. Continuous Deployment
 
 - https://www.quora.com/What-is-the-difference-between-continuous-delivery-and-continuous-deployment
+
