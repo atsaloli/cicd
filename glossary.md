@@ -43,3 +43,24 @@ See also: https://en.wikipedia.org/wiki/XUnit
 > the integrated system ready for system testing.
 
 -- [Wikipedia](https://en.wikipedia.org/wiki/Integration_testing)
+
+## CI
+
+CI stands for Continuous Integration.
+
+> Continuous integration (CI) is the practice of merging all developer
+> working copies to a shared mainline several times a day.
+...
+> The main aim of CI is to prevent integration problems
+
+-- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_integration)
+
+References:
+
+- Article [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
+
+## CD
+
+### Continuous Delivery vs. Continuous Deployment
+
+- https://www.quora.com/What-is-the-difference-between-continuous-delivery-and-continuous-deployment
