@@ -23,7 +23,7 @@ CI/CD stands for Continuous Integration / Continuous Deployment
 
 READ:
 
-- [CI entry in course glossary](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#ci)
+- [Continuous Integration entry in course glossary](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-integration)
 
 - The following sections on ThoughtWorks's [Continuous Integration] web page:
   - Integrate at least daily
