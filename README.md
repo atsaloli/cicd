@@ -1,4 +1,4 @@
-# Setting up CI/CD pipelines
+# Setting up CI/CD Pipelines
 
 ## Part I - CI/CD pipelines
 
