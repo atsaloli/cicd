@@ -19,3 +19,5 @@
   - More than a process
 
 3.  READ ["Continuous Deployment"](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-deployment) entry in course glossary
+
+4.  READ ["Continuous Delivery"](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-delivery) entry in course glossary
