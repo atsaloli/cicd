@@ -55,6 +55,14 @@ What would be the benefits of Continuous Integration for your organization and h
 
 ### Section 3. Definition of terms: DevOps
 
+> Currently, **DevOps** is more like a philosophical movement, and not yet a precise collection of practices, descriptive or prescriptive ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
+
+-- [Gene Kim](http://www.realgenekim.me/devops-cookbook/), author of ["The DevOps Handbook"](http://itrevolution.com/devops-handbook)
+
+> DevOps (a clipped compound of "development" and "operations") is a software development and delivery process that emphasizes communication and collaboration between product management, software development, operations professionals and close alignment with business objectives. It supports this by automating and monitoring the process of software integration, testing, deployment, and infrastructure changes by establishing a culture and environment where building, testing, and releasing software can happen rapidly, frequently, and more reliably.
+
+-- [Wikipedia entry, DevOps](https://en.wikipedia.org/wiki/DevOps)
+
 ### Section 4. The relationship of CI/CD to DevOps
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
