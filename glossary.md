@@ -78,7 +78,8 @@ CD stands for:
 
 ## Continuous Delivery
 
-https://en.wikipedia.org/wiki/Continuous_delivery
+> Continuous delivery is sometimes confused with continuous deployment. Continuous deployment means that every change is automatically deployed to production. Continuous delivery means that the team ensures every change can be deployed to production but may choose not to do it, usually due to business reasons. In order to do continuous deployment one must be doing continuous delivery.
+-- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
 
 See also:
 
