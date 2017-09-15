@@ -1,4 +1,4 @@
-# Setting up CI/CD pipelines with GitLab and Jenkins
+# Setting up CI/CD pipelines
 
 ## Part I - CI/CD pipelines
 
