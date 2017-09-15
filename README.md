@@ -2,30 +2,20 @@
 
 ## Part I - CI/CD pipelines
 
-### 1. Definition of terms
+### 1. Definition of terms: CI/CD
 
-#### CI/CD
-
-CI/CD stands for Continuous Integration / Continuous Deployment
+**CI/CD** stands for Continuous Integration / Continuous Deployment
 
 > Continuous
 > adjective
 > Forming an unbroken whole; without interruption.
 [OxfordDictionaries.com](https://en.oxforddictionaries.com/definition/us/continuous)
 
-##### Continuous Integration (CI)
+1. READ ["Continuous Integration"](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-integration)  entry in course glossary.
 
-READ:
-
-- [Continuous Integration entry in course glossary](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-integration)
-
-- The following sections on ThoughtWorks's [Continuous Integration](https://www.thoughtworks.com/continuous-integration) web page:
+2. READ the following sections in ThoughtWorks' [Continuous Integration](https://www.thoughtworks.com/continuous-integration) web page:
   - Integrate at least daily
   - Solve problems quickly
   - More than a process
 
-
-##### Continuous Deployment (CD)
-
-READ:
-[Continuous Deployment](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-deployment) in the course glossary
+3.  READ ["Continuous Deployment"](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/setting_up_cicd_pipelines/glossary.md#continuous-deployment) entry in course glossary
