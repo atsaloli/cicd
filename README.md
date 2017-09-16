@@ -43,7 +43,7 @@ Continuous Integration / Continuous Deployment
 -- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
 
 
-### Section 2. The benefits of Continuous Integration
+### Section 2. Benefits of Continuous Integration
 
 1. READING
 Read the first three sections of [Continuous Integration](https://www.thoughtworks.com/continuous-integration) page on ThoughtWorks.com:
@@ -55,20 +55,44 @@ What would be the benefits of Continuous Integration for your organization and h
 
 ### Section 3. Definition of terms: DevOps
 
+
+> The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  Why Development and IT Operations? Because that is typically the value stream that is between the business (where requirements are defined) and the customer (where value is delivered).
+
+-- [Top 11 Things You Need to Know about DevOps](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
+ 
 > Currently, **DevOps** is more like a philosophical movement, and not yet a precise collection of practices, descriptive or prescriptive ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
 
 -- [Gene Kim](http://www.realgenekim.me/devops-cookbook/), author of ["The DevOps Handbook"](http://itrevolution.com/devops-handbook)
 
+> DevOps is... an umbrella concept that refers to anything that smoothes out the interaction between development and operations.
+
+["What is Devops?", Damon Edwards](http://dev2ops.org/2010/02/what-is-devops/)
+
 > DevOps (a clipped compound of "development" and "operations") is a software development and delivery process that emphasizes communication and collaboration between product management, software development, operations professionals and close alignment with business objectives. It supports this by automating and monitoring the process of software integration, testing, deployment, and infrastructure changes by establishing a culture and environment where building, testing, and releasing software can happen rapidly, frequently, and more reliably.
 
 -- [Wikipedia entry, DevOps](https://en.wikipedia.org/wiki/DevOps)
+
+> DevOps practices and procedures lead to smoothing out the typically ‘bumpiest’ aspects of software development and deployment. By pulling infrastructure setup and awareness earlier in the development cycle, surprises from environmental differences are significantly reduced.
+>
+> By establishing consistent, reliable and repeatable automated deployments, human error and the need for ‘rockstar firefighters’ are reduced.
+
+-- ["What Is DevOps?", Daniel Greene](https://techcrunch.com/2015/05/15/what-is-devops/)
 
 ### Section 4. The relationship of CI/CD to DevOps
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
 >
 While continuous delivery is focused on automating the processes in software delivery, DevOps also focuses on the organization change to support great collaboration between the many functions involved.
-[Wikipedia entry for "DevOps"](https://en.wikipedia.org/wiki/DevOps#Continuous_delivery)
 
-Bibliography:
-- Article [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
+-- [Wikipedia entry for "DevOps"](https://en.wikipedia.org/wiki/DevOps#Continuous_delivery)
+
+> The **deployment pipeline**, first defined by Jez Humble and David Farley in their book "Continuous Delivery: Reliable Software Releaes Through Build, Test, and Deployment Automation", ensures that all code checked in to version control is automatically built and tested in a production-like environment. By doing this, we find any build, test or integration errors as soon as a change is introduced, enabling us to fix them immediately. Done correctly, this allows us toalways be assured that we are in a deployable and shippable state.
+>
+> To achieve this, we must create automated build and test processes that run in dedicated environments.
+
+-- "The DevOps Handbook", Chapter 10 "Enable Fast and Reliable Automated Testing"
+
+
+## Bibliography
+- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html) article by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
+- [Continuous Deployment at IMVU: Doing the impossible fifty times a day."](http://timothyfitz.com/2009/02/10/continuous-deployment-at-imvu-doing-the-impossible-fifty-times-a-day/) article by Timothy Fitz (2009).
