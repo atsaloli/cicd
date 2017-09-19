@@ -114,6 +114,10 @@ See also: https://en.wikipedia.org/wiki/XUnit
 
 ### Section 2. Benefits of Continuous Integration
 
+> Releasing software frequently to users is usually a time-consuming and painful process. Continuous Integration and Continuous Delivery (CI/CD) can help organizations ... by automating and streamlining the steps involved in going from an idea ... to the delivered product to the customer.
+
+-- [CI/CD with OpenShift](https://blog.openshift.com/cicd-with-openshift/)
+
 1. READING
 Read the first three sections of [Continuous Integration](https://www.thoughtworks.com/continuous-integration) page on ThoughtWorks.com:
   - Integrate at least daily
@@ -150,7 +154,7 @@ Martin Fowler was involved in the work at Chrysler, and, as he describes:
 
 -- [Wikipedia entry, "ThoughtWorks"](https://en.wikipedia.org/wiki/ThoughtWorks#Continuous_integration_and_continuous_delivery)
 
-### Section 3. Definition of terms - DevOps
+### Section 4. Definition of terms - DevOps
 
 > The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  
 
@@ -175,7 +179,15 @@ Martin Fowler was involved in the work at Chrysler, and, as he describes:
 
 -- [Gene Kim](http://www.realgenekim.me/devops-cookbook/), author of ["The DevOps Handbook"](http://itrevolution.com/devops-handbook)
 
-### Section 4. The relationship of CI/CD to DevOps
+> Today, DevOps is an understood set of practices and cultural values that has been proven to help organizations
+of all sizes improve their software release cycles, software quality, security, and ability to get rapid feedback on product development.
+
+-- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
+
+![enter image description here](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
+John Willis, DevOps enthusiast extraordinaire and co-author of "The DevOps Handbook" at [LOPSA-LA meetup](https://www.meetup.com/lopsala).
+
+### Section 4. Widespread adoption; how CI/CD relates to DevOps
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
 >
@@ -183,20 +195,55 @@ While continuous delivery is focused on automating the processes in software del
 
 -- [Wikipedia entry for "DevOps"](https://en.wikipedia.org/wiki/DevOps#Continuous_delivery)
 
-> The **deployment pipeline**, first defined by Jez Humble and David Farley in their book "Continuous Delivery: Reliable Software Releaes Through Build, Test, and Deployment Automation", ensures that all code checked in to version control is automatically built and tested in a production-like environment. By doing this, we find any build, test or integration errors as soon as a change is introduced, enabling us to fix them immediately. Done correctly, this allows us toalways be assured that we are in a deployable and shippable state.
+> The **deployment pipeline**, first defined by Jez Humble and David Farley in their book ["Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation"](http://amzn.to/1QBJM7k), ensures that all code checked in to version control is automatically built and tested in a production-like environment. By doing this, we find any build, test or integration errors as soon as a change is introduced, enabling us to fix them immediately. Done correctly, this allows us to always be assured that we are in a deployable and shippable state.
 >
 > To achieve this, we must create automated build and test processes that run in dedicated environments.
 
 -- "The DevOps Handbook", Chapter 10 "Enable Fast and Reliable Automated Testing"
 
-**CI/CD**
-Continuous Integration / Continuous Deployment
+> Automation is a key differentiator for organizations. ... Automation is a huge boon to organizations.
+High performers automate significantly more of their configuration management, testing, deployments and
+change approval processes than other teams. The result is more time for innovation and a faster feedback cycle.
+...
+> DevOps teams increased from 16% in 2014 to 19% in 2015 to 22% in 2016 to 27% in 2017.
 
-> Releasing software frequently to users is usually a time-consuming and painful process. Continuous Integration and Continuous Delivery (CI/CD) can help organizations ... by automating and streamlining the steps involved in going from an idea ... to the delivered product to the customer.
+-- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
--- [CI/CD with OpenShift](https://blog.openshift.com/cicd-with-openshift/)
+<!-- http://www.verticalsysadmin.com/img/2017-state-of-devops-report-puppet-dora.png -->
+The 2017 State of DevOps Report finds that Continuous Delivery reduces deployment pain and increases IT performance which leads to increased organizational performance.
 
+> We found that the following all positively affect continuous delivery: comprehensive use of version control; continuous integration and trunk-based development; integrating security into software delivery work; and the use of test and deployment automation. Of these, test automation is the biggest contributor. 
+
+> The biggest contributor to continuous delivery — bigger even than test and deployment automation — is whether a team can do all of the following:
+• Make large-scale changes to the design of its system without permission from someone outside the team.
+• Make large-scale changes to the design of its system without depending on other teams to make changes in their own systems, or creating significant work for other teams.
+• Complete its work without needing fine-grained communication and coordination with people outside the team. For example, not having to check 12 Google calendars to get feedback.
+• Deploy and release its product or service on demand, independently of other services the product or service depends upon.
+• Do most of its testing on demand, without requiring an integrated test environment.
+• Perform deployments during normal business hours with negligible downtime.
+
+-- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
+
+In the rest of this course, we will focus on test and deployment automation.
+
+### Section 4. Basic tasks: Build, Test, Deploy
+![DevOps Venn Diagram from Chinese Wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b5/Devops.svg)
+Image credit: Chinese Wikipedia entry for DevOps
+
+> **Build**
+> a compiled version of a program.
+> ▪ the process of compiling a program.
+
+-- Oxford Dictionaries
+
+    $ gcc -Wall hello.c -o hello
+
+> **Test** 
+> a process designed to find out whether something such as a machine or weapon works correctly or whether a product is satisfactory
+
+-- [Macmillan Dictionary](http://www.macmillandictionary.com/dictionary/american/test_1)
 
 ## Bibliography
 - ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html) article by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
 - [Continuous Deployment at IMVU: Doing the impossible fifty times a day."](http://timothyfitz.com/2009/02/10/continuous-deployment-at-imvu-doing-the-impossible-fifty-times-a-day/) article by Timothy Fitz (2009).
+-[Continuous Delivery](http://amzn.to/1QBJM7k) by Jez Humble and David Farley
