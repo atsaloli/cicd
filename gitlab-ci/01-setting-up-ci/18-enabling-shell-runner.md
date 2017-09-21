@@ -7,7 +7,7 @@ In Settings -> CI/CD Pipelines -> Specific Runners, find our Shell executor and 
 
 If our Pipeline was in "Pending" status before, it should now be in "Passed".
 
-Select "Passed" under Pipeline and then select the job and you should see something like:
+Select "Passed" under Pipeline and then select the job (the green checkmark) and you should see something like:
 
 ```
 Running with gitlab-ci-multi-runner 1.7.1 (f896af7)
