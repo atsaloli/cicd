@@ -22,4 +22,4 @@
 ## Set up deployment targets: stage and prod
 - [Set up "stage" and "prod" web sites](91-set-up-prod-and-stg-web-sites.md)
 - [Set up trust relationship to deploy via SSH](92-deploy-using-ssh.md)
-- [Additional infrastructure setup](90-additional-infrastructure-setup.md)
+- [Set up trust relationships to deploy via Git](93-deploy-via-git.md)
