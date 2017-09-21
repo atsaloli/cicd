@@ -1,6 +1,6 @@
 # Infrastructure Setup
 
-## Essentials - set up the GitLab and GitLab CI/CD infrastructure
+## Install "GitLab CE" and "GitLab CI/CD"
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)
