@@ -43,3 +43,8 @@ sudo gitlab-runner list
 You should now see it in GitLab, under `Settings -> Pipelines -> Runners activated for this project`.
 
 Click on the edit icon next to the runner name to see available settings. (Don't change anything yet.)
+
+Now go to "Pipelines -> Pipelines" and check the status of the job that
+was pending because no runner was available. It should now say "Passed".
+
+Select "Passed" to see the details (console log) of the job.
