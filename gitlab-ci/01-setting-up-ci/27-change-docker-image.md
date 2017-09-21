@@ -5,7 +5,7 @@ Change your CI config to tell the Docker runner to use an Ubuntu container image
 ```yaml
 image: ubuntu
 
-job1:
+test_it:
   script: cat /etc/*release
 ```
 
@@ -36,4 +36,17 @@ BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
 VERSION_CODENAME=xenial
 UBUNTU_CODENAME=xenial
 Build succeeded
+```
+You can specify the container image for all jobs, as above, or per job:
+
+```yaml
+
+test_it:
+  image: ruby
+  script: cat /etc/*release
+
+job2:
+  image: perl
+  script: cat /etc/*release
+
 ```
