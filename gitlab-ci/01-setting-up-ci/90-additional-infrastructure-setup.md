@@ -1,68 +1,79 @@
-# Deploy to stage/production branches
+# Deploy via Git
 
-I generated SSH keys in 'gitlab-runner' account on my
-GitLab runner host and added it to Administrator's SSH
-keys in GitLab so that they can push to the stage/production
-branches (one key for each branch, just to have granular
-control -- I could have used the same key for both branches).
 
-# Deploy to Stage/Production
+## Set up gitlab-runner to push to Git
 
-I generated SSH keys on my stage and production web server
-instances:
-
-- /root/.ssh/push_to_stage
-- /root/.ssh/push_to_prod
-
-These are called "push to X" because they are used to push
-to /var/www/html on the web server.
-
-I added them as global Deploy Keys to GitLab, which allows
-read-only access to all projects (Admin Tools -> Settings
--> Deploy Keys, or /admin/deploy_keys in your GitLab URL).
-
-You can also add Deploy Keys per Project (in Project Settings).
-
-I then ran a "git clone" once as root on each Web server instance
-to type "yes" and add the GitLab host key to .ssh/known_hosts
-so that when we do git operations from cron, it doesn't ask
-whether to add the host key.
-
-Note: you can use SSH config to help it pick out which key to use, 
-e.g.:
+Generate SSH key in 'gitlab-runner' account on GitLab runner host:
 
 ```
-root@33f495f9-868b-4587-f1f5-f7f6dae51ee1:~# cat .ssh/config
-Host            adamb.gitlabtutorial.org
-Hostname        adamb.gitlabtutorial.org
-IdentityFile    ~/.ssh/push_to_stg
-IdentitiesOnly yes
-root@33f495f9-868b-4587-f1f5-f7f6dae51ee1:~#
+
+gitlab-runner@alpha:~$ ssh-keygen -N '' -f ~/.ssh/push_to_git
+Generating public/private rsa key pair.
+Your identification has been saved in /home/gitlab-runner/.ssh/push_to_git.
+Your public key has been saved in /home/gitlab-runner/.ssh/push_to_git.pub.
+The key fingerprint is:
+SHA256:9UrzSOe4YacMdhL2tI+ZzHNqZWtPGp1vA5BeOqlCLxs gitlab-runner@alpha.gitlabtutorial.org
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|                 |
+|          . .    |
+|         . + .   |
+|        S * B    |
+|       o * #oo . |
+|      .E= @o*.=  |
+|       +.@oX++ o.|
+|       .+.@=o...o|
++----[SHA256]-----+
+gitlab-runner@alpha:~$
 ```
 
+Go to our "www" project, go to "Settings" tab, "Repository" sub-tab,
+and select "Expand" option for "Deploy Keys". Add the public key
+"push_to_git.pub" and check the "Write access allowed" checkbox.
 
-# PHP test
 
-On the GitLab-Runner machine:
 
-Install PHP so we can mock test PHP code with "php -l" (php lint)
+## Set up Stage/Prod to pull from Git
+
+As root, generate a key called "pull_from_git".
+
+root@alpha:~# ssh-keygen -N '' -f ~/.ssh/pull_from_git
+Generating public/private rsa key pair.
+Your identification has been saved in /root/.ssh/pull_from_git.
+Your public key has been saved in /root/.ssh/pull_from_git.pub.
+The key fingerprint is:
+SHA256:c3US3cNyp4Tv+je3mKLccj7HP+N4G9R1MEv+lYhTxfU root@alpha.gitlabtutorial.org
+The key's randomart image is:
++---[RSA 2048]----+
+|            .+Boo|
+|            +=+O=|
+|           oo+*oE|
+|           ..oo.=|
+|        S .  . .o|
+|         o    o  |
+|            .. . |
+|        ...+.o+=+|
+|         o=o+==*B|
++----[SHA256]-----+
+root@alpha:~#
+
+As it as a "Deploy Key" and leave the "Write access allowed"
+checkbox unchecked.
+
+Test your access (and here is when you would type "yes" to accept
+the key if you were doing this on separate servers for Stage and Prod):
 
 ```
-sudo apt install php7.0-cli php7.0-fpm
+root@alpha:~# git clone git@alpha.gitlabtutorial.org:root/www.git /tmp/www
+Cloning into '/tmp/www'...
+remote: Counting objects: 24, done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 24 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (24/24), done.
+Checking connectivity... done.
+root@alpha:~#
 ```
-Edit /etc/nginx/sites-enabled/default to enable PHP
-restart nginx
 
-Test with a test.php in /var/www/html to make sure it works
-
-## Install phpunit
-
-sudo apt install -y phpunit
-
-# Install development tools
-
-Install development tools so that we can build code.
-
-```
-sudo apt install -y build-essential
-```
+Later on, we'll use this trust relationship to download code from Git
+and then install it to the docroot.

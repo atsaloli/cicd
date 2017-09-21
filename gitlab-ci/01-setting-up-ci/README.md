@@ -5,6 +5,7 @@
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)
 - [Install GitLab CI/CD](20-installing-gitlab-ci.md)
+- [Install dev/test tools](21-install-dev-and-test-tools.md)
 
 
 
@@ -20,4 +21,5 @@
 
 ## Set up deployment targets: stage and prod
 - [Set up "stage" and "prod" web sites](91-set-up-prod-and-stg-web-sites.md)
+- [Set up trust relationship to deploy via SSH](92-deploy-using-ssh.md)
 - [Additional infrastructure setup](90-additional-infrastructure-setup.md)
