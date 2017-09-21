@@ -29,3 +29,19 @@ Notice also that GitLab Runner has its own config file, in `/etc/gitlab-runner/c
 
 TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). YAML is simpler
 and more readable than XML; TOML is even simpler than YAML.
+
+It's a pretty simple config file:
+
+```shell_session
+root@alpha:~/www# cat /etc/gitlab-runner/config.toml
+concurrent = 1
+check_interval = 0
+root@alpha:~/www#
+```
+
+The settings are explained in [Advanced configuration](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md):
+
+| Setting | Description |
+|---------|-------------|
+| concurrent | Limits how many jobs globally can be run concurrently. The most upper limit of jobs using all defined runners. 0 does not mean unlimited |
+| check_interval | defines in seconds how often to check GitLab for a new builds |
