@@ -1,4 +1,4 @@
-# Testing and deploying to STAGE
+# Deploying to Stage (via Git)
 
 The following will test with phpunit and if the test succeeds, will push the code to the stage branch in Git, from where it will get slurped up by the STAGE website:
 
