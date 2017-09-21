@@ -5,7 +5,7 @@
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)
 - [Install GitLab CI/CD](20-installing-gitlab-ci.md)
-- [Install dev/test tools](21-install-dev-and-test-tools.md)
+- [Install build/test tools](21-install-build-and-test-tools.md)
 
 
 
@@ -17,7 +17,8 @@
 - [Test Docker runner](26-test-docker-runner.md)
 - [Use a different container image](27-change-docker-image.md)
 - [Runner administration](80-runners-admin.md)
-- [Paused runner](90-paused-runner.md)
+- [Paused runner](84-paused-runner.md)
+- [Pause Docker runner and register Shell runner](86-shell-again.md)
 
 ## Set up deployment targets: stage and prod
 - [Set up "stage" and "prod" web sites](91-set-up-prod-and-stg-web-sites.md)
