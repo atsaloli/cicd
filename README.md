@@ -288,6 +288,10 @@ $
 > **Deploy** (verb) To place (people or other resources) into a position so as to be ready to for action or use.
 
 -- [Webster's 1913 Dictionary](http://www.webster-dictionary.org/definition/deploy)
+> Bring into effective action; utilize.  
+> ‘they are not always able to deploy this skill’
+
+-- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/deploy)
 
 Example:
 
