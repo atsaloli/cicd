@@ -18,17 +18,26 @@ Provision the host on a public cloud (e.g., Joyent):
 - High CPU with 8 GB of RAM
 
 
-## Change host name
+## Change host name to human-readable one
 
 Add DNS record (e.g. `alpha.gitlabtutorial.org`) so it's nicer to access the GitLab UI.
 
 Change hostname of your host before installing GitLab, since GitLab UI will pick up the hostname (e.g., in "git clone" URLs)
 
+For example:
+
+```
+hostname alpha.gitlabtutorial.org
+echo alpha.gitlabtutorial.org > /etc/hostname
+echo '8.19.33.153 alpha.gitlabtutorial.org' >> /etc/hosts
+```
+
+
 
 ## Installing the Omnibus package
 
-Use the official Omnibus GitLab package as recommended on https://about.gitlab.com/installation/.
+We'll use the official Omnibus GitLab package (that's what GitLab documentation recommends)
 
-Follow the download and installation instructions on https://about.gitlab.com/downloads/#ubuntu1604
+Follow the download and installation instructions on https://about.gitlab.com/installation/#ubuntu
 
 Login and set the password for the default Administrator user, `root`
