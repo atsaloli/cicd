@@ -1,2 +1,3 @@
 test:
-  script: cd www/html && phpunit UnitTest UserTest.php
+  image: php
+  script: apt-get update && apt install -y phpunit && cd www/html && phpunit UnitTest HelloTest.php

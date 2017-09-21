@@ -2,7 +2,7 @@
 
 - Register for a GitLab account if you don't already have one
 
-- Create a "CasITConf" project
+- Create a project
 
 - Setup CI on this project
   - Configure a mock test (e.g., check if README.md exists)
