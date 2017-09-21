@@ -230,18 +230,78 @@ In the rest of this course, we will focus on test and deployment automation.
 ![DevOps Venn Diagram from Chinese Wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b5/Devops.svg)
 Image credit: Chinese Wikipedia entry for DevOps
 
-> **Build**
-> a compiled version of a program.
-> ▪ the process of compiling a program.
+#### Stages that code goes through to get from Idea to Production
+
+Idea > Code > Build > Test > Deploy
+
+##### Idea
+"I'm going to write a 'hello world' program!"
+
+##### Code
+
+    $ cat hello.c
+    # include <stdio.h>
+    main()
+    {
+        printf("Hello World");
+    }
+    $
+
+##### Build
+
+> **Build** (noun) a compiled version of a program; the process of compiling a program.
 
 -- Oxford Dictionaries
 
-    $ gcc -Wall hello.c -o hello
+Example:
 
-> **Test** 
-> a process designed to find out whether something such as a machine or weapon works correctly or whether a product is satisfactory
+    $ gcc -o hello hello.c
+    $
+
+##### Test
+
+> **Test** (noun) a process designed to find out whether something such as a machine or weapon works correctly or whether a product is satisfactory
 
 -- [Macmillan Dictionary](http://www.macmillandictionary.com/dictionary/american/test_1)
+
+Example:
+
+Let's test the output of "hello" using [Bats (Bash Automated Testing System}](https://github.com/sstephenson/bats)
+
+
+```shell_session
+$ cat hello_test.bats
+#!/usr/bin/env bats
+
+@test "hello world using 'hello'" {
+  result="$(./hello)"
+  [ "$result" == "Hello World" ]
+}
+$ bats hello_test.bats
+ ✓ hello world using 'hello'
+
+1 test, 0 failures
+$
+
+```
+##### Deploy
+> **Deploy** (verb) To place (people or other resources) into a position so as to be ready to for action or use.
+
+-- [Webster's 1913 Dictionary](http://www.webster-dictionary.org/definition/deploy)
+
+Example:
+
+```shell_session
+$ sudo cp hello /usr/local/bin
+$
+```
+or
+
+```shell_session
+$ sudo scp hello root@production:/usr/local/bin/hello
+$
+```
+
 
 ## Bibliography
 - ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html) article by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
