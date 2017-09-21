@@ -8,7 +8,7 @@ test_it:
 ```
 
 Commit and push your change, and you should see "Alpine Linux" in
-the build output:
+the job console log:
 
 
 ```shell_session
