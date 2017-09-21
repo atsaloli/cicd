@@ -20,9 +20,7 @@ Provision the host on a public cloud (e.g., Joyent):
 
 ## Change host name to human-readable one
 
-Add DNS record (e.g. `alpha.gitlabtutorial.org`) so it's nicer to access the GitLab UI.
-
-Change hostname of your host before installing GitLab, since GitLab UI will pick up the hostname (e.g., in "git clone" URLs)
+Change hostname of your host before installing GitLab, since GitLab UI will pick up the hostname (e.g., it'll be the hostname in "git clone" URLs)
 
 For example:
 
@@ -32,6 +30,9 @@ echo alpha.gitlabtutorial.org > /etc/hostname
 echo '8.19.33.153 alpha.gitlabtutorial.org' >> /etc/hosts
 ```
 
+Add DNS record or `/etc/hosts` file entry on your local computer so it's nicer to access the GitLab UI.
+
+(e.g. `alpha.gitlabtutorial.org`) 
 
 
 ## Installing the Omnibus package

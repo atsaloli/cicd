@@ -1,6 +1,6 @@
 # Infrastructure Setup
 
-## Essentials - the GitLab and GitLab CI infrastructure
+## Essentials - set up the GitLab and GitLab CI/CD infrastructure
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Disable Public Runners](15-disabling-public-runners.md)

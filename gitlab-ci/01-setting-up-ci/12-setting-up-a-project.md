@@ -6,10 +6,12 @@ We will use this project to explore GitLab CI functionality.
 
 Add a new project "www" 
 
-Add an SSH key (if needed) so you can commit to this project.
+Add an SSH key so you can commit to this project.
 
 Follow the steps in "Command Line Instructions -> Create a new repository"
-to add the first file, `README.md`.
+to add the first file, `README.md`. (You use the SSH URL, not HTTPS,
+so that you can use your SSH key to authorize access without having
+to type in your password.)
 
 
 ## Enable CI
