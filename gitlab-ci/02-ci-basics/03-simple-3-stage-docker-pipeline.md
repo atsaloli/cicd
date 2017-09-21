@@ -1,0 +1,35 @@
+# Simple 3 stage pipeline (Docker version)
+
+
+```yaml
+my_build_job_1:
+  stage: build
+  script:
+  - /bin/echo This is a mock build job
+  - touch /tmp/build
+  - ls -lh /tmp/build
+  tags:
+  - docker
+
+
+my_build_job_2:
+  stage: test
+  script:
+  - /bin/echo This is a mock test job
+  - ls -lh /tmp/build
+  - touch /tmp/test
+  - ls -lh /tmp/test
+  tags:
+  - docker
+
+
+my_build_job_3:
+  stage: deploy
+  script:
+  - /bin/echo This is a mock deploy job
+  - ls -lh /tmp/build /tmp/test
+  tags:
+  - docker
+```
+
+[yaml](yaml/simple-3-stage-docker-pipeline.yaml)

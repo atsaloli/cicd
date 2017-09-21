@@ -1,2 +1,0 @@
-test:
-  script: cd www/html && phpunit UnitTest UserTest.php
