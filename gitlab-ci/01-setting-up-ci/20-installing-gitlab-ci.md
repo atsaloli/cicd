@@ -3,10 +3,6 @@
 Reference: [GitLab Runner installation documentation](https://docs.gitlab.com/runner/install/linux-repository.html)
 
 
-## Install Docker
-First, [install Docker](21-installing-docker.md) so our GitLab CI Runner can run repeatable tests in reproducible environments.
-
-
 ## Add GitLab CI repo
 ```
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
@@ -17,7 +13,8 @@ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-
 sudo apt-get install -y gitlab-ci-multi-runner
 ```
 
-## Add gitlab-runner to the docker group
+## Add gitlab-runner to the docker group to allow the non-root user gitlab-runner to use Docker
+
 ```
 sudo usermod -aG docker gitlab-runner
 ```
@@ -26,3 +23,9 @@ sudo usermod -aG docker gitlab-runner
 ```
 sudo service gitlab-runner status
 ```
+Notice that it says "active (running)" in the Active status line
+
+Notice also that GitLab Runner has its own config file, in `/etc/gitlab-runner/config.toml`
+
+TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). YAML is simpler
+and more readable than XML; TOML is even simpler than YAML.

@@ -1,7 +1,8 @@
 ## Install Docker
 
-Install Docker so that our GitLab CI Runner service can run jobs in Docker containers.
+Let's install Docker, so our GitLab CI Runner can run repeatable tests in reproducible environments (Docker containers).
 
+Do this on the "GitLab CI/CD" server, which GitLab recommends be a separate server from your "GitLab CE" server; but we're going to do everything on one server (just for the tutorial).
 
 ```shell_session
 # Install Docker
