@@ -318,7 +318,7 @@ Go through our [GitLab CI/CD tutorial](https://gitlab.com/atsaloli/gitlab-ci-tut
 
 ## Part III - Jenkins
 
-Shut down Gitlab and [install Jenkins](https://jenkins.io/download/) (going the Ubuntu/Debian route) 
+Shut down Gitlab (`sudo gitlab-ctl stop`) and [install Jenkins](https://jenkins.io/download/) (going the Ubuntu/Debian route) 
 
 ```bash
 gitlab-ctl stop
