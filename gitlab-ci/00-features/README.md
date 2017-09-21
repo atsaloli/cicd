@@ -1,6 +1,6 @@
 # GitLab CI/CD
 
-Read the [GitLab CI/CD web page](https://about.gitlab.com/gitlab-ci-cd/).
+Read the [GitLab CI/CD web page](https://about.gitlab.com/features/gitlab-ci-cd/).
 
 Bookmarks, for learning more about:
 - [GitLab Continuous Integration (https://docs.gitlab.com/ce/ci) - great "Getting Started" section](https://docs.gitlab.com/ce/ci/)

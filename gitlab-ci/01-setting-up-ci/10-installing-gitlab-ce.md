@@ -6,15 +6,15 @@ deals with spinning up your own.
 
 ## Creating a host
 
-Note: GitLab recommends install GitLab CI on dedicated hosts (separate from the GitLab instance itself).
+Note: GitLab recommends installing GitLab CI/CD on dedicated hosts (separate from the GitLab instance itself).
 
-In this tutorial, I put CE and CI on the the same host for convenience.
+In this tutorial, I put CE and CI/CD on the the same host for convenience.
 
 Provision the host on a public cloud (e.g., Joyent):
 
 - Data center: us-west-1 (closest to me)
 - Hardware Virtual Machine (so that we can 
-- Ubuntu 16 LTS (ubuntu-certified-16.04
+- Ubuntu 16 LTS (ubuntu-certified-16.04)
 - High CPU with 8 GB of RAM
 
 
