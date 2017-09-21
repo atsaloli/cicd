@@ -11,5 +11,6 @@
 - [Continuous Delivery: deploying to staging environment (via SSH)](42-deploying-to-stage-via-ssh.md)
 - [Continuous Delivery: deploying to staging environment (via Git)](45-deploying-to-stage-via-git.md)
 - [Continuous Delivery: manual deploy to production](50-manual-deploy-to-production.md)
+- [Continuous Deployment](55-continuous-deployment.md]
 - [CI Config: Debugging builds](90-debugging-builds.md)
 - [Practical exercise: setting up and using a CI pipeline](95-practical-exercise.md)
