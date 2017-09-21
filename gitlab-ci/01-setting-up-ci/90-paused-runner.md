@@ -1,3 +1,5 @@
 # Paused Runner
 
-![Runners Admin page with paused runner](/images/paused-runner.png)
+Example of a paused runner:
+
+![Runners Admin page with paused runner](../images/paused-runner.png)
