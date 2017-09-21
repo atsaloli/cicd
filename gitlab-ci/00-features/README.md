@@ -3,7 +3,7 @@
 Read the [GitLab CI/CD web page](https://about.gitlab.com/gitlab-ci-cd/).
 
 Bookmarks, for learning more about:
-- [GitLab Continuous Integration (https://docs.gitlab.com/ce/ci)](https://docs.gitlab.com/ce/ci/)
+- [GitLab Continuous Integration (https://docs.gitlab.com/ce/ci) - great "Getting Started" section](https://docs.gitlab.com/ce/ci/)
 - [GitLab CI YAML syntax](https://docs.gitlab.com/ce/ci/yaml/README.html)
 - [Using Docker Images](https://docs.gitlab.com/ce/ci/docker/using_docker_images.html)
 - [Building artifacts](https://docs.gitlab.com/ce/ci/build_artifacts/README.html)
