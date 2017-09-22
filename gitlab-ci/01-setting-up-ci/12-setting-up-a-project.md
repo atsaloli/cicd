@@ -8,6 +8,8 @@ Add a new project "www"
 
 Add an SSH key so you can commit to this project.
 
+Add a README.md file:
+
 Follow the steps in "Command Line Instructions -> Create a new repository"
 to add the first file, `README.md`. (You use the SSH URL, not HTTPS,
 so that you can use your SSH key to authorize access without having
