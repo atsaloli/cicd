@@ -314,7 +314,7 @@ $
 
 ## Part II - GitLab CI/CD
 
-Go through our [GitLab CI/CD tutorial](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md)
+Go through our [GitLab CI/CD tutorial](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md)
 
 ## Part III - Jenkins
 
