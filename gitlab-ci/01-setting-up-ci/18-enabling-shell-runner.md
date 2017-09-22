@@ -1,6 +1,7 @@
-# Enabling the shell runner for the "www" project
 
-In Settings -> Pipelines -> Specific Runners, find our Shell executor and select "Enable for this project".
+# Make sure the Shell runner is enabled for the "www" project
+
+In Settings -> Pipelines -> Specific Runners, find your Shell runner and check if it is enabled. It should have a green icon if it is enabled.  If it is not enabled, select "Enable for this project".
 
 
 # Examine pipeline
