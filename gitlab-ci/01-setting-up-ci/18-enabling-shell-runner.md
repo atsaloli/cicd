@@ -1,6 +1,6 @@
 # Enabling the shell runner for the "www" project
 
-In Settings -> CI/CD Pipelines -> Specific Runners, find our Shell executor and select "Enable for this project".
+In Settings -> Pipelines -> Specific Runners, find our Shell executor and select "Enable for this project".
 
 
 # Examine pipeline
