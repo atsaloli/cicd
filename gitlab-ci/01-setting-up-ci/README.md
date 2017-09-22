@@ -11,7 +11,7 @@
 
 ## Registering, enabling and using runners; reading job logs
 - [Register your first runner](22-registering-our-first-runner.md)
-- [Enable your first runner](23-enabling-shell-runner.md)
+- [Enable your first runner](18-enabling-shell-runner.md)
 - [Unregister runner](24-unregistering-runners.md)
 - [Register and enable Docker runner](25-register-and-enable-Docker-runner.md)
 - [Test Docker runner](26-test-docker-runner.md)
