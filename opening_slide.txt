@@ -1,0 +1,11 @@
+
+
+            Setting up CI/CD Pipelines
+
+Aleksey Tsalolikhin
+aleksey@verticalsysadmin.com
+
+LOPSA LA
+
+
+https://gitlab.com/atsaloli/gitlab-ci-tutorial
