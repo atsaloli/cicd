@@ -1,6 +1,6 @@
 # Infrastructure Setup
 
-- [Architecture: GitLab Server, Runner Server)(05-architecture.md)
+- [Architecture: GitLab Server, Runner Server](05-architecture.md)
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)
