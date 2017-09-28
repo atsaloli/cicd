@@ -3,12 +3,17 @@
 Reference: [GitLab Runner installation documentation](https://docs.gitlab.com/runner/install/linux-repository.html)
 
 
-## Add GitLab CI repo
+## Add Runner Server repo, `gitlab-ci-multi-runner`
+
+The Runner Server is called `gitlab-ci-multi-runner` and it lives in its own repository.
+
+Add the repository definition:
+
 ```
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
 ```
 
-## Install GitLab Runner
+## Install Runner Server
 ```
 sudo apt-get install -y gitlab-ci-multi-runner
 ```
@@ -19,25 +24,24 @@ sudo apt-get install -y gitlab-ci-multi-runner
 sudo usermod -aG docker gitlab-runner
 ```
 
-## Confirm GitLab Runner service is active (running)
+## Confirm gitlab-runner service is up
 ```
 sudo service gitlab-runner status
 ```
-Notice that it says "active (running)" in the Active status line
+Notice that it says "active (running)" in the Active status line:
 
-Notice also that GitLab Runner has its own config file, in `/etc/gitlab-runner/config.toml`
+![runner service is active](img/runner_service_active.png)
+
+## gitlab-runner config file
+
+GitLab Runner has its own config file, in `/etc/gitlab-runner/config.toml`
 
 TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). YAML is simpler
 and more readable than XML; TOML is even simpler than YAML.
 
-It's a pretty simple config file:
+Here it is:
 
-```shell_session
-root@alpha:~/www# cat /etc/gitlab-runner/config.toml
-concurrent = 1
-check_interval = 0
-root@alpha:~/www#
-```
+![runner config file](img/gitlab_runner_config_file.png)
 
 The settings are explained in [Advanced configuration](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md):
 
@@ -45,3 +49,5 @@ The settings are explained in [Advanced configuration](https://gitlab.com/gitlab
 |---------|-------------|
 | concurrent | Limits how many jobs globally can be run concurrently. The most upper limit of jobs using all defined runners. 0 does not mean unlimited |
 | check_interval | defines in seconds how often to check GitLab for a new builds |
+
+There are more settings than that, but that's what we start with.
