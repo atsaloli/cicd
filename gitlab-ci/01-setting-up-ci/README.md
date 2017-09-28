@@ -1,6 +1,6 @@
 # Infrastructure Setup
 
-## Install "GitLab Server" and "Runner Server"
+## Install GitLab Server and Runner Server
 
 GitLab Server provides the GitLab UI and file store, it's the GitLab Server in the below diagram.
 
