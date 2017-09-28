@@ -1,6 +1,6 @@
 # Register a Docker runner
 
-Run `sudo gitlab-runner register` using `docker` for the executor;
-use `alpine` as the default docker image because it is lightweight.
-If you're doing the non-interactive registration, you can specify
-the image with `--docker-image alpine`.
+Run `sudo gitlab-runner register` with `docker` for the executor;
+and `alpine` for the default docker image (it's lightweight).
+
+During non-interactive registration, specify the image with `--docker-image alpine`.
