@@ -1,12 +1,36 @@
-# Setup a "www" project and enable CI
-
-We will use this project to explore GitLab CI functionality.
+# Add a project and enable CI for it
 
 ## Add a project
 
-Add a new project "www" 
+Add a new project. You will use this project to explore GitLab CI functionality.
 
-Add an SSH key so you can commit to this project.
+Select the "New..." icon (it looks like a plus sign) and select "New project".
+
+![new project](img/new_project.png)
+
+Name the project. Call it "www" (we'll pretend it contains the source code
+for our web site).
+
+![name the project](img/name_project.png)
+
+Select "Create project" (below).
+
+![create project](img/create_project.png)
+
+GitLab will now take you to the "www" project page, and you should see
+a prompt to add an SSH key to your profile so you can pull or push
+project code.
+
+![create project](img/ssh_warning.png)
+
+Go ahead and select "add an SSH key", and create and add your SSH key.
+
+Create SSH key:
+
+![create key](img/ssh-keygen.png)
+
+Add your SSH key.
+
 
 Add a README.md file:
 
