@@ -4,7 +4,7 @@
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)
-- [Install GitLab CI/CD](20-installing-gitlab-ci.md)
+- [Install Runner Server](20-installing-gitlab-ci.md)
 - [Install build/test tools](21-install-build-and-test-tools.md)
 
 
