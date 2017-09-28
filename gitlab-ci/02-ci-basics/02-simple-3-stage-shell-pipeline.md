@@ -2,6 +2,8 @@
 
 ![3 stage pipeline](../images/3-stage-pipeline.png)
 
+Try running this pipeline.
+
 
 ```yaml
 stages:

@@ -1,4 +1,4 @@
-# Key definitions
+# Definitions of Key Terms
 
 ## Continuous Integration (CI)
 

@@ -1,5 +1,6 @@
 # Simple 3 stage pipeline (Docker version)
 
+Try running this pipeline.
 
 ```yaml
 my_build_job_1:

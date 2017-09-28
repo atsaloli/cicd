@@ -1,4 +1,4 @@
-# CI Basics
+# GitLab CI/CD Basics
 - [Definitions of Key Terms](00-key-definitions.md)
 - [CI config: setting up a test job](01-single-test-job.md)
 - [CI config: setting up a pipeline (Shell)](02-simple-3-stage-shell-pipeline.md)

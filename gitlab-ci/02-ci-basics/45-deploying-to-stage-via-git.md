@@ -1,6 +1,6 @@
 # Deploying to Stage (via Git)
 
-The following will test with phpunit and if the test succeeds, will push the code to the stage branch in Git, from where it will get slurped up by the STAGE website:
+Run the following pipeline that tests (with phpunit) and deploys (by pushing code to the `stage` branch in Git, from where it gets slurped up by the STAGE website):
 
 ```yaml
 
@@ -17,11 +17,10 @@ deploy_to_stage:
 Explanation of the git command:
 
 
-GIT_SSH_COMMAND allows us to define flags that ssh should use (to specify the identity key file).
+`GIT_SSH_COMMAND` allows us to define flags that ssh should use (to specify the identity key file).
 
 
---force allows us to push from master to stage:
-
+`--force` allows us to push from master to stage overriding the built-in safeguards:
 
 >       -f, --force
 >           Usually, the command refuses to update a remote ref that is not an ancestor of the local ref used to overwrite it. Also, when --force-with-lease option is used, the command refuses to update a remote
@@ -29,11 +28,10 @@ GIT_SSH_COMMAND allows us to define flags that ssh should use (to specify the id
 >
 >           This flag disables these checks, and can cause the remote repository to lose commits; use it with care.
 
-We're pushing to HEAD of the stage branch (ref/heads/stage).
+We're pushing to `HEAD` of the `stage` branch (`ref/heads/stage`).
 
-The + tells git to create the target branch if it doesn't exist:
+The `+` tells git to create the target branch if it doesn't exist:
 
 > By having the optional leading +, you can tell Git to update the <dst> ref even if it is not allowed by default (e.g., it is not a fast-forward.) 
 
-Those last two quotes are from "git-push" man page.
-
+The above two quotes are from the "git-push" man page.

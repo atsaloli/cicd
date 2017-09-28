@@ -1,7 +1,6 @@
 # Debugging builds
 
-You can add debug logging to an individual [job](yaml/job-debug.yaml) or the [whole pipeline](yaml/global-debug.yaml) 
-by using the CI_DEBUG_TRACE variable.
+Add debug logging to an individual [job](yaml/job-debug.yaml) or the [whole pipeline](yaml/global-debug.yaml) by using the `CI_DEBUG_TRACE` variable.
 
 Example output with tracing enabled:
 ```
@@ -549,4 +548,4 @@ $'\''cd'\'' "/home/gitlab-runner/builds/86e471c2/0/root/www"
 [0;m
 ```
 
-See "Debug tracing" in https://docs.gitlab.com/ce/ci/variables/README.html
+See [Debug tracing](https://docs.gitlab.com/ce/ci/variables/README.html)

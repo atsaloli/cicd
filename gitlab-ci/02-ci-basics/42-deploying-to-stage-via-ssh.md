@@ -1,6 +1,8 @@
 # Deploying to Stage (via SSH)
 
-The following will test with phpunit and if the test succeeds, will push the code to the stage environment via rsync.
+## Test -> Deploy (to Stage)
+
+Run the following pipeline to test (with phpunit) and (if successful), deploy to the stage environemnt (with rsync push to stage).
 
 ```yaml
 
@@ -29,3 +31,6 @@ Skipping Git submodules setup
 $ scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@stage.example.com:/var/www/stg-html/
 Job succeeded
 ```
+
+You should now be able to see the code in action (mock UAT):
+`curl http://stage.example.com/Hello.php`

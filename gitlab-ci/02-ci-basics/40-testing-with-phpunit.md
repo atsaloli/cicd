@@ -1,8 +1,8 @@
-Given the following PHP files in www/html directory,
-(based on the phpunit example code from GitHub repo
+Add the following PHP files to the `www/html` directory in your "www" project.
+(They are based on the phpunit example code from GitHub repo
 linked from https://www.sitepoint.com/getting-started-with-phpunit/):
 
-Hello.php:
+[Hello.php](Hello.php):
 
 ```php
 <?php
@@ -15,7 +15,7 @@ class Greeting {
 ?>
 ```
 
-HelloTest.php:
+[HelloTest.php](HelloTest.php):
 
 ```php
 <?php
@@ -32,7 +32,7 @@ class HelloTest extends PHPUnit_Framework_TestCase
 ```
 
 
-And given this [yaml](yaml/test-phpunit.yml),
+And given this [CI config](yaml/test-phpunit.yml) that uses the Docker "php" container:
 
 
 ```yaml
@@ -42,7 +42,7 @@ test:
 
 ```
 
-We successfully test User.php using "phpunit":
+Run the pipeline and it should test User.php using the "phpunit" unit test framework:
 
 ```
 ...

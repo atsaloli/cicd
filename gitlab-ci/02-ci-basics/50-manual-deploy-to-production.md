@@ -55,7 +55,7 @@ My gitlab-runner account's SSH key is allowed to write to the GitLab repo
 repo.
 
 My mock stage and production website instances are tracking the "stage" and "production" branches
-with a cron job:
+with a cron job (replace `alpha.gitlabtutorial.org` with the URL of your "www" repository):
 ```
 * * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@alpha.gitlabtutorial.org:root/www.git prod www/html/ 2>/dev/null| tar -x --transform s:www/html:/var/www/prod-html: -C / 2>/dev/null
 * * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@alpha.gitlabtutorial.org:root/www.git stage www/html/ 2>/dev/null| tar -x --transform s:www/html:/var/www/stg-html: -C / 2>/dev/null
@@ -63,8 +63,6 @@ with a cron job:
 ```
 
 In the source repo, the Web files are in "www/html"; I am using GNU Tar's --transform
-feature to put them in /var/www/prod-html and /var/www/stg-html.
+to put them in /var/www/prod-html and /var/www/stg-html.
 
-For production use, you may want something more robust, such
-as [Travis-CI dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html)
-which can deploy to a wide variety of [service providers](https://github.com/travis-ci/dpl#supported-providers)
+For production use, you may want a tool like [Travis-CI dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html) which can deploy to a wide variety of [service providers](https://github.com/travis-ci/dpl#supported-providers), but the above demonstrates a basic CI/CD pipeline.

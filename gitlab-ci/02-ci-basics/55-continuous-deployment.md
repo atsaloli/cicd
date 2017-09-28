@@ -1,8 +1,6 @@
-# Automatic Deploy to Production
+# Continuous Deployment: Automatic Deploy to Production
 
-AKA Continuous Deployment
-
-## YAML
+## CI config
 ```yaml
 
 stages:
@@ -22,7 +20,7 @@ deploy_to_stage:
 
 test:
   stage: test_on_stage
-  script: curl http://stage.example.com:8008/date.txt | grep Sep
+  script: curl http://stage.example.com:8008/Hello.php | grep ello
 
 deploy_to_prod:
   stage: deploy_to_prod
