@@ -48,4 +48,6 @@ We'll use the official Omnibus GitLab package (that's what GitLab documentation 
 
 Follow the download and installation instructions on https://about.gitlab.com/installation/#ubuntu
 
+Select "local" when prompted for mail server configuration options. (We are not going to be using mail.)
+
 Login and set the password for the default Administrator user, `root`
