@@ -7,7 +7,7 @@ GitLab Server provides the GitLab UI, git repos and file store for build artifac
 The Runner Server has runners which run build/test/deploy jobs.
 
 The Runner Server talks to GitLab Server over the GitLab REST API.
-It picks up jobs, runs them, and then reports the outcome.
+It picks up jobs, runs them, and reports the outcome.
 
 ![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
 
