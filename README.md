@@ -329,12 +329,13 @@ $
 -[Continuous Delivery](http://amzn.to/1QBJM7k) by Jez Humble and David Farley
 
 ## Part II - GitLab CI/CD
-
-Go through our [GitLab CI/CD tutorial](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md)
-
+- [Introducing GitLab CI/CD]
 
 
-1. [Introducing GitLab CI/CD](gitlab-ci/00-features/README.md)
+### Introducing GitLab CI/CD
+
+Read the [GitLab CI/CD product features web page](https://about.gitlab.com/features/gitlab-ci-cd/).
+
 2. [Setting up and testing your CI/CD infrastructure](gitlab-ci/01-setting-up-ci/README.md)
 3. [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
 - [Extras / GitLab CI/CD intermediate topics (under construction)](gitlab-ci/03-ci-intermediate/README.md)
