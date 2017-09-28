@@ -237,7 +237,7 @@ The 2017 State of DevOps Report finds that Continuous Delivery reduces deploymen
 
 In the rest of this course, we will focus on test and deployment automation.
 
-### Section 5. Basic tasks: Build, Test, Deploy
+### Section 6. Basic tasks: Build, Test, Deploy
 ![DevOps Venn Diagram from Chinese Wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b5/Devops.svg)
 Image credit: Chinese Wikipedia entry for DevOps
 
