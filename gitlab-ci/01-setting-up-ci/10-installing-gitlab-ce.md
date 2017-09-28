@@ -1,26 +1,33 @@
 # Installing GitLab CE
 
+## Community Edition (CE), Enterprise Edition (EE)
 
-You can use GitLab.com (public GitLab) or spin up your own. The rest of this section
-deals with spinning up your own.
+GitLab CE is the Community Edition (open source) of GitLab.
+
+There is also GitLab EE (Enterprise Edition) which comes with additional
+features and commercial support. (We are a GitLab EE reseller, and offer
+a discounted price to our students.)
+
 
 ## Creating a host
 
-Note: GitLab recommends installing GitLab CI/CD on dedicated hosts (separate from the GitLab instance itself).
+Note: GitLab recommends installing Runner Server on dedicated hosts (separate from the GitLab Server).
 
-In this tutorial, I put CE and CI/CD on the the same host for convenience.
+In this tutorial, I put GitLab Server and Runner Server on the the same host for convenience.
 
-Provision the host on a public cloud (e.g., Joyent):
+Provision the host on a public cloud (e.g., Joyent or AWS).  Here are the Joyent parameters I use:
 
 - Data center: us-west-1 (closest to me)
-- Hardware Virtual Machine (so that we can 
-- Ubuntu 16 LTS (ubuntu-certified-16.04)
+- Hardware Virtual Machine (to run Docker inside the VM)
+- Ubuntu 16 LTS (ubuntu-certified-16.04) (latest Ubuntu LTS)
 - High CPU with 8 GB of RAM
 
 
 ## Change host name to human-readable one
 
-Change hostname of your host before installing GitLab, since GitLab UI will pick up the hostname (e.g., it'll be the hostname in "git clone" URLs)
+Change hostname of your host before installing GitLab, since GitLab Server
+will pick up the hostname (e.g., it'll be the hostname in "git clone"
+URLs)
 
 For example:
 
