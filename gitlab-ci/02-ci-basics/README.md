@@ -9,6 +9,7 @@
 - [CI config: customizing your pipeline stages](30-custom-stages.md)
 - [CI config: integrating with an external test framework (PHPUnit)](40-testing-with-phpunit.md)
 - [Continuous Delivery: deploying to staging environment (via SSH)](42-deploying-to-stage-via-ssh.md)
+- [Continuous Delivery: set up git pulls from mock environments](44-set-up-git-pulls-from-mock-envs.md)
 - [Continuous Delivery: deploying to staging environment (via Git)](45-deploying-to-stage-via-git.md)
 - [Continuous Delivery: manual deploy to production](50-manual-deploy-to-production.md)
 - [Continuous Deployment](55-continuous-deployment.md]
