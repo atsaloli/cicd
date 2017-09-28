@@ -332,6 +332,14 @@ $
 
 Go through our [GitLab CI/CD tutorial](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md)
 
+
+
+1. [Introducing GitLab CI/CD](gitlab-ci/00-features/README.md)
+2. [Setting up and testing your CI/CD infrastructure](gitlab-ci/01-setting-up-ci/README.md)
+3. [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
+- [Extras / GitLab CI/CD intermediate topics (under construction)](gitlab-ci/03-ci-intermediate/README.md)
+- [Learning more about GitLab](gitlab-ci/learning-more--gitlab-master-plan.md)
+
 ## Part III - Jenkins
 
 Shut down Gitlab (`sudo gitlab-ctl stop`) and [install Jenkins](https://jenkins.io/download/) (going the Ubuntu/Debian route) 
