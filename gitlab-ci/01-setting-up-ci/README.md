@@ -1,6 +1,15 @@
 # Infrastructure Setup
 
 ## Install "GitLab CE" and "GitLab CI/CD"
+
+GitLab CE (Community Edition, as opposed to Enterprise Edition) provides the GitLab UI and file store
+
+GitLab CI/CD is the Runner Server (the "runner" runs build/test/deploy jobs)
+
+![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
+
+Image credit: https://about.gitlab.com/images/ci/arch-1.jpg
+
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)

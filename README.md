@@ -339,7 +339,7 @@ Read the [GitLab CI/CD product features web page](https://about.gitlab.com/featu
 
 ### Setting up and testing your CI/CD infrastructure
 
-[link](gitlab-ci/01-setting-up-ci/README.md)
+[Infrastructure Setup](gitlab-ci/01-setting-up-ci/README.md)
 
 ### GitLab CI/CD basics
 [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
