@@ -1,8 +1,8 @@
 # Infrastructure Setup
 
-## Install "GitLab CE" and "GitLab CI/CD"
+## Install "GitLab Server" and "Runner Server"
 
-GitLab CE (Community Edition, as opposed to Enterprise Edition) provides the GitLab UI and file store, it's the GitLab Server in the below diagram.
+GitLab Server provides the GitLab UI and file store, it's the GitLab Server in the below diagram.
 
 The Runner Server has runners which run build/test/deploy jobs.
 
@@ -11,6 +11,13 @@ The Runner Server talks to GitLab Server over the GitLab REST API.
 ![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
 
 Image credit: https://about.gitlab.com/images/ci/arch-1.jpg
+
+For CI/CD, you need at least one Runner Server; you _can_ have more.
+
+In this tutorial, we are going to install GitLab Server and Runner Server
+on the same VM, for convenience; this is not recommended for production
+(you should have dedicated servers).
+
 
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
