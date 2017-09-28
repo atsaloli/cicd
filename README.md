@@ -329,7 +329,7 @@ $
 -[Continuous Delivery](http://amzn.to/1QBJM7k) by Jez Humble and David Farley
 
 ## Part II - GitLab CI/CD
-- [Introducing GitLab CI/CD]
+- [Introducing GitLab CI/CD](#introducing-gitlab-cicd)
 
 
 ### Introducing GitLab CI/CD
