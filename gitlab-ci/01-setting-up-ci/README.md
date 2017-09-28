@@ -2,9 +2,11 @@
 
 ## Install "GitLab CE" and "GitLab CI/CD"
 
-GitLab CE (Community Edition, as opposed to Enterprise Edition) provides the GitLab UI and file store
+GitLab CE (Community Edition, as opposed to Enterprise Edition) provides the GitLab UI and file store, it's the GitLab Server in the below diagram.
 
-GitLab CI/CD is the Runner Server (the "runner" runs build/test/deploy jobs)
+The Runner Server has runners which run build/test/deploy jobs.
+
+The Runner Server talks to GitLab Server over the GitLab REST API.
 
 ![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
 
