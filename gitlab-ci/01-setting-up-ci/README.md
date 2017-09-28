@@ -1,12 +1,13 @@
 # Infrastructure Setup
 
-## Install GitLab Server and Runner Server
+## Architecture: GitLab Server, Runner Server
 
-GitLab Server provides the GitLab UI and file store, it's the GitLab Server in the below diagram.
+GitLab Server provides the GitLab UI, git repos and file store for build artifacts.
 
 The Runner Server has runners which run build/test/deploy jobs.
 
 The Runner Server talks to GitLab Server over the GitLab REST API.
+It picks up jobs, runs them, and then reports the outcome.
 
 ![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
 
