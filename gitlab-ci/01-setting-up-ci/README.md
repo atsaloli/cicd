@@ -1,24 +1,6 @@
 # Infrastructure Setup
 
-## Architecture: GitLab Server, Runner Server
-
-GitLab Server provides the GitLab UI, git repos and file store for build artifacts.
-
-The Runner Server has runners which run build/test/deploy jobs.
-
-The Runner Server talks to GitLab Server over the GitLab REST API.
-It picks up jobs, runs them, and reports the outcome.
-
-You need at least one Runner Server to run CI/CD jobs.
-
-In this tutorial, we are going to install GitLab Server and Runner Server
-on the same VM, for convenience; this is not recommended for production
-(you should have dedicated servers).
-
-![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
-
-Image credit: https://about.gitlab.com/images/ci/arch-1.jpg
-
+- [Architecture: GitLab Server, Runner Server)(05-architecture.md)
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
 - [Install Docker](15-installing-docker.md)
