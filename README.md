@@ -2,6 +2,12 @@
 
 ## Table of Contents
 - [Part I - Introduction and Orientation](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-i-introduction-and-orientation)
+  - [Section 1. Definition of terms - CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-1-definition-of-terms-cicd)
+  - [Section 2. Benefits of Continuous Integration](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-2-benefits-of-continuous-integration)
+  - [Section 3. Origin of Continuous Integration](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-3-origin-of-continuous-integration)
+  - [Section 4. Definition of terms - DevOps](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-4-definition-of-terms-devops)
+  - [Section 5. Widespread adoption; how CI/CD relates to DevOps](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-4-widespread-adoption-how-cicd-relates-to-devops)
+  - [Section 6. Basic tasks: Build, Test, Deploy](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-4-basic-tasks-build-test-deploy)
 - [Part II - GitLab CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-ii-gitlab-cicd)
 - [Part III - Jenkins](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-iii-jenkins)
 
@@ -192,7 +198,7 @@ of all sizes improve their software release cycles, software quality, security, 
 ![enter image description here](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
 John Willis, DevOps enthusiast extraordinaire and co-author of "The DevOps Handbook" at [LOPSA-LA meetup](https://www.meetup.com/lopsala).
 
-### Section 4. Widespread adoption; how CI/CD relates to DevOps
+### Section 5. Widespread adoption; how CI/CD relates to DevOps
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
 >
@@ -231,7 +237,7 @@ The 2017 State of DevOps Report finds that Continuous Delivery reduces deploymen
 
 In the rest of this course, we will focus on test and deployment automation.
 
-### Section 4. Basic tasks: Build, Test, Deploy
+### Section 5. Basic tasks: Build, Test, Deploy
 ![DevOps Venn Diagram from Chinese Wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b5/Devops.svg)
 Image credit: Chinese Wikipedia entry for DevOps
 
