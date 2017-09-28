@@ -9,16 +9,15 @@ The Runner Server has runners which run build/test/deploy jobs.
 The Runner Server talks to GitLab Server over the GitLab REST API.
 It picks up jobs, runs them, and reports the outcome.
 
-![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
-
-Image credit: https://about.gitlab.com/images/ci/arch-1.jpg
-
-For CI/CD, you need at least one Runner Server; you _can_ have more.
+You need at least one Runner Server to run CI/CD jobs.
 
 In this tutorial, we are going to install GitLab Server and Runner Server
 on the same VM, for convenience; this is not recommended for production
 (you should have dedicated servers).
 
+![GitLab Architecture](https://about.gitlab.com/images/ci/arch-1.jpg)
+
+Image credit: https://about.gitlab.com/images/ci/arch-1.jpg
 
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project and enable CI for it](12-setting-up-a-project.md)
