@@ -330,7 +330,7 @@ $
 
 ## Part II - GitLab CI/CD
 - [Introducing GitLab CI/CD](#introducing-gitlab-cicd)
-- [Setting up and testing your CI/CD infrastructure]()
+- [Setting up and testing your CI/CD infrastructure](#setting-up-and-testing-your-cicd-infrastructure)
 
 
 ### Introducing GitLab CI/CD
@@ -341,9 +341,9 @@ Read the [GitLab CI/CD product features web page](https://about.gitlab.com/featu
 
 [link](gitlab-ci/01-setting-up-ci/README.md)
 
-3. [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
-- [Extras / GitLab CI/CD intermediate topics (under construction)](gitlab-ci/03-ci-intermediate/README.md)
-- [Learning more about GitLab](gitlab-ci/learning-more--gitlab-master-plan.md)
+### GitLab CI/CD basics
+[GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
+
 
 ## Part III - Jenkins
 
