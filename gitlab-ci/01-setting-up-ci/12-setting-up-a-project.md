@@ -1,4 +1,4 @@
-# Add a project and enable CI for it
+# Add a project and set up CI for it
 
 ## Add a project
 
@@ -45,17 +45,26 @@ Add a README.md file by selecting "README" in the UI:
 
 ![add README](img/add_readme.png)
 
-Put in some text (e.g., "I am a README") and select "Commit changes"
+Put in some text (e.g., "I am a README file") and select "Commit changes"
 to create the file.
 
-![README](img/ima_readme.png)
+![editing README](img/commit_readme.png)
+
+You should then see the confirmation.
+
+![README](img/new_readme.png)
+
+Use the breadcrumbs at the top to go back to the main "www" project screen:
+
+![breadcrumbs](img/breadcrumbs.png)
+
+And you should now see the "Set up CI" button:
+
+![notice the "Set up CI" button](img/setup_ci.png)
 
 
-## Enable CI
+## Set up CI
 
-Select "www" in the top left to go to your "www" project main page
-
-Notice that you are on the "Project" tab
 
 Select "Set up CI" to add the CI config file, `.gitlab-ci.yml`.
 
@@ -67,21 +76,34 @@ Let's start with a stub test job:
 
 ```
 test_it:
-  script: /bin/echo I am a pretend test suite. You passed!
+  script: /bin/echo I am a pretend test suite. I passed!
 ```
+![first CI job](img/pretend_test_1.png)
 
-Select "Commit changes".
+Select "Commit changes" at the bottom, green.
 
-This "test" job will run on every single commit to test the new revision.
+Our first CI test job, "test_it" will run on every single commit 
+to test the new revision. It will execute the /bin/echo command.
 
 Notice that GitLab automatically checks the syntax of the CI config file
 and will alert you if the config does not pass validation.
 
-Go to "Pipelines" tab.
+You may notice the "pending" indicator - that's because we haven't
+set up a Runner Server yet to run the job:
 
-Notice you have a pipeline with status "Pending".  It's pending because
-we haven't setup any Runners yet. We'll install the GitLab Runner service
-and setup a runner next.
+![pending pipeline](img/pending_pipeline.png)
+
+
+Go to "CI/CD -> Pipelines" to see our pipeline status:
+
+![pipelines menu](img/pipelines_menu.png)
+
+Here is the status:
+
+![stuck pipeline](img/stuck_pipeline.png)
+
+The pipeline is stuck in Pending, because we haven't setup any Runners yet. 
+We'll do that next.
 
 ### Definition: Runner
 A GitLab "runner" is an abstraction. It's a way for GitLab to tell the
