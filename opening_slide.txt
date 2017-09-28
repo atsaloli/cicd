@@ -2,10 +2,12 @@
 
             Setting up CI/CD Pipelines
 
+               Ohio Linux Fest 2017
+
+
+
 Aleksey Tsalolikhin
+
 aleksey@verticalsysadmin.com
-
-LOPSA LA
-
 
 https://gitlab.com/atsaloli/gitlab-ci-tutorial
