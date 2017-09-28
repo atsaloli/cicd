@@ -539,8 +539,9 @@ Install the "Blue Ocean" plug-in (Manage Jenkins -> Manage Plugins).  Once it in
 
 ### Troubleshooting
 
-- http://www.scmgalaxy.com/tutorials/jenkins-troubleshooting
-  - take a look at the log file on http://jenkinsmaster/log
-  - take a look at /var/log/jenkins/jenkins.log
-  - install the [monitoring](https://wiki.jenkins.io/display/JENKINS/Monitoring) plug-in and visit http://jenkinsmaster/monitoring
+- Take a look at the log file on http://jenkinsmaster/log
+- Take a look at /var/log/jenkins/jenkins.log
+- Install the [monitoring](https://wiki.jenkins.io/display/JENKINS/Monitoring) plug-in and visit http://jenkinsmaster/monitoring
+
+Reference: http://www.scmgalaxy.com/tutorials/jenkins-troubleshooting
 
