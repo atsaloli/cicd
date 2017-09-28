@@ -1,5 +1,10 @@
 # Setting up CI/CD Pipelines
 
+## Table of Contents
+- [Part I - Introduction and Orientation](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-i-introduction-and-orientation)
+- [Part II - GitLab CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-ii-gitlab-cicd)
+- [Part III - Jenkins](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-iii-jenkins)
+
 ## Part I - Introduction and Orientation
 
 ### Section 1. Definition of terms - CI/CD
