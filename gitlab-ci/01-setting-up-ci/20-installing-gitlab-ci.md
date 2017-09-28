@@ -1,4 +1,4 @@
-# Installing GitLab CI Runner
+# Install Runner Server
 
 Reference: [GitLab Runner installation documentation](https://docs.gitlab.com/runner/install/linux-repository.html)
 
