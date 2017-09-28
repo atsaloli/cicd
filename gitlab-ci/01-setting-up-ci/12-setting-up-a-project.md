@@ -13,7 +13,7 @@ for our web site).
 
 ![name the project](img/name_project.png)
 
-Select "Create project" (below).
+Select "Create project" (below, green).
 
 ![create project](img/create_project.png)
 
@@ -23,21 +23,32 @@ project code.
 
 ![create project](img/ssh_warning.png)
 
-Go ahead and select "add an SSH key", and create and add your SSH key.
-
-Create SSH key:
+Go ahead and select "add an SSH key", and then, in your shell session,
+create an SSH key:
 
 ![create key](img/ssh-keygen.png)
 
-Add your SSH key.
+Whoomp! There it is:
+
+![show key](img/show_key.png)
 
 
-Add a README.md file:
+Add it to GitLab:
 
-Follow the steps in "Command Line Instructions -> Create a new repository"
-to add the first file, `README.md`. (You use the SSH URL, not HTTPS,
-so that you can use your SSH key to authorize access without having
-to type in your password.)
+![add key](img/add_key.png)
+
+Go back to your "www" project:
+
+![go back to www project](img/go_back_to_www.png)
+
+Add a README.md file by selecting "README" in the UI:
+
+![add README](img/add_readme.png)
+
+Put in some text (e.g., "I am a README") and select "Commit changes"
+to create the file.
+
+![README](img/ima_readme.png)
 
 
 ## Enable CI
