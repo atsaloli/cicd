@@ -1,12 +1,30 @@
 # Registering our first runner
 
+## CI/CD settings
+
+Go to "Settings" -> "CI/CD"
+![CI/CD settings](img/settings_cicd.png)
+
+Find "Runner settings" in the menu:
+![CI/CD settings](img/runner_settings_menu.png)
+
+You'll find there are no runners listed yet (we haven't set any up yet), 
+and you'll find instructions for registering runners with GitLab:
+
+![no runners yet](img/runner_menu.png)
 
 ## Register a Shell runner
 
-You can define an "executor" for each runner. It tells GitLab CI/CD in
-what kind of environment to execute the job.
+When you register a runner, you have to tell it which GitLab it should talk
+to, to pick up jobs (and return status and possibly build artifacts).
 
-The simplest executor is Shell - the job will run in a shell on the GitLab CI/CD server.
+You'll supply a registration token.
+
+You'll also have to define an "executor" for each runner. This tells 
+the Runner Server in what kind of environment to execute the job
+(e.g., shell, docker and there are others).
+
+The simplest executor is Shell - the job will run in a shell on the Runner Server.
 
 Register a runner:
 
@@ -18,17 +36,19 @@ Go to the "Settings" tab of your project, and then select the "Pipelines" sub-ta
 
 You'll see the URL you will need to provide GitLab Runner (tells it how to get to GitLab) as well as the registration token.
 
-- For description, put "Shell runner".
-- For executor, use "shell".
+- Provide the URL from the "CI/CD settings" page
+- Provide the token from the "CI/CD setting" page
+- For description, you can put "Shell runner".
 - Don't put any tags (we'll learn later how to tag jobs to route them to specific runners).
 - Don't lock the runner to a project (not locking the runner makes it a shared runner, it can be shared between projects)
+- For executor, pick "shell".
 
 
 You can also register runners non-interactively:
 
 ```bash
 sudo gitlab-runner register --non-interactive \
-                            --url https://gitlab.com/ \
+                            --url <url> \
                             --registration-token <token> \
                             --executor shell \
                             --description "Shell Runner"
@@ -40,11 +60,48 @@ You should now see the Shell runner:
 sudo gitlab-runner list
 ```
 
-You should now see it in GitLab, under `Settings -> Pipelines -> Runners activated for this project`.
+![shell runner list](img/shell_runner_list.png)
 
-Click on the edit icon next to the runner name to see available settings. (Don't change anything yet.)
+Refresh the "CI/CD settings" page and expand Runner settings and you'll see your Shell runner:
 
-Now go to "Pipelines -> Pipelines" and check the status of the job that
-was pending because no runner was available. It should now say "Passed".
 
-Select "Passed" to see the details (console log) of the job.
+![shell runner list](img/shell_runner_in_UI.png)
+
+
+Notice that it has a green "ready" light: it's online and checking in for jobs:
+
+
+![green is good](img/shell_runner_green.png)
+
+Notice also you can select the runner id (next to the green light) to see
+runner detail; and that you can select the "edit" icon (next to the id)
+to change the runner's configuration. (Don't change anything yet.)
+
+Notice also we now have a "Remove Runner" button.
+
+Now select "CI/CD" -> "Pipelines" in the menu:
+
+![cicd pipelines menu](img/cicd_pipelines_menu.png)
+
+Remember the job that was pending because no runner was available?
+It should now say "Passed":
+
+![unstuck](img/unstuck.png)
+
+Select the "Passed" icon:
+
+![passed](img/passed_icon.png)
+
+This will expose the detail of the pipeline:
+
+![pipeline view](img/pipeline_view.png)
+
+Notice this pipeline only has one stage (Test) -- that's the default stage;
+and one job in that stage, "test_it", which passed.
+
+Select the job icon:
+![job icon](job_icon.png)
+
+Now you will see the job detail, including the console log:
+
+![job detail](img/job_detail.png)
