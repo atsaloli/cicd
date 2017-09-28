@@ -331,7 +331,7 @@ $
 ## Part II - GitLab CI/CD
 - [Introducing GitLab CI/CD](#introducing-gitlab-cicd)
 - [Setting up and testing your CI/CD infrastructure](#setting-up-and-testing-your-cicd-infrastructure)
-
+- [GitLab CI/CD basics](#gitlab-cicd-basics)
 
 ### Introducing GitLab CI/CD
 
