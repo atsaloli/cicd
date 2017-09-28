@@ -330,13 +330,17 @@ $
 
 ## Part II - GitLab CI/CD
 - [Introducing GitLab CI/CD](#introducing-gitlab-cicd)
+- [Setting up and testing your CI/CD infrastructure]()
 
 
 ### Introducing GitLab CI/CD
 
 Read the [GitLab CI/CD product features web page](https://about.gitlab.com/features/gitlab-ci-cd/).
 
-2. [Setting up and testing your CI/CD infrastructure](gitlab-ci/01-setting-up-ci/README.md)
+### Setting up and testing your CI/CD infrastructure
+
+[link](gitlab-ci/01-setting-up-ci/README.md)
+
 3. [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
 - [Extras / GitLab CI/CD intermediate topics (under construction)](gitlab-ci/03-ci-intermediate/README.md)
 - [Learning more about GitLab](gitlab-ci/learning-more--gitlab-master-plan.md)
