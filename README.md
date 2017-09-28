@@ -10,6 +10,11 @@
   - [Section 6. Basic tasks: Build, Test, Deploy](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-6-basic-tasks-build-test-deploy)
 - [Part II - GitLab CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-ii-gitlab-cicd)
 - [Part III - Jenkins](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-iii-jenkins)
+  - [Overview and Architecture](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#overview-and-architecture)
+  - [Definition of Key Terms](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#definition-of-key-terms)
+  - [Building, Testing and Deploying (with hands-on lab)](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#building-testing-and-deploying-with-hands-on-lab)
+  - [Checking Pipeline status with Jenkins Blue Ocean UI](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#checking-pipeline-status-with-jenkins-blue-ocean-ui)
+  - [Troubleshooting](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#troubleshooting)
 
 ## Part I - Introduction and Orientation
 
