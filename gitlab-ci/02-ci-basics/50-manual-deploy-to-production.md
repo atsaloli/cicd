@@ -10,22 +10,31 @@ by the STAGE website where it's available for human gatekeeper review
 and manual push to production:
 
 ```yaml
-
 test:
-  script: cd www/html && phpunit UnitTest HelloTest.php
+  image: ubuntu
+  script: 
+  - apt-get update
+  - apt install -y phpunit
+  - cd www/html && phpunit UnitTest HelloTest.php
+  tags:
+    - docker
 
 deploy_to_stage:
   stage: deploy
   script:
-  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@alpha.gitlabtutorial.org:root/www.git +HEAD:refs/heads/stage
+  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@ec2-35-157-23-11.eu-central-1.compute.amazonaws.com:root/www.git +HEAD:refs/heads/stage
   environment: stage
-
+  tags: 
+    - shell
+    
 deploy_to_prod:
   stage: deploy
   script:
-  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@alpha.gitlabtutorial.org:root/www.git +HEAD:refs/heads/prod
+  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@ec2-35-157-23-11.eu-central-1.compute.amazonaws.com:root/www.git +HEAD:refs/heads/prod
   environment: production
   when: manual
+  tags:
+    - shell
 ```
 ## Deploy to STAGE in progress
 
