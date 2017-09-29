@@ -29,7 +29,7 @@ deploy_to_stage:
   environment: stage
   tags: 
     - shell
-
+```
 
 Example output of the deploy job:
 
