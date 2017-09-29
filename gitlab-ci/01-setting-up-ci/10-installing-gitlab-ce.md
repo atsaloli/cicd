@@ -31,7 +31,11 @@ Follow the download and installation instructions on https://about.gitlab.com/in
 
 Select "local" when prompted for mail server configuration options. (We are not going to be using mail.)
 
-After the installation is done, GitLab will tell you its URL.  Login and set the password for the default Administrator user, `root`.
+After the installation is done, GitLab will tell you its URL.
+
+Please make a note of this URL -- you will need it for the rest of the exercices.
+
+Go to this URL, it will ask you to set the password for `root`, the default (and, right now, the only) user.
 
 ![login](img/login.png)
 
