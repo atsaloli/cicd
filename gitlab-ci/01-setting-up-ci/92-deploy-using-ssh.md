@@ -11,16 +11,16 @@ server document root.
 
 ## Stage
 
-Generate a key-pair for pushing code to Stage docroot (Web server document root):
+On the Runner Server, as the `gitlab-runner` user (which is the user
+that the Runners run as), generate a key-pair for pushing code to Stage
+Web server document root:
 
 ```shell_session
 root@alpha:~# su - gitlab-runner
 gitlab-runner@alpha:~$ mkdir .ssh; chmod 0700 .ssh
 gitlab-runner@alpha:~$ cd .ssh
-gitlab-runner@alpha:~/.ssh$ ssh-keygen -f push_to_stg_docroot
+gitlab-runner@alpha:~/.ssh$ ssh-keygen -f push_to_stg_docroot -N ''
 Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
 Your identification has been saved in push_to_stg_docroot.
 Your public key has been saved in push_to_stg_docroot.pub.
 The key fingerprint is:
@@ -73,6 +73,10 @@ Thu Sep 21 09:31:14 UTC 2017
 gitlab-runner@alpha:~$
 ```
 
+Of course for real production, you'd want to use a non-root user as the owner
+of the Web documents, so you don't have to give gitlab-runner root access 
+in the environment.
+
 ## Prod
 
 Now do the same for Prod:
@@ -80,10 +84,8 @@ Now do the same for Prod:
 
 
 ```shell_session
-gitlab-runner@alpha:~$ ssh-keygen -f ~/.ssh/push_to_prod_docroot
+gitlab-runner@alpha:~$ ssh-keygen -f ~/.ssh/push_to_prod_docroot -N ''
 Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
 Your identification has been saved in /home/gitlab-runner/.ssh/push_to_prod_docroot.
 Your public key has been saved in /home/gitlab-runner/.ssh/push_to_prod_docroot.pub.
 The key fingerprint is:
