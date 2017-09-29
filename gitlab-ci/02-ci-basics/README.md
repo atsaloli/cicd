@@ -12,7 +12,7 @@
 - [Continuous Delivery: set up git pulls from mock environments](44-set-up-git-pulls-from-mock-envs.md)
 - [Continuous Delivery: deploying to staging environment (via Git)](45-deploying-to-stage-via-git.md)
 - [Continuous Delivery: manual deploy to production](50-manual-deploy-to-production.md)
-- [Continuous Deployment](55-continuous-deployment.md)
+- [Continuous Deployment: automatic deploy to production](55-continuous-deployment.md)
 - [CI Config: Debugging builds](90-debugging-builds.md)
 - [Practical exercise: setting up and using a CI pipeline](95-practical-exercise.md)
 

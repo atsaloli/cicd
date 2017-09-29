@@ -2,6 +2,8 @@
 
 Run the following pipeline that tests (with phpunit) and deploys (by pushing code to the `stage` branch in Git, from where it gets slurped up by the STAGE website):
 
+(Make sure to fill in the `<your server>` placeholder, below.)
+
 ```yaml
 
 test:
