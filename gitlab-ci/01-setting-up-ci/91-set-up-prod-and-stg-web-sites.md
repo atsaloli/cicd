@@ -12,15 +12,26 @@ infrastructure footprint manageable for the tutorial.
 Install Apache2, listening on port 8008 (since GitLab is listening on 80).
 
 ```bash
-apt install -y apache2 apache2-php php libapache2-mod-php
-sed -i /etc/apache2/ports.conf -e 's:Listen 80:Listen 8008:'
-service apache2 start
-service apache2 status # the service should be active and running
-curl http://<your address>:8008/  # you should see the Welcome page
+sudo apt-get update
+sudo apt install -y apache2 php libapache2-mod-php
+sudo sed -i /etc/apache2/ports.conf -e 's:Listen 80:Listen 8008:'
+sudo service apache2 start
+sudo service apache2 status # the service should be active and running
+curl http://localhost:8008/  # you should see the Ubuntu Apache Welcome page source
 
 ```
 
 Set up "stage" and "prod" virtual hosts (two separate environments).
+
+## Set up /etc/hosts record
+
+Add "stage.example.com" and "prod.example.com" to the localhost record in /etc/hosts -- we'll be able to test from the server itself.
+
+Example:
+
+```
+127.0.0.1 localhost stage.example.com prod.example.com
+```
 
 ## Set up stage
 
@@ -30,10 +41,6 @@ Set up "stage" and "prod" virtual hosts (two separate environments).
 mkdir /var/www/stg-html
 echo "<?php echo '<p>Stage - Hello World</p>'; ?>" > /var/www/stg-html/index.php
 ```
-
-### Create /etc/hosts entry
-
-Edit your /etc/hosts to add "stage.example.com" as an alias to your GitLab Server hostname.
 
 ### Set up vhost
 
@@ -59,12 +66,17 @@ ln -s /etc/apache2/sites-available/001-stg.conf /etc/apache2/sites-enabled/
 service apache2 reload
 ```
 
-Test it, it should say "stage":
+Test it, it should say `<p>Stage - Hello World</p>`.
 
 ```bash
 curl http://stage.example.com:8008/
 ```
+Example:
 
+```shell_session
+root@ip-172-31-27-145:~# curl http://stage.example.com:8008/
+<p>Stage - Hello World</p>root@ip-172-31-27-145:~#
+```
 
 ## Set up Prod
 
@@ -75,10 +87,6 @@ mkdir /var/www/prod-html
 echo "<?php echo '<p>Prod - Hello World</p>'; ?>" > /var/www/prod-html/index.php
 
 ```
-### Create /etc/hosts entry
-
-Edit your /etc/hosts to add "prod.example.com" as an alias to your GitLab Server hostname.
-
 ### Set up vhost
 
 Set up httpd config for the "prod" virtual host:
@@ -103,7 +111,7 @@ ln -s /etc/apache2/sites-available/002-prod.conf /etc/apache2/sites-enabled/
 service apache2 reload
 ```
 
-Test it, it should say "prod":
+Test it, it should say "<p>Prod - Hello World</p>".
 
 ```bash
 curl http://prod.example.com:8008/
