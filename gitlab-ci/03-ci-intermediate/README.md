@@ -1,3 +1,5 @@
+# Intermediate topics
+
 - [Mandatory test-before-merge](60-project-settings-to-enable-builds-before-merges.md)
 - [Artifacts](65-artifacts.md)
 - [Caching artifacts](70-cache.md)
