@@ -7,14 +7,21 @@ Run the following pipeline that tests (with phpunit) and deploys (by pushing cod
 ```yaml
 
 test:
-  script: cd www/html && phpunit UnitTest UserTest.php
+  image: ubuntu
+  script: 
+  - apt-get update
+  - apt install -y phpunit
+  - cd www/html && phpunit UnitTest HelloTest.php
+  tags:
+    - docker
 
 deploy_to_stage:
   stage: deploy
   script:
-  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@<your server>:root/www.git +HEAD:refs/heads/stage
+  - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@<your server>:/var/www/stg-html/
   environment: stage
-```
+  tags: 
+    - shell```
 
 Explanation of the git command:
 
