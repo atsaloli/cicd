@@ -2,22 +2,36 @@
 
 ## Test -> Deploy (to Stage)
 
-Run the following pipeline to test (with phpunit) and (if successful), deploy to the stage environemnt (with rsync push to stage).
+Run the following pipeline to test (with phpunit in a Docker container) and 
+(if successful), deploy to the stage environment (with rsync push to stage).
+
+NOTE: Edit your Docker and Shell runner settings as follows:
+- uncheck "pick up untagged jobs" checkbox
+- ensure each runner has a tag set ("docker" for the Docker one,
+- and "shell" for the Shell one)
+
 
 ```yaml
 
 test:
-  script: cd www/html && phpunit UnitTest HelloTest.php
+  image: ubuntu
+  script: 
+  - apt-get update
+  - apt install -y phpunit
+  - cd www/html && phpunit UnitTest HelloTest.php
+  tags:
+    - docker
 
 deploy_to_stage:
   stage: deploy
   script:
   - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@stage.example.com:/var/www/stg-html/
   environment: stage
-```
+  tags: 
+    - shell
 
 
-Example:
+Example output of the deploy job:
 
 ```
 Running with gitlab-ci-multi-runner 9.5.0 (413da38)
