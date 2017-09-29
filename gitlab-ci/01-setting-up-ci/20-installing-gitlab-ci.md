@@ -43,11 +43,9 @@ Here it is:
 
 ![runner config file](img/gitlab_runner_config_file.png)
 
-The settings are explained in [Advanced configuration](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md):
-
 | Setting | Description |
 |---------|-------------|
 | concurrent | Limits how many jobs globally can be run concurrently. The most upper limit of jobs using all defined runners. 0 does not mean unlimited |
 | check_interval | defines in seconds how often to check GitLab for a new builds |
 
-There are more settings than that, but that's what we start with.
+There are [more settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md) than that, but that's what we start with.
