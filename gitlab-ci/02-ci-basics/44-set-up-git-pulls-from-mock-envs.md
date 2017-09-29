@@ -30,3 +30,5 @@ to put them in `/var/www/prod-html` and `/var/www/stg-html` since we've shoehorn
 both websites onto one server.
 
 For real production use, you may want a tool like [Travis-CI dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html) which can deploy to a wide variety of [service providers](https://github.com/travis-ci/dpl#supported-providers). We are putting together a bare-bones example of a distributed CI/CD pipeline.
+
+# [[Up]](README.md)

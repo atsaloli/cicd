@@ -34,3 +34,5 @@ deploy_it:
 ```
 
 [yaml](yaml/simple-3-stage-pipeline.yaml)
+
+# [[Up]](README.md)

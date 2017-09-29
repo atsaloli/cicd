@@ -55,3 +55,5 @@ Time: 42 ms, Memory: 2.50Mb
 OK (1 test, 1 assertion)
 Job succeeded
 ```
+
+# [[Up]](README.md)

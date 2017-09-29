@@ -15,3 +15,6 @@
 - [Continuous Deployment](55-continuous-deployment.md]
 - [CI Config: Debugging builds](90-debugging-builds.md)
 - [Practical exercise: setting up and using a CI pipeline](95-practical-exercise.md)
+
+
+# [[Up]](../README.md)

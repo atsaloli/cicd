@@ -35,3 +35,5 @@ The `+` tells git to create the target branch if it doesn't exist:
 > By having the optional leading +, you can tell Git to update the <dst> ref even if it is not allowed by default (e.g., it is not a fast-forward.) 
 
 The above two quotes are from the "git-push" man page.
+
+# [[Up]](README.md)
