@@ -9,6 +9,9 @@ the code to the stage branch in Git, from where it will get slurped up
 by the STAGE website where it's available for human gatekeeper review
 and manual push to production:
 
+
+IMPORTANT NOTE -- update the hostname in the Git URL below to YOUR hostname.
+
 ```yaml
 test:
   image: ubuntu
