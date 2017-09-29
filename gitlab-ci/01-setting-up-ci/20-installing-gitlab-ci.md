@@ -50,4 +50,4 @@ Here it is:
 
 There are [more settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md) than that, but that's what we start with.
 
-# [Up](README.md)
+# [[Up]](README.md)
