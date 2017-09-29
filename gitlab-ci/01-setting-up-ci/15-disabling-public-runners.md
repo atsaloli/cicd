@@ -6,3 +6,5 @@ courtesy of DigitalOcean), let's disable the GitLab.com Shared Runners
 and use our own.
 
 Go to `Settings -> Pipelines -> Shared Runners -> Disable shared runners`.
+
+# [[Up]](README.md)

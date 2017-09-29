@@ -34,3 +34,5 @@ Select "local" when prompted for mail server configuration options. (We are not 
 After the installation is done, GitLab will tell you its URL.  Login and set the password for the default Administrator user, `root`.
 
 ![login](img/login.png)
+
+# [[Up]](README.md)

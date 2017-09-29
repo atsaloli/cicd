@@ -7,3 +7,5 @@ Example of a paused runner:
 ![Runners Admin page with paused runner](../images/paused-runner.png)
 
 Go to your Runners Admin page and then pause your runner. Now resume it.
+
+# [[Up]](README.md)
