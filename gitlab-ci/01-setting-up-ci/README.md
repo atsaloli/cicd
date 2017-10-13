@@ -3,7 +3,7 @@
 - [Architecture: GitLab Server, Runner Server](05-architecture.md)
 - [Install GitLab CE](10-installing-gitlab-ce.md)
 - [Add a project](12-setting-up-a-project.md)
-- [Set up CI for a project](13-enabling-ci-on-a-project.md)
+- [Set up CI](13-enabling-ci-on-a-project.md)
 - [Install Docker](15-installing-docker.md)
 - [Install Runner Server](20-installing-gitlab-ci.md)
 - [Install build/test tools](21-install-build-and-test-tools.md)
