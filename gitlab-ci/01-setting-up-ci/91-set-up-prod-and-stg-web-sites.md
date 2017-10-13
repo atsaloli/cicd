@@ -3,7 +3,7 @@
 We are going to set up mock "stage" and "prod" environments,
 so that our CI/CD pipeline has environments to deploy into.
 
-We'll put them on the same server just to keep the
+We'll put them on the same server, to keep the
 infrastructure footprint manageable for the tutorial.
 
 
