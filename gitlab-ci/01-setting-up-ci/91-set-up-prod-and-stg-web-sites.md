@@ -111,7 +111,7 @@ ln -s /etc/apache2/sites-available/002-prod.conf /etc/apache2/sites-enabled/
 service apache2 reload
 ```
 
-Test it, it should say "<p>Prod - Hello World</p>".
+Test it, it should say `<p>Prod - Hello World</p>`:
 
 ```bash
 curl http://prod.example.com:8008/
