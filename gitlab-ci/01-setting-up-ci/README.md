@@ -18,10 +18,10 @@
 - [Paused runner](84-paused-runner.md)
 - [Pause Docker runner and register Shell runner](86-shell-again.md)
 
-## Set up deployment targets: stage and prod
-- [Set up "stage" and "prod" web sites](91-set-up-prod-and-stg-web-sites.md)
-- [Set up trust relationship to deploy via SSH](92-deploy-using-ssh.md)
-- [Set up trust relationships to deploy via Git](93-deploy-via-git.md)
+## Set up deployment targets: Stage and Prod
+- [Set up Stage and Prod web sites](91-set-up-prod-and-stg-web-sites.md)
+- [Set up trust relationship to deploy to Stage via SSH](92-deploy-using-ssh.md)
+- [Set up trust relationships to deploy to Prod via Git](93-deploy-via-git.md)
 
 
 # [[Up]](../README.md)
