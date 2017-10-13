@@ -9,3 +9,5 @@
 ### Bonus content
 - [Intermediate topics](03-ci-intermediate/README.md)
 - [Learning more about GitLab](learning-more--gitlab-master-plan.md)
+
+# [[Up]](../README.md)
