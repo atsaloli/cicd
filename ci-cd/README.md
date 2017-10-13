@@ -1,4 +1,4 @@
-# Introduction and Orientation: CI/CD and DevOps
+# Introduction to CI/CD and DevOps
 
 ## Table of Contents
 - [Section 1. Definition of terms - CI/CD](#section-1-definition-of-terms-cicd)
