@@ -33,16 +33,20 @@ Explanation of the git command:
 `--force` allows us to push from master to stage overriding the built-in safeguards:
 
 >       -f, --force
->           Usually, the command refuses to update a remote ref that is not an ancestor of the local ref used to overwrite it. Also, when --force-with-lease option is used, the command refuses to update a remote
->           ref whose current value does not match what is expected.
+>           Usually, the command refuses to update a remote ref that is not an
+>           ancestor of the local ref used to overwrite it. Also, when 
+>           --force-with-lease option is used, the command refuses to update 
+>           a remote ref whose current value does not match what is expected.
 >
->           This flag disables these checks, and can cause the remote repository to lose commits; use it with care.
+>           This flag disables these checks, and can cause the remote repository 
+>           to lose commits; use it with care.
 
 We're pushing to `HEAD` of the `stage` branch (`ref/heads/stage`).
 
 The `+` tells git to create the target branch if it doesn't exist:
 
-> By having the optional leading +, you can tell Git to update the <dst> ref even if it is not allowed by default (e.g., it is not a fast-forward.) 
+> By having the optional leading +, you can tell Git to update the <dst> ref 
+> even if it is not allowed by default (e.g., it is not a fast-forward.) 
 
 The above two quotes are from the "git-push" man page.
 
