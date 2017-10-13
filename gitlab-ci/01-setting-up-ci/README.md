@@ -12,7 +12,7 @@
 ## Registering, enabling and using runners; reading job logs
 - [Register your first runner](22-registering-our-first-runner.md)
 - [Unregister runner](24-unregistering-runners.md)
-- [Register and enable Docker runner](25-register-and-enable-Docker-runner.md)
+- [Register a Docker runner](25-register-and-enable-Docker-runner.md)
 - [Test Docker runner](26-test-docker-runner.md)
 - [Use a different container image](27-change-docker-image.md)
 - [Runner administration](80-runners-admin.md)
