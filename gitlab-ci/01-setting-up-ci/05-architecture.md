@@ -1,10 +1,10 @@
 # Architecture: GitLab Server + Runner Server
 
-**GitLab Server** is a web application with an API that stores its state in a database, and your git repo data on disk. This is where your git repos live, and this is what provides the GitLab UI.
+**GitLab Server** is a web application with an API. This is where your git repos live.
 
-**Runner Server** is an application which processes CI/CD jobs. It can be deployed separately and works with GitLab through an API.
+**Runner Server** is an application which processes (runs) CI/CD jobs. It can be deployed separately and works with GitLab through GitLab's API.
 
-In order to run CI/CD jobs (such as tests), you need at least one GitLab Server and one Runner Server. You _can_ have more than one Runner Server.
+To run CI/CD jobs (such as tests), you need a GitLab Server and at least one Runner Server. You _can_ have more than one Runner Server.
 
 ![arch diagram](https://about.gitlab.com/images/ci/arch-1.jpg)
 
