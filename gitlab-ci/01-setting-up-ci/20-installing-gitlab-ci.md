@@ -51,4 +51,4 @@ Here it is:
 
 There are [more settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md), but that's what we start with.
 
-# [[Up]](README.md)
+# [[Next]](21-install-build-and-test-tools.md) [[Up]](README.md)
