@@ -1,4 +1,4 @@
-# Set up deployment targets: Stage and Prod
+# Set up Stage and Prod web sites
 
 We are going to set up mock "stage" and "prod" environments,
 so that our CI/CD pipeline has environments to deploy into.
