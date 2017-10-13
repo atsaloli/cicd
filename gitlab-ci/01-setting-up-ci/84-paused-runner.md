@@ -8,4 +8,4 @@ Example of a paused runner:
 
 Go to your Runners Admin page and then pause your runner. Now resume it.
 
-# [[Up]](README.md)
+# [[Next]](86-shell-again.md) [[Up]](README.md)
