@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-1. [Introducing GitLab CI/CD](00-features/README.md)
+1. [Introducing GitLab CI/CD](https://about.gitlab.com/features/gitlab-ci-cd/) (Read GitLab's CI/CD web page.)
 2. [Setting up and testing your CI/CD infrastructure](01-setting-up-ci/README.md)
 3. [GitLab CI/CD basics](02-ci-basics/README.md)
 
