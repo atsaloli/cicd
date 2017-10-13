@@ -5,8 +5,7 @@
 
 Generate SSH key in 'gitlab-runner' account on GitLab runner host:
 
-```
-
+```shell_session
 gitlab-runner@alpha:~$ ssh-keygen -N '' -f ~/.ssh/push_to_git
 Generating public/private rsa key pair.
 Your identification has been saved in /home/gitlab-runner/.ssh/push_to_git.
@@ -55,6 +54,7 @@ gitlab-runner@alpha:/tmp/test1$
 
 As root, generate a key called "pull_from_git".
 
+```shell_session
 root@alpha:~# ssh-keygen -N '' -f ~/.ssh/pull_from_git
 Generating public/private rsa key pair.
 Your identification has been saved in /root/.ssh/pull_from_git.
@@ -74,6 +74,7 @@ The key's randomart image is:
 |         o=o+==*B|
 +----[SHA256]-----+
 root@alpha:~#
+```
 
 As it as a "Deploy Key" and leave the "Write access allowed"
 checkbox unchecked.
@@ -81,7 +82,7 @@ checkbox unchecked.
 Test your access (and here is when you would type "yes" to accept
 the key if you were doing this on separate servers for Stage and Prod):
 
-```
+```shell_session
 root@alpha:~# git clone git@alpha.gitlabtutorial.org:root/www.git /tmp/www
 Cloning into '/tmp/www'...
 remote: Counting objects: 24, done.
