@@ -21,7 +21,8 @@ deploy_to_stage:
   - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@INSERT_YOUR_GITLAB_HOSTNAME:/var/www/stg-html/
   environment: stage
   tags: 
-    - shell```
+    - shell
+```
 
 Explanation of the git command:
 
