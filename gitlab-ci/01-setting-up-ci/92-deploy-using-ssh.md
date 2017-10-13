@@ -1,14 +1,17 @@
-# Set up trust relationship to deploy via SSH
+# Set up trust relationship to deploy to Stage via SSH
 
 We can have GitLab deploy our code after all tests pass.
 
 There are different ways to deploy code.
 
-In this section, we'll mock up deploying by pushing the code to the Web
-server document root over SSH (scp or rsync).
+Let's mock up deploying by pushing the code to the
+Stage Web server document root over SSH (scp or rsync), 
+to demonstrate that pathway.
 
+And then we'll deploy to Prod a different way, to demonstrate
+another possible pathway.
 
-## Stage
+## Allow `gitlab-runner` user to SSH to Stage environment
 
 On the Runner Server, as the `gitlab-runner` user (which is the user
 that the Runners run as), generate a key-pair for pushing code to Stage
@@ -89,32 +92,8 @@ Thu Sep 21 09:31:14 UTC 2017
 gitlab-runner@alpha:~$
 ```
 
-For real production, you'd want to use a non-root user as the owner
-of the Web documents, so you don't have to give gitlab-runner root access 
-in the environment.
-
-## Prod
-
-Do the same for Prod:
-
-```bash
-sudo su - gitlab-runner
-ssh-keygen -f ~/.ssh/push_to_prod_docroot -N ''
-```
-
-
-Add the public key to root's `authorized_keys` file (as root):
-
-```bash
-sudo su -
-cat ~gitlab-runner/.ssh/push_to_prod_docroot.pub >> ~root/.ssh/authorized_keys
-```
-
-Now run as `gitlab-runner` the initial connection, and accept Prod's host key:
-
-```bash
-sudo su - gitlab-runner
-ssh -i ~gitlab-runner/.ssh/push_to_prod_docroot root@prod.example.com
-```
+In the real world, you'd want to set up a non-root user as the owner
+of the Web documents, so you don't have to give gitlab-runner root access.
+To keep the scope of this tutorial manageable, we won't do that here.
 
 # [[Up]](README.md)
