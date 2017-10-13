@@ -49,6 +49,6 @@ Here it is:
 | concurrent | Limits how many jobs globally can be run concurrently. The most upper limit of jobs using all defined runners. 0 does not mean unlimited |
 | check_interval | defines in seconds how often to check GitLab for a new builds |
 
-There are [more settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md) than that, but that's what we start with.
+There are [more settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md), but that's what we start with.
 
 # [[Up]](README.md)
