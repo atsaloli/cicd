@@ -1,12 +1,11 @@
 # Set up trust relationship to deploy via SSH
 
-If all tests passed, we can deploy the code.
+We can have GitLab deploy our code after all tests pass.
 
-There are different ways you can deploy code.
+There are different ways to deploy code.
 
-In this section, we'll mock up deploying by pushing to the environment
-over SSH (with scp or rsync).  We'll copy the code directly to the Web
-server document root.
+In this section, we'll mock up deploying by pushing the code to the Web
+server document root over SSH (scp or rsync).
 
 
 ## Stage
@@ -14,6 +13,15 @@ server document root.
 On the Runner Server, as the `gitlab-runner` user (which is the user
 that the Runners run as), generate a key-pair for pushing code to Stage
 Web server document root:
+
+```bash
+sudo su - gitlab-runner
+mkdir .ssh; chmod 0700 .ssh
+cd .ssh
+ssh-keygen -f push_to_stg_docroot -N ''
+```
+
+For example:
 
 ```shell_session
 root@alpha:~# su - gitlab-runner
@@ -41,16 +49,24 @@ gitlab-runner@alpha:~/.ssh$
 gitlab-runner@alpha:~/.ssh$
 ```
 
-Add the public key to root's `authorized_keys` file:
+Add the public key to root's `authorized_keys` file.  
+You'll have to do it as root:
 
-As root, run:
 ```
+sudo su -
 cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub >> ~/.ssh/authorized_keys
 ```
 
-Now run as `gitlab-runner` the initial connection, to accept Stage host key:
+Now run, as `gitlab-runner` the initial connection, to accept Stage host key:
 
+```bash
+sudo su - gitlab-runner
+ssh -i ~/.ssh/push_to_stg_docroot root@stage.example.com
 ```
+
+For example:
+
+```shell_session
 gitlab-runner@alpha:~$ ssh -i ~/.ssh/push_to_stg_docroot root@stage.example.com
 The authenticity of host 'stage.example.com (8.19.33.153)' can't be established.
 ECDSA key fingerprint is SHA256:wkRvdDEsd1bK6sweR5OSK6FYUpYLn8BT41xFkh2RJy4.
@@ -73,56 +89,32 @@ Thu Sep 21 09:31:14 UTC 2017
 gitlab-runner@alpha:~$
 ```
 
-Of course for real production, you'd want to use a non-root user as the owner
+For real production, you'd want to use a non-root user as the owner
 of the Web documents, so you don't have to give gitlab-runner root access 
 in the environment.
 
 ## Prod
 
-Now do the same for Prod:
+Do the same for Prod:
 
-
-
-```shell_session
-gitlab-runner@alpha:~$ ssh-keygen -f ~/.ssh/push_to_prod_docroot -N ''
-Generating public/private rsa key pair.
-Your identification has been saved in /home/gitlab-runner/.ssh/push_to_prod_docroot.
-Your public key has been saved in /home/gitlab-runner/.ssh/push_to_prod_docroot.pub.
-The key fingerprint is:
-SHA256:0iYNvu3Xxwh7/jrRwUI2GaZ4wReOhmLCnN4/u6K5Lv8 gitlab-runner@alpha.gitlabtutorial.org
-The key's randomart image is:
-+---[RSA 2048]----+
-|         .. ++   |
-|   o .   o.**    |
-|    = + o =+.o   |
-|   . = = o  . o  |
-|    . = S    o . |
-|       B  . . .  |
-|      . +  + +   |
-|  .  ... oo = o  |
-|   +*+E.+o oo=.  |
-+----[SHA256]-----+
-gitlab-runner@alpha:~$
+```bash
+sudo su - gitlab-runner
+ssh-keygen -f ~/.ssh/push_to_prod_docroot -N ''
 ```
 
-Add the public key to root's `authorized_keys` file:
 
-As root, run:
-```
+Add the public key to root's `authorized_keys` file (as root):
+
+```bash
+sudo su -
 cat ~gitlab-runner/.ssh/push_to_prod_docroot.pub >> ~/.ssh/authorized_keys
 ```
 
 Now run as `gitlab-runner` the initial connection, to accept Prod host key:
 
-```
-gitlab-runner@alpha:~$ ssh -i ~/.ssh/push_to_prod_docroot root@prod.example.com
-The authenticity of host 'prod.example.com (8.19.33.153)' can't be established.
-ECDSA key fingerprint is SHA256:wkRvdDEsd1bK6sweR5OSK6FYUpYLn8BT41xFkh2RJy4.
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'prod.example.com' (ECDSA) to the list of known hosts.
-Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-81-generic x86_64)
-Certified Ubuntu Cloud Image
-...
+```bash
+su - gitlab-runner
+ssh -i ~/.ssh/push_to_prod_docroot root@prod.example.com
 ```
 
 # [[Up]](README.md)
