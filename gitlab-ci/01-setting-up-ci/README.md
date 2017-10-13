@@ -1,4 +1,4 @@
-# Infrastructure Setup
+# Setting up your CI/CD infrastructure
 
 - [Architecture: GitLab Server, Runner Server](05-architecture.md)
 - [Install GitLab CE](10-installing-gitlab-ce.md)
