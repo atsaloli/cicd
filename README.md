@@ -8,7 +8,7 @@ aleksey@verticalsysadmin.com
 12 October 2017
 
 ## Table of Contents
-- [Part I - Introduction and Orientation](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-i-introduction-and-orientation)
+- [Part I - Introduction to CI/CD and DevOps](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-i-introduction-and-orientation)
   - [Section 1. Definition of terms - CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-1-definition-of-terms-cicd)
   - [Section 2. Benefits of Continuous Integration](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-2-benefits-of-continuous-integration)
   - [Section 3. Origin of Continuous Integration](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-3-origin-of-continuous-integration)
