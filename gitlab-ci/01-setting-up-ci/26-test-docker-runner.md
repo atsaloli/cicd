@@ -32,4 +32,4 @@ BUG_REPORT_URL="http://bugs.alpinelinux.org"
 Build succeeded
 ```
 
-# [[Up]](README.md)
+# [[Next]](27-change-docker-image.md) [[Up]](README.md)
