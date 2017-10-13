@@ -20,6 +20,7 @@
   - [Increasing Runner Server "log_level"](100-increasing-loglevel.md)
   - [Checking GitLab Server logs](110-gitlab-logs.md)
   - [Interactive access to containers](115-interactive-containers.md)
+  - [Checking environment variables](118-env-vars.md)
   - [Debugging Tips](120-debugging.md)
 - [Exercise: Setting up and using a CI/CD pipeline](200-practical-exercise.md)
 
