@@ -54,7 +54,7 @@ You'll have to do it as root:
 
 ```
 sudo su -
-cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub >> ~/.ssh/authorized_keys
+cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub >> ~root/.ssh/authorized_keys
 ```
 
 Now run, as `gitlab-runner` the initial connection, to accept Stage host key:
@@ -107,7 +107,7 @@ Add the public key to root's `authorized_keys` file (as root):
 
 ```bash
 sudo su -
-cat ~gitlab-runner/.ssh/push_to_prod_docroot.pub >> ~/.ssh/authorized_keys
+cat ~gitlab-runner/.ssh/push_to_prod_docroot.pub >> ~root/.ssh/authorized_keys
 ```
 
 Now run as `gitlab-runner` the initial connection, to accept Prod host key:
