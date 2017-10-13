@@ -1,5 +1,14 @@
 # Setting up CI/CD Pipelines
 
+
+Aleksey Tsalolikhin
+
+aleksey@verticalsysadmin.com
+
+www.verticalsysadmin.com
+
+12 October 2017
+
 ## Table of Contents
 - [Part I - Introduction and Orientation](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-i-introduction-and-orientation)
   - [Section 1. Definition of terms - CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-1-definition-of-terms-cicd)
