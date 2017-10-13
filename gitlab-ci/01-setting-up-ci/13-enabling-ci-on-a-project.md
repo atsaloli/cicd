@@ -1,4 +1,4 @@
-# Set up CI for a project
+# Set up CI
 
 Notice the "Set up CI" button:
 
