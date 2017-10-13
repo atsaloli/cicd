@@ -1,4 +1,4 @@
-# Learning More: Accelerating work from Idea to Production - the GitLab philosophy (and master plan)
+# GitLab Master Plan: Accelerating work from Idea to Production
 
 [GitLab Master Plan](https://about.gitlab.com/2016/09/13/gitlab-master-plan/)
 
