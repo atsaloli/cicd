@@ -1,8 +1,8 @@
 # Deploying to Stage (via Git)
 
-Run the following pipeline that tests (with phpunit) and deploys (by pushing code to the `stage` branch in Git, from where it gets slurped up by the STAGE website):
+Run the following pipeline that tests with phpunit, and deploys by pushing code to the `stage` branch in Git (from where the Stage environment will slurp it up):
 
-(Make sure to fill in the `<your server>` placeholder, below.)
+(Make sure to fill in the `INSERT_YOUR_GITLAB_HOSTNAME` placeholder.)
 
 ```yaml
 
@@ -18,7 +18,7 @@ test:
 deploy_to_stage:
   stage: deploy
   script:
-  - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@<your server>:/var/www/stg-html/
+  - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@INSERT_YOUR_GITLAB_HOSTNAME:/var/www/stg-html/
   environment: stage
   tags: 
     - shell```
