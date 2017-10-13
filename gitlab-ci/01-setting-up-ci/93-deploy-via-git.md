@@ -1,9 +1,16 @@
 # Deploy via Git
 
 
-## Set up gitlab-runner to push to Git
+## Allow "gitlab-runner" user to push to Git
 
 Generate SSH key in 'gitlab-runner' account on GitLab runner host:
+
+```bash
+sudo su - gitlab-runner
+ssh-keygen -N '' -f ~/.ssh/push_to_git
+```
+
+Example:
 
 ```shell_session
 gitlab-runner@alpha:~$ ssh-keygen -N '' -f ~/.ssh/push_to_git
@@ -27,12 +34,24 @@ The key's randomart image is:
 gitlab-runner@alpha:~$
 ```
 
-Go to our "www" project, go to "Settings" tab, "Repository" sub-tab,
-and select "Expand" option for "Deploy Keys". Add the public key
-"push_to_git.pub" and check the "Write access allowed" checkbox.
+Go to your "www" project,
+
+Go to "Settings" tab,
+
+Go to "Repository" sub-tab,
+
+Select "Expand" option for "Deploy Keys".
+
+Add the public key "push_to_git.pub" and check the "Write access allowed" checkbox.
 
 
-Now run it once by hand to type "yes" to accept the host key:
+Now run it, and type "yes" to accept the host key:
+
+```bash
+gitlab-runner@alpha:/tmp/test1$  GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git
+```
+
+Example:
 
 ```
 gitlab-runner@alpha:/tmp/test1$  GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git clone git@alpha.gitlabtutorial.org:root/www.git
@@ -53,6 +72,14 @@ gitlab-runner@alpha:/tmp/test1$
 ## Set up Stage/Prod to pull from Git
 
 As root, generate a key called "pull_from_git".
+
+```bash
+sudo su -
+ssh-keygen -N '' -f ~root/.ssh/pull_from_git
+```
+
+Example:
+
 
 ```shell_session
 root@alpha:~# ssh-keygen -N '' -f ~/.ssh/pull_from_git
@@ -76,11 +103,17 @@ The key's randomart image is:
 root@alpha:~#
 ```
 
-As it as a "Deploy Key" and leave the "Write access allowed"
+Add it as a "Deploy Key" and leave the "Write access allowed"
 checkbox unchecked.
 
 Test your access (and here is when you would type "yes" to accept
 the key if you were doing this on separate servers for Stage and Prod):
+
+```bash
+git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git /tmp/www
+```
+
+Example:
 
 ```shell_session
 root@alpha:~# git clone git@alpha.gitlabtutorial.org:root/www.git /tmp/www
@@ -93,7 +126,7 @@ Checking connectivity... done.
 root@alpha:~#
 ```
 
-Later on, we'll use this trust relationship to download code from Git
-and then install it to the docroot.
+Later, we'll use this trust relationship to download code from Git
+so that we can put it in the Web server document root.
 
 # [[Up]](README.md)

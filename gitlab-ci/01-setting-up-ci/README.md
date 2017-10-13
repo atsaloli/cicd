@@ -21,7 +21,7 @@
 ## Set up deployment targets: Stage and Prod
 - [Set up Stage and Prod web sites](91-set-up-prod-and-stg-web-sites.md)
 - [Set up trust relationship to deploy to Stage via SSH](92-deploy-using-ssh.md)
-- [Set up trust relationship to deploy to Prod via Git](93-deploy-via-git.md)
+- [Set up trust relationships to deploy to Stage and Prod via Git](93-deploy-via-git.md)
 
 
 # [[Up]](../README.md)
