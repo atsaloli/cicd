@@ -7,8 +7,7 @@ Run the following pipeline to test (with phpunit in a Docker container) and
 
 NOTE: Edit your Docker and Shell runner settings as follows:
 - uncheck "pick up untagged jobs" checkbox
-- ensure each runner has a tag set ("docker" for the Docker one,
-- and "shell" for the Shell one)
+- ensure each runner has a tag set ("docker" for the Docker one, and "shell" for the Shell one)
 
 
 ```yaml
