@@ -314,8 +314,8 @@ $
 
 
 ## Bibliography
-- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html) article by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
-- [Continuous Deployment at IMVU: Doing the impossible fifty times a day."](http://timothyfitz.com/2009/02/10/continuous-deployment-at-imvu-doing-the-impossible-fifty-times-a-day/) article by Timothy Fitz (2009).
+- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), article by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
+- [Continuous Deployment at IMVU: Doing the impossible fifty times a day](http://timothyfitz.com/2009/02/10/continuous-deployment-at-imvu-doing-the-impossible-fifty-times-a-day/), article by Timothy Fitz (2009).
 - [Continuous Delivery](http://amzn.to/1QBJM7k) by Jez Humble and David Farley
 
 
