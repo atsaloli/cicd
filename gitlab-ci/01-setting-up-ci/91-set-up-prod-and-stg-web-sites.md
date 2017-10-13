@@ -33,7 +33,7 @@ Example:
 127.0.0.1 localhost stage.example.com prod.example.com
 ```
 
-## Set up stage
+## Set up Stage
 
 ### Set up document root
 
