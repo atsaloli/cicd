@@ -8,6 +8,7 @@
 
 ### Bonus content
 - [Intermediate topics](03-ci-intermediate/README.md)
-- [Learning more about GitLab](learning-more--gitlab-master-plan.md)
+- [GitLab Master Plan: Accelerating work from Idea to Production](learning-more--gitlab-master-plan.md)
+- [Would you like to learn more?](bookmarks.md)
 
 # [[Up]](../README.md)
