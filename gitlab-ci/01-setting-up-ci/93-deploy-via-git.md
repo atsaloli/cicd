@@ -1,4 +1,4 @@
-# Deploy via Git
+# Set up trust relationships to deploy to Stage and Prod via Git
 
 
 ## Allow "gitlab-runner" user to push to Git
