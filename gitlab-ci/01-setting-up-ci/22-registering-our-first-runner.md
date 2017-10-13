@@ -22,7 +22,7 @@ You'll supply a registration token.
 
 You'll also have to define an "executor" for each runner. This tells 
 the Runner Server in what kind of environment to execute the job
-(e.g., shell, docker and there are others).
+(e.g., Shell, SSH, Vagrant, Docker, Kubernetes).
 
 The simplest executor is Shell - the job will run in a shell on the Runner Server.
 
