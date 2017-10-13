@@ -5,17 +5,20 @@
 GitLab CE is the Community Edition (open source) of GitLab.
 
 There is also GitLab EE (Enterprise Edition) which comes with additional
-features and commercial support. (We are a GitLab EE reseller, and offer
-a discounted price to our students.)
+features and commercial support. (I am a GitLab EE reseller, and offer
+a discount to my students.)
+
 
 
 ## Creating a host
 
-Note: GitLab recommends installing Runner Server on dedicated hosts (separate from the GitLab Server).
+Note: GitLab recommends installing Runner Server on dedicated hosts.
 
-In this tutorial, I put GitLab Server and Runner Server on the the same host for convenience.
+In this tutorial, we put GitLab Server and Runner Server on the the same host
+for convenience.
 
-Provision the host on a public cloud (e.g., Joyent or AWS).  Here are the Joyent parameters I use:
+Provision the host on a public cloud (e.g., Joyent or AWS) or on your VM if 
+you were provided one. Here are the Joyent parameters I use:
 
 - Data center: us-west-1 (closest to me)
 - Hardware Virtual Machine (to run Docker inside the VM)
@@ -25,17 +28,17 @@ Provision the host on a public cloud (e.g., Joyent or AWS).  Here are the Joyent
 
 ## Installing the Omnibus package
 
-We'll use the official Omnibus GitLab package (that's what GitLab documentation recommends)
+We'll use the official Omnibus GitLab package (as the GitLab documentation recommends).
 
 Follow the download and installation instructions on https://about.gitlab.com/installation/#ubuntu
 
-Select "local" when prompted for mail server configuration options. (We are not going to be using mail.)
+Select "local" when prompted for mail server configuration options. (We are not going to use mail.)
 
 After the installation is done, GitLab will tell you its URL.
 
-Please make a note of this URL -- you will need it for the rest of the exercices.
+IMPORTANT -- Note this URL -- you will need it later!
 
-Go to this URL, it will ask you to set the password for `root`, the default (and, right now, the only) user.
+Go to this URL, and it will ask you to set the password for `root`, the admin user.
 
 ![login](img/login.png)
 
