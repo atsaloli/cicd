@@ -14,7 +14,7 @@
 - [Continuous Delivery: manual deploy to production](50-manual-deploy-to-production.md)
 - [Continuous Deployment: automatic deploy to production](55-continuous-deployment.md)
 - [CI Config: Debugging builds](90-debugging-builds.md)
-- [Practical exercise: setting up and using a CI pipeline](95-practical-exercise.md)
+- [Exercise: Setting up and using a CI/CD pipeline](95-practical-exercise.md)
 
 
 # [[Up]](../README.md)
