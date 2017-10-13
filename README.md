@@ -5,8 +5,6 @@ Aleksey Tsalolikhin
 
 aleksey@verticalsysadmin.com
 
-www.verticalsysadmin.com
-
 12 October 2017
 
 ## Table of Contents
