@@ -34,6 +34,9 @@ The key's randomart image is:
 gitlab-runner@alpha:~$
 ```
 
+Let's add the public key as a Deploy Key (deploy keys allowed to access the
+git project in order to automate deployment of code):
+
 Go to your "www" project,
 
 Go to "Settings" tab,
@@ -45,7 +48,7 @@ Select "Expand" option for "Deploy Keys".
 Add the public key "push_to_git.pub" and check the "Write access allowed" checkbox.
 
 
-Now run it, and type "yes" to accept the host key:
+Run it, and type "yes" to accept the host key:
 
 ```bash
 gitlab-runner@alpha:/tmp/test1$  GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git
