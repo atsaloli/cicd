@@ -5,4 +5,4 @@ and `alpine` for the default docker image (it's lightweight).
 
 During non-interactive registration, specify the image with `--docker-image alpine`.
 
-# [[Up]](README.md)
+# [[Next]](26-test-docker-runner.md) [[Up]](README.md)
