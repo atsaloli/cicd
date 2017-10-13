@@ -9,6 +9,9 @@
   - [Section 5. Widespread adoption; how CI/CD relates to DevOps](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-5-widespread-adoption-how-cicd-relates-to-devops)
   - [Section 6. Basic tasks: Build, Test, Deploy](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-6-basic-tasks-build-test-deploy)
 - [Part II - GitLab CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-ii-gitlab-cicd)
+  - [Introducing GitLab CI/CD (read the product features page)](https://about.gitlab.com/features/gitlab-ci-cd/)
+  - [Setting up and testing your CI/CD infrastructure](gitlab-ci/01-setting-up-ci/README.md)
+  - [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
 - [Part III - Jenkins](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-iii-jenkins)
   - [Overview and Architecture](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#overview-and-architecture)
   - [Definition of Key Terms](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#definition-of-key-terms)
@@ -328,21 +331,6 @@ $
 - [Continuous Deployment at IMVU: Doing the impossible fifty times a day."](http://timothyfitz.com/2009/02/10/continuous-deployment-at-imvu-doing-the-impossible-fifty-times-a-day/) article by Timothy Fitz (2009).
 -[Continuous Delivery](http://amzn.to/1QBJM7k) by Jez Humble and David Farley
 
-## Part II - GitLab CI/CD
-- [Introducing GitLab CI/CD](#introducing-gitlab-cicd)
-- [Setting up and testing your CI/CD infrastructure](#setting-up-and-testing-your-cicd-infrastructure)
-- [GitLab CI/CD basics](#gitlab-cicd-basics)
-
-### Introducing GitLab CI/CD
-
-Read the [GitLab CI/CD product features web page](https://about.gitlab.com/features/gitlab-ci-cd/).
-
-### Setting up and testing your CI/CD infrastructure
-
-[Infrastructure Setup](gitlab-ci/01-setting-up-ci/README.md)
-
-### GitLab CI/CD basics
-[GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
 
 
 ## Part III - Jenkins
