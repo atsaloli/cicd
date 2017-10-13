@@ -1,4 +1,4 @@
-# Would you like to learn more?
+# Would you like to know more?
 - [GitLab Continuous Integration (https://docs.gitlab.com/ce/ci) - great "Getting Started" section](https://docs.gitlab.com/ce/ci/)
 - [GitLab CI YAML syntax](https://docs.gitlab.com/ce/ci/yaml/README.html)
 - [Using Docker Images](https://docs.gitlab.com/ce/ci/docker/using_docker_images.html)
