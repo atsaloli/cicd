@@ -1,6 +1,6 @@
 # Use a different container image
 
-Change your CI config to tell the Docker runner to use an Ubuntu container image:
+Change your CI config to tell the Docker runner to use an Ubuntu container image for all jobs in this project:
 
 ```yaml
 image: ubuntu
@@ -9,7 +9,7 @@ test_it:
   script: cat /etc/*release
 ```
 
-You can confirm in the build log that you are now creating an Ubuntu container:
+Confirm in the build log that Runner Server is creating an Ubuntu container:
 
 ```
 Running with gitlab-ci-multi-runner 1.7.1 (f896af7)
@@ -37,9 +37,11 @@ VERSION_CODENAME=xenial
 UBUNTU_CODENAME=xenial
 Build succeeded
 ```
-You can specify the container image for all jobs, as above, or per job:
+You can specify the container image globally (as above), and override
+the image definition per job:
 
 ```yaml
+image: ubuntu
 
 test_it:
   image: ruby
