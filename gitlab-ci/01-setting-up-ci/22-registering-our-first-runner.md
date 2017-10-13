@@ -1,4 +1,6 @@
-# Registering our first runner
+# Register a Shell runner
+
+In this section, we will learn how to register runners
 
 ## CI/CD settings
 
