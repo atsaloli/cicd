@@ -36,8 +36,9 @@ Notice that it says "active (running)" in the Active status line:
 
 GitLab Runner has its own config file, in `/etc/gitlab-runner/config.toml`
 
-TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). YAML is simpler
-and more readable than XML; TOML is even simpler than YAML.
+TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). 
+Just as YAML is simpler (and more readable) than XML, so is TOML is simpler 
+(and more readable) than YAML.
 
 Here it is:
 
