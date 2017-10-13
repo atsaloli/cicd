@@ -110,11 +110,11 @@ sudo su -
 cat ~gitlab-runner/.ssh/push_to_prod_docroot.pub >> ~root/.ssh/authorized_keys
 ```
 
-Now run as `gitlab-runner` the initial connection, to accept Prod host key:
+Now run as `gitlab-runner` the initial connection, and accept Prod's host key:
 
 ```bash
-su - gitlab-runner
-ssh -i ~/.ssh/push_to_prod_docroot root@prod.example.com
+sudo su - gitlab-runner
+ssh -i ~gitlab-runner/.ssh/push_to_prod_docroot root@prod.example.com
 ```
 
 # [[Up]](README.md)
