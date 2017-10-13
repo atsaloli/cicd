@@ -113,21 +113,9 @@ Test your access (and here is when you would type "yes" to accept
 the key if you were doing this on separate servers for Stage and Prod):
 
 ```bash
-git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git /tmp/www
+GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git /tmp/www
 ```
 
-Example:
-
-```shell_session
-root@alpha:~# git clone git@alpha.gitlabtutorial.org:root/www.git /tmp/www
-Cloning into '/tmp/www'...
-remote: Counting objects: 24, done.
-remote: Compressing objects: 100% (19/19), done.
-remote: Total 24 (delta 0), reused 0 (delta 0)
-Receiving objects: 100% (24/24), done.
-Checking connectivity... done.
-root@alpha:~#
-```
 
 Later, we'll use this trust relationship to download code from Git
 so that we can put it in the Web server document root.
