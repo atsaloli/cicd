@@ -23,3 +23,5 @@ and [GitLab Container Registry](https://about.gitlab.com/2016/05/23/gitlab-conta
 9. Chatops - [Cog chatbot](https://gitlab.com/gitlab-org/omnibus-gitlab/issues/1412) has been integrated with GitLab 8.13
 
 10. Feedback - [Cycle Analytics](https://gitlab.com/gitlab-org/gitlab-ce/issues/20975) - analyzing how long it took us to go from idea to deploy to production.
+
+# [[Up]](../README.md)
