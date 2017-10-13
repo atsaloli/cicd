@@ -6,9 +6,10 @@ Run the following pipeline to test (with phpunit in a Docker container) and
 (if successful), deploy to the stage environment (with rsync push to stage).
 
 NOTE: Edit your Docker and Shell runner settings as follows:
-- uncheck "pick up untagged jobs" checkbox
-- ensure each runner has a tag set ("docker" for the Docker one, and "shell" for the Shell one)
+- Uncheck "pick up untagged jobs" checkbox
+- Ensure each runner has a tag set ("docker" for the Docker one, and "shell" for the Shell one)
 
+Now we'll target these runners using those tags in our job specifications:
 
 ```yaml
 
