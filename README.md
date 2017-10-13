@@ -8,7 +8,7 @@
   - [Section 4. Definition of terms - DevOps](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-4-definition-of-terms-devops)
   - [Section 5. Widespread adoption; how CI/CD relates to DevOps](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-5-widespread-adoption-how-cicd-relates-to-devops)
   - [Section 6. Basic tasks: Build, Test, Deploy](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#section-6-basic-tasks-build-test-deploy)
-- [Part II - GitLab CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/README.md#part-ii-gitlab-cicd)
+- [Part II - GitLab CI/CD](https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md)
   - [Introducing GitLab CI/CD (read the product features page)](https://about.gitlab.com/features/gitlab-ci-cd/)
   - [Setting up and testing your CI/CD infrastructure](gitlab-ci/01-setting-up-ci/README.md)
   - [GitLab CI/CD basics](gitlab-ci/02-ci-basics/README.md)
