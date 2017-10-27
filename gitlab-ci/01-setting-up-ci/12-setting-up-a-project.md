@@ -1,5 +1,8 @@
 # Add a project
 
+- [Add a practice project](#add-a-practice-project)
+- [Add a README.md to your project](#add-a-readme-md-to-your-project)
+
 ## Add a practice project
 
 Add a project. You will use this project to explore GitLab CI functionality.
@@ -51,7 +54,7 @@ Go back to your "www" project:
 
 -->
 
-## Add a README.md to your "www" project
+## Add a README.md to your project
 
 Add a README.md file by selecting "README" in the UI:
 
