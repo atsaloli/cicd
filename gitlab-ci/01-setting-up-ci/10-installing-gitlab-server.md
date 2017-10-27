@@ -1,48 +1,46 @@
-# Installing GitLab CE
-
-## Community Edition (CE), Enterprise Edition (EE)
-
-GitLab CE is the Community Edition (open source) of GitLab.
-
-There is also GitLab EE (Enterprise Edition) which comes with additional
-features and commercial support. (I am a GitLab EE reseller, and offer
-a discount to my students.)
-
-
+# Installing GitLab Server
 
 ## Creating a host
 
-Note: GitLab recommends installing Runner Server on dedicated hosts.
+In our live tutorials, you'll be provided a Strigo VM (running Ubuntu
+16 LTS). You can go on to the next section.
 
-In this tutorial, we put GitLab Server and Runner Server on the the same host
-for convenience.
+For everyone else: you can provision a host in a public cloud (e.g.,
+Joyent or AWS). The Joyent instance parameters I use are:
 
-Provision the host on a public cloud (e.g., Joyent or AWS) or on your VM if 
-you were provided one. Here are the Joyent parameters I use:
-
-- Data center: us-west-1 (closest to me)
-- Hardware Virtual Machine (to run Docker inside the VM)
-- Ubuntu 16 LTS (ubuntu-certified-16.04) (latest Ubuntu LTS)
-- High CPU with 8 GB of RAM
+- Hardware Virtual Machine (to run Docker in the VM)
+- Ubuntu 16 LTS (ubuntu-certified-16.04)
+- High CPU with 8 GB of RAM (4 GB for GitLab Server, and 4 GB for GitLab Runner)
 
 
 ## Installing the Omnibus package
 
+We'll install GitLab EE (Enterprise Edition) which is functionally
+identical to GitLab EE (Community Edition) until you install an
+EE license to enable the additional EE features. This makes upgrading
+to EE a breeze.
+
 We'll use the official Omnibus GitLab package (which bundles every thing
 into one package).
 
+Add the GitLab package repository, and install the package:
+
 ```console
-# Add the GitLab package repository
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
-
-# Install GitLab Server
-sudo apt-get install gitlab-ee
-
+sudo apt-get install gitlab-ee 
 ```
 
-(Note: The above is the "short" version, which is just enough installation instructions for our tutorial. You can find the full version at https://about.gitlab.com/installation/)
+Note: The above is just enough installation instructions to
+get GitLab up for our tutorial. The full version is at
+https://about.gitlab.com/installation/ and you can look at that later
+if you need more (e.g. mail notifications or HTTPS).
 
-The installer will print the URL of your GitLab Server instance below the ASCII art of the GitLab icon, the tanuki (also known as Asiatic racoon, or racoon dog).  Please make a note of the URL.
+
+## Note the URL of your GitLab instance
+
+The installer will print the URL of your GitLab Server instance below the
+ASCII art of the GitLab icon, the tanuki (also known as Asiatic racoon,
+or racoon dog).  Please make a note of the URL.
 
 For example:
 
