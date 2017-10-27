@@ -17,7 +17,7 @@ Joyent or AWS). The Joyent instance parameters I use are:
 
 We'll install GitLab EE (Enterprise Edition) which is functionally
 identical to GitLab CE (Community Edition) until you install an
-EE license to enable the additional EE features. This makes upgrading
+EE license to enable the additional features. This makes upgrading
 to EE a breeze.
 
 We'll use the official Omnibus GitLab package (which bundles every thing
