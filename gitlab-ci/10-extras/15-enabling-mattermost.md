@@ -5,7 +5,7 @@
 We are going to need a dedicated virtual host for Mattermost (chat), and a virtual host for the GitLab UI.
 
 For example:
-- DNS hostname for the GitLab UI (`alpha.gitlabtutorial.org`), 
+- DNS hostname for the GitLab UI (e.g., `alpha.gitlabtutorial.org`), 
 - DNS hostname for the Mattermost chat (e.g., `alpha-mm.gitlabtutorial.org`
 
 ## Enabling Mattermost (chat)

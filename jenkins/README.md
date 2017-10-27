@@ -9,6 +9,9 @@
 - [Checking Pipeline status with Jenkins Blue Ocean UI](#checking-pipeline-status-with-jenkins-blue-ocean-ui)
 - [Troubleshooting](#troubleshooting)
 
+
+Note: in the following tutorial, `alpha.gitlabtutorial.org` was the hostname of my server.
+
 ## Set up Infrastructure
 
 Shut down Gitlab (`sudo gitlab-ctl stop`) and [install Jenkins](https://jenkins.io/download/) (going the Ubuntu/Debian route) 

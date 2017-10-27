@@ -48,10 +48,10 @@ Select "Expand" option for "Deploy Keys".
 Add the public key "push_to_git.pub" and check the "Write access allowed" checkbox.
 
 
-Run it, and type "yes" to accept the host key:
+Run the following command to type "yes" to accept GitLab Server's host key for the first time:
 
 ```bash
-gitlab-runner@alpha:/tmp/test1$  GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git
+GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git
 ```
 
 Example:
@@ -71,14 +71,14 @@ Resolving deltas: 100% (3/3), done.
 Checking connectivity... done.
 gitlab-runner@alpha:/tmp/test1$
 ```
+Note: GIT_SSH_COMMAND requires Git v2.3.0 or newer. You can also specify the SSH key via `.ssh/config`.
 
 ## Set up Stage/Prod to pull from Git
 
 As root, generate a key called "pull_from_git".
 
 ```bash
-sudo su -
-ssh-keygen -N '' -f ~root/.ssh/pull_from_git
+sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
 ```
 
 Example:
@@ -113,9 +113,8 @@ Test your access (and here is when you would type "yes" to accept
 the key if you were doing this on separate servers for Stage and Prod):
 
 ```bash
-GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@INSERT_YOUR_GITLAB_HOSTNAME_HERE:root/www.git /tmp/www
+GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@INSERT_YOUR_GITLAB_SERVER_HOSTNAME_HERE:root/www.git /tmp/www
 ```
-
 
 Later, we'll use this trust relationship to download code from Git
 so that we can put it in the Web server document root.
