@@ -3,7 +3,7 @@
 ## Creating a host
 
 In our live tutorial, you'll be provided a Strigo VM (running Ubuntu
-16 LTS). You can go on to the next section.
+16 LTS). Your Strigo VMs will be destroyed at the end of the day.
 
 For everyone else: you can provision a host in a public cloud (e.g.,
 Joyent or AWS). The Joyent instance parameters I use are:
@@ -12,6 +12,13 @@ Joyent or AWS). The Joyent instance parameters I use are:
 - Ubuntu 16 LTS (ubuntu-certified-16.04)
 - High CPU with 8 GB of RAM (4 GB for GitLab Server, and 4 GB for GitLab Runner)
 
+### Copy/paste with Strigo Web terminal
+
+On the Mac, use Command-C to copy and Command-V to paste.
+
+On other systems, you can highlight the text you want to copy, 
+right-click in the Web browser and select "Copy" from the menu;
+Ctrl-Shift-V to paste.
 
 ## Installing the package
 
