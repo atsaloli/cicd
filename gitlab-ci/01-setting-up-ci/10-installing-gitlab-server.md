@@ -20,8 +20,7 @@ identical to GitLab CE (Community Edition) until you install an
 EE license to enable the additional features. This makes upgrading
 to EE a breeze.
 
-We'll use the official Omnibus GitLab package (which bundles every thing
-into one package).
+We'll use the official package from GitLab.
 
 Add the GitLab package repository, and install the package:
 
