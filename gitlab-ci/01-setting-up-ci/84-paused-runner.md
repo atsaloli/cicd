@@ -6,6 +6,6 @@ Example of a paused runner:
 
 ![Runners Admin page with paused runner](../images/paused-runner.png)
 
-Go to your Runners Admin page and then pause your runner. Now resume it.
+Go to your runners admin page and then pause your runner. Now resume it.
 
 # [[Next]](86-shell-again.md) [[Up]](README.md)

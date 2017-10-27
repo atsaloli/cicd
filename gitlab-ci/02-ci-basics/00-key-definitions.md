@@ -42,7 +42,7 @@ It's used to track which environment a job deployed to, and the URL of the deplo
 ## Runners
 
 A "runner" is an abstraction.
-It's a way for GitLab to communicate with the `gitlab-ci-multi-runner` process on GitLab Runner server and to tell it what type of virtual environment to create (e.g. shell, docker, vagrant VM, Parallels VM, Kubernetes, etc.) and any variables (including secrets) needed to connect to different APIs, etc.
+It's a way for GitLab to communicate with the `gitlab-ci-multi-runner` process on GitLab Runner Server and to tell it what type of virtual environment to create (e.g. shell, docker, vagrant VM, Parallels VM, Kubernetes, etc.) and any variables (including secrets) needed to connect to different APIs, etc.
 Access to this abstraction can be controlled at the project level or using runner tags (runners can be tagged during registration, and jobs can include those tags).
 
 ## See also

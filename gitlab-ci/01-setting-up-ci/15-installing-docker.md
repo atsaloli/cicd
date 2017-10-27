@@ -1,6 +1,6 @@
 ## Install Docker
 
-Let's install Docker, so our Runners can run repeatable tests in reproducible environments.
+Let's install Docker, so our runners can run repeatable tests in reproducible environments.
 
 Do this on the Runner Server, which, in our case, is the same as the GitLab Server.
 

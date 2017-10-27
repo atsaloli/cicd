@@ -42,7 +42,7 @@ Here is the status:
 
 ![stuck pipeline](img/stuck_pipeline.png)
 
-The pipeline is stuck in Pending, because we haven't setup any Runners yet. 
+The pipeline is stuck in Pending, because we haven't setup any runners yet. 
 We'll do that next.
 
 ### Definition: Runner

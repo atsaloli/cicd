@@ -14,7 +14,7 @@ another possible pathway.
 ## Allow `gitlab-runner` user to SSH to Stage environment
 
 On the Runner Server, as the `gitlab-runner` user (which is the user
-that the Runners run as), generate a key-pair for pushing code to Stage
+that the runners run as), generate a key-pair for pushing code to Stage
 Web server document root:
 
 ```bash

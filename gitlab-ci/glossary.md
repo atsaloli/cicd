@@ -13,7 +13,7 @@ we help teams go faster from idea to production."
 # Definition: Runner
 
 A "runner" is an abstraction. It's a way for GitLab to tell the
-Go gitlab-ci-multi-runner process on GitLab Runner server what type
+Go gitlab-ci-multi-runner process on GitLab Runner Server what type
 of environment to create (e.g. shell, Docker, Vagrant VM, Parallels
 VM, etc.) and to communicate the (secret) variables needed to connect
 to different APIs, etc.  It also provides a way to control access

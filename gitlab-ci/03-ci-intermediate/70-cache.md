@@ -1,5 +1,5 @@
 "cache" allows you to define list of files that should be
-cached (on GitLab Runner) between runs.
+cached (on GitLab Runner Server) between runs.
 
 Here is an example of caching files between stages:
 
