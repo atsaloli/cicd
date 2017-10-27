@@ -25,4 +25,4 @@
 - [Exercise: Setting up and using a CI/CD pipeline](200-practical-exercise.md)
 
 
-# [[Up]](../README.md)
+# [[Next]](00-key-definitions.md) [[Up]](../README.md)
