@@ -1,6 +1,8 @@
 # Add a project
 
-Add a new project. You will use this project to explore GitLab CI functionality.
+## Add a practice project
+
+Add a project. You will use this project to explore GitLab CI functionality.
 
 Select the "New..." icon (it looks like a plus sign) and select "New project".
 
@@ -21,7 +23,15 @@ project code.
 
 ![create project](img/ssh_warning.png)
 
-Go ahead and select "add an SSH key", and then, in your shell session,
+Select "Don't show again" in the SSH warning, as in this tutorial,
+you'll use the GitLab Web UI to change files in your project.
+
+<!--
+## Add an SSH key
+
+![ssh_arning](img/ssh_warning.png)
+
+Select "add an SSH key", and then, in your shell session,
 create an SSH key:
 
 ![create key](img/ssh-keygen.png)
@@ -31,13 +41,17 @@ Whoomp! There it is:
 ![show key](img/show_key.png)
 
 
-Add it to GitLab:
+Add your public key to GitLab:
 
 ![add key](img/add_key.png)
 
 Go back to your "www" project:
 
 ![go back to www project](img/go_back_to_www.png)
+
+-->
+
+## Add a README.md to your "www" project
 
 Add a README.md file by selecting "README" in the UI:
 
