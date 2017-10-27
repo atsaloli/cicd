@@ -16,9 +16,9 @@ Joyent or AWS). The Joyent instance parameters I use are:
 
 On the Mac, use Command-C to copy and Command-V to paste.
 
-On other systems, you can highlight the text you want to copy, 
-right-click in the Web browser and select "Copy" from the menu;
-Ctrl-Shift-V to paste.
+On other systems: to copy, highlight the text you want to copy, 
+right-click in the Web browser and select "Copy" from the menu
+that pops up; to paste, use Ctrl-Shift-V.
 
 ## Installing the package
 
