@@ -25,7 +25,7 @@ Set up "stage" and "prod" virtual hosts (two separate environments).
 
 ## Set up /etc/hosts record
 
-Add "stage.example.com" and "prod.example.com" to the localhost record in /etc/hosts -- we'll be able to test from the server itself.
+Add "stage.example.com" and "prod.example.com" to the localhost record in /etc/hosts -- so we can test the vhosts from the server itself.
 
 Example:
 
@@ -38,8 +38,8 @@ Example:
 ### Set up document root
 
 ```bash
-mkdir /var/www/stg-html
-echo "<?php echo '<p>Stage - Hello World</p>'; ?>" > /var/www/stg-html/index.php
+sudo mkdir /var/www/stg-html
+echo "<?php echo '<p>Stage - Hello World</p>'; ?>" | sudo tee /var/www/stg-html/index.php
 ```
 
 ### Set up vhost
@@ -47,7 +47,7 @@ echo "<?php echo '<p>Stage - Hello World</p>'; ?>" > /var/www/stg-html/index.php
 Set up httpd config for the "stage" virtual host:
 
 ```bash
-cat <<EOF > /etc/apache2/sites-available/001-stg.conf
+cat <<EOF | sudo tee /etc/apache2/sites-available/001-stg.conf
 <VirtualHost *:8008>
         ServerName stage.example.com
         DocumentRoot /var/www/stg-html
@@ -62,8 +62,8 @@ EOF
 Enable vhost:
 
 ```bash
-ln -s /etc/apache2/sites-available/001-stg.conf /etc/apache2/sites-enabled/
-service apache2 reload
+sudo ln -s /etc/apache2/sites-available/001-stg.conf /etc/apache2/sites-enabled/
+sudo service apache2 reload
 ```
 
 Test it, it should say `<p>Stage - Hello World</p>`.
@@ -76,6 +76,7 @@ Example:
 ```shell_session
 root@ip-172-31-27-145:~# curl http://stage.example.com:8008/
 <p>Stage - Hello World</p>root@ip-172-31-27-145:~#
+root@ip-172-31-27-145:~#
 ```
 
 ## Set up Prod
@@ -83,8 +84,8 @@ root@ip-172-31-27-145:~# curl http://stage.example.com:8008/
 ### Set up document root
 
 ```bash
-mkdir /var/www/prod-html
-echo "<?php echo '<p>Prod - Hello World</p>'; ?>" > /var/www/prod-html/index.php
+sudo mkdir /var/www/prod-html
+echo "<?php echo '<p>Prod - Hello World</p>'; ?>" | sudo tee /var/www/prod-html/index.php
 
 ```
 ### Set up vhost
@@ -92,7 +93,7 @@ echo "<?php echo '<p>Prod - Hello World</p>'; ?>" > /var/www/prod-html/index.php
 Set up httpd config for the "prod" virtual host:
 
 ```bash
-cat <<EOF > /etc/apache2/sites-available/002-prod.conf
+cat <<EOF | sudo tee /etc/apache2/sites-available/002-prod.conf
 <VirtualHost *:8008>
         ServerName prod.example.com
         DocumentRoot /var/www/prod-html
@@ -107,8 +108,8 @@ EOF
 Enable and activate the new site:
 
 ```bash
-ln -s /etc/apache2/sites-available/002-prod.conf /etc/apache2/sites-enabled/
-service apache2 reload
+sudo ln -s /etc/apache2/sites-available/002-prod.conf /etc/apache2/sites-enabled/
+sudo service apache2 reload
 ```
 
 Test it with `curl http://prod.example.com:8008/`, you should see 
