@@ -61,4 +61,4 @@ And you should now see the "Set up CI" button:
 ![notice the "Set up CI" button](img/setup_ci.png)
 
 
-# [[Up]](README.md)
+# [[Next]](13-enabling-ci-on-a-project.md) [[Up]](README.md)
