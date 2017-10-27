@@ -80,6 +80,8 @@ Note the URL of your GitLab instance, you *will* need it later.
 
 Go to your GitLab Server using the URL you noted in the previous step and set the password for `root` (`root` is the only user on the system right now).
 
+You should see something like:
+
 ![login](img/login.png)
 
 # [[Up]](README.md)
