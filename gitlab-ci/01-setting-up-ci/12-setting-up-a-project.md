@@ -2,6 +2,7 @@
 
 - [Add a practice project](#add-a-practice-project)
 - [Add a README.md to your project](#add-a-readme-md-to-your-project)
+- [Get rid of the "add an SSH key" prompt](#get-rid-of-the--add-an-ssh-key--prompt)
 
 ## Add a practice project
 
@@ -16,7 +17,9 @@ for our web site).
 
 ![name the project](img/name_project.png)
 
-Select "Create project" (below, green).
+Select the big fat green "Create project" button to create your project.
+
+## Get rid of the "add an SSH key" prompt
 
 ![create project](img/create_project.png)
 
