@@ -2,7 +2,7 @@
 
 ## Creating a host
 
-In our live tutorials, you'll be provided a Strigo VM (running Ubuntu
+In our live tutorial, you'll be provided a Strigo VM (running Ubuntu
 16 LTS). You can go on to the next section.
 
 For everyone else: you can provision a host in a public cloud (e.g.,
