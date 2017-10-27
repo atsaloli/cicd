@@ -84,4 +84,4 @@ You should see something like:
 
 ![login](img/login.png)
 
-# [[Up]](README.md)
+# [[Next]](12-setting-up-a-project.md) [[Up]](README.md)
