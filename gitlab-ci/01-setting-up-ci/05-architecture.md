@@ -8,4 +8,4 @@ To run CI/CD jobs (such as tests), you need a GitLab Server and at least one Run
 
 ![arch diagram](https://about.gitlab.com/images/ci/arch-1.jpg)
 
-# [[Next]](10-installing-gitlab-ce.md) [[Up]](README.md)
+# [[Next]](10-installing-gitlab-server.md) [[Up]](README.md)
