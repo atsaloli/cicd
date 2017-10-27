@@ -36,16 +36,12 @@ Select "local" when prompted for mail server configuration options. (We are not 
 
 After the installation is done, GitLab will tell you its URL.
 
-IMPORTANT -- Note this URL -- you will need it later!
-
-![important](img/important-1702878.png)
-
-Note the URL of your GitLab instance, you *will* need it later.
-
 ![important](img/important-one-tenth.png)
 Note the URL of your GitLab instance, you *will* need it later.
 
-Go to this URL and set the password for `root` (your admin user and right now the only user on the system).
+## Setting password for "root"
+
+Go to your GitLab Server using the URL you noted in the previous step and set the password for `root` (`root` is the only user on the system right now).
 
 ![login](img/login.png)
 
