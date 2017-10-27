@@ -23,11 +23,14 @@ that pops up; to paste, use Ctrl-Shift-V.
 ## Installing the package
 
 We'll install GitLab EE (Enterprise Edition) which is functionally
-identical to GitLab CE (Community Edition) until you install an
+identical to GitLab CE (Community Edition) unless you install an
 EE license to enable the additional features. This makes upgrading
 to EE a breeze.
 
-We'll use the official package from GitLab.
+We'll use the official package from GitLab (which is updated
+quite often!) GitLab releases a new version on the 22nd of
+every month, no fail; and sometimes security updates come out
+in between.
 
 Add the GitLab package repository, and install the package:
 
