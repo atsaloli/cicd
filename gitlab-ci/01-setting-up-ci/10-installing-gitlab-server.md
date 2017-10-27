@@ -13,10 +13,10 @@ Joyent or AWS). The Joyent instance parameters I use are:
 - High CPU with 8 GB of RAM (4 GB for GitLab Server, and 4 GB for GitLab Runner)
 
 
-## Installing the Omnibus package
+## Installing the package
 
 We'll install GitLab EE (Enterprise Edition) which is functionally
-identical to GitLab EE (Community Edition) until you install an
+identical to GitLab CE (Community Edition) until you install an
 EE license to enable the additional EE features. This makes upgrading
 to EE a breeze.
 
