@@ -28,18 +28,21 @@ you were provided one. Here are the Joyent parameters I use:
 
 ## Installing the Omnibus package
 
-We'll use the official Omnibus GitLab package (as the GitLab documentation
-recommends).
+We'll use the official Omnibus GitLab package (which bundles every thing
+into one package).
 
-Follow the download and installation instructions on
-https://about.gitlab.com/installation/#ubuntu
+```console
+# Add the GitLab package repository
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 
-Select "local" when prompted for mail server configuration options. (We
-are not going to use mail.)
+# Install GitLab Server
+sudo apt-get install gitlab-ee
 
-After the installation is done, GitLab will tell you its URL. The URL
-will be printed at the end, below the ASCII art showing the "tanuki"
-(also known as Asiatic racoon, or racoon dog, the GitLab icon).
+```
+
+(Note: The above is the "short" version, which is just enough installation instructions for our tutorial. You can find the full version at https://about.gitlab.com/installation/)
+
+The installer will print the URL of your GitLab Server instance below the ASCII art of the GitLab icon, the tanuki (also known as Asiatic racoon, or racoon dog).  Please make a note of the URL.
 
 For example:
 
@@ -78,7 +81,7 @@ Note the URL of your GitLab instance, you *will* need it later.
 
 ## Setting password for "root"
 
-Go to your GitLab Server using the URL you noted in the previous step and set the password for `root` (`root` is the only user on the system right now).
+Go to your GitLab Server using the URL you noted in the previous step and set the password for `root`, the initial user on the system.
 
 You should see something like:
 
