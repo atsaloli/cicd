@@ -28,13 +28,50 @@ you were provided one. Here are the Joyent parameters I use:
 
 ## Installing the Omnibus package
 
-We'll use the official Omnibus GitLab package (as the GitLab documentation recommends).
+We'll use the official Omnibus GitLab package (as the GitLab documentation
+recommends).
 
-Follow the download and installation instructions on https://about.gitlab.com/installation/#ubuntu
+Follow the download and installation instructions on
+https://about.gitlab.com/installation/#ubuntu
 
-Select "local" when prompted for mail server configuration options. (We are not going to use mail.)
+Select "local" when prompted for mail server configuration options. (We
+are not going to use mail.)
 
-After the installation is done, GitLab will tell you its URL.
+After the installation is done, GitLab will tell you its URL. The URL
+will be printed at the end, below the ASCII art showing the "tanuki"
+(also known as Asiatic racoon, or racoon dog, the GitLab icon).
+
+For example:
+
+```text
+
+                                                                                                                                                                                                                                                                                                                                                 
+       *.                  *.                                                                                                                                                                                                                                                                                                                    
+      ***                 ***                                                                                                                                                                                                                                                                                                                    
+     *****               *****                                                                                                                                                                                                                                                                                                                   
+    .******             *******                                                                                                                                                                                                                                                                                                                  
+    ********            ********                                                                                                                                                                                                                                                                                                                 
+   ,,,,,,,,,***********,,,,,,,,,                                                                                                                                                                                                                                                                                                                 
+  ,,,,,,,,,,,*********,,,,,,,,,,,                                                                                                                                                                                                                                                                                                                
+  .,,,,,,,,,,,*******,,,,,,,,,,,,                                                                                                                                                                                                                                                                                                                
+      ,,,,,,,,,*****,,,,,,,,,.                                                                                                                                                                                                                                                                                                                   
+         ,,,,,,,****,,,,,,                                                                                                                                                                                                                                                                                                                       
+            .,,,***,,,,                                                                                                                                                                                                                                                                                                                          
+                ,*,.                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                 
+     _______ __  __          __                                                                                                                                                                                                                                                                                                                  
+    / ____(_) /_/ /   ____ _/ /_                                                                                                                                                                                                                                                                                                                 
+   / / __/ / __/ /   / __ \`/ __ \                                                                                                                                                                                                                                                                                                               
+  / /_/ / / /_/ /___/ /_/ / /_/ /                                                                                                                                                                                                                                                                                                                
+  \____/_/\__/_____/\__,_/_.___/                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                 
+Thank you for installing GitLab!                                                                                                                                                                                                                                                                                                                 
+GitLab should be available at http://ec2-52-59-79-192.eu-central-1.compute.amazonaws.com                     
+
+```
 
 ![important](img/important-one-tenth.png)
 Note the URL of your GitLab instance, you *will* need it later.
