@@ -38,7 +38,11 @@ After the installation is done, GitLab will tell you its URL.
 
 IMPORTANT -- Note this URL -- you will need it later!
 
-Go to this URL, and it will ask you to set the password for `root`, the admin user.
+![important](img/important-1702878.png)
+
+Note the URL of your GitLab instance, you *will* need it later.
+
+Go to this URL and set the password for `root` (your admin user and right now the only user on the system).
 
 ![login](img/login.png)
 
