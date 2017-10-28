@@ -10,12 +10,13 @@ aleksey@verticalsysadmin.com
 
 
 ### Table of Contents
-- [Section 1. Definition of terms - CI/CD](#section-1-definition-of-terms-cicd)
-- [Section 2. Benefits of Continuous Integration](#section-2-benefits-of-continuous-integration)
-- [Section 3. Origin of Continuous Integration](#section-3-origin-of-continuous-integration)
-- [Section 4. Definition of terms - DevOps](#section-4-definition-of-terms-devops)
-- [Section 5. Widespread adoption; how CI/CD relates to DevOps](#section-5-widespread-adoption-how-cicd-relates-to-devops)
-- [Section 6. Basic tasks: Build, Test, Deploy](#section-6-basic-tasks-build-test-deploy)
+- 1. Definition of terms - CI/CD
+- 2. Benefits of Continuous Integration
+- 3. Origin of Continuous Integration
+- 4. Definition of terms - DevOps
+- 5. Widespread adoption; how CI/CD relates to DevOps
+- 6. Basic tasks: Build, Test, Deploy
+- 7. Bibliography
 
 #HSLIDE
 
