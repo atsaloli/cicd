@@ -21,7 +21,7 @@ aleksey@verticalsysadmin.com
 
 ### Definition of terms - CI/CD
 
-**Continuous**
+**Continuous**  
 (adjective)  Forming an unbroken whole; without interruption.
 -- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/continuous)
 
