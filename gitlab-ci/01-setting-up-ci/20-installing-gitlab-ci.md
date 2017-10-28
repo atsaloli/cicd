@@ -2,8 +2,8 @@
 
 
 The Runner Server is in the GitLab `gitlab-ci-multi-runner` repository.
-Let's add the repo definition, install Runner Server, and allow
-the Runner Server to use Docker:
+
+Add the repo definition, install Runner Server, and allow the Runner Server to use Docker:
 
 
 ```console
