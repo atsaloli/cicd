@@ -41,7 +41,26 @@ You'll see the URL you will need to provide GitLab Runner (tells it how to get t
 - For executor, pick "shell".
 
 
-You can also register runners non-interactively:
+
+You should now see the Shell runner:
+
+```bash
+sudo gitlab-runner list
+```
+
+Example:
+
+```shell_session
+ubuntu@ip-172-31-24-94:~$ sudo gitlab-runner list
+Listing configured runners    ConfigFile=/etc/gitlab-runner/config.toml
+Shell runner                  Executor=shell Token=296362d1338ca9b3c2862a4f7570c2 URL=http://ec2-52-58-90-232.eu-central-1.compute.amazonaws.com/
+ubuntu@ip-172-31-24-94:~$
+
+```
+
+![shell runner list](img/shell_runner_list.png)
+
+Note: You can also register runners non-interactively:
 
 ```bash
 sudo gitlab-runner register --non-interactive \
@@ -50,14 +69,6 @@ sudo gitlab-runner register --non-interactive \
                             --executor shell \
                             --description "Shell Runner"
 ```
-
-You should now see the Shell runner:
-
-```bash
-sudo gitlab-runner list
-```
-
-![shell runner list](img/shell_runner_list.png)
 
 Refresh the "CI/CD settings" page and expand Runner settings and you'll see your Shell runner:
 
@@ -105,3 +116,4 @@ Now you will see the job detail, including the console log:
 
 Notice that the runner checked out the code from Git and then tested it.
 # [[Next]](24-unregistering-runners.md) [[Up]](README.md)
+
