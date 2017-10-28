@@ -45,14 +45,20 @@ Here is the status:
 The pipeline is stuck in Pending, because we haven't setup any runners yet. 
 We'll do that next.
 
-### Definition: Runner
-A GitLab "runner" is an abstraction. It's a way for GitLab to tell the
-Go `gitlab-ci-multi-runner` process on GitLab Runner server what type
-of environment to create (e.g. shell, Docker, Vagrant VM, Parallels
-VM, etc.) and to communicate the (secret) variables needed to connect
-to different APIs, etc.  It also provides a way to control access
-at the project level (a runner can be dedicated to a project) or
-using tags (runners can be tagged during registration) and you can
-then say I want THIS build job to run only on runners with tag X.
+### Definition: runner
+A GitLab "runner" is an abstraction. The GitLab Runner service is a
+single Go `gitlab-ci-multi-runner` process on a GitLab Runner server;
+the "runner" concept provides a way for GitLab to tell the
+`gitlab-ci-multi-runner` process what type of environment to use
+for building and testing the code (e.g. shell, Docker container,
+Vagrant or Parallels VM, Kubernetes), and to communicate the
+variables needed to connect to different APIs, etc. 
+
+The "runner" abstraction provides a way to control access at
+the project level, e.g.  project X will use runner X' (which has
+variables X-a, X-b and X-c); and project Y will use runners Y1,
+Y2 and Y3 (with variables Y-a, Y-b and Y-c).  But on the back end,
+behind the wizard curtain, it's just one 'gitlab-ci-multi-runner`
+process.  "Runners" are a very useful fiction.
 
 # [[Next]](15-installing-docker.md) [[Up]](README.md)
