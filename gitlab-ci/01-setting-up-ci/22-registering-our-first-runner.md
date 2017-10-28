@@ -63,8 +63,8 @@ sudo gitlab-runner register --non-interactive \
                             --description "Shell Runner"
 ```
 
-Refresh the "CI/CD settings" page and expand Runner settings and you'll see your Shell runner:
-
+Refresh the "CI/CD settings" page and expand "Runner settings".
+You should see your Shell runner:
 
 ![shell runner list](img/shell_runner_in_UI.png)
 
