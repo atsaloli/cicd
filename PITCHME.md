@@ -75,10 +75,26 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
+#### Pipeline
+
+**Pipeline**  
+(noun) A system through which something is conducted, especially as a means of supply: "Farther down the pipeline are three other approaches to vaccine development" (Boston Globe).  
+-- [American Heritage Dictionary of the English Language](https://www.ahdictionary.com/word/search.html?q=pipeline)
+
+**Conduct**  
+(verb)To serve as a medium for conveying; transmit: "Some metals conduct heat."
+
+**Convey**  
+(verb) To transport or carry to a place: "Pipes were laid to convey water to the house"  
+-- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/convey)
+
+#HSLIDE
+
 ![Release Pipeline](https://i0.wp.com/devops.com/wp-content/uploads/2015/03/cicdcd.png)
 Image credit: [“I want to do Continuous Deployment” article on devops.com](https://devops.com/i-want-to-do-continuous-deployment/)
 
 
+#HSLIDE
 > **Unit testing** 
 > The type of testing where a developer (usually the one who wrote the
 > code) proves that a code module (the "unit") meets its requirements.
@@ -134,18 +150,6 @@ See also: https://en.wikipedia.org/wiki/XUnit
 -- [Wikipedia entry for "Acceptance testing"](https://en.wikipedia.org/wiki/Acceptance_testing#Overview)
 
 
-> **Pipeline**
-> (noun) A system through which something is conducted, especially as a means of supply: "Farther down the pipeline are three other approaches to vaccine development" (Boston Globe).
-
--- [American Heritage Dictionary of the English Language](https://www.ahdictionary.com/word/search.html?q=pipeline)
-
-> **Conduct**
-> (verb)To serve as a medium for conveying; transmit: "Some metals conduct heat."
-
-> **Convey**
-> (verb) To transport or carry to a place: ""pipes were laid to convey water to the house""
-
--- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/convey)
 
 ## Section 2. Benefits of Continuous Integration
 
