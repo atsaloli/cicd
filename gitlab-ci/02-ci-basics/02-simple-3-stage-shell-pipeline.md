@@ -35,4 +35,4 @@ deploy_it:
 
 [yaml](yaml/simple-3-stage-pipeline.yaml)
 
-# [[Up]](README.md)
+# [[Next]](03-simple-3-stage-docker-pipeline.md) [[Up]](README.md)
