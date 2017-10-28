@@ -33,6 +33,4 @@ my_build_job_3:
   - docker
 ```
 
-[yaml](yaml/simple-3-stage-docker-pipeline.yaml)
-
 # [[Next]](05-ci.md) [[Up]](README.md)
