@@ -33,6 +33,5 @@ deploy_it:
   - ls -lh /tmp/build
 ```
 
-[yaml](yaml/simple-3-stage-pipeline.yaml)
 
 # [[Next]](03-simple-3-stage-docker-pipeline.md) [[Up]](README.md)
