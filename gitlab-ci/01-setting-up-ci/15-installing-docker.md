@@ -1,17 +1,18 @@
 ## Install Docker
 
-Let's install Docker, so our runners can run repeatable tests in reproducible environments.
+Let's install Docker, to run repeatable tests in reproducible environments.
 
-Do this on the Runner Server, which, in our case, is the same as the GitLab Server.
+Do this on the Runner Server, which, for expediency in this tutorial,
+is the same as the GitLab Server. (For production use, you should have
+dedicated Runner Servers and a dedicated GitLab Server.)
+
+Install and test Docker:
 
 ```console
-# Install Docker
 curl -sSL https://get.docker.com/ | sudo sh
 
-# confirm Docker works
 sudo docker run alpine /bin/echo 'Hello world'
 ```
-
 
 Example output of the Docker test:
 
