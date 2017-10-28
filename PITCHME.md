@@ -9,17 +9,19 @@ aleksey@verticalsysadmin.com
 #HSLIDE
 
 ### Table of Contents
-- Definition of terms - CI/CD
+- Definition of terms: CI/CD
 - Benefits of Continuous Integration
 - Origin of Continuous Integration
-- Definition of terms - DevOps
+- Definition of terms: DevOps
 - Widespread adoption; how CI/CD relates to DevOps
 - Basic tasks: Build, Test, Deploy
 - Bibliography
 
 #HSLIDE
 
-### Definition of terms - CI/CD
+### Definition of terms: CI/CD
+
+#### Continuous Integration (CI)
 
 **Continuous**  
 (adjective)  Forming an unbroken whole; without interruption.  
@@ -54,6 +56,9 @@ aleksey@verticalsysadmin.com
 
 
 #HSLIDE
+
+#### Continuous Deployment (CD)
+
 > **Continuous Deployment** is closely related to Continuous Integration
 > and refers to the release into production of software that passes the
 > automated tests.
@@ -61,6 +66,9 @@ aleksey@verticalsysadmin.com
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
 #HSLIDE
+
+#### Continuous Delivery (also CD)
+
 > **Continuous Delivery** is sometimes confused with continuous deployment. Continuous deployment means that every change is automatically deployed to production. Continuous delivery means that the team ensures every change can be deployed to production but may choose not to do it, usually due to business reasons. In order to do continuous deployment one must be doing continuous delivery.
 
 -- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
