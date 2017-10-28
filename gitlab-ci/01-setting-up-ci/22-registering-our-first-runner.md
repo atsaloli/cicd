@@ -29,17 +29,12 @@ Register a runner:
 sudo gitlab-ci-multi-runner register
 ```
 
-Go to the "Settings" tab of your project, and then select the "Pipelines" sub-tab.
-
-You'll see the URL you will need to provide GitLab Runner (tells it how to get to GitLab) as well as the registration token.
-
-- Provide the URL from the "CI/CD settings" page
-- Provide the token from the "CI/CD setting" page
-- For description, you can put "Shell runner".
-- Don't put any tags (we'll learn later how to tag jobs to route them to specific runners).
+- Provide the URL from the "Runner settings" page
+- Provide the token from the "Runner setting" page
+- For description, put "Shell runner".
+- Don't put any tags (we'll cover tags later)
 - Don't lock the runner to a project (not locking the runner makes it a shared runner, it can be shared between projects)
-- For executor, pick "shell".
-
+- For executor, pick "shell"
 
 
 You should now see the Shell runner:
