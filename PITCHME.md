@@ -8,6 +8,10 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
+<span style="font-family: Helvetica Neue; font-weight: bold; color:#ffffff"><span color:##e49436">Git</span>Pitch</span>!
+
+#HSLIDE
+
 
 ### Table of Contents
 - Definition of terms - CI/CD
