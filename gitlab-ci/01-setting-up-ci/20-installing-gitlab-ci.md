@@ -3,9 +3,9 @@
 Reference: [GitLab Runner installation documentation](https://docs.gitlab.com/runner/install/linux-repository.html)
 
 
-## Add Runner Server repo, `gitlab-ci-multi-runner`
+## Add repository definition for the Runner Server project
 
-The Runner Server is called `gitlab-ci-multi-runner` and it lives in its own repository.
+The Runner Server is in the GitLab `gitlab-ci-multi-runner` repository.
 
 Add the repository definition:
 
