@@ -8,13 +8,6 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
-hello world
-<span style="font-size: 10pt">hello world</span>
-
-
-#HSLIDE
-
-
 ### Table of Contents
 - Definition of terms - CI/CD
 - Benefits of Continuous Integration
@@ -43,6 +36,7 @@ hello world
 #HSLIDE
 
 
+<span style="font-size: 12pt">
 > **Continuous Integration** is a software development practice where
 > members of a team integrate their work frequently, usually each person
 > integrates at least daily - leading to multiple integrations per day. Each
@@ -50,7 +44,8 @@ hello world
 > integration errors as quickly as possible. Many teams find that this
 > approach leads to significantly reduced integration problems and allows
 > a team to develop cohesive software more rapidly.
-```
+</span>
+
 #HSLIDE
 
 ```text
