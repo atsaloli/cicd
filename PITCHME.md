@@ -35,6 +35,12 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
+> **Continuous integration (CI)** is the practice of merging all developer working copies to a shared mainline several times a day.  ... The main aim of CI is to prevent integration problems.
+
+-- [Wikipedia entry "Continuous Integration"](https://en.wikipedia.org/wiki/Continuous_integration)
+
+#HSLIDE
+
 > **Continuous Integration** is a software development practice where
 > members of a team integrate their work frequently, usually each person
 > integrates at least daily - leading to multiple integrations per day. Each
@@ -43,32 +49,23 @@ aleksey@verticalsysadmin.com
 > approach leads to significantly reduced integration problems and allows
 > a team to develop cohesive software more rapidly."
 
--- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler, Chief Scientist at ThoughtWorks (ThoughtWorks was first to market with a Continuous Integration server in 2001)
+-- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
+
+
 
 #HSLIDE
-**Continuous Integration**
-> **Continuous Integration** is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
-
--- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler, Chief Scientist at ThoughtWorks, first to market with a Continuous Integration server in 2001.
-
-&nbsp;
-
-> **Continuous integration (CI)** is the practice of merging all developer working copies to a shared mainline several times a day.  ... The main aim of CI is to prevent integration problems.
-
--- [Wikipedia entry "Continuous Integration"](https://en.wikipedia.org/wiki/Continuous_integration)
-
-
-
 > **Continuous Deployment** is closely related to Continuous Integration
 > and refers to the release into production of software that passes the
 > automated tests.
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
-
+#HSLIDE
 > **Continuous Delivery** is sometimes confused with continuous deployment. Continuous deployment means that every change is automatically deployed to production. Continuous delivery means that the team ensures every change can be deployed to production but may choose not to do it, usually due to business reasons. In order to do continuous deployment one must be doing continuous delivery.
 
 -- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
+
+#HSLIDE
 
 ![Release Pipeline](https://i0.wp.com/devops.com/wp-content/uploads/2015/03/cicdcd.png)
 Image credit: [“I want to do Continuous Deployment” article on devops.com](https://devops.com/i-want-to-do-continuous-deployment/)
