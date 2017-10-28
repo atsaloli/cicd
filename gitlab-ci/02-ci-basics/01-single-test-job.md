@@ -8,5 +8,4 @@ i_love_tests:
 
 ![single test job](../images/single-test-job.png)
 
-# [[Up]](README.md)
-[[Next]](02-simple-3-stage-shell-pipeline.md)
+# [[Next]](02-simple-3-stage-shell-pipeline.md) [[Up]](README.md)

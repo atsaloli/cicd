@@ -49,4 +49,4 @@ Access to this abstraction can be controlled at the project level or using runne
 
 [Introduction to pipelines and builds](https://docs.gitlab.com/ce/ci/pipelines.html)
 
-# [[Up]](README.md)
+# [[Next]](01-single-test-job.md) [[Up]](README.md)
