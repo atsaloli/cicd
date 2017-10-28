@@ -20,7 +20,7 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
-## Section 1. Definition of terms - CI/CD
+### Definition of terms - CI/CD
 
 **Continuous**
 (adjective)  Forming an unbroken whole; without interruption.
@@ -33,6 +33,8 @@ aleksey@verticalsysadmin.com
 **Integrate**
 (verb) to unite with something else; to incorporate into a larger unit
 -- [Merriam-Webster](https://www.merriam-webster.com/dictionary/integrate)
+
+#HSLIDE
 
 **Continuous Integration**
 > **Continuous Integration** is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
