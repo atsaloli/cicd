@@ -45,7 +45,7 @@ integration errors as quickly as possible. Many teams find that this
 approach leads to significantly reduced integration problems and allows
 a team to develop cohesive software more rapidly."
 
--- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler, Chief Scientist at ThoughtWorks (ThoughtWorks was first to market with a Continuous Integration server in 2001)
+["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler, Chief Scientist at ThoughtWorks (ThoughtWorks was first to market with a Continuous Integration server in 2001)
 </span>
 
 #HSLIDE
