@@ -72,9 +72,5 @@ Use the breadcrumbs at the top to go back to the main "www" project screen:
 
 ![breadcrumbs](img/breadcrumbs.png)
 
-And you should now see the "Set up CI" button:
-
-![notice the "Set up CI" button](img/setup_ci.png)
-
 
 # [[Next]](13-enabling-ci-on-a-project.md) [[Up]](README.md)
