@@ -8,8 +8,9 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
-<span style="font-family: Helvetica Neue; font-weight: bold; color:#ffffff">
-<span "color:##e49436">Git</span>Pitch</span>!
+hello world
+<span style="font-size: 10pt">hello world</span>
+
 
 #HSLIDE
 
