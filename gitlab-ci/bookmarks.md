@@ -12,6 +12,8 @@
 
 # See also
 
+[GitLab Runner installation documentation](https://docs.gitlab.com/runner/install/linux-repository.html)
+
 [Setting Up GitLab Runner for Continuous Integration](https://about.gitlab.com/2016/03/01/gitlab-runner-with-docker/)
 
 [Passing artifacts and autoscaling](https://about.gitlab.com/2016/03/29/gitlab-runner-1-1-released/)
