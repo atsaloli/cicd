@@ -12,12 +12,6 @@ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-
 
 # Install Runner Server
 sudo apt-get install -y gitlab-ci-multi-runner
-
-# Add "gitlab-runner" user to the docker group to allow
-# the non-root user gitlab-runner to use Docker fully
-
-sudo usermod -aG docker gitlab-runner
-
 ```
 
 ## Confirm Runner Server is active
@@ -32,6 +26,15 @@ sudo service gitlab-runner status
 
 ![runner service is active](img/runner_service_active.png)
 
+## Allow Runner Server to use Docker
+
+Add "gitlab-runner" user to the docker group to allow
+the non-root user "gitlab-runner" to use Docker fully.
+
+```console 
+sudo usermod -aG docker gitlab-runner
+
+```
 ## gitlab-runner config file
 
 Runner Server has its own config file, in `/etc/gitlab-runner/config.toml`

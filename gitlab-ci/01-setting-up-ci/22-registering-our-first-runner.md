@@ -11,22 +11,17 @@ Find "Runner settings" in the menu:
 ![CI/CD settings](img/runner_settings_menu.png)
 
 You'll find there are no runners listed yet (we haven't set any up yet), 
-and you'll find instructions for registering runners with GitLab:
+and you'll find instructions (in the left pane) for registering runners
+with GitLab:
 
 ![no runners yet](img/runner_menu.png)
 
 ## Register a Shell runner
 
-When you register a runner, you have to tell it which GitLab it should talk
-to, to pick up jobs (and return status and possibly build artifacts).
-
-You'll supply a registration token.
-
-You'll also have to define an "executor" for each runner. This tells 
-the Runner Server in what kind of environment to execute the job
-(e.g., Shell, SSH, Vagrant, Docker, Kubernetes).
-
-The simplest executor is Shell - the job will run in a shell on the Runner Server.
+When you register a runner, you have to specify:
+- The GitLab Server API endpoint (to pick up jobs, return outcomes and upload build artifacts).
+- A registration token.
+- An "executor". This tells the Runner Server in what kind of environment to execute the job (e.g., Shell, SSH, Vagrant, Docker, Kubernetes).
 
 Register a runner:
 
