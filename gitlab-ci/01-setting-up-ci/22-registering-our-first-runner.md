@@ -80,6 +80,8 @@ to change the runner's configuration. (Don't change anything yet.)
 
 Notice also we now have a "Remove Runner" button.
 
+## Check CI/CD Pipeline status
+
 Now select "CI/CD" -> "Pipelines" in the menu:
 
 ![cicd pipelines menu](img/cicd_pipelines_menu.png)
