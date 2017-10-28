@@ -42,23 +42,7 @@ Here is the status:
 
 ![stuck pipeline](img/stuck_pipeline.png)
 
-The pipeline is stuck in Pending, because we haven't setup any runners yet. 
-We'll do that next.
-
-### Definition: runner
-A GitLab "runner" is an abstraction. The GitLab Runner service is a
-single Go `gitlab-ci-multi-runner` process on a GitLab Runner server;
-the "runner" concept provides a way for GitLab to tell the
-`gitlab-ci-multi-runner` process what type of environment to use
-for building and testing the code (e.g. shell, Docker container,
-Vagrant or Parallels VM, Kubernetes), and to communicate the
-variables needed to connect to different APIs, etc. 
-
-The "runner" abstraction provides a way to control access at
-the project level, e.g.  project X will use runner X' (which has
-variables X-a, X-b and X-c); and project Y will use runners Y1,
-Y2 and Y3 (with variables Y-a, Y-b and Y-c).  But on the back end,
-behind the wizard curtain, it's just one 'gitlab-ci-multi-runner`
-process.  "Runners" are a very useful fiction.
+The pipeline is stuck in Pending, because we haven't setup our CI/CD
+server yet. We'll do that next.
 
 # [[Next]](15-installing-docker.md) [[Up]](README.md)
