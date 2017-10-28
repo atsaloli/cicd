@@ -14,7 +14,7 @@ curl -sSL https://get.docker.com/ | sudo sh
 sudo docker run alpine /bin/echo 'Hello world'
 ```
 
-Example output of the Docker test:
+Example successful test:
 
 ```shell_session
 ubuntu@1ddb8d03-6597-48bd-a001-9c4f5a99dd6d:~$ sudo docker run alpine /bin/echo 'Hello world'
