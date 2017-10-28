@@ -18,10 +18,17 @@ sudo apt-get install -y gitlab-ci-multi-runner
 
 sudo usermod -aG docker gitlab-runner
 
-# Confirm gitlab-runner service is active
+```
+
+## Confirm Runner Server is active
+
+The "Active" status should be "active (running") when you check service status:
+
+
+```console
 sudo service gitlab-runner status
 ```
-Notice that it says "active (running)" in the Active status line:
+
 
 ![runner service is active](img/runner_service_active.png)
 
