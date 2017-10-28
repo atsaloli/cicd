@@ -1,9 +1,5 @@
 # Add a project
 
-- [Add a practice project](#add-a-practice-project)
-- [Get rid of the "add an SSH key" prompt](#get-rid-of-the--add-an-ssh-key--prompt)
-- [Add a README.md to your project](#add-a-readme-md-to-your-project)
-
 ## Add a practice project
 
 Add a project. You will use this project to explore GitLab CI functionality.
