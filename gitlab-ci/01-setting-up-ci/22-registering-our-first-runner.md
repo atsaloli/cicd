@@ -102,7 +102,8 @@ Now we see the stages of the pipeline and the jobs in each stage:
 Notice this pipeline only has one stage (Test) -- that's the default stage;
 and one job in that stage, "test_it", which passed.
 
-Select the job icon:
+Select the "test_it" job icon:
+
 ![job icon](img/job_icon.png)
 
 Now you will see the job detail, including the console log:
