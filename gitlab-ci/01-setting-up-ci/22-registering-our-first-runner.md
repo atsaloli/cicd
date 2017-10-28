@@ -58,8 +58,6 @@ ubuntu@ip-172-31-24-94:~$
 
 ```
 
-![shell runner list](img/shell_runner_list.png)
-
 Note: You can also register runners non-interactively:
 
 ```bash
