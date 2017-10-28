@@ -49,7 +49,7 @@ aleksey@verticalsysadmin.com
 > approach leads to significantly reduced integration problems and allows
 > a team to develop cohesive software more rapidly."
 
--- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
+-- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler (Chief Scientist at ThoughtWorks, maker of first commercial Continuous Integration server)
 
 
 
