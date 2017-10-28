@@ -95,13 +95,16 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 
 #HSLIDE
+
+#### Unit Testing
+
 > **Unit testing** 
 > The type of testing where a developer (usually the one who wrote the
 > code) proves that a code module (the "unit") meets its requirements.
 
 -- [Free On-Line Dictionary of Computing](https://foldoc.org/unit%20testing)
 
-
+#HSLIDE
 
 > The primary goal of **unit testing** is to take the smallest piece of testable
 > software in the application, isolate it from the remainder of the code,
@@ -112,6 +115,9 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 -- [Microsoft Developer Network](https://msdn.microsoft.com/en-us/library/aa292197(v=vs.71).aspx)
 
 
+
+#HSLIDE
+
 > In computer programming, **unit testing** is a software testing method
 > by which individual units of source code ...  are tested to determine
 > whether they are fit for use.
@@ -121,13 +127,19 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 See also: https://en.wikipedia.org/wiki/XUnit
 
 
-> **Integration Testing**
->  A type of testing in which software and/or hardware components are
-> combined and tested to confirm that they interact according to their
-> requirements. Integration testing can continue progressively until the
-> entire system has been integrated.
 
+#HSLIDE
+
+#### Integration Testing
+
+**Integration Testing**  
+A type of testing in which software and/or hardware components are
+combined and tested to confirm that they interact according to their
+requirements. Integration testing can continue progressively until the
+entire system has been integrated.  
 -- [Free On-Line Dictionary of Computing](https://foldoc.org/integration%20testing)
+
+#HSLIDE
 
 > **Integration testing** ... is the phase in software testing in
 > which individual software modules are combined and tested as a
@@ -138,20 +150,28 @@ See also: https://en.wikipedia.org/wiki/XUnit
 
 -- [Wikipedia](https://en.wikipedia.org/wiki/Integration_testing)
 
+#HSLIDE
+
+#### Functional Testing
+
 > **Functional testing** ... bases its test cases on the specifications of the software component under test. Functions are tested by feeding them input and examining the output, and internal program structure is rarely considered. ...  Functional testing usually describes _what_ the system does.
 > 
 > Functional testing does not imply that you are testing a function (method) of your module or class. Functional testing tests a slice of functionality of the whole system.
 
 -- [Wikipedia entry, "Functional testing"](https://en.wikipedia.org/wiki/Functional_testing)
 
+#HSLIDE
+
+#### Acceptance Testing
+
 > **Acceptance testing**
 >  Acceptance testing is a test conducted to determine if the requirements of a specification or contract are met. ... [It is defined as] formal testing with respect to user needs, requirements, and business processes conducted to determine whether a system satisfies the acceptance criteria and to enable the user, customers or other authorized entity to determine whether or not to accept the system. Acceptance testing is also known as user acceptance testing (UAT), end-user testing, operational acceptance testing (OAT) or field (acceptance) testing.
 
 -- [Wikipedia entry for "Acceptance testing"](https://en.wikipedia.org/wiki/Acceptance_testing#Overview)
 
+#HSLIDE
 
-
-## Section 2. Benefits of Continuous Integration
+### Benefits of Continuous Integration
 
 > Releasing software frequently to users is usually a time-consuming and painful process. Continuous Integration and Continuous Delivery (CI/CD) can help organizations ... by automating and streamlining the steps involved in going from an idea ... to the delivered product to the customer.
 
