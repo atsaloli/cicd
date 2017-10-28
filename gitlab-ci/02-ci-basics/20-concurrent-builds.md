@@ -10,4 +10,4 @@ Do you need to reload the `gitlab-ci-multi-runner` service?
 
 Do your multiple test jobs run in parallel now?
 
-# [[Up]](README.md)
+# [[Next]](30-custom-stages.md) [[Up]](README.md)

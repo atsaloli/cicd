@@ -22,7 +22,6 @@
   - [Interactive access to containers](115-interactive-containers.md)
   - [Checking environment variables](118-env-vars.md)
   - [Debugging Tips](120-debugging.md)
-- [Exercise: Setting up and using a CI/CD pipeline](200-practical-exercise.md)
 
 
 # [[Next]](00-key-definitions.md) [[Up]](../README.md)
