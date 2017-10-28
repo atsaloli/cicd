@@ -9,7 +9,7 @@ Select "Set up CI" to add the CI config file, `.gitlab-ci.yml`.
 The config file format is detailed in  
 [Configuration of your builds with .gitlab-ci.yml - GitLab Documentation](https://docs.gitlab.com/ce/ci/yaml/README.html)
 
-Make a note of this link -- this _the_ reference for GitLab CI syntax!
+This is _the_ reference for GitLab CI configuration syntax!
 
 Let's start with a stub test job:
 
