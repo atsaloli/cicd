@@ -39,13 +39,25 @@ sudo usermod -aG docker gitlab-runner
 
 Runner Server has its own config file, in `/etc/gitlab-runner/config.toml`
 
-TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). 
+Let's take a look at it.
+
+
+```console
+sudo cat /etc/gitlab-runner/config.toml
+```
+
+Example:
+
+```shell_session
+ubuntu@ip-172-31-24-94:~$ sudo cat /etc/gitlab-runner/config.toml
+concurrent = 1
+check_interval = 0
+ubuntu@ip-172-31-24-94:~$
+```
+
+Note: TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). 
 Just as YAML is simpler (and more readable) than XML, so is TOML is simpler 
 (and more readable) than YAML.
-
-Here it is:
-
-![runner config file](img/gitlab_runner_config_file.png)
 
 | Setting | Description |
 |---------|-------------|
