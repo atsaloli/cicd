@@ -91,11 +91,11 @@ It should now say "Passed":
 
 ![unstuck](img/unstuck.png)
 
-Select the "Passed" icon:
+Select the "Passed" icon to see pipeline detail:
 
 ![passed](img/passed_icon.png)
 
-This will expose the detail of the pipeline:
+Now we see the stages of the pipeline and the jobs in each stage:
 
 ![pipeline view](img/pipeline_view.png)
 
