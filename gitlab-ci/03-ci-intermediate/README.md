@@ -6,5 +6,6 @@
 - [Constraining jobs to tags and branches](90-constraining-jobs-to-tags-and-branches.md)
 - [Skipping Builds](xx-skipping-builds.md)
 - [Review Apps](98-review-apps.md)
+- [Auto DevOps - Kubernetes](https://docs.gitlab.com/ee/topics/autodevops/quick_start_guide.html)
 
 # [[Up]](../README.md)
