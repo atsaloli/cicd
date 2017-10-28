@@ -64,6 +64,6 @@ Just as YAML is simpler (and more readable) than XML, so is TOML is simpler
 | concurrent | Limits how many jobs globally can be run concurrently. The most upper limit of jobs using all defined runners. 0 does not mean unlimited |
 | check_interval | defines in seconds how often to check GitLab for a new builds |
 
-There are [more settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md), which won't look at now.
+We won't look at the [other settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md) now.
 
 # [[Next]](21-install-build-and-test-tools.md) [[Up]](README.md)
