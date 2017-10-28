@@ -1,3 +1,4 @@
 published : true
 slide-number : true
 vertical-center : false
+theme-override : PITCHME.css
