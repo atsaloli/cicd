@@ -49,7 +49,7 @@ In this tutorial, you will set up:
 
 Using these building blocks, you will set up a **CI/CD pipeline**:
 
-Code --> Automated (unit) testing --> Deploy to UAT --> Acceptance Testing --> Deploy to Prod
+Code --> (Automated) Unit testing --> (Automated) Deploy to UAT --> Acceptance Testing --> (Manual) Deploy to Prod
 
 You will re-use the UAT and Production environments in the Jenkins tutorial.
 
