@@ -27,9 +27,7 @@ GitLab.com is the public service; the software is also available for private (on
 ---
 ## Introducing GitLab CI/CD
 
-GitLab comes with an add-on componet called Runner Server which provides runners (runners run builds, tests and deploys when new code is committed or integrated).
-
-Runner Server integrates with GitLab Server.
+GitLab comes with an add-on package called Runner Server which provides runners. Simply put, a runner is what runs the tests. Runners can run build jobs, test jobs, and deploy jobs. Or actually any kind of job! More on this later.
 
 ---
 
@@ -45,7 +43,6 @@ Your basic pipeline will be:
 
 Code --> Automated (unit) testing --> Deploy to UAT --> Acceptance Testing --> Deploy to Prod
 
----
 
 ---?include=01_05-architecture.md
 
