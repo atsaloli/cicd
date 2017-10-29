@@ -340,6 +340,10 @@ John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOP
 
 #HSLIDE
 
+### How CI/CD relates to DevOps
+
+#### Automating deployments
+
 > The **deployment pipeline**, first defined by Jez Humble and David Farley in their book ["Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation"](http://amzn.to/1QBJM7k), ensures that all code checked in to version control is automatically built and tested in a production-like environment. By doing this, we find any build, test or integration errors as soon as a change is introduced, enabling us to fix them immediately. Done correctly, this allows us to always be assured that we are in a deployable and shippable state.
 >
 > To achieve this, we must create automated build and test processes that run in dedicated environments.
