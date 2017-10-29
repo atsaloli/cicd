@@ -15,14 +15,14 @@ We'll put Stage and Prod on the same server, for expediency for the tutorial.
 Install Apache2 and change the port to 8008 (since GitLab is listening on 80).
 
 ```bash
-sudo apt-get update
-sudo apt install -y apache2 php libapache2-mod-php
-sudo sed -i /etc/apache2/ports.conf -e 's:Listen 80:Listen 8008:'
-sudo service apache2 start
-sudo service apache2 status # the service should be active and running
-curl http://localhost:8008/  # you should see the Ubuntu Apache Welcome page source
+sudo apt-get update; \
+sudo apt install -y apache2 php libapache2-mod-php; \
+sudo sed -i /etc/apache2/ports.conf -e 's:Listen 80:Listen 8008:'; \
+sudo service apache2 start; \
+curl http://localhost:8008/
 
 ```
+You should see the Ubuntu Apache welcome page.
 ---
 ## Setting up your CI/CD infrastructure
 ### Setting up Stage and Prod environments
