@@ -343,13 +343,13 @@ change approval processes than other teams. The result is more time for innovati
 
 ### Basic tasks: Build, Test, Deploy
 
+<!--
 ![DevOps Venn Diagram from Chinese Wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b5/Devops.svg)
 Image credit: Chinese Wikipedia entry, "DevOps"
+-->
 
 
-#HSLIDE
-
-#### Stages that code goes through to get from Idea to Production
+#### Stages from Idea to Production
 
 Idea --> Code --> Build --> Test --> Deploy
 
@@ -358,12 +358,17 @@ Idea --> Code --> Build --> Test --> Deploy
 
 #### Idea
 
+Example:
+
 "I'm going to write a 'hello world' program!"
 
 
 #HSLIDE
 
 #### Code
+
+Example:
+
 
 ```shell_session
 $ cat hello.c
@@ -398,26 +403,64 @@ Example:
 
 -- [Macmillan Dictionary](http://www.macmillandictionary.com/dictionary/american/test_1)
 
-Example:
 
-Let's test the output of "hello" using [Bats (Bash Automated Testing System}](https://github.com/sstephenson/bats)
+#HSLIDE
+
+Example 1:
+
+```shell_session
+$ cat Makefile
+test:
+        ./hello > output.txt
+        diff -q correct.txt output.txt
+
+$ cat correct.txt
+Hello World
+$ make test
+./hello > output.txt
+diff -q correct.txt output.txt
+
+$
+
+```
+Induce failure:
+
+```shell_session
+atsaloli@Aleksey_X1_C2G MINGW64 /c/git-sdk-64/git/cicd (master)
+$ date > correct.txt
+
+$ make test
+./hello > output.txt
+diff -q correct.txt output.txt
+Files correct.txt and output.txt differ
+make: *** [Makefile:3: test] Error 1
+
+$
+```
+#HSLIDE
+
+Example 2:
+
+Test using [Bash Automated Testing System (bats)](https://github.com/sstephenson/bats)
 
 
 ```shell_session
 $ cat hello_test.bats
 #!/usr/bin/env bats
 
-@test "hello world using 'hello'" {
+@test "'hello' outputs 'hello world'" {
   result="$(./hello)"
   [ "$result" == "Hello World" ]
 }
 $ bats hello_test.bats
- ✓ hello world using 'hello'
+ ✓ 'hello' outputs 'hello world' 
 
 1 test, 0 failures
 $
-
 ```
+
+#HSLIDE
+
 #### Deploy
 > **Deploy** (verb) To place (people or other resources) into a position so as to be ready to for action or use.
 
