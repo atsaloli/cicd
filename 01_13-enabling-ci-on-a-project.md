@@ -49,7 +49,7 @@ Using the built-in Web editor:
 
 `script` lists the command the GitLab test runner will run to test your code.
 
-Or, it could be a list of commands:
+Or, it could be a list of commands (just an example, don't add this to your project):
 
 ```console
 my_CI_job:
