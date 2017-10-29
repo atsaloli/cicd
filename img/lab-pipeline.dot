@@ -6,10 +6,10 @@ digraph G {
   subgraph pipeline {
     style = filled;
     color = lightgrey;
-    test [ label = "(Automated) Test" color = blue style = filled fillcolor = lightgrey ]
-    deploy_uat [ label = "(Automated) Deploy to UAT" color = blue style = filled fillcolor = lightgrey ]
-    uat_test [ label = "(Manual) Acceptance Testing" color = blue style = filled fillcolor = lightgrey ]
-    deploy_prod [ label = "(Manual) Deploy to Prod" color = blue style = filled fillcolor = lightgrey ]
+    test [ label = "(Automated) Test" color = blue style = filled fillcolor = lightblue ]
+    deploy_uat [ label = "(Automated) Deploy to UAT" color = blue style = filled fillcolor = lightblue ]
+    uat_test [ label = "(Manual) Acceptance Testing" color = blue style = filled fillcolor = lightblue ]
+    deploy_prod [ label = "(Manual) Deploy to Prod" color = blue style = filled fillcolor = lightblue ]
     test -> deploy_uat -> uat_test -> deploy_prod [constraint=false]; 
     label = "CI/CD Pipeline";
   }
