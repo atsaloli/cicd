@@ -12,7 +12,7 @@ We'll put Stage and Prod on the same server, for expediency for the tutorial.
 ### Setting up Stage and Prod environments
 #### Web server
 
-Install Apache2, listening on port 8008 (since GitLab is listening on 80).
+Install Apache2 and change the port to 8008 (since GitLab is listening on 80).
 
 ```bash
 sudo apt-get update
