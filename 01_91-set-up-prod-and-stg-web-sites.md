@@ -37,7 +37,7 @@ sudo sed -e 's:^127.0.0.1.*:127.0.0.1 localhost stage.example.com prod.example.c
 ```
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Stage vhost 
+### Set up Stage 
 ### Document root
 
 ```bash
@@ -47,7 +47,7 @@ echo "<?php echo '<p>Stage - Hello World</p>'; ?>" | sudo tee /var/www/stg-html/
 
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Stage vhost 
+### Set up Stage 
 ### Create httpd vhost config
 
 Set up httpd config for the "stage" virtual host:
@@ -66,7 +66,7 @@ EOF
 ```
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Stage vhost 
+### Set up Stage 
 ### Load httpd vhost config
 
 Enable vhost:
@@ -78,7 +78,7 @@ sudo service apache2 reload
 
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Stage vhost 
+### Set up Stage 
 ### Test httpd vhost config
 Test it, it should say `<p>Stage - Hello World</p>`.
 
@@ -95,7 +95,7 @@ root@ip-172-31-27-145:~#
 ---
 
 ## Setting up your CI/CD infrastructure 
-### Set up Prod vhost 
+### Set up Prod 
 ### Document root
 
 ```bash
@@ -105,7 +105,7 @@ echo "<?php echo '<p>Prod - Hello World</p>'; ?>" | sudo tee /var/www/prod-html/
 ```
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Prod vhost 
+### Set up Prod 
 ### Create httpd vhost config
 
 ```bash
@@ -123,7 +123,7 @@ EOF
 
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Prod vhost 
+### Set up Prod 
 ### Load httpd vhost config
 
 Enable and activate the new site:
@@ -135,7 +135,7 @@ sudo service apache2 reload
 
 --- 
 ## Setting up your CI/CD infrastructure 
-### Set up Prod vhost 
+### Set up Prod 
 ### Test httpd vhost config
 
 Test it:
