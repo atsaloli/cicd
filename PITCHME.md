@@ -38,11 +38,15 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
+#### Continuous Integration (CI)
+
 > **Continuous integration (CI)** is the practice of merging all developer working copies to a shared mainline several times a day.  ... The main aim of CI is to prevent integration problems.
 
 -- [Wikipedia entry "Continuous Integration"](https://en.wikipedia.org/wiki/Continuous_integration)
 
 #HSLIDE
+
+#### Continuous Integration (CI)
 
 > **Continuous Integration** is a software development practice where
 > members of a team integrate their work frequently, usually each person
