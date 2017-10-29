@@ -22,12 +22,12 @@ aleksey@verticalsysadmin.com
 
 [GitLab](https://about.gitlab.com) is a Web application for working together on code. In addition to a Git data store, it has everything you need for a modern workflow: ticketing system, issue boards, code review, CI/CD, chat and more -- all smoothly integrated in one UI.
 
-Gitlab.com is a public GitLab Server; the GitLab Server software is also available for private (on-prem) use as the Community Edition (open source, free of charge) or the Enterprise Edition (commercial).
+GitLab.com is the public service; the software is also available for private (on-prem) use in the Community Edition (open source, free of charge) and the Enterprise Edition (commercial -- ask me for a discount code).
 
 ---
 ## Introducing GitLab CI/CD
 
-GitLab comes with an add-on package called Runner Server which provides runners (runners run builds, tests and deploys when new code is committed or integrated).
+GitLab comes with an add-on componet called Runner Server which provides runners (runners run builds, tests and deploys when new code is committed or integrated).
 
 Runner Server integrates with GitLab Server.
 
