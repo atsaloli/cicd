@@ -1,8 +1,14 @@
-# Set up CI
+## Setting up your CI/CD infrastructure
+### Setting up CI
 
 Notice the "Set up CI" button:
 
 ![notice the "Set up CI" button](img/setup_ci.png)
+
+---
+
+## Setting up your CI/CD infrastructure
+### Setting up CI
 
 Select "Set up CI" to add the CI config file, `.gitlab-ci.yml`.
 
@@ -14,7 +20,7 @@ This is _the_ reference for GitLab CI configuration syntax!
 Let's start with a stub test job:
 
 
-```
+```text
 test_it:
   script: /bin/echo I am a pretend test suite. I passed!
 ```
