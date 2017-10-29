@@ -178,9 +178,6 @@ entire system has been integrated.
 
 #### Integrate at least daily
 
----?image=images/image-24e379a0872e15d9f04f76407c1ba67a.png&size=auto 40%
-
-Image credit: ThoughtWorks.com
 > Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. 
 >
 > By integrating regularly, you can detect errors quickly, and locate them more easily.
@@ -190,19 +187,44 @@ Image credit: ThoughtWorks.com
 
 #HSLIDE
 
-1. READING
-Read the first three sections of [Continuous Integration](https://www.thoughtworks.com/continuous-integration) page on ThoughtWorks.com:
-  - Integrate at least daily
-  - Solve problems quickly
-  - More than a process
+#### Solve problems quickly
 
-2. READING
-Read the devops.com article [“I want to do Continuous Deployment”](https://devops.com/i-want-to-do-continuous-deployment/)
+> Because you’re integrating so frequently, there is significantly less back-tracking to discover where things went wrong, so you can spend more time building features.
+>
+> Continuous Integration is cheap. Not integrating continuously is expensive. If you don’t follow a continuous approach, you’ll have longer periods between integrations. This makes it exponentially more difficult to find and fix problems. Such integration problems can easily knock a project off-schedule, or cause it to fail altogether.
 
-3. ESSAY
+-- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
+
+#### Benefits
+
+> Continuous Integration brings multiple benefits to your organization:
+> 
+> - Say goodbye to long and tense integrations
+> - Increase visibility enabling greater communication
+> - Catch issues early and nip them in the bud
+> - Spend less time debugging and more time adding features
+> - Build a solid foundation
+> - Stop waiting to find out if your code’s going to work
+> - Reduce integration problems allowing you to deliver software more rapidly
+
+
+-- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
+
+#HSLIDE
+
+> Continuous Integration doesn’t get rid of bugs, but it does make them dramatically easier to find and remove.
+
+— Martin Fowler, Chief Scientist, ThoughtWorks
+
+#HSLIDE
+
+ESSAY
+
 What would be the benefits of Continuous Integration for your organization and how would it impact you personally if your organization practiced it?
 
-## Section 3. Origin of Continuous Integration
+#HSLIDE
+
+### Origin of Continuous Integration
 
 In the late 1990's, Don Wells introduced continuous integration at Chrysler:
 
