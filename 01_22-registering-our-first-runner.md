@@ -59,7 +59,7 @@ You'll be prompted for:
 ---
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-Confirm you the runner was created:
+Confirm the runner was created:
 
 ```bash
 sudo gitlab-runner list
