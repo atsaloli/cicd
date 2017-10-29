@@ -134,6 +134,4 @@ Note your GitLab URL, you *will* need it later.
 
 Go to your GitLab Server using the URL you noted in the previous step and set the password for `root`, the initial user on the system.
 
-You should see something like:
-
 ![login](img/login.png)
