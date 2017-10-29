@@ -92,10 +92,10 @@ sudo gitlab-runner register --non-interactive \
 
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-Refresh the "CI/CD settings" page and expand "Runner settings".
-You should see your Shell runner:
+Refresh the "CI/CD settings" page and expand "Runner settings" again.
+You should see your Shell runner. (See next slide.)
 
-![shell runner list](img/shell_runner_in_UI.png)
+---?image=img/shell_runner_in_UI.png
 
 
 ---
