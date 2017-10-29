@@ -425,7 +425,6 @@ $
 Example 1b - induce failure:
 
 ```shell_session
-atsaloli@Aleksey_X1_C2G MINGW64 /c/git-sdk-64/git/cicd (master)
 $ date > correct.txt
 
 $ make test
