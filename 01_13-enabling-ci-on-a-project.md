@@ -30,6 +30,15 @@ test_it:
 ```
 Reminder: If you're viewing this on gitpitch.com, "x" highlights the code block.
 
+(See next slide.)
+
+---
+## Setting up your CI/CD infrastructure
+### Setting up CI
+Example:
+
+![img](img/pretend_test_1.png)
+
 ---?image=img/pretend_test_1.png&size=auto 60%
 
 ---
@@ -46,8 +55,6 @@ my_CI_job:
 ```
 
 The GitLab CI config file is in [YAML](http://yaml.org).
----
-
 
 ---
 
