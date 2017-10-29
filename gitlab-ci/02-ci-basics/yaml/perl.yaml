@@ -1,0 +1,20 @@
+# "./configure; make; make test; make install" as CI YAML
+# Using perl as an example
+
+build:
+  stage: build
+  script:
+  - make clean
+  - [ -d /tmp/perl ] && rm -rf /tmp/perl
+  - ./Configure -des --prefix=/tmp/perl
+  - make
+
+test:
+  stage: test
+  script:
+  - make test
+
+deploy:
+  stage: deploy
+  script:
+  - make install

@@ -1,0 +1,3 @@
+i_love_tests:
+
+  script: /bin/echo run tests

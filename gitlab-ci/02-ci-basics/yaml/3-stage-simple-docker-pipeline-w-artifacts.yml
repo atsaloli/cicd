@@ -1,0 +1,30 @@
+my_build_job_1:
+  stage: build
+  script:
+  - /bin/echo This is a mock build job
+  - date > date.txt
+  - ls -lh date.txt
+  tags:
+  - docker
+  artifacts:
+    paths:
+     - date.txt
+
+
+
+my_build_job_2:
+  stage: test
+  script:
+  - /bin/echo This is a mock test job
+  - ls -lh date.txt
+  tags:
+  - docker
+
+
+my_build_job_3:
+  stage: deploy
+  script:
+  - /bin/echo This is a mock deploy job
+  - ls -lh date.txt
+  tags:
+  - docker

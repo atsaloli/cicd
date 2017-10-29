@@ -1,0 +1,61 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  tags:
+    - nginx
+    - review-apps
+    - deploy
+  script:
+    - echo Build my page
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 hour
+  tags:
+    - nginx
+    - review-apps
+    - deploy
+
+production:
+  stage: deploy
+  script:
+    - rsync -av --delete public /srv/nginx/pages/production
+  environment:
+    name: production
+    url: http://production.$APPS_DOMAIN
+  when: manual
+  only:
+    - master
+  tags:
+    - nginx
+    - review-apps
+    - deploy
+
+staging:
+  stage: deploy
+  script:
+    - rsync -av --delete public /srv/nginx/pages/staging
+  environment:
+    name: staging
+    url: http://staging.$APPS_DOMAIN
+  only:
+    - master
+
+review:
+  stage: deploy
+  script:
+    - rsync -av --delete public /srv/nginx/pages/$CI_BUILD_REF_NAME
+  environment:
+    name: review/$CI_BUILD_REF_NAME
+    url: http://$CI_BUILD_REF_NAME.$APPS_DOMAIN
+  only:
+    - branches
+  except:
+    - master
+  tags:
+    - nginx
+    - review-apps
+    - deploy
