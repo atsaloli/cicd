@@ -111,9 +111,12 @@ Notice the green "ready" light. The runner is available (online and checking in 
 
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-Notice also you can select the runner id (next to the green light) to see
-runner detail; and that you can select the "edit" icon (next to the id)
-to change the runner's configuration. (Don't change anything yet.)
+You can select the runner id to see runner detail. 
+
+---
+## Setting up your CI/CD infrastructure
+### Registering runners
+You can select the "edit" icon (next to the id) to change the runner's configuration. (Don't change it yet.)
 
 ---
 
@@ -171,3 +174,13 @@ The job detail includes the console log:
 ![job detail](img/job_detail.png)
 
 Notice that the runner checked out the code from Git and then (pretend) tested it.
+
+
+---
+
+## Setting up your CI/CD infrastructure
+### Locking down the Shell runner
+
+Go back to "Settings -> CI/CD -> Runner settings" and select the edit icon next to the Shell runner id.  
+
+Add "shell" to tags.

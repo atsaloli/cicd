@@ -1,9 +1,7 @@
 ## Setting up your CI/CD infrastructure
 ### Adding a project
 
-Add a project. You will use this project to explore GitLab CI functionality.
-
-Select the "New..." icon (it looks like a plus sign) and select "New project".
+Login as `root`. Add a project. You will use this project to explore GitLab CI functionality.  To add a project, select the "New..." icon (it looks like a plus sign) and select "New project":
 
 ![new project](img/new_project.png)
 
