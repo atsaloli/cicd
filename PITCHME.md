@@ -260,38 +260,38 @@ Martin Fowler was involved in the work at Chrysler.
 
 ### Definition of terms: DevOps
 
-> The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  
-
--- [Top 11 Things You Need to Know about DevOps](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
- 
-
 > DevOps is... an umbrella concept that refers to anything that smoothes out the interaction between development and operations.
 
-["What is Devops?", Damon Edwards](http://dev2ops.org/2010/02/what-is-devops/)
+-- ["What is Devops?", Damon Edwards](http://dev2ops.org/2010/02/what-is-devops/)
 
-> **DevOps** (a clipped compound of "development" and "operations") is a software development and delivery process that emphasizes communication and collaboration between product management, software development, operations professionals and close alignment with business objectives. It supports this by automating and monitoring the process of software integration, testing, deployment, and infrastructure changes by establishing a culture and environment where building, testing, and releasing software can happen rapidly, frequently, and more reliably.
+#HSLIDE
 
--- [Wikipedia entry, DevOps](https://en.wikipedia.org/wiki/DevOps)
+> The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  
 
-> **DevOps** practices and procedures lead to smoothing out the typically ‘bumpiest’ aspects of software development and deployment. By pulling infrastructure setup and awareness earlier in the development cycle, surprises from environmental differences are significantly reduced.
->
-> By establishing consistent, reliable and repeatable automated deployments, human error and the need for ‘rockstar firefighters’ are reduced.
+-- ["Top 11 Things You Need to Know about DevOps", on Gene Kim's ITRevolution.com](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
+ 
 
--- ["What Is DevOps?", Daniel Greene](https://techcrunch.com/2015/05/15/what-is-devops/)
+#HSLIDE
 
-> Currently, **DevOps** is more like a philosophical movement, and not yet a precise collection of practices ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
+
+> Today, DevOps is an understood set of practices and cultural values that has been proven to help organizations of all sizes improve their software release cycles, software quality, security, and ability to get rapid feedback on product development.
+
+-- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
+
+#HSLIDE
+
+> Currently, **DevOps** is more like a philosophical movement ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
 
 -- [Gene Kim](http://www.realgenekim.me/devops-cookbook/), author of ["The DevOps Handbook"](http://itrevolution.com/devops-handbook)
 
-> Today, DevOps is an understood set of practices and cultural values that has been proven to help organizations
-of all sizes improve their software release cycles, software quality, security, and ability to get rapid feedback on product development.
-
--- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
+#HSLIDE
 
 ![enter image description here](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
 John Willis, DevOps enthusiast extraordinaire and co-author of "The DevOps Handbook" at [LOPSA-LA meetup](https://www.meetup.com/lopsala).
 
-## Section 5. Widespread adoption; how CI/CD relates to DevOps
+#HSLIDE
+
+### Widespread adoption; how CI/CD relates to DevOps
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
 >
