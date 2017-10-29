@@ -1,5 +1,5 @@
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 
 Notice the "Set up CI" button:
 
@@ -8,7 +8,7 @@ Notice the "Set up CI" button:
 ---
 
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 
 Select "Set up CI" to add the CI config file, `.gitlab-ci.yml`.
 
@@ -19,7 +19,7 @@ This is _the_ reference for GitLab CI configuration syntax!
 
 ---
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 
 Edit your `.gitlab-ci.yml` to add a test job:
 
@@ -35,7 +35,7 @@ Select "Commit changes" at the bottom, green.
 
 ---
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 Using the built-in Web editor:
 
 ![img](img/pretend_test_1.png)
@@ -43,7 +43,7 @@ Using the built-in Web editor:
 ---
 
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 
 `script` lists the command the GitLab test runner will run to test your code.
 
@@ -62,7 +62,7 @@ The GitLab CI config file is in [YAML](http://yaml.org).
 
 
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 
 Our first CI job, "test_it" will run on every commit 
 to test the new revision. It will run the test command
@@ -77,14 +77,14 @@ set up our Runner Server yet so there are no runners available.
 
 ---
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 Go to "CI/CD -> Pipelines" to see pipeline status:
 
 ![pipelines menu](img/pipelines_menu.png)
 
 ---
 ## Setting up your CI/CD infrastructure
-### Setting up CI
+### Configuring CI
 You'll see the pipeline is "pending":
 
 ![stuck pipeline](img/stuck_pipeline.png)
