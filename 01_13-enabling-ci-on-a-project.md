@@ -17,7 +17,11 @@ The config file format is detailed in
 
 This is _the_ reference for GitLab CI configuration syntax!
 
-Let's start with a stub test job:
+---
+## Setting up your CI/CD infrastructure
+### Setting up CI
+
+Put the following stub test job into your `.gitlab-ci.yml`:
 
 
 ```text
