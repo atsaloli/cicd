@@ -12,7 +12,7 @@ Select the "New..." icon (it looks like a plus sign) and select "New project".
 ## Setting up your CI/CD infrastructure
 ### Adding a project
 
-Name the project. Call it "www" (we'll pretend it contains the source code
+Name the project "www" (we'll pretend it's the source code
 for our web site).
 
 ![name the project](img/name_project.png)
