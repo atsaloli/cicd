@@ -325,6 +325,8 @@ change approval processes than other teams. The result is more time for innovati
 
 > We found that the following all positively affect continuous delivery: comprehensive use of version control; continuous integration and trunk-based development; integrating security into software delivery work; and the use of test and deployment automation. Of these, test automation is the biggest contributor. 
 
+-- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
+
 #HSLIDE
 
 > The biggest contributor to continuous delivery — bigger even than test and deployment automation — is whether a team can do all of the following:
