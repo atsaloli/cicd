@@ -1,16 +1,15 @@
 
 ## Setting up your CI/CD infrastructure
-### Setting up Stage (UAT) and Prod environments
+### Setting up Stage and Prod environments
 
-We are going to set up "stage" and "prod" environments,
+We are going to set up "stage" (UAT) and "prod" environments,
 which jobs in our CI/CD pipeline can then target.
 
-We'll put Stage and Prod on the same server, to keep the
-infrastructure footprint manageable for the tutorial.
+We'll put Stage and Prod on the same server, for expediency for the tutorial.
 
 ---
 ## Setting up your CI/CD infrastructure
-### Setting up Stage (UAT) and Prod environments
+### Setting up Stage and Prod environments
 #### Web server
 
 Install Apache2, listening on port 8008 (since GitLab is listening on 80).
@@ -26,7 +25,7 @@ curl http://localhost:8008/  # you should see the Ubuntu Apache Welcome page sou
 ```
 ---
 ## Setting up your CI/CD infrastructure
-### Setting up Stage (UAT) and Prod environments
+### Setting up Stage and Prod environments
 #### DNS
 
 Add "stage.example.com" and "prod.example.com" to the `localhost` record in `/etc/hosts` so we can test the vhosts from our lab Linux server.
