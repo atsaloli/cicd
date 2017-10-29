@@ -94,18 +94,19 @@ root@ip-172-31-27-145:~#
 ```
 ---
 
-## Set up Prod
-
-### Set up document root
+## Setting up your CI/CD infrastructure 
+### Set up Prod vhost 
+### Document root
 
 ```bash
 sudo mkdir /var/www/prod-html
 echo "<?php echo '<p>Prod - Hello World</p>'; ?>" | sudo tee /var/www/prod-html/index.php
 
 ```
-### Set up vhost
-
-Set up httpd config for the "prod" virtual host:
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Prod vhost 
+### Create httpd vhost config
 
 ```bash
 cat <<EOF | sudo tee /etc/apache2/sites-available/002-prod.conf
@@ -120,12 +121,22 @@ cat <<EOF | sudo tee /etc/apache2/sites-available/002-prod.conf
 EOF
 ```
 
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Prod vhost 
+### Load httpd vhost config
+
 Enable and activate the new site:
 
 ```bash
 sudo ln -s /etc/apache2/sites-available/002-prod.conf /etc/apache2/sites-enabled/
 sudo service apache2 reload
 ```
+
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Prod vhost 
+### Test httpd vhost config
 
 Test it with `curl http://prod.example.com:8008/`, you should see 
 `<p>Prod - Hello World</p>`.
