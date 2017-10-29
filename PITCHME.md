@@ -183,6 +183,8 @@ entire system has been integrated.
 
 #HSLIDE
 
+### Benefits of Continuous Integration
+
 #### Integrate at least daily
 
 > Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. 
@@ -194,6 +196,8 @@ entire system has been integrated.
 
 #HSLIDE
 
+### Benefits of Continuous Integration
+
 #### Solve problems quickly
 
 > Because you’re integrating so frequently, there is significantly less back-tracking to discover where things went wrong, so you can spend more time building features.
@@ -204,7 +208,7 @@ entire system has been integrated.
 
 #HSLIDE
 
-#### Benefits
+### Benefits of Continuous Integration
 
 > Continuous Integration brings multiple benefits to your organization:
 > 
@@ -220,6 +224,8 @@ entire system has been integrated.
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
 #HSLIDE
+
+### Benefits of Continuous Integration
 
 > Continuous Integration doesn’t get rid of bugs, but it does make them dramatically easier to find and remove.
 
@@ -241,11 +247,15 @@ In the late 1990's, Don Wells introduced continuous integration at Chrysler:
 
 #HSLIDE
 
+### Origin of Continuous Integration
+
 > The real prize in that change was what came to be known as collective ownership. The entire team owns the entire code base. The entire team is responsible for developing and extending the system design. The team worked together cooperatively at a much faster pace than anyone expected.  Don  has  some  rough  estimates  and believes the team was going six and a half times faster.
 
 -- [www.agile-process.org web page "Your host:  Don Wells"](http://www.agile-process.org/don.html)
 
 #HSLIDE
+
+### Origin of Continuous Integration
 
 Martin Fowler was involved in the work at Chrysler.
 
@@ -254,6 +264,8 @@ Martin Fowler was involved in the work at Chrysler.
 -- [Martin Fowler's article "Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html)
 
 #HSLIDE
+
+### Origin of Continuous Integration
 
 > ThoughtWorks created the first known Continuous Integration server, Cruise, in 2001. This Java-based tool was later open-sourced and renamed CruiseControl. 
 > 
@@ -273,6 +285,8 @@ Martin Fowler was involved in the work at Chrysler.
 
 #HSLIDE
 
+#### DevOps
+
 > The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  
 
 -- ["Top 11 Things You Need to Know about DevOps", Gene Kim's ITRevolution.com](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
@@ -280,6 +294,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 #HSLIDE
 
+#### DevOps
 
 > Today, DevOps is an understood set of practices and cultural values that has been proven to help organizations of all sizes improve their software release cycles, software quality, security, and ability to get rapid feedback on product development.
 
@@ -287,11 +302,14 @@ Martin Fowler was involved in the work at Chrysler.
 
 #HSLIDE
 
+#### DevOps
 > Currently, **DevOps** is more like a philosophical movement ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
 
 -- ["DevOps Cookbook" article by Gene Kim](http://www.realgenekim.me/devops-cookbook/)
 
 #HSLIDE
+
+#### DevOps
 
 John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOPSA
 ![John Willis with LA chapter of LOPSA](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
