@@ -18,6 +18,7 @@ The GitLab CI configuration syntax is detailed
 In addition to the Gitlab CI syntax, since the file is in YAML,
 it has to follow the rules for [YAML](http://yaml.org).
 
+There can be one `.gitlab-ci.yml` file per project and it lives at the top level.
 ---
 ## Setting up your CI/CD infrastructure
 ### Configuring CI
