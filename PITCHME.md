@@ -405,7 +405,7 @@ Example:
 
 #HSLIDE
 
-Example 1 - successful test:
+Example 1 - testing with Make - a successful test:
 
 ```shell_session
 $ cat Makefile
@@ -437,9 +437,7 @@ $
 ```
 #HSLIDE
 
-Example 2:
-
-Test using [Bash Automated Testing System (bats)](https://github.com/sstephenson/bats)
+Example 2 - Testing with [Bash Automated Testing System (bats)](https://github.com/sstephenson/bats)
 
 
 ```shell_session
