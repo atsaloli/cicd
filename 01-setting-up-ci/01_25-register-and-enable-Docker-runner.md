@@ -8,4 +8,4 @@ Run `sudo gitlab-runner register` with:
 - `docker` for the executor;
 - `alpine` for the default docker image (it's lightweight).
 
-# [[Next]](26-test-docker-runner.md) [[Up]](README.md)
+# [[Next]](01_26-test-docker-runner.md) [[Up]](README.md)

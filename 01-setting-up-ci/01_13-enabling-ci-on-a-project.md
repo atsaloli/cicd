@@ -45,4 +45,4 @@ Here is the status:
 The pipeline is stuck in Pending, because we haven't setup our CI/CD
 server yet. We'll do that next.
 
-# [[Next]](15-installing-docker.md) [[Up]](README.md)
+# [[Next]](01_15-installing-docker.md) [[Up]](README.md)

@@ -94,4 +94,4 @@ You should see something like:
 
 ![login](img/login.png)
 
-# [[Next]](12-setting-up-a-project.md) [[Up]](README.md)
+# [[Next]](01_12-setting-up-a-project.md) [[Up]](README.md)

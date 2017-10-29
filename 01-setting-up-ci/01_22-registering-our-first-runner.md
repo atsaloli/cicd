@@ -111,5 +111,5 @@ Now you will see the job detail, including the console log:
 ![job detail](img/job_detail.png)
 
 Notice that the runner checked out the code from Git and then (pretend) tested it.
-# [[Next]](24-unregistering-runners.md) [[Up]](README.md)
+# [[Next]](01_24-unregistering-runners.md) [[Up]](README.md)
 

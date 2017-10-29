@@ -68,4 +68,4 @@ Here is what our settings mean:
 
 We won't look at the [other possible settings](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/configuration/advanced-configuration.md) now.
 
-# [[Next]](21-install-build-and-test-tools.md) [[Up]](README.md)
+# [[Next]](01_21-install-build-and-test-tools.md) [[Up]](README.md)

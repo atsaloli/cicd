@@ -13,4 +13,4 @@ registration token, and you can get it from `gitlab-runner list` or from
 
 Run `gitlab-runner help` to see other things you can do with `gitlab-runner`.
 
-# [[Next]](25-register-and-enable-Docker-runner.md) [[Up]](README.md)
+# [[Next]](01_25-register-and-enable-Docker-runner.md) [[Up]](README.md)

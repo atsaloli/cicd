@@ -96,4 +96,4 @@ In the real world, you'd want to set up a non-root user as the owner
 of the Web documents, so you don't have to give gitlab-runner root access.
 To keep the scope of this tutorial manageable, we won't do that here.
 
-# [[Next]](93-deploy-via-git.md) [[Up]](README.md)
+# [[Next]](01_93-deploy-via-git.md) [[Up]](README.md)
