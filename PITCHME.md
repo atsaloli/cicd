@@ -95,6 +95,8 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
+#### Pipeline
+
 ![Release Pipeline](https://i0.wp.com/devops.com/wp-content/uploads/2015/03/cicdcd.png)
 Image credit: [“I want to do Continuous Deployment” article on devops.com](https://devops.com/i-want-to-do-continuous-deployment/)
 
