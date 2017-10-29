@@ -8,10 +8,8 @@ Add the repo definition and install the Runner Server package:
 
 
 ```console
-# Add the repo definition
 curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
 
-# Install Runner Server
 sudo apt-get install -y gitlab-ci-multi-runner
 ```
 ---
@@ -24,6 +22,8 @@ Check the status of the service (`Active` field) to make sure it's "active (runn
 ```console
 sudo service gitlab-runner status
 ```
+Green is good:
+
 ![runner service is active](img/runner_service_active.png)
 ---
 
