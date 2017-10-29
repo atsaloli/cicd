@@ -78,7 +78,7 @@ ubuntu@ip-172-31-24-94:~$
 
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-FYI (don't do it now), but you can also register runners non-interactively:
+You can also register runners non-interactively (don't do it now):
 
 ```console
 sudo gitlab-runner register --non-interactive \
