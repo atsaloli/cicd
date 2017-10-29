@@ -256,6 +256,8 @@ What would be the benefits of Continuous Integration for your organization and h
 In the late 1990's, Don Wells introduced continuous integration at Chrysler:
 
 > Don proposed to the team that they set up an extra computer on an empty desk where all integration would take place. They would integrate and release new code to the repository when ever they wanted without prior permission so long as it ran all the unit tests. Management hated the idea. The team was mixed about it. Management played their trump card by not allowing Don to have an extra computer. So Don simply moved his own computer to the empty desk and told everyone it was the integration station. He wanted to do more pair programming anyway. 
+ 
+(continued on next slide)
 
 #HSLIDE
 
