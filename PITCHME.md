@@ -231,16 +231,22 @@ What would be the benefits of Continuous Integration for your organization and h
 In the late 1990's, Don Wells introduced continuous integration at Chrysler:
 
 > Don proposed to the team that they set up an extra computer on an empty desk where all integration would take place. They would integrate and release new code to the repository when ever they wanted without prior permission so long as it ran all the unit tests. Management hated the idea. The team was mixed about it. Management played their trump card by not allowing Don to have an extra computer. So Don simply moved his own computer to the empty desk and told everyone it was the integration station. He wanted to do more pair programming anyway. 
-> 
+
+#HSLIDE
+
 > The real prize in that change was what came to be known as collective ownership. The entire team owns the entire code base. The entire team is responsible for developing and extending the system design. The team worked together cooperatively at a much faster pace than anyone expected.  Don  has  some  rough  estimates  and believes the team was going six and a half times faster.
 
--- ["Your host:  Don Wells" at www.agile-process.org](http://www.agile-process.org/don.html)
+-- [www.agile-process.org web page "Your host:  Don Wells"](http://www.agile-process.org/don.html)
+
+#HSLIDE
 
 Martin Fowler was involved in the work at Chrysler, and, as he describes:
+
 > This was my first chance to see Continuous Integration in action with a meaningful amount of unit tests. It showed me what was possible and gave me an inspiration that led me for many years.
 
 -- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html) by Martin Fowler, Chief Scientist, ThoughtWorks
 
+#HSLIDE
 
 > ThoughtWorks created the first known Continuous Integration server, Cruise, in 2001. This Java-based tool was later open-sourced and renamed CruiseControl. 
 > 
@@ -250,7 +256,9 @@ Martin Fowler was involved in the work at Chrysler, and, as he describes:
 
 -- [Wikipedia entry, "ThoughtWorks"](https://en.wikipedia.org/wiki/ThoughtWorks#Continuous_integration_and_continuous_delivery)
 
-## Section 4. Definition of terms - DevOps
+#HSLIDE
+
+### Definition of terms: DevOps
 
 > The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  
 
