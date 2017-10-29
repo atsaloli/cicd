@@ -13,7 +13,8 @@ aleksey@verticalsysadmin.com
 - Benefits of Continuous Integration
 - Origin of Continuous Integration
 - Definition of terms: DevOps
-- Widespread adoption; how CI/CD relates to DevOps
+- How CI/CD relates to DevOps
+- Adoption
 - Basic tasks: Build, Test, Deploy
 - Bibliography
 
@@ -286,12 +287,12 @@ Martin Fowler was involved in the work at Chrysler.
 
 #HSLIDE
 
-LOPSA Los Angeles chapter with John Willis, co-author of "The DevOps Handbook"
-![enter image description here](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
+John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOPSA
+![John Willis with LA chapter of LOPSA](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
 
 #HSLIDE
 
-### Widespread adoption; how CI/CD relates to DevOps
+### How CI/CD relates to DevOps
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
 >
@@ -306,14 +307,19 @@ LOPSA Los Angeles chapter with John Willis, co-author of "The DevOps Handbook"
 > To achieve this, we must create automated build and test processes that run in dedicated environments.
 
 -- "The DevOps Handbook", Chapter 10 "Enable Fast and Reliable Automated Testing"
+#HSLIDE
+
+### Adoption
 
 > Automation is a key differentiator for organizations. ... Automation is a huge boon to organizations.
 High performers automate significantly more of their configuration management, testing, deployments and
 change approval processes than other teams. The result is more time for innovation and a faster feedback cycle.
-...
+> ...
 > DevOps teams increased from 16% in 2014 to 19% in 2015 to 22% in 2016 to 27% in 2017.
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
+
+#HSLIDE
 
 <!-- http://www.verticalsysadmin.com/img/2017-state-of-devops-report-puppet-dora.png -->
 The 2017 State of DevOps Report finds that Continuous Delivery reduces deployment pain and increases IT performance which leads to increased organizational performance.
@@ -321,37 +327,53 @@ The 2017 State of DevOps Report finds that Continuous Delivery reduces deploymen
 > We found that the following all positively affect continuous delivery: comprehensive use of version control; continuous integration and trunk-based development; integrating security into software delivery work; and the use of test and deployment automation. Of these, test automation is the biggest contributor. 
 
 > The biggest contributor to continuous delivery — bigger even than test and deployment automation — is whether a team can do all of the following:
-• Make large-scale changes to the design of its system without permission from someone outside the team.
-• Make large-scale changes to the design of its system without depending on other teams to make changes in their own systems, or creating significant work for other teams.
-• Complete its work without needing fine-grained communication and coordination with people outside the team. For example, not having to check 12 Google calendars to get feedback.
-• Deploy and release its product or service on demand, independently of other services the product or service depends upon.
-• Do most of its testing on demand, without requiring an integrated test environment.
-• Perform deployments during normal business hours with negligible downtime.
+> • Make large-scale changes to the design of its system without permission from someone outside the team.
+> • Make large-scale changes to the design of its system without depending on other teams to make changes in their own systems, or creating significant work for other teams.
+> • Complete its work without needing fine-grained communication and coordination with people outside the team. For example, not having to check 12 Google calendars to get feedback.
+> • Deploy and release its product or service on demand, independently of other services the product or service depends upon.
+> • Do most of its testing on demand, without requiring an integrated test environment.
+> • Perform deployments during normal business hours with negligible downtime.
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
-In the rest of this course, we will focus on test and deployment automation.
+#HSLIDE
 
-## Section 6. Basic tasks: Build, Test, Deploy
+### Basic tasks: Build, Test, Deploy
+
 ![DevOps Venn Diagram from Chinese Wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b5/Devops.svg)
-Image credit: Chinese Wikipedia entry for DevOps
+Image credit: Chinese Wikipedia entry, "DevOps"
 
-### Stages that code goes through to get from Idea to Production
 
-Idea > Code > Build > Test > Deploy
+#HSLIDE
+
+#### Stages that code goes through to get from Idea to Production
+
+Idea --> Code --> Build --> Test --> Deploy
+
+
+#HSLIDE
 
 #### Idea
+
 "I'm going to write a 'hello world' program!"
+
+
+#HSLIDE
 
 #### Code
 
-    $ cat hello.c
-    # include <stdio.h>
-    main()
-    {
-        printf("Hello World");
-    }
-    $
+```shell_session
+$ cat hello.c
+# include <stdio.h>
+main()
+{
+    printf("Hello World");
+}
+$
+```
+
+
+#HSLIDE
 
 #### Build
 
@@ -363,6 +385,9 @@ Example:
 
     $ gcc -o hello hello.c
     $
+
+
+#HSLIDE
 
 #### Test
 
