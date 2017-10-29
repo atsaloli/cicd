@@ -64,20 +64,18 @@ The GitLab CI config file is in [YAML](http://yaml.org).
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
 
-Our first CI job, "test_it" will run on every single commit 
-to test the new revision. It will execute the /bin/echo command.
+Our first CI job, "test_it" will run on every commit 
+to test the new revision. It will execute the `/bin/echo` command.
 
-Notice that GitLab automatically checks the syntax of the CI config file
-and will alert you if the config does not pass validation.
+On the next slide, notice that:
+- GitLab checks the syntax of the CI config file and will alert you
+if your GitLab CI YAML does not pass validation.
+- The pause icon ("pending" indicator) - we haven't
+set up our Runner Server yet so there are no runners available.
 
-You may notice the "pending" indicator - that's because we haven't
-set up our Runner Server yet:
-
-![pending pipeline](img/pending_pipeline.png)
+---?image=img/pending_pipeline.png
 
 ---
-
-
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
 Go to "CI/CD -> Pipelines" to see our pipeline status:
