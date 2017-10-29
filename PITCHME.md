@@ -268,7 +268,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 > The term “DevOps” typically refers to the emerging professional movement that advocates a collaborative working relationship between Development and IT Operations, resulting in the fast flow of planned work (i.e., high deploy rates), while simultaneously increasing the reliability, stability, resilience and security of the production environment.  
 
--- ["Top 11 Things You Need to Know about DevOps", on Gene Kim's ITRevolution.com](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
+-- ["Top 11 Things You Need to Know about DevOps", Gene Kim's ITRevolution.com](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
  
 
 #HSLIDE
@@ -282,7 +282,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 > Currently, **DevOps** is more like a philosophical movement ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
 
--- [Gene Kim](http://www.realgenekim.me/devops-cookbook/), author of ["The DevOps Handbook"](http://itrevolution.com/devops-handbook)
+-- ["DevOps Cookbook" article by Gene Kim](http://www.realgenekim.me/devops-cookbook/)
 
 #HSLIDE
 
