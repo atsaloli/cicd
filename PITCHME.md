@@ -103,6 +103,12 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 #HSLIDE
 
+#### Testing
+
+This section will define terms pertaining to testing, specifically different types of testing.
+
+#HSLIDE
+
 #### Testing: Unit Testing
 
 > **Unit testing** 
