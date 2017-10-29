@@ -21,7 +21,7 @@ This is _the_ reference for GitLab CI configuration syntax!
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
 
-Put the following stub test job into your `.gitlab-ci.yml`:
+Edit your `.gitlab-ci.yml` to add a test job:
 
 
 ```text
