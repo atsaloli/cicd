@@ -1,13 +1,17 @@
-# Set up Stage and Prod web sites
 
-We are going to set up mock "stage" and "prod" environments,
-so that our CI/CD pipeline has environments to deploy into.
+## Setting up your CI/CD infrastructure
+### Setting up Stage (UAT) and Prod environments
 
-We'll put them on the same server, to keep the
+We are going to set up "stage" and "prod" environments,
+which jobs in our CI/CD pipeline can then target.
+
+We'll put Stage and Prod on the same server, to keep the
 infrastructure footprint manageable for the tutorial.
 
-
-## Bring up a Web server alongside GitLab
+---
+## Setting up your CI/CD infrastructure
+### Setting up Stage (UAT) and Prod environments
+#### Web server
 
 Install Apache2, listening on port 8008 (since GitLab is listening on 80).
 
@@ -20,18 +24,21 @@ sudo service apache2 status # the service should be active and running
 curl http://localhost:8008/  # you should see the Ubuntu Apache Welcome page source
 
 ```
+---
+## Setting up your CI/CD infrastructure
+### Setting up Stage (UAT) and Prod environments
+#### DNS
 
-Set up "stage" and "prod" virtual hosts (two separate environments).
-
-## Set up /etc/hosts record
-
-Add "stage.example.com" and "prod.example.com" to the localhost record in /etc/hosts -- so we can test the vhosts from the server itself.
+Add "stage.example.com" and "prod.example.com" to the `localhost` record in `/etc/hosts` so we can test the vhosts from our lab Linux server.
 
 Example:
 
-```
+```text
 127.0.0.1 localhost stage.example.com prod.example.com
 ```
+---
+
+Set up "stage" and "prod" virtual hosts (two separate environments).
 
 ## Set up Stage
 
@@ -114,5 +121,3 @@ sudo service apache2 reload
 
 Test it with `curl http://prod.example.com:8008/`, you should see 
 `<p>Prod - Hello World</p>`.
-
-# [[Next]](01_92-deploy-using-ssh.md) [[Up]](README.md)

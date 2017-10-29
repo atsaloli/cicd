@@ -115,8 +115,5 @@ the key if you were doing this on separate servers for Stage and Prod):
 ```bash
 GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@INSERT_YOUR_GITLAB_SERVER_HOSTNAME_HERE:root/www.git /tmp/www
 ```
-
 Later, we'll use this trust relationship to download code from Git
 so that we can put it in the Web server document root.
-
-# [[Next]](../02-ci-basics/README.md) [[Up]](README.md)
