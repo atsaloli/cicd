@@ -190,8 +190,8 @@ We are going to set up two runners:
 ---
 ## Setting up your CI/CD infrastructure
 ### Locking down the Shell runner
-Let's change the Shell runner so it only picks up jobs tagged "shell":
-- Go back to "Settings -> CI/CD -> Runner settings" 
+Change the Shell runner so it only picks up jobs tagged "shell":
+- Go to "Settings -> CI/CD -> Runner settings" 
 - Select the edit icon next to the Shell runner id
 - Add "shell" to tags.  
 - Select green "Save changes" button.
