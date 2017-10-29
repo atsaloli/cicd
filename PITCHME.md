@@ -391,7 +391,7 @@ Image credit: Chinese Wikipedia entry, "DevOps"
 -->
 
 
-#### Stages from Idea to Production
+#### from Idea to Production
 
 Idea --> Code --> Build --> Test --> Deploy
 
@@ -402,7 +402,7 @@ Idea --> Code --> Build --> Test --> Deploy
 
 Example:
 
-"I'm going to write a 'hello world' program!"
+"Let's write a 'hello world' program!"
 
 
 #HSLIDE
