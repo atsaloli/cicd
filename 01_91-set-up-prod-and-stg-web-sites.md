@@ -32,8 +32,8 @@ Add "stage.example.com" and "prod.example.com" to the `localhost` record in `/et
 
 Example:
 
-```text
-127.0.0.1 localhost stage.example.com prod.example.com
+```console
+sed -e 's:.*localhost.*:127.0.0.1 localhost stage.example.com prod.example.com' -e /etc/hosts
 ```
 ---
 
