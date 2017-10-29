@@ -245,7 +245,7 @@ entire system has been integrated.
 
 #HSLIDE
 
-ESSAY
+#### ESSAY
 
 What would be the benefits of Continuous Integration for your organization and how would it impact you personally if your organization practiced it?
 
