@@ -10,6 +10,7 @@ digraph G {
     deploy_prod [ label = "(Manual) Deploy to Prod" color = blue style = filled fillcolor = white ]
     label = "CI/CD Pipeline";
     style = filled;
+  test -> deploy_uat -> uat_test -> deploy_prod [constraint=false]; 
   }
 
   users [ label = "Users"      color = orange style = filled fillcolor = white ]
