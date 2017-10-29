@@ -1,15 +1,18 @@
-digraph policy_propagation {
+digraph G {
   node [ shape = box ];
 
-    code [ label = "Code change"      color = blue style = filled fillcolor = white ]
+  code [ label = "Code change"      color = purple style = filled fillcolor = white ]
+
+  subgraph pipeline {
     test [ label = "(Automated) Test" color = blue style = filled fillcolor = white ]
     deploy_uat [ label = "(Automated) Deploy to UAT" color = blue style = filled fillcolor = white ]
-    uat_test [ label = "Acceptance Testing" color = blue style = filled fillcolor = white ]
-    deploy_prod [ label = "(Automated) Deploy to UAT" color = blue style = filled fillcolor = white ]
+    uat_test [ label = "(Manual) Acceptance Testing" color = blue style = filled fillcolor = white ]
+    deploy_prod [ label = "(Manual) Deploy to Prod" color = blue style = filled fillcolor = white ]
+    label = "CI/CD Pipeline";
+    style = filled;
+  }
 
-  code -> test;
-  test -> deploy_uat;
-  deploy_uat -> uat_test;
-  uat_test -> deploy_prod;
+  users [ label = "Users"      color = orange style = filled fillcolor = white ]
 
+  code -> test -> deploy_uat -> uat_test -> deploy_prod -> users [constraint=false]; 
 }
