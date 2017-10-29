@@ -10,7 +10,7 @@ Now that we have a file in our project, GitLab UI offers a "Set up CI" button:
 ## Setting up your CI/CD infrastructure
 ### Configuring CI
 
-Select "Set up CI" to add the GitLab CI config file, `.gitlab-ci.yml`.
+Select "Set up CI" to create the GitLab CI config file, `.gitlab-ci.yml` in the Web editor.
 
 The GitLab CI configuration syntax is detailed
 [here](https://docs.gitlab.com/ce/ci/yaml/README.html).
