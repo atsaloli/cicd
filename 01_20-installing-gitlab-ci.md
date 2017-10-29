@@ -41,10 +41,9 @@ sudo usermod -aG docker gitlab-runner
 ## Setting up your CI/CD infrastructure
 ### Locate the config file for Runner Server
 
-Runner Server has its own config file, `/etc/gitlab-runner/config.toml`.
-The config file is written in TOML, [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml), which is supposed to be even easier (for humans) than YAML.
+Runner Server's config file is `/etc/gitlab-runner/config.toml`.
+It is in TOML, [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml), even easier (for humans) than YAML:
 
-Let's look at it:
 ```console
 sudo cat /etc/gitlab-runner/config.toml
 ```
