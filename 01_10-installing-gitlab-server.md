@@ -122,7 +122,6 @@ GitLab should be available at http://ec2-52-59-79-192.eu-central-1.compute.amazo
 ---
 ## Setting up your CI/CD infrastructure
 ### Installing GitLab Server
-#### Please note your GitLab URL
 
 ![important](img/important-one-tenth.png)  
 Note your GitLab URL, you *will* need it later.
@@ -130,7 +129,6 @@ Note your GitLab URL, you *will* need it later.
 ---
 ## Setting up your CI/CD infrastructure
 ### Installing GitLab Server
-#### Setting password for "root"
 
 Go to your GitLab Server using the URL you noted in the previous step and set the password for `root`, the initial user on the system.
 
