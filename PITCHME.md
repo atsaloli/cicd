@@ -17,6 +17,7 @@ aleksey@verticalsysadmin.com
 - Adoption
 - Basic tasks: Build, Test, Deploy
 - Bibliography
+- P.S. What about Agile?
 
 ---
 
@@ -550,3 +551,11 @@ $
 - [10+ Deploys Per Day: Dev and Ops Cooperation at Flickr](https://www.youtube.com/watch?v=LdOe18KhtT4&t=14s) video, 2009 Velocity presentation
 - [The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) by Gene Kim, et al.
 - [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B01M9ASFQ3) by Gene Kim, et al.
+
+---
+
+### P.S. What about Agile?
+
+A common question I get is, how does CI/CD relate to Agile?
+
+[Agile software development](https://en.wikipedia.org/wiki/Agile_software_development) values early delivery, short feedback loops and continuous improvement; the principles and technology of CI/CD enable that.
