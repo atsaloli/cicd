@@ -193,6 +193,7 @@ Let's change the Shell runner so it only picks up jobs tagged "shell":
 - Go back to "Settings -> CI/CD -> Runner settings" 
 - Select the edit icon next to the Shell runner id
 - Add "shell" to tags.  
+- Select green "Save changes" button.
 
 (See next slide.)
 
