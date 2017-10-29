@@ -467,8 +467,8 @@ $
 -- [Webster's 1913 Dictionary](http://www.webster-dictionary.org/definition/deploy)
 
 **Deploy**  
-Bring into effective action; utilize.  
-‘they are not always able to deploy this skill’
+(verb) Bring into effective action; utilize.  
+"They are not always able to deploy this skill."
 
 -- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/deploy)
 
