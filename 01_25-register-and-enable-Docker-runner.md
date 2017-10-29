@@ -2,7 +2,11 @@
 
 ### Registering a Docker runner
 
-Run `sudo gitlab-runner register` with:
+```console
+sudo gitlab-runner register
+```
+
+Use:
 - `Docker runner` for the desription
 - `docker` for the tag
 - `false` for running untagged builds
