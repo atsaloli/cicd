@@ -80,8 +80,9 @@ The pipeline could be fully automated:
 <!-- setting up runners -->
 
 ---?include=01_22-registering-our-first-runner.md
----?include=01_24-unregistering-runners.md
+
 ---?include=01_25-register-and-enable-Docker-runner.md
+
 ---?include=01_26-test-docker-runner.md
 ---?include=01_27-change-docker-image.md
 ---?include=01_80-runners-admin.md

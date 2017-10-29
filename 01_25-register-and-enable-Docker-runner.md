@@ -1,11 +1,11 @@
-# Register a Docker runner
+## Setting up your CI/CD infrastructure
+
+### Registering a Docker runner
 
 Run `sudo gitlab-runner register` with:
-- `Docker runner` for the desription;
-- `docker` for the tag;
-- `false` for running untagged builds;
-- `false` for locking Runner to current project;
-- `docker` for the executor;
-- `alpine` for the default docker image (it's lightweight).
-
-# [[Next]](01_26-test-docker-runner.md) [[Up]](README.md)
+- `Docker runner` for the desription
+- `docker` for the tag
+- `false` for running untagged builds
+- `false` for locking Runner to current project
+- `docker` for the executor
+- `alpine` for the default docker image (Alpine is a lightweight image)
