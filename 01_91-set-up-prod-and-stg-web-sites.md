@@ -138,5 +138,8 @@ sudo service apache2 reload
 ### Set up Prod vhost 
 ### Test httpd vhost config
 
-Test it with `curl http://prod.example.com:8008/`, you should see 
-`<p>Prod - Hello World</p>`.
+Test it:
+```bash
+curl http://prod.example.com:8008/
+```
+You should see `<p>Prod - Hello World</p>`.
