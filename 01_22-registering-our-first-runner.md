@@ -13,7 +13,7 @@ In this section, we will learn how to register runners
 ### Registering runners
 
 
-Go to "Settings" -> "CI/CD":
+Go to "Settings" (gear icon in the vertical nav bar on the left), and select "CI/CD":
 
 ![CI/CD settings](img/settings_cicd.png)
 
@@ -22,7 +22,7 @@ Go to "Settings" -> "CI/CD":
 ## Setting up your CI/CD infrastructure
 ### Registering runners
 
-Find "Runner settings" in the menu:
+Find and select "Runner settings" in the menu:
 
 ![CI/CD settings](img/runner_settings_menu.png)
 
@@ -31,7 +31,7 @@ Find "Runner settings" in the menu:
 ### Registering runners
 
 
-There'll be no runners listed (we haven't set them up yet), 
+There'll be no runners listed (we haven't set up any yet), 
 but notice the instructions (in the left pane) for registering
 runners with the GitLab API endpoint:
 
@@ -43,30 +43,21 @@ runners with the GitLab API endpoint:
 ### Registering runners
 
 
-To register a runner, you have to specify:
-- The GitLab Server API endpoint URL (to pick up jobs, return outcomes and upload build artifacts)
-- Registration token
-- "Executor" type. This tells the Runner Server in what kind of environment to execute the job (e.g., shell, SSH, Vagrant, Docker, Kubernetes).
-
-You can get the first two from GitLab's "Settings -> CI/CD" page.
-
----
-
-## Setting up your CI/CD infrastructure
-### Registering runners
-Register a runner:
+To register a runner, run:
 
 ```bash
 sudo gitlab-ci-multi-runner register
 ```
+You'll be prompted for:
+- The GitLab Server API endpoint URL (to pick up jobs, return outcomes and upload build artifacts)
+- Registration token
 
-- Provide the URL from the settings page
-- Provide the token from the setting page
+You can get the above from GitLab's "Settings -> CI/CD" page.
+
 - For description, put "Shell runner" (our first runner will be a shell runner)
 - Don't put any tags (you can tag runners, and then list tags in jobs to route jobs to specific runners)
 - Don't lock the runner to a project (not locking the runner makes it a shared runner, so it can be shared between projects)
-- For executor, pick "shell" (simplest runner)
-
+- For executor, pick "shell". The "executor" type tells the Runner Server in what kind of environment to execute the job (e.g., shell, SSH, Vagrant, Docker, Kubernetes).
 
 ---
 ## Setting up your CI/CD infrastructure
