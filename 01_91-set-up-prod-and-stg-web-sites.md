@@ -35,20 +35,20 @@ Example:
 ```console
 sudo sed -e 's:^127.0.0.1.*:127.0.0.1 localhost stage.example.com prod.example.com' -i /etc/hosts
 ```
----
-
-Set up "stage" and "prod" virtual hosts (two separate environments).
-
-## Set up Stage
-
-### Set up document root
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Stage vhost 
+### Document root
 
 ```bash
 sudo mkdir /var/www/stg-html
 echo "<?php echo '<p>Stage - Hello World</p>'; ?>" | sudo tee /var/www/stg-html/index.php
 ```
 
-### Set up vhost
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Stage vhost 
+### Create httpd vhost config
 
 Set up httpd config for the "stage" virtual host:
 
@@ -64,6 +64,10 @@ cat <<EOF | sudo tee /etc/apache2/sites-available/001-stg.conf
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 EOF
 ```
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Stage vhost 
+### Load httpd vhost config
 
 Enable vhost:
 
@@ -72,6 +76,10 @@ sudo ln -s /etc/apache2/sites-available/001-stg.conf /etc/apache2/sites-enabled/
 sudo service apache2 reload
 ```
 
+--- 
+## Setting up your CI/CD infrastructure 
+### Set up Stage vhost 
+### Test httpd vhost config
 Test it, it should say `<p>Stage - Hello World</p>`.
 
 ```bash
@@ -84,6 +92,7 @@ root@ip-172-31-27-145:~# curl http://stage.example.com:8008/
 <p>Stage - Hello World</p>root@ip-172-31-27-145:~#
 root@ip-172-31-27-145:~#
 ```
+---
 
 ## Set up Prod
 
