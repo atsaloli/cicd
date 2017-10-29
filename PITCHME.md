@@ -533,7 +533,7 @@ $ sudo cp hello /usr/local/bin/hello
 $
 ```
 
-Example: deploy to a remote environment:
+Example: deploying to a remote environment:
 
 ```shell_session
 $ scp hello root@production:/usr/local/bin/hello
