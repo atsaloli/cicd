@@ -41,10 +41,11 @@ Using the built-in Web editor:
 ![img](img/pretend_test_1.png)
 
 ---
+
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
 
-Note: `script` lists the command the GitLab test runner will run to test your code.
+`script` lists the command the GitLab test runner will run to test your code.
 
 Or, it could be a list of commands:
 
@@ -62,6 +63,7 @@ The GitLab CI config file is in [YAML](http://yaml.org).
 
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
+
 Our first CI job, "test_it" will run on every single commit 
 to test the new revision. It will execute the /bin/echo command.
 
