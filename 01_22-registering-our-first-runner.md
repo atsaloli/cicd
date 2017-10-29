@@ -199,3 +199,4 @@ Change the Shell runner so it only picks up jobs tagged "shell":
 (See next slide.)
 
 ---?image=img/edit-runner-to-add-tag.png
+
