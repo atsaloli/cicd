@@ -44,6 +44,10 @@ my_CI_job:
 The GitLab CI config file is in [YAML](http://yaml.org).
 ---
 
+---?image=img/pretend_test_1.png&size=auto 60%
+
+---
+
 ![first CI job](img/pretend_test_1.png)
 ---
 
