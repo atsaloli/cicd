@@ -45,14 +45,13 @@ On other systems:
 #### Community Edition vs Enterprise Edition
 
 We'll install GitLab EE (Enterprise Edition) which is functionally
-identical to GitLab CE (Community Edition) unless you install an
+identical to GitLab CE (Community Edition) until you install an
 EE license to enable the additional features. This makes upgrading
 to EE a breeze.
 
-We'll use the official package from GitLab (which is updated
-quite often!) GitLab releases a new version on the 22nd of
-every month, no fail; and sometimes security updates come out
-in between.
+We'll use the official package from GitLab.  GitLab releases a
+new version on the 22nd of every month, no fail (always with
+new features).
 ---
 ## Setting up your CI/CD infrastructure
 
