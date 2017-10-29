@@ -13,6 +13,10 @@ test_it:
 
 You should see "Alpine Linux" in the job's console log:
 
+(see next slide)
+
+---
+
 
 ```shell_session
 Running with gitlab-ci-multi-runner 9.5.1 (96b34cc)
