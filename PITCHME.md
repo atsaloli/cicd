@@ -72,7 +72,7 @@ aleksey@verticalsysadmin.com
 
 #HSLIDE
 
-#### Continuous Delivery (also CD)
+#### Continuous Delivery (CD)
 
 > **Continuous Delivery** is sometimes confused with continuous deployment. Continuous deployment means that every change is automatically deployed to production. Continuous delivery means that the team ensures every change can be deployed to production but may choose not to do it, usually due to business reasons. In order to do continuous deployment one must be doing continuous delivery.
 
@@ -87,7 +87,8 @@ aleksey@verticalsysadmin.com
 -- [American Heritage Dictionary of the English Language](https://www.ahdictionary.com/word/search.html?q=pipeline)
 
 **Conduct**  
-(verb)To serve as a medium for conveying; transmit: "Some metals conduct heat."
+(verb) To serve as a medium for conveying; transmit: "Some metals conduct heat."  
+-- [American Heritage Dictionary](https://www.ahdictionary.com/word/search.html?q=conduct)
 
 **Convey**  
 (verb) To transport or carry to a place: "Pipes were laid to convey water to the house"  
@@ -125,10 +126,9 @@ This section will define terms pertaining to testing, specifically different typ
 > software in the application, isolate it from the remainder of the code,
 > and determine whether it behaves exactly as you expect. ...
 > Unit testing has proven its value in that a large percentage of defects
-> are identified during its use
+> are identified during its use.
 
--- [Microsoft Developer Network](https://msdn.microsoft.com/en-us/library/aa292197(v=vs.71).aspx)
-
+-- Microsoft Developer Network
 
 
 #HSLIDE
