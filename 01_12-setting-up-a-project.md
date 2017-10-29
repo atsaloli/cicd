@@ -1,6 +1,5 @@
-# Add a project
-
-## Add a practice project
+## Setting up your CI/CD infrastructure
+### Add a project
 
 Add a project. You will use this project to explore GitLab CI functionality.
 
@@ -8,26 +7,38 @@ Select the "New..." icon (it looks like a plus sign) and select "New project".
 
 ![new project](img/new_project.png)
 
+---
+
+## Setting up your CI/CD infrastructure
+### Add a project
+
 Name the project. Call it "www" (we'll pretend it contains the source code
 for our web site).
 
 ![name the project](img/name_project.png)
 
+---
+## Setting up your CI/CD infrastructure
+### Add a project
 Select the big fat green "Create project" button to create your project.
 
-## Get rid of the "add an SSH key" prompt
-
 ![create project](img/create_project.png)
+---
+## Setting up your CI/CD infrastructure
+### Add a project
 
 GitLab will now take you to the "www" project page, and you should see
 a prompt to add an SSH key to your profile so you can pull or push
 project code.
-
 ![create project](img/ssh_warning.png)
+
+---
+## Setting up your CI/CD infrastructure
+### Add a project
 
 Select "Don't show again" in the SSH warning, as in this tutorial,
 you'll use the GitLab Web UI to change files in your project.
-
+---
 <!--
 ## Add an SSH key
 
@@ -53,24 +64,38 @@ Go back to your "www" project:
 
 -->
 
-## Add a README.md to your project
+## Setting up your CI/CD infrastructure
+### Add a project
+#### Add a README.md
 
 Add a README.md file by selecting "README" in the UI:
 
 ![add README](img/add_readme.png)
 
+---
+
+## Setting up your CI/CD infrastructure
+### Add a project
+#### Add a README.md
 Put in some text (e.g., "I am a README file") and select "Commit changes"
 to create the file.
 
 ![editing README](img/commit_readme.png)
 
+---
+
+## Setting up your CI/CD infrastructure
+### Add a project
+#### Add a README.md
 You should then see the confirmation.
 
 ![README](img/new_readme.png)
 
-Use the breadcrumbs at the top to go back to the main "www" project screen:
+---
+
+## Setting up your CI/CD infrastructure
+### Add a project
+Use the navigation breadcrumbs at the top to go back to the main "www" project screen:
 
 ![breadcrumbs](img/breadcrumbs.png)
 
-
-# [[Next]](01_13-enabling-ci-on-a-project.md) [[Up]](README.md)
