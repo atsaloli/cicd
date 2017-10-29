@@ -524,14 +524,14 @@ $
 
 #HSLIDE
 
-Example deploy (local host):
+Example: deploying on the local host:
 
 ```shell_session
 $ sudo cp hello /usr/local/bin/hello
 $
 ```
 
-Example deploy (remote):
+Example: deploy to a remote environment:
 
 ```shell_session
 $ scp hello root@production:/usr/local/bin/hello
