@@ -5,7 +5,7 @@ Aleksey Tsalolikhin
 
 aleksey@verticalsysadmin.com
 
-12 October 2017
+28 October 2017
 
 ## Table of Contents
 - [Part I - Introduction to CI/CD and DevOps](https://gitpitch.com/atsaloli/cicd?grs=gitlab)
