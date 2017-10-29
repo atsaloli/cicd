@@ -74,27 +74,25 @@ The pipeline could be fully automated:
 
 ---?include=01_20-installing-gitlab-ci.md
 
----?include=01_21-install-build-and-test-tools.md
-
 ---
 
-## Registering, enabling and using runners; reading job logs
-- [Register a Shell runner](01_22-registering-our-first-runner.md)
-- [Unregister the Shell runner](01_24-unregistering-runners.md)
-- [Register a Docker runner](01_25-register-and-enable-Docker-runner.md)
-- [Test Docker runner](01_26-test-docker-runner.md)
-- [Use a different container image](01_27-change-docker-image.md)
-- [Runner administration](01_80-runners-admin.md)
-- [Paused runner](01_84-paused-runner.md)
-- [Pause Docker runner and register Shell runner](01_86-shell-again.md)
 
-## Set up deployment targets: Stage and Prod
-- [Set up Stage and Prod web sites](01_91-set-up-prod-and-stg-web-sites.md)
-- [Set up trust relationship to deploy to Stage via SSH](01_92-deploy-using-ssh.md)
-- [Set up trust relationships to deploy to Stage and Prod via Git](01_93-deploy-via-git.md)
+<!-- setting up runners -->
 
+---?include=01_22-registering-our-first-runner.md
+---?include=01_24-unregistering-runners.md
+---?include=01_25-register-and-enable-Docker-runner.md
+---?include=01_26-test-docker-runner.md
+---?include=01_27-change-docker-image.md
+---?include=01_80-runners-admin.md
+---?include=01_84-paused-runner.md
+---?include=01_86-shell-again.md
 
-# [[Up]](../README.md)
+<!-- setting up UAT and Prod environments -->
+---?include=01_91-set-up-prod-and-stg-web-sites.md
+---?include=01_92-deploy-using-ssh.md
+---?include=01_93-deploy-via-git.md
+
 
 ---
 
