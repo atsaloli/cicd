@@ -195,6 +195,8 @@ entire system has been integrated.
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
+#HSLIDE
+
 #### Benefits
 
 > Continuous Integration brings multiple benefits to your organization:
