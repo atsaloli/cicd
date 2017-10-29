@@ -1,7 +1,7 @@
 ## Setting up your CI/CD infrastructure
 ### Configuring CI
 
-Notice the "Set up CI" button:
+Now that we have files in our project, GitLab UI offers a "Set up CI" button:
 
 ![notice the "Set up CI" button](img/setup_ci.png)
 
