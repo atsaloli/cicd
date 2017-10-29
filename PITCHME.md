@@ -322,17 +322,18 @@ change approval processes than other teams. The result is more time for innovati
 #HSLIDE
 
 <!-- http://www.verticalsysadmin.com/img/2017-state-of-devops-report-puppet-dora.png -->
-The 2017 State of DevOps Report finds that Continuous Delivery reduces deployment pain and increases IT performance which leads to increased organizational performance.
 
 > We found that the following all positively affect continuous delivery: comprehensive use of version control; continuous integration and trunk-based development; integrating security into software delivery work; and the use of test and deployment automation. Of these, test automation is the biggest contributor. 
 
+#HSLIDE
+
 > The biggest contributor to continuous delivery — bigger even than test and deployment automation — is whether a team can do all of the following:
-> • Make large-scale changes to the design of its system without permission from someone outside the team.
-> • Make large-scale changes to the design of its system without depending on other teams to make changes in their own systems, or creating significant work for other teams.
-> • Complete its work without needing fine-grained communication and coordination with people outside the team. For example, not having to check 12 Google calendars to get feedback.
-> • Deploy and release its product or service on demand, independently of other services the product or service depends upon.
-> • Do most of its testing on demand, without requiring an integrated test environment.
-> • Perform deployments during normal business hours with negligible downtime.
+> - Make large-scale changes to the design of its system without permission from someone outside the team.
+> - Make large-scale changes to the design of its system without depending on other teams to make changes in their own systems, or creating significant work for other teams.
+> - Complete its work without needing fine-grained communication and coordination with people outside the team. For example, not having to check 12 Google calendars to get feedback.
+> - Deploy and release its product or service on demand, independently of other services the product or service depends upon.
+> - Do most of its testing on demand, without requiring an integrated test environment.
+> - Perform deployments during normal business hours with negligible downtime.
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
