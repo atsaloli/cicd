@@ -428,7 +428,7 @@ $
 
 > **Build** (noun) a compiled version of a program; the process of compiling a program.
 
--- Oxford Dictionaries
+-- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/build)
 
 Example:
 
