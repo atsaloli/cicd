@@ -406,6 +406,22 @@ Example:
 Example:
 
 
+
+    $ cat hello.c
+    # include <stdio.h>
+    main()
+    {
+        printf("Hello World");
+    }
+    $
+
+#HSLIDE
+
+#### Code
+
+Example:
+
+
 ```shell_session
 $ cat hello.c
 # include <stdio.h>
