@@ -6,7 +6,7 @@ aleksey@verticalsysadmin.com
 
 28 Oct 2017
 
-#HSLIDE
+---
 
 ### Table of Contents
 - Definition of terms: CI/CD
@@ -18,7 +18,7 @@ aleksey@verticalsysadmin.com
 - Basic tasks: Build, Test, Deploy
 - Bibliography
 
-#HSLIDE
+---
 
 ### Definition of terms: CI/CD
 
@@ -36,7 +36,7 @@ aleksey@verticalsysadmin.com
 (verb) to unite with something else; to incorporate into a larger unit  
 -- [Merriam-Webster](https://www.merriam-webster.com/dictionary/integrate)
 
-#HSLIDE
+---
 
 #### Continuous Integration (CI)
 
@@ -44,7 +44,7 @@ aleksey@verticalsysadmin.com
 
 -- [Wikipedia entry "Continuous Integration"](https://en.wikipedia.org/wiki/Continuous_integration)
 
-#HSLIDE
+---
 
 #### Continuous Integration (CI)
 
@@ -60,7 +60,7 @@ aleksey@verticalsysadmin.com
 
 
 
-#HSLIDE
+---
 
 #### Continuous Deployment (CD)
 
@@ -70,7 +70,7 @@ aleksey@verticalsysadmin.com
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
-#HSLIDE
+---
 
 #### Continuous Delivery (CD)
 
@@ -78,7 +78,7 @@ aleksey@verticalsysadmin.com
 
 -- [Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
 
-#HSLIDE
+---
 
 #### Pipeline
 
@@ -94,7 +94,7 @@ aleksey@verticalsysadmin.com
 (verb) To transport or carry to a place: "Pipes were laid to convey water to the house"  
 -- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/convey)
 
-#HSLIDE
+---
 
 #### Pipeline
 
@@ -102,13 +102,13 @@ aleksey@verticalsysadmin.com
 Image credit: [“I want to do Continuous Deployment” article on devops.com](https://devops.com/i-want-to-do-continuous-deployment/)
 
 
-#HSLIDE
+---
 
 #### Testing
 
 This section will define terms pertaining to testing, specifically different types of testing.
 
-#HSLIDE
+---
 
 #### Unit Testing
 
@@ -118,7 +118,7 @@ This section will define terms pertaining to testing, specifically different typ
 
 -- [Free On-Line Dictionary of Computing](https://foldoc.org/unit%20testing)
 
-#HSLIDE
+---
 
 #### Unit Testing
 
@@ -131,7 +131,7 @@ This section will define terms pertaining to testing, specifically different typ
 -- Microsoft Developer Network
 
 
-#HSLIDE
+---
 
 #### Unit Testing
 
@@ -142,7 +142,7 @@ This section will define terms pertaining to testing, specifically different typ
 -- [Wikipedia](https://en.wikipedia.org/wiki/Unit_testing)
 
 
-#HSLIDE
+---
 
 #### Integration Testing
 
@@ -153,7 +153,7 @@ requirements. Integration testing can continue progressively until the
 entire system has been integrated.  
 -- [Free On-Line Dictionary of Computing](https://foldoc.org/integration%20testing)
 
-#HSLIDE
+---
 
 #### Integration Testing
 
@@ -166,7 +166,7 @@ entire system has been integrated.
 
 -- [Wikipedia](https://en.wikipedia.org/wiki/Integration_testing)
 
-#HSLIDE
+---
 
 #### Functional Testing
 
@@ -176,7 +176,7 @@ entire system has been integrated.
 
 -- [Wikipedia entry, "Functional testing"](https://en.wikipedia.org/wiki/Functional_testing)
 
-#HSLIDE
+---
 
 #### Acceptance Testing
 
@@ -185,7 +185,7 @@ entire system has been integrated.
 
 -- [Wikipedia entry for "Acceptance testing"](https://en.wikipedia.org/wiki/Acceptance_testing#Overview)
 
-#HSLIDE
+---
 
 ### Benefits of Continuous Integration
 
@@ -193,7 +193,7 @@ entire system has been integrated.
 
 -- [OpenShift blog, "CI/CD with OpenShift"](https://blog.openshift.com/cicd-with-openshift/)
 
-#HSLIDE
+---
 
 ### Benefits of Continuous Integration
 
@@ -206,7 +206,7 @@ entire system has been integrated.
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
 
-#HSLIDE
+---
 
 ### Benefits of Continuous Integration
 
@@ -218,7 +218,7 @@ entire system has been integrated.
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
-#HSLIDE
+---
 
 ### Benefits of Continuous Integration
 
@@ -235,7 +235,7 @@ entire system has been integrated.
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
-#HSLIDE
+---
 
 ### Benefits of Continuous Integration
 
@@ -243,13 +243,13 @@ entire system has been integrated.
 
 — Martin Fowler, Chief Scientist, ThoughtWorks
 
-#HSLIDE
+---
 
 #### ESSAY
 
 What would be the benefits of Continuous Integration for your organization and how would it impact you personally if your organization practiced it?
 
-#HSLIDE
+---
 
 ### Origin of Continuous Integration
 
@@ -259,7 +259,7 @@ In the late 1990's, Don Wells introduced continuous integration at Chrysler:
  
 (continued on next slide)
 
-#HSLIDE
+---
 
 ### Origin of Continuous Integration
 
@@ -267,7 +267,7 @@ In the late 1990's, Don Wells introduced continuous integration at Chrysler:
 
 -- [www.agile-process.org web page "Your host:  Don Wells"](http://www.agile-process.org/don.html)
 
-#HSLIDE
+---
 
 ### Origin of Continuous Integration
 
@@ -277,7 +277,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 -- [Martin Fowler's article "Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html)
 
-#HSLIDE
+---
 
 ### Origin of Continuous Integration
 
@@ -289,7 +289,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 -- [Wikipedia entry, "ThoughtWorks"](https://en.wikipedia.org/wiki/ThoughtWorks#Continuous_integration_and_continuous_delivery)
 
-#HSLIDE
+---
 
 ### Definition of terms: DevOps
 
@@ -297,7 +297,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 -- ["What is Devops?", Damon Edwards](http://dev2ops.org/2010/02/what-is-devops/)
 
-#HSLIDE
+---
 
 #### DevOps
 
@@ -306,7 +306,7 @@ Martin Fowler was involved in the work at Chrysler.
 -- ["Top 11 Things You Need to Know about DevOps", Gene Kim's ITRevolution.com](http://images.itrevolution.com/documents/Top_11_DevOps_01_2015.pdf)
  
 
-#HSLIDE
+---
 
 #### DevOps
 
@@ -314,21 +314,21 @@ Martin Fowler was involved in the work at Chrysler.
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
-#HSLIDE
+---
 
 #### DevOps
 > Currently, **DevOps** is more like a philosophical movement ...  At this early stage we’re in, DevOps is more like a vibrant community of practitioners who are interesting in replicating the performance outcomes and culture as exemplified in the seminal John Allspaw/Tim Hammond 2009 Velocity presentation about doing “ten deploys a day” at Flickr.
 
 -- ["DevOps Cookbook" article by Gene Kim](http://www.realgenekim.me/devops-cookbook/)
 
-#HSLIDE
+---
 
 #### DevOps
 
 John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOPSA
 ![John Willis with LA chapter of LOPSA](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
 
-#HSLIDE
+---
 
 ### How CI/CD relates to DevOps
 
@@ -338,7 +338,7 @@ John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOP
 
 -- [Wikipedia entry for "DevOps"](https://en.wikipedia.org/wiki/DevOps#Continuous_delivery)
 
-#HSLIDE
+---
 
 ### How CI/CD relates to DevOps
 
@@ -349,7 +349,7 @@ John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOP
 > To achieve this, we must create automated build and test processes that run in dedicated environments.
 
 -- "The DevOps Handbook", Chapter 10 "Enable Fast and Reliable Automated Testing"
-#HSLIDE
+---
 
 ### Adoption
 
@@ -361,7 +361,7 @@ change approval processes than other teams. The result is more time for innovati
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
-#HSLIDE
+---
 
 <!-- http://www.verticalsysadmin.com/img/2017-state-of-devops-report-puppet-dora.png -->
 
@@ -369,7 +369,7 @@ change approval processes than other teams. The result is more time for innovati
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
-#HSLIDE
+---
 
 > The biggest contributor to continuous delivery — bigger even than test and deployment automation — is whether a team can do all of the following:
 > - Make large-scale changes to the design of its system without permission from someone outside the team.
@@ -381,7 +381,7 @@ change approval processes than other teams. The result is more time for innovati
 
 -- [2017 State of DevOps Report](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
-#HSLIDE
+---
 
 ### Basic tasks: Build, Test, Deploy
 
@@ -396,7 +396,7 @@ Image credit: Chinese Wikipedia entry, "DevOps"
 Idea --> Code --> Build --> Test --> Deploy
 
 
-#HSLIDE
+---
 
 #### Idea
 
@@ -405,7 +405,7 @@ Example:
 "Let's write a 'hello world' program!"
 
 
-#HSLIDE
+---
 
 #### Code
 
@@ -422,7 +422,7 @@ main()
 $
 ```
 
-#HSLIDE
+---
 
 #### Build
 
@@ -445,7 +445,7 @@ $ gcc -o hello hello.c
 $
 ```
 
-#HSLIDE
+---
 
 #### Test
 
@@ -454,7 +454,7 @@ $
 
 -- [Macmillan Dictionary](http://www.macmillandictionary.com/dictionary/american/test_1)
 
-#HSLIDE
+---
 
 Example 1 - testing with Make - a successful test:
 
@@ -473,7 +473,7 @@ diff -q correct.txt output.txt
 $
 
 ```
-#HSLIDE
+---
 
 Example 1b - induce failure:
 
@@ -488,7 +488,7 @@ make: *** [Makefile:3: test] Error 1
 
 $
 ```
-#HSLIDE
+---
 
 Example 2 - Testing with [Bash Automated Testing System (bats)](https://github.com/sstephenson/bats)
 
@@ -508,7 +508,7 @@ $ bats hello_test.bats
 $
 ```
 
-#HSLIDE
+---
 
 #### Deploy
 **Deploy**  
@@ -522,7 +522,7 @@ $
 
 -- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/deploy)
 
-#HSLIDE
+---
 
 #### Deploy
 
@@ -540,7 +540,7 @@ $ scp hello root@production:/usr/local/bin/hello
 $
 ```
 
-#HSLIDE
+---
 
 ### Bibliography
 - [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), article by Martin Fowler
