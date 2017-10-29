@@ -49,15 +49,12 @@ To register a runner, run:
 sudo gitlab-ci-multi-runner register
 ```
 You'll be prompted for:
-- The GitLab Server API endpoint URL (to pick up jobs, return outcomes and upload build artifacts)
-- Registration token
-
-You can get the above from GitLab's "Settings -> CI/CD" page.
-
-- For description, put "Shell runner" (our first runner will be a shell runner)
+- The GitLab Server API endpoint URL (to pick up jobs, return outcomes and upload build artifacts). You can get it from GitLab's runner settings.
+- Registration token. You can get it from GitLab's runner settings, too.
+- For description, put "Shell runner" (the first runner will be a shell runner)
 - Don't put any tags (you can tag runners, and then list tags in jobs to route jobs to specific runners)
 - Don't lock the runner to a project (not locking the runner makes it a shared runner, so it can be shared between projects)
-- For executor, pick "shell". The "executor" type tells the Runner Server in what kind of environment to execute the job (e.g., shell, SSH, Vagrant, Docker, Kubernetes).
+- For executor, pick "shell". The executor type tells the Runner Server in what kind of environment to execute the job (e.g., shell, SSH, Vagrant, Docker, Kubernetes).
 
 ---
 ## Setting up your CI/CD infrastructure
