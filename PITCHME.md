@@ -84,6 +84,7 @@ The pipeline could be fully automated:
 ---?include=01_25-register-and-enable-Docker-runner.md
 
 ---?include=01_26-test-docker-runner.md
+
 ---?include=01_27-change-docker-image.md
 ---?include=01_80-runners-admin.md
 ---?include=01_84-paused-runner.md
