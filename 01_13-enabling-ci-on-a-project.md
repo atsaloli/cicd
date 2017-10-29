@@ -30,7 +30,11 @@ test_it:
 ```
 Reminder: If you're viewing this on gitpitch.com, "x" highlights the code block.
 
-Above, `script` lists the command the GitLab test runner will run to test your code.
+---?image=img/pretend_test_1.png&size=auto 60%
+
+---
+
+`script` lists the command the GitLab test runner will run to test your code.
 
 Or, it could be a list of commands:
 
@@ -44,7 +48,6 @@ my_CI_job:
 The GitLab CI config file is in [YAML](http://yaml.org).
 ---
 
----?image=img/pretend_test_1.png&size=auto 60%
 
 ---
 
