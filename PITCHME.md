@@ -250,7 +250,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 > ThoughtWorks created the first known Continuous Integration server, Cruise, in 2001. This Java-based tool was later open-sourced and renamed CruiseControl. 
 > 
-> Around 2007, after finding CruiseControl limiting, Humble worked alongside a ThoughtWorks team in Beijing to create the tool that later became Go (now styled [GoCD](https://www.thoughtworks.com/go/)). 
+> Around 2007, after finding CruiseControl limiting, [Jez] Humble worked alongside a ThoughtWorks team in Beijing to create the [ThoughtWorks] tool that later became Go (now styled GoCD). 
 > 
 > In 2010, Humble and ex-ThoughtWorker Dave Farley published [the first book on continuous delivery](http://amzn.to/1QBJM7k).
 
