@@ -399,7 +399,8 @@ Example:
 
 #### Test
 
-> **Test** (noun) a process designed to find out whether something such as a machine or weapon works correctly or whether a product is satisfactory
+**Test**   
+(noun) a process designed to find out whether something such as a machine or weapon works correctly or whether a product is satisfactory  
 
 -- [Macmillan Dictionary](http://www.macmillandictionary.com/dictionary/american/test_1)
 
