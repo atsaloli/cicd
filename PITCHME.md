@@ -286,8 +286,8 @@ Martin Fowler was involved in the work at Chrysler.
 
 #HSLIDE
 
+LOPSA LA meetup with John Willis, co-author of "The DevOps Handbook"
 ![enter image description here](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
-John Willis, DevOps enthusiast extraordinaire and co-author of "The DevOps Handbook" at [LOPSA-LA meetup](https://www.meetup.com/lopsala).
 
 #HSLIDE
 
