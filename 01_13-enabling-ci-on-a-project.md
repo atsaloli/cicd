@@ -45,6 +45,7 @@ The GitLab CI config file is in [YAML](http://yaml.org).
 ---
 
 ![first CI job](img/pretend_test_1.png)
+---
 
 Select "Commit changes" at the bottom, green.
 
