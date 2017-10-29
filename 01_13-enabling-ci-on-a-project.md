@@ -41,9 +41,9 @@ Using the built-in Web editor:
 ![img](img/pretend_test_1.png)
 
 ---
-
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
+
 Note: `script` lists the command the GitLab test runner will run to test your code.
 
 Or, it could be a list of commands:
