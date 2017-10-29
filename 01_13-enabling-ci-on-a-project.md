@@ -78,16 +78,15 @@ set up our Runner Server yet so there are no runners available.
 ---
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
-Go to "CI/CD -> Pipelines" to see our pipeline status:
+Go to "CI/CD -> Pipelines" to see pipeline status:
 
 ![pipelines menu](img/pipelines_menu.png)
 
 ---
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
-Pipeline status:
+You'll see the pipeline is "pending":
 
 ![stuck pipeline](img/stuck_pipeline.png)
 
-The pipeline is stuck in Pending, because we haven't setup our CI/CD
-server yet. We'll do that next.
+Let's setup our CI/CD server yet.
