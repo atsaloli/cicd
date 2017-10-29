@@ -50,11 +50,9 @@ sudo cat /etc/gitlab-runner/config.toml
 
 Example:
 
-```shell_session
-ubuntu@ip-172-31-24-94:~$ sudo cat /etc/gitlab-runner/config.toml
+```text
 concurrent = 1
 check_interval = 0
-ubuntu@ip-172-31-24-94:~$
 ```
 
 | Setting | Description |
