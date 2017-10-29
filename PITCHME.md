@@ -107,6 +107,8 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 #HSLIDE
 
+#### Unit Testing
+
 > The primary goal of **unit testing** is to take the smallest piece of testable
 > software in the application, isolate it from the remainder of the code,
 > and determine whether it behaves exactly as you expect. ...
@@ -118,6 +120,8 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 
 #HSLIDE
+
+#### Unit Testing
 
 > In computer programming, **unit testing** is a software testing method
 > by which individual units of source code ...  are tested to determine
@@ -138,6 +142,8 @@ entire system has been integrated.
 -- [Free On-Line Dictionary of Computing](https://foldoc.org/integration%20testing)
 
 #HSLIDE
+
+#### Integration Testing
 
 > **Integration testing** ... is the phase in software testing in
 > which individual software modules are combined and tested as a
