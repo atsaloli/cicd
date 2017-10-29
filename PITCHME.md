@@ -172,19 +172,21 @@ entire system has been integrated.
 
 > Releasing software frequently to users is usually a time-consuming and painful process. Continuous Integration and Continuous Delivery (CI/CD) can help organizations ... by automating and streamlining the steps involved in going from an idea ... to the delivered product to the customer.
 
--- [CI/CD with OpenShift](https://blog.openshift.com/cicd-with-openshift/)
+-- [OpenShift blog, "CI/CD with OpenShift"](https://blog.openshift.com/cicd-with-openshift/)
 
 #HSLIDE
 
 #### Integrate at least daily
-
-![Illustration of Continuous Integration from ThoughtWorks.com](https://dynamic.webteam.thoughtworks.com/gatepages/image-24e379a0872e15d9f04f76407c1ba67a.png)
 
 > Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. 
 >
 > By integrating regularly, you can detect errors quickly, and locate them more easily.
 
 -- [ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
+
+---?image=images/image-24e379a0872e15d9f04f76407c1ba67a.png&size=auto 40%
+
+Image credit: ThoughtWorks.com
 
 #HSLIDE
 
