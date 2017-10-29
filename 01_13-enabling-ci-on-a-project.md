@@ -29,6 +29,7 @@ test_it:
   script: /bin/echo I am a pretend test suite. I passed!
 ```
 Reminder: If you're viewing this on gitpitch.com, "x" highlights the code block.
+Select "Commit changes" at the bottom, green.
 
 (See next slide.)
 
@@ -39,11 +40,11 @@ Example:
 
 ![img](img/pretend_test_1.png)
 
----?image=img/pretend_test_1.png&size=auto 60%
-
 ---
 
-`script` lists the command the GitLab test runner will run to test your code.
+## Setting up your CI/CD infrastructure
+### Setting up CI
+Note: `script` lists the command the GitLab test runner will run to test your code.
 
 Or, it could be a list of commands:
 
@@ -58,12 +59,10 @@ The GitLab CI config file is in [YAML](http://yaml.org).
 
 ---
 
-![first CI job](img/pretend_test_1.png)
----
 
-Select "Commit changes" at the bottom, green.
-
-Our first CI test job, "test_it" will run on every single commit 
+## Setting up your CI/CD infrastructure
+### Setting up CI
+Our first CI job, "test_it" will run on every single commit 
 to test the new revision. It will execute the /bin/echo command.
 
 Notice that GitLab automatically checks the syntax of the CI config file
@@ -74,12 +73,19 @@ set up our Runner Server yet:
 
 ![pending pipeline](img/pending_pipeline.png)
 
+---
 
+
+## Setting up your CI/CD infrastructure
+### Setting up CI
 Go to "CI/CD -> Pipelines" to see our pipeline status:
 
 ![pipelines menu](img/pipelines_menu.png)
 
-Here is the status:
+---
+## Setting up your CI/CD infrastructure
+### Setting up CI
+Pipeline status:
 
 ![stuck pipeline](img/stuck_pipeline.png)
 
