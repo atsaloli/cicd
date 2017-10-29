@@ -20,7 +20,9 @@ aleksey@verticalsysadmin.com
 
 ## Introducing GitLab
 
-...
+[GitLab](https://about.gitlab.com) is a Web application for working together on code. In addition to a Git data store, it has everything you need for a modern workflow: ticketing system, issue boards, code review, CI/CD, chat and more -- all smoothly integrated in one UI.
+
+gitlab.com is the public service; private (on-prem) instances are available as Community Edition (open source, free of charge) or Enterprise Edition (commercial).
 ---
 ## Introducing GitLab CI/CD
 
