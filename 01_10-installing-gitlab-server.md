@@ -35,7 +35,7 @@ On the Mac, you can use the usual hotkeys (Command-C to copy and Command-V to pa
 
 On other systems:
 - Copying: highlight the text, right-click in the Web browser and select "Copy" from the menu.
-- Pasting: use Ctrl-Shift-V.
+- Pasting: use Ctrl-Shift-V, or right-click and select "Paste".
 
 ---
 ## Setting up your CI/CD infrastructure
