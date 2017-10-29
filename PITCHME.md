@@ -30,7 +30,7 @@ GitLab.com is the public service; the software is also available for private (on
 
 ### GitLab CI/CD (Runner Server)
 
-GitLab comes with an add-on package called Runner Server which provides runners. Simply put, a runner is what runs the tests. Runners can run build jobs, test jobs, and deploy jobs. Or actually any kind of job! More on this later.
+GitLab comes with an add-on package called Runner Server which provides runners. Simply put, a runner is what runs the tests. Runners can run build jobs, test jobs, and deploy jobs. Or actually any kind of job! Runner Server works with GitLab through GitLab Server's API.
 
 ---?include=01_05-architecture.md
 
