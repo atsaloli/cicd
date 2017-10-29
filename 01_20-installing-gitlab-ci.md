@@ -17,12 +17,11 @@ sudo apt-get install -y gitlab-ci-multi-runner
 ## Setting up your CI/CD infrastructure
 ### Confirm Runner Server is up
 
-Check the status of the service (`Active` field) to make sure it's "active (running"):
+Check service status:
 
 ```console
 sudo service gitlab-runner status
 ```
-Green is good:
 
 ![runner service is active](img/runner_service_active.png)
 ---
