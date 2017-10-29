@@ -24,16 +24,17 @@ the image definition _per job_:
 ```yaml
 image: ubuntu
 
-test_it:
+ruby_test:
   image: ruby
   script: cat /etc/*release
   tags:
   - docker
 
-job2:
+perl_test:
   image: perl
   script: cat /etc/*release
   tags:
   - docker
 
 ```
+Make the above change (to `.gitlab-ci.yml`) and check the logs for each job, with attention to what image was used in each.
