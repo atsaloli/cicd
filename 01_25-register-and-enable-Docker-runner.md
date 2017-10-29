@@ -7,6 +7,7 @@ sudo gitlab-runner register
 ```
 
 Use:
+- GitLab API endpoint and runner registration token from GitLab's runner settings page
 - `Docker runner` for the desription
 - `docker` for the tag
 - `false` for running untagged builds
