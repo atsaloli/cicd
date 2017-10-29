@@ -76,7 +76,16 @@ if you need extras like outgoing email or HTTPS.
 #### Note your GitLab URL
 
 The installer will print the URL of your GitLab Server instance below the
-GitLab tanuki, also known as Asiatic racoon, or racoon dog - a member of the dog family(Canidae) - and GitLab's logo. Please note the URL. (See next slide.)
+GitLab tanuki.
+
+The tanuki is also known as Asiatic racoon, or racoon dog.
+It's a member of the dog family (Canidae).
+
+> Our Tanuki logo symbolizes [GitLab vision] with a smart animal that works in a group to achieve a common goal.
+
+-- [about.gitlab.com/about](https://about.gitlab.com/about)
+
+(See next slide.)
 
 ---
 ## Setting up your CI/CD infrastructure
