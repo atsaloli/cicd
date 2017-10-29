@@ -79,7 +79,10 @@ The installer will print the URL of your GitLab Server instance below the
 ASCII art of the GitLab icon, the tanuki (also known as Asiatic racoon,
 or racoon dog).  Please make a note of the URL.
 
-For example:
+---
+## Setting up your CI/CD infrastructure
+### Installing GitLab Server
+#### Note your GitLab URL
 
 ```text
 
