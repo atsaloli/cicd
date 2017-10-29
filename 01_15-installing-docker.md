@@ -1,10 +1,11 @@
-## Install Docker
+## Setting up your CI/CD infrastructure
+### Installing Docker
 
 Let's install Docker, to run repeatable tests in reproducible environments.
 
 Do this on the Runner Server, which, for expediency in this tutorial,
-is the same as the GitLab Server. (For production use, you should have
-dedicated Runner Servers and a dedicated GitLab Server.)
+is the same as the GitLab Server, UAT and Prod. For production, you
+should have dedicated Runner Servers and a dedicated GitLab Server.
 
 Install and test Docker:
 
@@ -26,5 +27,3 @@ Status: Downloaded newer image for alpine:latest
 Hello world
 ubuntu@1ddb8d03-6597-48bd-a001-9c4f5a99dd6d:~$
 ```
-
-# [[Next]](01_20-installing-gitlab-ci.md) [[Up]](README.md)

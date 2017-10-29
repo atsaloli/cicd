@@ -71,7 +71,7 @@ we specified.
 
 (It _is_ possible to run CI jobs on specific branches
 only, e.g., only on merge requests into the "master" branch.
-However, out of the box, GitLab runs CI on every commit,
+By default, GitLab runs CI on every commit,
 to catch problems early.)
 
 On the next slide, notice:
