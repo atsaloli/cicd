@@ -1,5 +1,5 @@
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 
 Add a project. You will use this project to explore GitLab CI functionality.
 
@@ -10,7 +10,7 @@ Select the "New..." icon (it looks like a plus sign) and select "New project".
 ---
 
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 
 Name the project. Call it "www" (we'll pretend it contains the source code
 for our web site).
@@ -19,13 +19,13 @@ for our web site).
 
 ---
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 Select the big fat green "Create project" button to create your project.
 
 ![create project](img/create_project.png)
 ---
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 
 GitLab will now take you to the "www" project page, and you should see
 a prompt to add an SSH key to your profile so you can pull or push
@@ -62,7 +62,7 @@ Go back to your "www" project:
 -->
 
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 #### Add a README.md
 
 Add a README.md file by selecting "README" in the UI:
@@ -72,7 +72,7 @@ Add a README.md file by selecting "README" in the UI:
 ---
 
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 #### Add a README.md
 Put in some text (e.g., "I am a README file") and select "Commit changes"
 to create the file.
@@ -82,7 +82,7 @@ to create the file.
 ---
 
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 #### Add a README.md
 You should then see the confirmation.
 
@@ -91,7 +91,7 @@ You should then see the confirmation.
 ---
 
 ## Setting up your CI/CD infrastructure
-### Add a project
+### Adding a project
 Use the navigation breadcrumbs at the top to go back to the main "www" project screen:
 
 ![breadcrumbs](img/breadcrumbs.png)
