@@ -51,7 +51,18 @@ Using these building blocks, you will set up a **CI/CD pipeline**:
 
 ![lab pipeline](img/lab-pipeline.png)
 
-You will re-use the UAT and Production environments in the Jenkins tutorial.
+You will then re-use the UAT and Production environments in the Jenkins tutorial.
+
+---
+
+## Introduction
+
+### Lab exercise
+
+The pipeline could be fully automated:
+
+![lab pipeline](img/lab-pipeline-full-auto.png)
+
 
 ---?include=01_10-installing-gitlab-server.md
 
