@@ -1,26 +1,48 @@
-# Installing GitLab Server
+## Setting up your CI/CD infrastructure
 
-## Creating a host
+### Installing GitLab Server
 
-In our live tutorial, you'll be provided a Strigo VM (running Ubuntu
+#### Creating a host
+
+During the LISA tutorial, you'll be provided a Strigo VM (running Ubuntu
 16 LTS). Your Strigo VMs will be destroyed at the end of the day.
 
-To continue afterwards, you can provision a host in a public cloud (e.g.,
+To continue afterwards, you can use a host in a public cloud (e.g.,
 Joyent or AWS). The Joyent instance parameters I use are:
 
-- Hardware Virtual Machine (to run Docker in the VM)
+- Hardware Virtual Machine (to run Docker)
 - Ubuntu 16 LTS (ubuntu-certified-16.04)
 - High CPU with 8 GB of RAM (4 GB for GitLab Server, and 4 GB for GitLab Runner)
 
-### Copy/paste with Strigo Web terminal
+---
+## Setting up your CI/CD infrastructure
 
-On the Mac, use Command-C to copy and Command-V to paste.
+### Installing GitLab Server
 
-On other systems: to copy, highlight the text you want to copy, 
-right-click in the Web browser and select "Copy" from the menu
-that pops up; to paste, use Ctrl-Shift-V.
+#### Strigo VM
 
-## Installing the package
+URL:  ...
+ 
+Code:  ...
+---
+## Setting up your CI/CD infrastructure
+
+### Installing GitLab Server
+
+#### Strigo Web terminal: Copying and Pasting
+
+On the Mac, you can use the usual hotkeys (Command-C to copy and Command-V to paste).
+
+On other systems:
+- Copying: highlight the text, right-click in the Web browser and select "Copy" from the menu.
+- Pasting: use Ctrl-Shift-V.
+
+---
+## Setting up your CI/CD infrastructure
+
+### Installing GitLab Server
+
+#### Community Edition vs Enterprise Edition
 
 We'll install GitLab EE (Enterprise Edition) which is functionally
 identical to GitLab CE (Community Edition) unless you install an
@@ -31,21 +53,28 @@ We'll use the official package from GitLab (which is updated
 quite often!) GitLab releases a new version on the 22nd of
 every month, no fail; and sometimes security updates come out
 in between.
+---
+## Setting up your CI/CD infrastructure
 
-Add the GitLab package repository, and install the package:
+### Installing GitLab Server
+
+#### Add the GitLab package repository, and install the package:
 
 ```console
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 sudo apt-get install gitlab-ee 
 ```
 
-Note: The above is just enough installation instructions to
-get GitLab up for our tutorial. The full version is at
-https://about.gitlab.com/installation/ and you can look at that later
-if you need more (e.g. mail notifications or HTTPS).
+Pro tip: Use "x" in your Web browser to select the code block above.
 
-
-## Note the URL of your GitLab instance
+Note: The above is just enough to
+get GitLab up for our tutorial. The full installation instructions are at
+https://about.gitlab.com/installation/ -- you can look at them after class
+if you need extras like outgoing email or HTTPS.
+---
+## Setting up your CI/CD infrastructure
+### Installing GitLab Server
+#### Note your GitLab URL
 
 The installer will print the URL of your GitLab Server instance below the
 ASCII art of the GitLab icon, the tanuki (also known as Asiatic racoon,
