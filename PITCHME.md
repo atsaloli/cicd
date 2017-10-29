@@ -40,14 +40,14 @@ GitLab comes with an add-on package called Runner Server which provides runners.
 
 ### Lab exercise
 
-In this tutorial, you will set up (all on one server, for expedience):
+In this tutorial, you will set up:
 
 - GitLab Server 
 - Runner Server
-- a UAT environment
-- a Production environment
+- UAT environment
+- Production environment
 
-You will configure a CI/CD pipeline:
+Using these building blocks, you will set up a **CI/CD pipeline**:
 
 Code --> Automated (unit) testing --> Deploy to UAT --> Acceptance Testing --> Deploy to Prod
 
