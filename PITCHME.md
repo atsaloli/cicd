@@ -240,11 +240,11 @@ In the late 1990's, Don Wells introduced continuous integration at Chrysler:
 
 #HSLIDE
 
-Martin Fowler was involved in the work at Chrysler, and, as he describes:
+Martin Fowler was involved in the work at Chrysler.
 
 > This was my first chance to see Continuous Integration in action with a meaningful amount of unit tests. It showed me what was possible and gave me an inspiration that led me for many years.
 
--- ["Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html) by Martin Fowler, Chief Scientist, ThoughtWorks
+-- [Martin Fowler's article "Continuous Integration"](https://martinfowler.com/articles/continuousIntegration.html)
 
 #HSLIDE
 
