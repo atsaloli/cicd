@@ -10,30 +10,35 @@ aleksey@verticalsysadmin.com
 
 ## Table of contents
 
-- Introducing GitLab
-- Introducing GitLab CI/CD
+- Introduction
 - Setting up your CI/CD infrastructure
 - GitLab CI/CD basics
 - Would you like to know more?
 
 ---
 
-## Introducing GitLab
+## Introduction
+
+### GitLab
 
 [GitLab](https://about.gitlab.com) is a Web application for working together on code. In addition to a Git data store, it has everything you need for a modern workflow: ticketing system, issue boards, code review, CI/CD, chat and more -- all smoothly integrated in one UI.
 
 GitLab.com is the public service; the software is also available for private (on-prem) use in the Community Edition (open source, free of charge) and the Enterprise Edition (commercial -- ask me for a discount code).
 
 ---
-## Introducing GitLab CI/CD
+## Introduction
+
+### GitLab CI/CD (Runner Server)
 
 GitLab comes with an add-on package called Runner Server which provides runners. Simply put, a runner is what runs the tests. Runners can run build jobs, test jobs, and deploy jobs. Or actually any kind of job! More on this later.
 
+---?include=01_05-architecture.md
+
 ---
 
-## Setting up your CI/CD infrastructure
+## Introduction
 
-### Introduction
+### The Lab exercise in this tutorial
 
 In this tutorial, you will learn how to install GitLab Server and Runner Server, and will use them to set up a basic CI/CD pipeline.
 
@@ -44,7 +49,6 @@ Your basic pipeline will be:
 Code --> Automated (unit) testing --> Deploy to UAT --> Acceptance Testing --> Deploy to Prod
 
 
----?include=01_05-architecture.md
 
 ---?include=01_10-installing-gitlab-server.md
 
