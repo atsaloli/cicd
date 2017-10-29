@@ -36,7 +36,7 @@ Select "Commit changes" at the bottom, green.
 ---
 ## Setting up your CI/CD infrastructure
 ### Setting up CI
-Example:
+Using the built-in Web editor:
 
 ![img](img/pretend_test_1.png)
 
