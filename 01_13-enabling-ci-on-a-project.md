@@ -30,10 +30,9 @@ test_it:
 ```
 Reminder: If you're viewing this on gitpitch.com, "x" highlights the code block.
 
-`script` lists command (or commands) that the GitLab test runner should run in order to test your code.
+Above, `script` lists the command the GitLab test runner will run to test your code.
 
-Instead of the stub above, it could be a list of commands to run
-to build and test the code:
+Or, it could be a list of commands:
 
 ```console
 my_CI_job:
