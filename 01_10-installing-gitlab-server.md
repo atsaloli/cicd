@@ -122,7 +122,7 @@ GitLab should be available at http://ec2-52-59-79-192.eu-central-1.compute.amazo
 ---
 ## Setting up your CI/CD infrastructure
 ### Installing GitLab Server
-#### Note your GitLab URL
+#### Please note your GitLab URL
 
 ![important](img/important-one-tenth.png)  
 Note your GitLab URL, you *will* need it later.
