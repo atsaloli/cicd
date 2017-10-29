@@ -30,14 +30,11 @@ Select the big fat green "Create project" button to create your project.
 GitLab will now take you to the "www" project page, and you should see
 a prompt to add an SSH key to your profile so you can pull or push
 project code.
+
+Select "Don't show again", as in this tutorial,
+you'll use the GitLab Web UI to change files in your project.
 ![create project](img/ssh_warning.png)
 
----
-## Setting up your CI/CD infrastructure
-### Add a project
-
-Select "Don't show again" in the SSH warning, as in this tutorial,
-you'll use the GitLab Web UI to change files in your project.
 ---
 <!--
 ## Add an SSH key
