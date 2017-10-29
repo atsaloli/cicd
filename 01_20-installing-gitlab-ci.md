@@ -27,7 +27,7 @@ sudo service gitlab-runner status
 ---
 
 ## Setting up your CI/CD infrastructure
-### Allowing Runner Server user to use Docker
+### Configure `docker` group
 
 Add non-root "gitlab-runner" user to the docker group to allow
 it to use Docker:
