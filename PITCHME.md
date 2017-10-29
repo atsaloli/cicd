@@ -406,22 +406,6 @@ Example:
 Example:
 
 
-
-    $ cat hello.c
-    # include <stdio.h>
-    main()
-    {
-        printf("Hello World");
-    }
-    $
-
-#HSLIDE
-
-#### Code
-
-Example:
-
-
 ```shell_session
 $ cat hello.c
 # include <stdio.h>
@@ -431,7 +415,6 @@ main()
 }
 $
 ```
-
 
 #HSLIDE
 
@@ -443,8 +426,10 @@ $
 
 Example:
 
-    $ gcc -o hello hello.c
-    $
+```shell_session
+$ gcc -o hello hello.c
+$
+```
 
 
 #HSLIDE
