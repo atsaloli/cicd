@@ -474,13 +474,14 @@ $
 
 #HSLIDE
 
-Example deploy:
+Example deploy (local host):
 
 ```shell_session
 $ sudo cp hello /usr/local/bin/hello
 $
 ```
-or
+
+Example deploy (remote):
 
 ```shell_session
 $ sudo scp hello root@production:/usr/local/bin/hello
