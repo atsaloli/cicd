@@ -102,7 +102,7 @@ You should see your Shell runner. (See next slide.)
 
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-Notice the green "ready" light. The runner is checking in:
+Notice the green "ready" light. The runner is available (online and checking in for jobs):
 
 
 ![green is good](img/shell_runner_green.png)
