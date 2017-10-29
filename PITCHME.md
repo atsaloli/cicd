@@ -461,18 +461,23 @@ $
 #HSLIDE
 
 #### Deploy
-> **Deploy** (verb) To place (people or other resources) into a position so as to be ready to for action or use.
+**Deploy**  
+(verb) To place (people or other resources) into a position so as to be ready to for action or use.  
 
 -- [Webster's 1913 Dictionary](http://www.webster-dictionary.org/definition/deploy)
-> Bring into effective action; utilize.  
-> ‘they are not always able to deploy this skill’
+
+**Deploy**  
+Bring into effective action; utilize.  
+‘they are not always able to deploy this skill’
 
 -- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/deploy)
 
-Example:
+#HSLIDE
+
+Example deploy:
 
 ```shell_session
-$ sudo cp hello /usr/local/bin
+$ sudo cp hello /usr/local/bin/hello
 $
 ```
 or
@@ -482,6 +487,7 @@ $ sudo scp hello root@production:/usr/local/bin/hello
 $
 ```
 
+#HSLIDE
 
 ## Bibliography
 - [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), article by Martin Fowler, Chief Scientist at ThoughtWorks, which created CruiseControl, the first Continuous Integration server (2001).
