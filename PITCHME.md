@@ -403,10 +403,9 @@ Example:
 
 -- [Macmillan Dictionary](http://www.macmillandictionary.com/dictionary/american/test_1)
 
-
 #HSLIDE
 
-Example 1:
+Example 1 - successful test:
 
 ```shell_session
 $ cat Makefile
@@ -423,7 +422,7 @@ diff -q correct.txt output.txt
 $
 
 ```
-Induce failure:
+Example 1b - induce failure:
 
 ```shell_session
 atsaloli@Aleksey_X1_C2G MINGW64 /c/git-sdk-64/git/cicd (master)
