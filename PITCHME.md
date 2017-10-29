@@ -103,7 +103,7 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 #HSLIDE
 
-#### Unit Testing
+#### Testing: Unit Testing
 
 > **Unit testing** 
 > The type of testing where a developer (usually the one who wrote the
@@ -113,7 +113,7 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 #HSLIDE
 
-#### Unit Testing
+#### Testing: Unit Testing
 
 > The primary goal of **unit testing** is to take the smallest piece of testable
 > software in the application, isolate it from the remainder of the code,
@@ -127,7 +127,7 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 #HSLIDE
 
-#### Unit Testing
+#### Testing: Unit Testing
 
 > In computer programming, **unit testing** is a software testing method
 > by which individual units of source code ...  are tested to determine
@@ -138,7 +138,7 @@ Image credit: [“I want to do Continuous Deployment” article on devops.com](h
 
 #HSLIDE
 
-#### Integration Testing
+#### Testing: Integration Testing
 
 **Integration Testing**  
 A type of testing in which software and/or hardware components are
@@ -149,7 +149,7 @@ entire system has been integrated.
 
 #HSLIDE
 
-#### Integration Testing
+#### Testing: Integration Testing
 
 > **Integration testing** ... is the phase in software testing in
 > which individual software modules are combined and tested as a
@@ -162,7 +162,7 @@ entire system has been integrated.
 
 #HSLIDE
 
-#### Functional Testing
+#### Testing: Functional Testing
 
 > **Functional testing** ... bases its test cases on the specifications of the software component under test. Functions are tested by feeding them input and examining the output, and internal program structure is rarely considered. ...  Functional testing usually describes _what_ the system does.
 > 
@@ -172,7 +172,7 @@ entire system has been integrated.
 
 #HSLIDE
 
-#### Acceptance Testing
+#### Testing: Acceptance Testing
 
 > **Acceptance testing**
 >  Acceptance testing is a test conducted to determine if the requirements of a specification or contract are met. ... [It is defined as] formal testing with respect to user needs, requirements, and business processes conducted to determine whether a system satisfies the acceptance criteria and to enable the user, customers or other authorized entity to determine whether or not to accept the system. Acceptance testing is also known as user acceptance testing (UAT), end-user testing, operational acceptance testing (OAT) or field (acceptance) testing.
