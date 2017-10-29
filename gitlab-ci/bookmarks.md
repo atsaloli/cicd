@@ -1,4 +1,5 @@
 # Would you like to know more?
+- [GitLab Master Plan: Accelerating work from Idea to Production](learning-more--gitlab-master-plan.md)
 - [GitLab Continuous Integration (https://docs.gitlab.com/ce/ci) - great "Getting Started" section](https://docs.gitlab.com/ce/ci/)
 - [GitLab CI YAML syntax](https://docs.gitlab.com/ce/ci/yaml/README.html)
 - [Using Docker Images](https://docs.gitlab.com/ce/ci/docker/using_docker_images.html)
