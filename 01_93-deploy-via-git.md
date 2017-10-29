@@ -71,7 +71,7 @@ Resolving deltas: 100% (3/3), done.
 Checking connectivity... done.
 gitlab-runner@alpha:/tmp/test1$
 ```
-Note: GIT_SSH_COMMAND requires Git v2.3.0 or newer. You can also specify the SSH key via `.ssh/config`.
+GIT_SSH_COMMAND requires Git v2.3.0 or newer. You can also specify the SSH key via `.ssh/config`.
 
 ## Set up Stage/Prod to pull from Git
 

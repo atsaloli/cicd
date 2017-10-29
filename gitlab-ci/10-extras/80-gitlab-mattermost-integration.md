@@ -23,5 +23,5 @@ Confirm that git events (push ,commit, tag, merge etc) now result in chat
 messages in Mattermost.
 
 
-Note: You can  create a Service Template for Slack (under Admin Tools),
+You can  create a Service Template for Slack (under Admin Tools),
 and all new projects will inherit that Service definition.

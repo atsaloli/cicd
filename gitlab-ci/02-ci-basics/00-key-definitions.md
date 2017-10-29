@@ -18,7 +18,7 @@ A job is defined by a list of parameters that define its behavior.
 ## Builds
 
 Builds are individual runs of jobs. Not to be confused with a build job or a build stage.
-(Note: GitLab is moving away from this confusing terminology, individual runs of jobs are now called jobs in most places. Some places in the software they are still called builds. Don't let this one trip you up.)
+(GitLab is moving away from this confusing terminology, individual runs of jobs are now called jobs in most places. Some places in the software they are still called builds. Don't let this one trip you up.)
 
 ## Pipelines (and Stages)
 

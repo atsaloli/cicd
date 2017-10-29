@@ -10,7 +10,7 @@
 - [Troubleshooting](#troubleshooting)
 
 
-Note: in the following tutorial, `alpha.gitlabtutorial.org` was the hostname of my server.
+In the following tutorial, `alpha.gitlabtutorial.org` was the hostname of my server.
 
 ## Set up Infrastructure
 
@@ -132,7 +132,7 @@ deploy
 Finished: SUCCESS
 ```
 
-Note: The creator of Jenkins, Kohsuke Kawaguchi, is Japanese, and in Japan, green is considered a shade of blue -- see https://jenkins.io/blog/2012/03/13/why-does-jenkins-have-blue-balls/ and http://www.atlasobscura.com/articles/japan-green-traffic-lights-blue.  If this bugs you, you can install the ["Green Balls"](https://wiki.jenkins.io/display/JENKINS/Green+Balls) plug-in to turn the blue balls green.
+The creator of Jenkins, Kohsuke Kawaguchi, is Japanese, and in Japan, green is considered a shade of blue -- see https://jenkins.io/blog/2012/03/13/why-does-jenkins-have-blue-balls/ and http://www.atlasobscura.com/articles/japan-green-traffic-lights-blue.  If this bugs you, you can install the ["Green Balls"](https://wiki.jenkins.io/display/JENKINS/Green+Balls) plug-in to turn the blue balls green.
 
 ## Overview and Architecture
 

@@ -53,7 +53,7 @@ ubuntu@ip-172-31-24-94:~$
 
 ```
 
-Note: You can also register runners non-interactively:
+You can also register runners non-interactively:
 
 ```bash
 sudo gitlab-runner register --non-interactive \
