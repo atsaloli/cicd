@@ -68,10 +68,9 @@ Our first CI job, "test_it" will run on every commit
 to test the new revision. It will run the test command
 we specified.
 
-On the next slide, notice that:
-- GitLab checks the syntax of the CI config file and will alert you
-if your GitLab CI YAML does not pass validation.
-- The pause icon ("pending" indicator) - we haven't
+On the next slide, notice:
+- that GitLab checks the syntax of the CI config file
+- the orange pause icon ("pending" indicator) - we haven't
 set up our Runner Server yet so there are no runners available.
 
 ---?image=img/pending_pipeline.png
