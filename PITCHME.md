@@ -423,6 +423,8 @@ diff -q correct.txt output.txt
 $
 
 ```
+#HSLIDE
+
 Example 1b - induce failure:
 
 ```shell_session
