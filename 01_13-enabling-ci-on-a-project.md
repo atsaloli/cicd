@@ -24,10 +24,27 @@ This is _the_ reference for GitLab CI configuration syntax!
 Edit your `.gitlab-ci.yml` to add a test job:
 
 
-```text
+```console
 test_it:
   script: /bin/echo I am a pretend test suite. I passed!
 ```
+Reminder: If you're viewing this on gitpitch.com, "x" highlights the code block.
+
+`script` lists command (or commands) that the GitLab test runner should run in order to test your code.
+
+Instead of the stub above, it could be a list of commands to run
+to build and test the code:
+
+```console
+my_CI_job:
+  script:
+  - make
+  - make test
+```
+
+The GitLab CI config file is in [YAML](http://yaml.org).
+---
+
 ![first CI job](img/pretend_test_1.png)
 
 Select "Commit changes" at the bottom, green.
@@ -39,7 +56,7 @@ Notice that GitLab automatically checks the syntax of the CI config file
 and will alert you if the config does not pass validation.
 
 You may notice the "pending" indicator - that's because we haven't
-set up a Runner Server yet to run the job:
+set up our Runner Server yet:
 
 ![pending pipeline](img/pending_pipeline.png)
 
@@ -54,5 +71,3 @@ Here is the status:
 
 The pipeline is stuck in Pending, because we haven't setup our CI/CD
 server yet. We'll do that next.
-
-# [[Next]](01_15-installing-docker.md) [[Up]](README.md)
