@@ -65,7 +65,8 @@ The GitLab CI config file is in [YAML](http://yaml.org).
 ### Setting up CI
 
 Our first CI job, "test_it" will run on every commit 
-to test the new revision. It will execute the `/bin/echo` command.
+to test the new revision. It will run the test command
+we specified.
 
 On the next slide, notice that:
 - GitLab checks the syntax of the CI config file and will alert you
