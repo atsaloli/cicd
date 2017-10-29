@@ -426,9 +426,17 @@ $
 
 #### Build
 
-> **Build** (noun) a compiled version of a program; the process of compiling a program.
+**Build**  
+(verb) _Computing_ Compile (a program, database, index, etc.).
+(noun) _Computing_ A compiled version of a program; the process of compiling a program.
 
 -- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/build)
+
+
+**Compile**  
+_Computing_ (of a computer) convert (a program) into a machine-code or lower-level form in which the program can be executed.
+
+-- [Oxford Dictionaries](https://en.oxforddictionaries.com/definition/us/compile)
 
 Example:
 
