@@ -65,14 +65,18 @@ my_CI_job:
 ## Setting up your CI/CD infrastructure
 ### Configuring CI
 
-Our first CI job, "test_it" will run on every commit 
+Our first CI job, "test_it", will run on every commit 
 to test the new revision. It will run the test command
 we specified.
 
+(It _is_ possible to run CI jobs on specific branches
+only, e.g., only on merge requests into the "master" branch.
+However, out of the box, GitLab runs CI on every commit,
+to catch problems early.)
+
 On the next slide, notice:
-- that GitLab checks the syntax of the CI config file
-- the orange pause icon ("pending" indicator) - we haven't
-set up our Runner Server yet so there are no runners available.
+- that GitLab checked the syntax of the CI config file
+- we haven't set up our Runner Server yet so there are no runners available to run the CI job, so we have an orange pause icon ("pending" indicator)
 
 ---?image=img/pending_pipeline.png
 
