@@ -193,6 +193,7 @@ We are going to set up two runners:
 Change the Shell runner so it only picks up jobs tagged "shell":
 - Go to "Settings -> CI/CD -> Runner settings" 
 - Select the edit icon next to the Shell runner id
+- Uncheck "Run untagged jobs"
 - Add "shell" to tags.  
 - Select green "Save changes" button.
 
