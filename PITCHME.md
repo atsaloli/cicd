@@ -431,6 +431,21 @@ $ gcc -o hello hello.c
 $
 ```
 
+#HSLIDE
+
+#### Build2
+
+> **Build** (noun) a compiled version of a program; the process of compiling a program.
+
+-- Oxford Dictionaries
+
+Example:
+
+
+    $ gcc -o hello hello.c
+    $
+
+
 
 #HSLIDE
 
