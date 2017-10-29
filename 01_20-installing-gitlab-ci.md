@@ -59,7 +59,7 @@ check_interval = 0
 ubuntu@ip-172-31-24-94:~$
 ```
 
-Note: TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). 
+TOML is [Tom's Obvious, Minimal Language](https://github.com/toml-lang/toml). 
 Just as YAML is simpler (and more readable) than XML, so is TOML is simpler 
 (and more readable) than YAML.
 
