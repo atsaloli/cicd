@@ -63,7 +63,6 @@ Go back to your "www" project:
 
 ## Setting up your CI/CD infrastructure
 ### Adding a project
-#### Add a README.md
 
 Add a README.md file by selecting "README" in the UI:
 
@@ -73,7 +72,7 @@ Add a README.md file by selecting "README" in the UI:
 
 ## Setting up your CI/CD infrastructure
 ### Adding a project
-#### Add a README.md
+
 Put in some text (e.g., "I am a README file") and select "Commit changes"
 to create the file.
 
@@ -83,7 +82,7 @@ to create the file.
 
 ## Setting up your CI/CD infrastructure
 ### Adding a project
-#### Add a README.md
+
 You should then see the confirmation.
 
 ![README](img/new_readme.png)
