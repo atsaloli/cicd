@@ -38,17 +38,20 @@ GitLab comes with an add-on package called Runner Server which provides runners.
 
 ## Introduction
 
-### The Lab exercise in this tutorial
+### Lab exercise
 
-In this tutorial, you will learn how to install GitLab Server and Runner Server, and will use them to set up a basic CI/CD pipeline.
+In this tutorial, you will set up (all on one server, for expedience):
 
-You will set up two environments: UAT and Prod.
+- GitLab Server 
+- Runner Server
+- a UAT environment
+- a Production environment
 
-Your basic pipeline will be:
+You will configure a CI/CD pipeline:
 
 Code --> Automated (unit) testing --> Deploy to UAT --> Acceptance Testing --> Deploy to Prod
 
-
+You will re-use the UAT and Production environments in the Jenkins tutorial.
 
 ---?include=01_10-installing-gitlab-server.md
 
