@@ -286,7 +286,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 #HSLIDE
 
-LOPSA LA meetup with John Willis, co-author of "The DevOps Handbook"
+LOPSA Los Angeles chapter with John Willis, co-author of "The DevOps Handbook"
 ![enter image description here](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
 
 #HSLIDE
@@ -295,9 +295,11 @@ LOPSA LA meetup with John Willis, co-author of "The DevOps Handbook"
 
 > Continuous delivery and DevOps have common goals and are often used in conjunction, but there are subtle differences.
 >
-While continuous delivery is focused on automating the processes in software delivery, DevOps also focuses on the organization change to support great collaboration between the many functions involved.
+> While continuous delivery is focused on automating the processes in software delivery, DevOps also focuses on the organization change to support great collaboration between the many functions involved.
 
 -- [Wikipedia entry for "DevOps"](https://en.wikipedia.org/wiki/DevOps#Continuous_delivery)
+
+#HSLIDE
 
 > The **deployment pipeline**, first defined by Jez Humble and David Farley in their book ["Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation"](http://amzn.to/1QBJM7k), ensures that all code checked in to version control is automatically built and tested in a production-like environment. By doing this, we find any build, test or integration errors as soon as a change is introduced, enabling us to fix them immediately. Done correctly, this allows us to always be assured that we are in a deployable and shippable state.
 >
