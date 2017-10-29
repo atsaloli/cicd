@@ -39,7 +39,7 @@ sudo usermod -aG docker gitlab-runner
 ---
 
 ## Setting up your CI/CD infrastructure
-### Locating the config file for Runner Server
+### Locate the config file for Runner Server
 
 Runner Server has its own config file, in `/etc/gitlab-runner/config.toml`
 
