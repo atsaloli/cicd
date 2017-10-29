@@ -15,5 +15,6 @@ digraph G {
 
   users [ label = "Users"      color = orange style = filled fillcolor = white ]
 
-  code -> test -> deploy_uat -> uat_test -> deploy_prod -> users [constraint=false]; 
+  code -> test [constraint=false];
+  deploy_prod -> users [constraint=false]; 
 }
