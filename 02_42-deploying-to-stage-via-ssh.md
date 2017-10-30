@@ -62,3 +62,11 @@ You should now be able to see the code in action:
 ```console
 curl http://stage.example.com:8008/index.php
 ```
+
+Example:
+
+```shell_session
+ubuntu@ip-172-31-23-12:~$ curl http://stage.example.com:8008/index.php
+<h1>Hello world</h1>
+ubuntu@ip-172-31-23-12:~$
+```

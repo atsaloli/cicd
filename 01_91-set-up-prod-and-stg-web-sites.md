@@ -28,12 +28,12 @@ You should see the Ubuntu Apache welcome page.
 ### Setting up Stage and Prod environments
 #### DNS
 
-Add "stage.example.com" and "prod.example.com" to the `localhost` record in `/etc/hosts` so we can test the vhosts from our lab Linux server.
+Add `stage.example.com` and `prod.example.com` to the `localhost` record in `/etc/hosts` so we can test the vhosts from our lab Linux server. Also add `gitlab.example.com`, this will make it so that you can copy and paste my `git clone` examples later without fiddling with the hostname.
 
-Example:
+Run:
 
 ```console
-sudo sed -e 's:^127.0.0.1.*:127.0.0.1 localhost stage.example.com prod.example.com' -i /etc/hosts
+sudo sed -e 's:^127.0.0.1.*:127.0.0.1 localhost stage.example.com prod.example.com gitlab.example.com' -i /etc/hosts
 ```
 --- 
 ## Setting up your CI/CD infrastructure 

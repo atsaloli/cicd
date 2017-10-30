@@ -1,9 +1,10 @@
-# Deploy via Git
+## Configuring CI/CD pipelines
+### Continuous Delivery
+#### Deploy via Git
 
-Now, instead of _pushing_ code to the system, let's mock up
-a distributed system; we'll
-have each environment _pull_ changes from Git when they
-become available.
+Now, instead of _pushing_ code to the system, let's build
+a distributed system; where each environment _pulls_ changes
+from Git.
 
 Stage will pull from the "stage" branch, and Prod will pull
 from the "prod" branch (while development continues
