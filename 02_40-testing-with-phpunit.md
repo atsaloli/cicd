@@ -4,7 +4,7 @@
 
 Add the following PHP files to your "www" project:
 
-[Hello.php](Hello.php):
+Hello.php (source code):
 
 ```php
 <?php
@@ -17,7 +17,7 @@ class Greeting {
 ?>
 ```
 
-[HelloTest.php](HelloTest.php):
+HelloTest.php (unit test for `Hello.php`):
 
 ```php
 <?php
