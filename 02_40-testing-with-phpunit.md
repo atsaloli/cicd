@@ -1,6 +1,9 @@
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Testing with PHPUnit
+
 Add the following PHP files to the `www/html` directory in your "www" project.
-(They are based on the phpunit example code from GitHub repo
-linked from https://www.sitepoint.com/getting-started-with-phpunit/):
+:
 
 [Hello.php](Hello.php):
 
@@ -30,7 +33,8 @@ class HelloTest extends PHPUnit_Framework_TestCase
     }
 }
 ```
-
+(Credit: https://www.sitepoint.com/getting-started-with-phpunit/)
+---
 
 And given this [CI config](yaml/test-phpunit.yml) that uses the Docker "php" container:
 
