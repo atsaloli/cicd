@@ -12,6 +12,7 @@ In this section, you will register different types of runners.
 ## Setting up your CI/CD infrastructure
 ### Registering runners
 
+First, we need to get, from the GitLab UI, the API URL and the runner registration token.
 
 Go to "Settings" (gear icon in the vertical nav bar on the left), and select "CI/CD":
 
