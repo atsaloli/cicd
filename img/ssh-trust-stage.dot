@@ -6,5 +6,5 @@ digraph G {
   stage [ label = "Stage Server\n\n/root/.ssh/authorized_keys\n"  color = blue  style = filled fillcolor = white ]
 
 
-  gitlab_runner -> stage [constraint=false];
+  gitlab_runner -> stage [constraint=false label = "SSH trust" ];
 }
