@@ -1,14 +1,13 @@
 ## Configuring CI/CD pipelines
 ### Continuous Integration
-#### Simple 3 stage pipeline (Docker version)
+#### Two-stage pipeline (Docker version)
 
-Try running this pipeline.
+Try running this pipeline:
 
 ```yaml
 job_1:
   stage: build
   script:
-  - /bin/echo This is a mock build job
   - touch /tmp/build
   - ls -lh /tmp/build
   tags:
@@ -22,13 +21,5 @@ job_2:
   - touch /tmp/test
   - ls -lh /tmp/test
   tags:
-  - docker
-
-job_3:
-  stage: deploy
-  script:
-  - /bin/echo This is a mock deploy job
-  - ls -lh /tmp/build /tmp/test
-  tags:
-  - docker
+  - docker 
 ```

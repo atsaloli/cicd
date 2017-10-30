@@ -1,6 +1,6 @@
 ## Configuring CI/CD pipelines
 ### Continuous Integration
-#### Simple 2 stage pipeline (Shell version)
+#### Two-stage pipeline (Shell version)
 
 Try running this pipeline:
 
