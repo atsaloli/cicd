@@ -17,6 +17,13 @@ class Greeting {
 ?>
 ```
 
+---
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Testing with PHPUnit
+
+Add the following to your "www" project:
+
 HelloTest.php (unit test for `Hello.php`):
 
 ```php
