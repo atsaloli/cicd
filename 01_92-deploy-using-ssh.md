@@ -22,6 +22,10 @@ We are going to generate a "push_to_stg_docroot" keypair in `gitlab-runner`'s ac
 
 ![img](img/ssh-trust-stage.png)
 
+Put another way, we'll make `/home/gitlab-runner/.ssh/push_to_stg_docroot.pub`,
+and then add it to Stage `.authorized_keys` so that GitLab runners can access the Stage environment to deploy changes.
+
+
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
