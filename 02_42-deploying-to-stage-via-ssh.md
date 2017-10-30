@@ -1,35 +1,33 @@
-# Deploying to Stage (via SSH)
-
-## Test -> Deploy (to Stage)
+## Configuring CI/CD pipelines
+### Continuous Delivery
+#### Deploying to Stage (via SSH)
 
 Run the following pipeline to test (with phpunit in a Docker container) and 
-(if successful), deploy to the stage environment (with rsync push to stage).
+(if successful), deploy to Stage (with rsync push from a Shell executor).
 
-NOTE: Edit your Docker and Shell runner settings as follows:
-- Uncheck "pick up untagged jobs" checkbox
-- Ensure each runner has a tag set ("docker" for the Docker one, and "shell" for the Shell one)
-
-Now we'll target these runners using those tags in our job specifications:
-
-```yaml
-
+```yaml 
 test:
   image: ubuntu
   script: 
   - apt-get update
   - apt install -y phpunit
-  - cd www/html && phpunit UnitTest HelloTest.php
+  - phpunit UnitTest HelloTest.php
   tags:
     - docker
 
 deploy_to_stage:
   stage: deploy
   script:
-  - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@stage.example.com:/var/www/stg-html/
+  - scp -v -i ~gitlab-runner/.ssh/push_to_stg_docroot -r *.php root@stage.example.com:/var/www/stg-html/
   environment: stage
   tags: 
     - shell
 ```
+---
+## Configuring CI/CD pipelines
+### Continuous Delivery
+#### Deploying to Stage (via SSH)
+
 
 Example output of the deploy job:
 
@@ -48,5 +46,3 @@ Job succeeded
 
 You should now be able to see the code in action (mock UAT):
 `curl http://stage.example.com/Hello.php`
-
-
