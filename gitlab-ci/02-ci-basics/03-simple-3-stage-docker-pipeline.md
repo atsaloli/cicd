@@ -33,4 +33,3 @@ my_build_job_3:
   - docker
 ```
 
-# [[Next]](05-ci.md) [[Up]](README.md)

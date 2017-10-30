@@ -56,4 +56,3 @@ OK (1 test, 1 assertion)
 Job succeeded
 ```
 
-# [[Next]](42-deploying-to-stage-via-ssh.md) [[Up]](README.md)

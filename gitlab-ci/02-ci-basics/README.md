@@ -24,4 +24,3 @@
   - [Debugging Tips](120-debugging.md)
 
 
-# [[Next]](00-key-definitions.md) [[Up]](../README.md)

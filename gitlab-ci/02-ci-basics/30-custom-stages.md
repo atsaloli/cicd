@@ -6,4 +6,3 @@ You can make your own, [like GitLab does](https://gitlab.com/gitlab-org/gitlab-c
 
 ![Custom stages](../images/custom-stages.png)
 
-# [[Next]](40-testing-with-phpunit.md) [[Up]](README.md)

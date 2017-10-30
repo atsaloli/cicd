@@ -34,4 +34,3 @@ deploy_it:
 ```
 
 
-# [[Next]](03-simple-3-stage-docker-pipeline.md) [[Up]](README.md)

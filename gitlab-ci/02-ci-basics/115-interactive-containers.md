@@ -8,4 +8,3 @@ docker run -it <image> /bin/bash
 
 For example, `docker run -it ubuntu /bin/bash`.
 
-# [[Next]](118-env-vars.md) [[Up]](README.md)

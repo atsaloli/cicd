@@ -66,4 +66,3 @@ prod was skipped, and is tagged as a "manual" deploy:
 My gitlab-runner account's SSH key is allowed to write to the GitLab repo
 repo.
 
-# [[Next]](55-continuous-deployment.md) [[Up]](README.md)

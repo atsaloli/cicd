@@ -4,4 +4,3 @@ GitLab has a number of components in its technology stack, and of course they al
 
 See [Log system](https://docs.gitlab.com/ce/administration/logs.html)
 
-# [[Next]](115-interactive-containers.md) [[Up]](README.md)
