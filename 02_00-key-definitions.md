@@ -7,7 +7,7 @@
 > a day. Each check-in is then verified by an automated build, allowing
 > teams to detect problems early.
 
-[Continuous Integration on ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
+["Continuous Integration", ThoughtWorks.com](https://www.thoughtworks.com/continuous-integration)
 
 ---
 ## Configuring CI/CD pipelines
@@ -21,7 +21,7 @@ Each job must have a unique name.
 
 A job is defined by a list of parameters that define its behavior.
 
-You specify what a job does, and how and when it does it.
+You specify what a job does, and (optionally) when it does it.
 
 For example, a job can build a package, test something, deploy something,
 test it again after deploying it.
