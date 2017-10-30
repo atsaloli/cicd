@@ -10,6 +10,7 @@
 - [Pipelines](https://docs.gitlab.com/ce/ci/pipelines.html)
 - [Environments and deployments](https://docs.gitlab.com/ce/ci/environments.html)
 - [The "Review Apps" feature](https://about.gitlab.com/features/review-apps/)
+- [The "Auto DevOps" feature](https://docs.gitlab.com/ee/topics/autodevops/)
 
 ---
 
