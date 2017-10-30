@@ -2,8 +2,7 @@
 ### Continuous Integration
 #### Testing with PHPUnit
 
-Add the following PHP files to the `www/html` directory in your "www" project.
-:
+Add the following PHP files to your "www" project:
 
 [Hello.php](Hello.php):
 
