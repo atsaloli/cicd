@@ -1,27 +1,28 @@
-# Set up trust relationship to deploy to Stage via SSH
 
-We can have GitLab deploy our code after all tests pass.
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy to Stage via SSH
+
+GitLab can deploy code provided all tests pass.
 
 There are different ways to deploy code.
 
-Let's mock up deploying by pushing the code to the
-Stage Web server document root over SSH (scp or rsync), 
-to demonstrate that pathway.
+We'll consider two:
+- **SSH**: pushing the changed files to the Stage Web server document root over SSH
+- **Git**: pushing the changed files to a special Git branch, that Prod syncs from
 
-And then we'll deploy to Prod a different way, to demonstrate
-another possible pathway.
+There are other deployment mechanisms, e.g., there is a beta feature called Auto DevOps for deploying to application services in Kubernetes.
 
-## Allow `gitlab-runner` user to SSH to Stage environment
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy to Stage via SSH: generate key-pair
 
-On the Runner Server, as the `gitlab-runner` user (which is the user
-that the runners run as), generate a key-pair for pushing code to Stage
-Web server document root:
+On the Runner Server, as the Runner Serve user `gitlab-runner`,
+generate a key-pair for pushing code to Stage:
 
 ```bash
-sudo su - gitlab-runner
-mkdir .ssh; chmod 0700 .ssh
-cd .ssh
-ssh-keygen -f push_to_stg_docroot -N ''
+sudo su - gitlab-runner -c "ssh-keygen -f push_to_stg_docroot -N ''"
 ```
 
 For example:
