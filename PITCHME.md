@@ -112,7 +112,8 @@ First, let's go over some key definitions.
 
 ---?include=02_00-key-definitions.md
 
-- Continuous Integration
+<!-- Continuous Integration -->
+
 ---?include=02_01-single-test-job.md
 ---?include=02_02-simple-3-stage-shell-pipeline.md
 ---?include=02_03-simple-3-stage-docker-pipeline.md
@@ -121,6 +122,7 @@ First, let's go over some key definitions.
 ---?include=02_20-concurrent-builds.md
 ---?include=02_30-custom-stages.md
 ---?include=02_40-testing-with-phpunit.md
+
 - Continuous Delivery
 ---?include=02_42-deploying-to-stage-via-ssh.md
 ---?include=02_44-set-up-git-pulls-from-mock-envs.md

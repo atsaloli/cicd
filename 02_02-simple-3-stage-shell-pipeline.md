@@ -1,15 +1,15 @@
-# Simple 3 stage pipeline
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Simple 3 stage pipeline (Shell version)
 
 ![3 stage pipeline](../images/3-stage-pipeline.png)
 
 Try running this pipeline.
 
-
 ```yaml
-stages:
-  - build
-  - test
-  - deploy
+
+tags:
+- shell
 
 build_it:
   stage: build
@@ -18,13 +18,11 @@ build_it:
   - touch /tmp/build
   - ls -lh /tmp/build
 
-
 test_it:
   stage: test
   script:
   - /bin/echo This is a mock test job
   - ls -lh /tmp/build
-
 
 deploy_it:
   stage: deploy
@@ -32,5 +30,3 @@ deploy_it:
   - /bin/echo This is a mock deploy job
   - ls -lh /tmp/build
 ```
-
-

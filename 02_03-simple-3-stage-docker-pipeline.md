@@ -1,9 +1,11 @@
-# Simple 3 stage pipeline (Docker version)
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Simple 3 stage pipeline (Docker version)
 
 Try running this pipeline.
 
 ```yaml
-my_build_job_1:
+job_1:
   stage: build
   script:
   - /bin/echo This is a mock build job
@@ -12,8 +14,7 @@ my_build_job_1:
   tags:
   - docker
 
-
-my_build_job_2:
+job_2:
   stage: test
   script:
   - /bin/echo This is a mock test job
@@ -23,8 +24,7 @@ my_build_job_2:
   tags:
   - docker
 
-
-my_build_job_3:
+job_3:
   stage: deploy
   script:
   - /bin/echo This is a mock deploy job
@@ -32,4 +32,3 @@ my_build_job_3:
   tags:
   - docker
 ```
-

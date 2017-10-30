@@ -31,11 +31,11 @@ test it again after deploying it.
 ### Definitions of Key Terms
 #### (legacy term) Builds
 
-"Builds" (also known as "jobs") are individual runs of jobs.
+Legacy term alert! "Builds" (now known as "jobs") are individual runs of jobs.
 Not to be confused with a build job or a build stage, where
 you are compiling or packaging the code.
 
-The term "builds" is deprecated (due to the above potential
+The term "builds" has been deprecated (due to the above potential
 confusion); individual runs of jobs are now called jobs.
 Older documentation and GitLab UIs still refer to "builds".
 Newer ones say "jobs".
@@ -76,11 +76,3 @@ It's used to track which environment a job deployed to, and the URL of the deplo
 A "runner" is an abstraction.
 It's a way for GitLab to communicate with the `gitlab-ci-multi-runner` process on GitLab Runner Server and to tell it what type of virtual environment to create (e.g. shell, docker, vagrant VM, Parallels VM, Kubernetes, etc.) and any variables (including secrets) needed to connect to different APIs, etc.
 Access to this abstraction can be controlled at the project level or using runner tags (runners can be tagged during registration, and jobs can include those tags).
-
----
-## Configuring CI/CD pipelines
-### Definitions of Key Terms
-#### See also
-
-- [Introduction to pipelines and builds](https://docs.gitlab.com/ce/ci/pipelines.html)
-
