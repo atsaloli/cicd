@@ -5,7 +5,7 @@
 
 #### Introduction
 
-In this section, we will learn how to register runners
+In this section, you will register different types of runners.
 
 ---
 
@@ -78,7 +78,7 @@ ubuntu@ip-172-31-24-94:~$
 
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-You can also register runners non-interactively (don't do it now):
+You can also register runners non-interactively:
 
 ```console
 sudo gitlab-runner register --non-interactive \
@@ -111,12 +111,12 @@ Notice the green "ready" light. The runner is available (online and checking in 
 
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-You can select the runner id to see runner detail. 
+Select the runner id to see runner detail. 
 
 ---
 ## Setting up your CI/CD infrastructure
 ### Registering runners
-You can select the "edit" icon (next to the id) to change the runner's configuration. (Don't change it yet.)
+Go back and select the "edit" icon, next to the id, to see how you can change the runner's configuration.
 
 ---
 
@@ -149,12 +149,9 @@ Select the "Passed" icon to see pipeline detail:
 
 ## Setting up your CI/CD infrastructure
 ### Checking pipeline status
-Now we see the stages of the pipeline and the jobs in each stage:
+Now we see the stages of the pipeline (this pipeline has one stage, Test) and the jobs in each stage:
 
 ![pipeline view](img/pipeline_view.png)
-
-Notice this pipeline only has one stage (Test) -- that's the default stage;
-and one job in that stage, "test_it", which passed.
 
 ---
 

@@ -68,10 +68,9 @@ We won't look at the [other possible settings](https://gitlab.com/gitlab-org/git
 
 Edit `/etc/gitlab-runner/config.toml` to increase concurrency to 3.
 
-Runner Server will pick up the changes automatically.
-
-This will allow us to run jobs in parallel (provided there are no dependencies).
-
 ```console
 sudo vim /etc/gitlab-runner/config.toml
 ```
+Runner Server will pick up the change automatically.
+
+Now we can run jobs in parallel (provided there are no dependencies).
