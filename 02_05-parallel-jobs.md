@@ -21,4 +21,6 @@ job_2c:
 
 Check the Pipeline detail view for this pipeline.
 
+Notice that the "test" stage doesn't start until the "build" stage completes.
+
 How are jobs visually represented as to what stage they belong to?

@@ -45,21 +45,21 @@ Here you can see the tests have passed, deploy to stage is in progress,
 and that deploy to production is set to manual (you have to click the
 Play triangle to start it):
 
-![Deploy to STG in progress](../images/deploy-to-stage-is-running.png)
+![Deploy to STG in progress](images/deploy-to-stage-is-running.png)
 
 
 ## Deploy to STAGE complete
 
 After the deploy to stage completes, we see:
 
-![Ready for deploy to PRD](../images/manual-deploy-ready.png)
+![Ready for deploy to PRD](images/manual-deploy-ready.png)
 
 ## Pipeline detail
 
 If you look at the pipeline detail, you can see the deploy to 
 prod was skipped, and is tagged as a "manual" deploy:
 
-![pipeline detail](../images/pipeline-detail.png)
+![pipeline detail](images/pipeline-detail.png)
 
 ## Notes on setup
 

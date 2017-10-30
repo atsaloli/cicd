@@ -117,9 +117,7 @@ First, let's go over some key definitions.
 ---?include=02_01-single-test-job.md
 ---?include=02_02-simple-3-stage-shell-pipeline.md
 ---?include=02_03-simple-3-stage-docker-pipeline.md
----?include=02_05-ci.md
----?include=02_10-builds-admin.md
----?include=02_20-concurrent-builds.md
+---?include=02_05-parallel-jobs.md
 ---?include=02_30-custom-stages.md
 ---?include=02_40-testing-with-phpunit.md
 
