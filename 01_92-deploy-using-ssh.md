@@ -80,40 +80,31 @@ The basic idea is, add `gitlab-runner`'s public key to Stage's list of trusted k
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy to Stage via SSH: type "yes"
+#### Deploy to Stage via SSH
 
-Now run, as `gitlab-runner` the initial connection, to accept Stage host key:
+Add the public keys of Stage to `gitlab-runner`'s host keys database, so it does question the authenticity of Stage and ask "Are you sure you want to continue connecting (yes/no)?"
+
 
 ```bash
-sudo su - gitlab-runner
-ssh -i ~/.ssh/push_to_stg_docroot root@stage.example.com
+sudo su - gitlab-runner -c "ssh-keyscan -H stage.example.com >> ~/.ssh/known_hosts"
 ```
 
-For example:
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy to Stage via SSH
 
-```shell_session
-gitlab-runner@alpha:~$ ssh -i ~/.ssh/push_to_stg_docroot root@stage.example.com
-The authenticity of host 'stage.example.com (8.19.33.153)' can't be established.
-ECDSA key fingerprint is SHA256:wkRvdDEsd1bK6sweR5OSK6FYUpYLn8BT41xFkh2RJy4.
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'stage.example.com' (ECDSA) to the list of known hosts.
-Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-81-generic x86_64)
-Certified Ubuntu Cloud Image
-...
-```
-Now we can push files to the docroot, e.g.:
+Confirm `gitlab-runner` can push files to the Stage docroot, e.g.:
 
 ```
-gitlab-runner@alpha:~$ date > date.txt
-gitlab-runner@alpha:~$ cat date.txt
-Thu Sep 21 09:31:14 UTC 2017
-gitlab-runner@alpha:~$ scp -i ~/.ssh/push_to_stg_docroot date.txt  root@stage.example.com:/var/www/stg-html/date.txt
-date.txt                                                                               100%   29     0.0KB/s   00:00
-gitlab-runner@alpha:~$ curl http://stage.example.com:8008/date.txt
-Thu Sep 21 09:31:14 UTC 2017
-gitlab-runner@alpha:~$
+gitlab-runner@ip-172-31-23-12:~$ date > date.txt
+gitlab-runner@ip-172-31-23-12:~$ cat date.txt
+Mon Oct 30 03:19:31 UTC 2017
+gitlab-runner@ip-172-31-23-12:~$ scp -i ~/.ssh/push_to_stg_docroot date.txt root@stage.example.com:/var/www/stg-html/
+date.txt                                                                                                           100%   29     0.0KB/s   00:00
+gitlab-runner@ip-172-31-23-12:~$
 ```
 
-In the real world, you'd want to set up a non-root user as the owner
-of the Web documents, so you don't have to give gitlab-runner root access.
-To keep the scope of this tutorial manageable, we won't do that here.
+In the real world, you may want to set up a non-root user as the owner
+of the Web documents, so you don't have to give `gitlab-runner` root
+access to the environment.
