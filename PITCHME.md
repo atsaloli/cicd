@@ -101,8 +101,4 @@ The pipeline could be fully automated:
 - [GitLab CI/CD basics](02-ci-basics/README.md)
 -->
 
----
-
-## Would you like to know more?
-
 ---?include=bookmarks.md
