@@ -25,41 +25,49 @@ generate a key-pair for pushing code to Stage:
 sudo su - gitlab-runner -c "ssh-keygen -f push_to_stg_docroot -N ''"
 ```
 
-For example:
+Example:
 
 ```shell_session
-root@alpha:~# su - gitlab-runner
-gitlab-runner@alpha:~$ mkdir .ssh; chmod 0700 .ssh
-gitlab-runner@alpha:~$ cd .ssh
-gitlab-runner@alpha:~/.ssh$ ssh-keygen -f push_to_stg_docroot -N ''
+ubuntu@ip-172-31-23-12:~$ sudo su - gitlab-runner -c "ssh-keygen -f push_to_stg_docroot -N ''"                                                       
 Generating public/private rsa key pair.
 Your identification has been saved in push_to_stg_docroot.
 Your public key has been saved in push_to_stg_docroot.pub.
 The key fingerprint is:
-SHA256:rVfuv3ylogkdw5UBZRzKcqVAaVAIRYlBqKiZF8v8sV4 gitlab-runner@alpha.gitlabtutorial.org
+SHA256:HjYhIX4zarrOVsU1TpSnNVGX1PU97kpJg1h4mbuj69Q gitlab-runner@ip-172-31-23-12
 The key's randomart image is:
 +---[RSA 2048]----+
-|   o+*+*+..+*.   |
-|  . . o oo =.o   |
-|..     .. = o    |
-|o .      = .     |
-|.= o    S = .    |
-|+ = .    o =    .|
-| . . oE o o .  ..|
-|    o.   o o... .|
-|   ..     o..o+o |
+|    . .....o..ooo|
+|   . . .= = o.. +|
+|    ..=+.* *   .o|
+|     oo+o.+ o . .|
+|    o.  S. o o . |
+|   o.  o o. o +  |
+|  ..    .. E o . |
+| ...    . . o .  |
+| o+     .+.  .   |
 +----[SHA256]-----+
-gitlab-runner@alpha:~/.ssh$
-gitlab-runner@alpha:~/.ssh$
+ubuntu@ip-172-31-23-12:~$
 ```
 
-Add the public key to root's `authorized_keys` file.  
-You'll have to do it as root:
+
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy to Stage via SSH: add public key to Stage authorized_keys
+
+Add gitlab-runner@runner_server's public key to root@stage's `authorized_keys` list.  
+
+Since in our tutorial runner_server and stage one and the same, you can just run:
 
 ```
-sudo su -
-cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub >> ~root/.ssh/authorized_keys
+sudo cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub | sudo tee -a ~root/.ssh/authorized_keys
 ```
+
+
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy to Stage via SSH: type "yes"
 
 Now run, as `gitlab-runner` the initial connection, to accept Stage host key:
 
