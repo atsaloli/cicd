@@ -1,4 +1,6 @@
-# Deploying to Stage (via Git)
+## Configuring CI/CD pipelines
+### Continuous Delivery
+#### Deploy via Git
 
 Run the following pipeline that tests with phpunit, and deploys by pushing code to the `stage` branch in Git (from where the Stage environment will slurp it up):
 
