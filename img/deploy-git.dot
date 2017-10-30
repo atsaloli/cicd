@@ -4,7 +4,7 @@ digraph G {
   gitlab_runner [ label = "Runner Server\n\n/home/gitlab-runner/.ssh/push_to_git\n/home/gitlab-runner/ssh/push_to_git.pub"  color = green  style = filled fillcolor = white ]
 
   git [ label = "GitLab Server"  color = blue  style = filled fillcolor = white ]
-  prod [ label = "Prod Server\n\n/root/.ssh/authorized_keys\n"  color = red  style = filled fillcolor = white ]
+  prod [ label = "Prod Server\n\n/root/.ssh/pull_from_git\n/root/.ssh/pull_from_git.pub"  color = red  style = filled fillcolor = white ]
 
 
   gitlab_runner -> git [constraint=false label = "Git push" ];
