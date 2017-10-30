@@ -3,7 +3,7 @@
 #### Deploying to Stage (via SSH)
 
 Run the following pipeline to test (with phpunit in a Docker container) and 
-(if successful), deploy to Stage (with rsync push from a Shell executor).
+(if successful), deploy to Stage (with scp push from a Shell executor).
 
 ```yaml 
 test:
@@ -18,7 +18,7 @@ test:
 deploy_to_stage:
   stage: deploy
   script:
-  - scp -v -i ~gitlab-runner/.ssh/push_to_stg_docroot -r *.php root@stage.example.com:/var/www/stg-html/
+  - rsync -av -e 'ssh -i ~gitlab-runner/.ssh/push_to_stg_docroot' *.php root@stage.example.com:/var/www/stg-html/
   environment: stage
   tags: 
     - shell
@@ -29,20 +29,20 @@ deploy_to_stage:
 #### Deploying to Stage (via SSH)
 
 
-Example output of the deploy job:
+In your job log, you should see the files sent over:
 
 ```
-Running with gitlab-ci-multi-runner 9.5.0 (413da38)
-  on shell (88d325d7)
-Using Shell executor...
-Running on alpha.gitlabtutorial.org...
-Fetching changes...
-HEAD is now at 5d85ebf s
-Checking out 5d85ebf6 as master...
-Skipping Git submodules setup
-$ scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r www/html/ root@stage.example.com:/var/www/stg-html/
+$ rsync -av -e 'ssh -i ~gitlab-runner/.ssh/push_to_stg_docroot' *.php root@stage.example.com:/var/www/stg-html/
+sending incremental file list
+Hello.php
+HelloTest.php
+
+sent 604 bytes  received 54 bytes  1,316.00 bytes/sec
+total size is 413  speedup is 0.63
 Job succeeded
 ```
+
+---
 
 You should now be able to see the code in action (mock UAT):
 `curl http://stage.example.com/Hello.php`
