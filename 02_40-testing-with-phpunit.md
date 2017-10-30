@@ -50,7 +50,8 @@ class HelloTest extends PHPUnit_Framework_TestCase
     }
 }
 ```
-(Credit: https://www.sitepoint.com/getting-started-with-phpunit/)
+Credit: https://www.sitepoint.com/getting-started-with-phpunit/
+
 ---
 ## Configuring CI/CD pipelines
 ### Continuous Integration
@@ -60,6 +61,8 @@ Run this pipeline:
 
 ```yaml
 test:
+  tags:
+  - docker
   image: php
   script: apt-get update && apt install -y phpunit && phpunit UnitTest HelloTest.php
 
