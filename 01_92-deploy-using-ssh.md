@@ -16,6 +16,13 @@ There are other deployment mechanisms, e.g., there is a beta feature called Auto
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
+#### Deploy to Stage via SSH
+
+![img](img/ssh-trust-stage.png)
+
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
 #### Deploy to Stage via SSH: generate key-pair
 
 On the Runner Server, as the Runner Serve user `gitlab-runner`,
@@ -58,7 +65,7 @@ ubuntu@ip-172-31-23-12:~$
 
 Add gitlab-runner@runner_server's public key to root@stage's `authorized_keys` list.  
 
-Since in our tutorial runner_server and stage one and the same, you can just run:
+Since in our tutorial runner_server and stage one and the same, you can run:
 
 ```
 sudo cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub | sudo tee -a ~root/.ssh/authorized_keys
