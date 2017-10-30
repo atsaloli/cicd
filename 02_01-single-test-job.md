@@ -17,7 +17,7 @@ i_love_tests:
 ## Configuring CI/CD pipelines
 ### Continuous Integration
 #### Minimum viable GitLab CI config
-GitLab UI renders a pipeline showing:
+For the above minimum job definition, GitLab UI will render a pipeline showing:
 - the stage that the job belongs to (default stage is "test")
 - job name
 - outcome

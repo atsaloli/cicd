@@ -6,13 +6,11 @@
 
 Try running this pipeline.
 
-```yaml
-
-tags:
-- shell
-
+```yaml 
 build_it:
   stage: build
+  tags:
+  - shell
   script:
   - /bin/echo This is a mock build job
   - touch /tmp/build
@@ -20,12 +18,16 @@ build_it:
 
 test_it:
   stage: test
+  tags:
+  - shell
   script:
   - /bin/echo This is a mock test job
   - ls -lh /tmp/build
 
 deploy_it:
   stage: deploy
+  tags:
+  - shell
   script:
   - /bin/echo This is a mock deploy job
   - ls -lh /tmp/build
