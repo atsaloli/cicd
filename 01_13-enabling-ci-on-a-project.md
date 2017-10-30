@@ -23,7 +23,7 @@ There can be one `.gitlab-ci.yml` file per project and it lives at the top level
 ## Setting up your CI/CD infrastructure
 ### Configuring CI
 
-Edit your `.gitlab-ci.yml` to add a test job:
+Edit your `.gitlab-ci.yml` (using the Web editor, next slide) to add a test job:
 
 
 ```console
@@ -31,16 +31,17 @@ test_it:
   script: /bin/echo I am a pretend test suite. I passed!
 ```
 Reminder: If you're viewing this on gitpitch.com, "x" highlights the code block.
-Select "Commit changes" at the bottom, green.
 
-(See next slide.)
 
 ---
 ## Setting up your CI/CD infrastructure
 ### Configuring CI
-Using the built-in Web editor:
+
+Use the built-in Web editor:
 
 ![img](img/pretend_test_1.png)
+
+Select "Commit changes" at the bottom, green.
 
 ---
 
