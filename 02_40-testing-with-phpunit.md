@@ -41,16 +41,22 @@ class HelloTest extends PHPUnit_Framework_TestCase
 ```
 (Credit: https://www.sitepoint.com/getting-started-with-phpunit/)
 ---
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Testing with PHPUnit
 
-And given this [CI config](yaml/test-phpunit.yml) that uses the Docker "php" container:
-
+Run this pipeline:
 
 ```yaml
 test:
   image: php
-  script: apt-get update && apt install -y phpunit && cd www/html && phpunit UnitTest HelloTest.php
+  script: apt-get update && apt install -y phpunit && phpunit UnitTest HelloTest.php
 
 ```
+---
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Testing with PHPUnit
 
 Run the pipeline and it should test User.php using the "phpunit" unit test framework:
 
