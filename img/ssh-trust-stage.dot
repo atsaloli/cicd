@@ -3,7 +3,7 @@ digraph G {
 
   gitlab_runner [ label = "Runner Server\n\n/home/gitlab-runner/.ssh/push_to_stg_docroot\n/home/gitlab-runner/ssh/push_to_stg_docroot.pub"  color = green  style = filled fillcolor = white ]
 
-  stage [ label = "Stage Server\n\n/root/.ssh/authorized_keys"  color = blue  style = filled fillcolor = white ]
+  stage [ label = "Stage Server\n\n/root/.ssh/authorized_keys\n"  color = blue  style = filled fillcolor = white ]
 
 
   gitlab_runner -> stage [constraint=false];
