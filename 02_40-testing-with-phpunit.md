@@ -92,3 +92,13 @@ Job succeeded
 
 If any of the tests don't pass, phpunit will exit with non-zero status,
 and the test job will fail.
+
+---
+Let's add one more file, `index.php`:
+
+```php 
+<?php
+include('Hello.php');
+echo Greeting::talk();
+?>  
+```
