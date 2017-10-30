@@ -71,8 +71,7 @@ Add a README.md file by selecting "README" in the UI:
 ## Setting up your CI/CD infrastructure
 ### Adding a project
 
-Put in some text (e.g., "I am a README file") and select "Commit changes"
-to create the file.
+Add text and select "Commit changes" to create the `README.md` file.
 
 ![editing README](img/commit_readme.png)
 
