@@ -74,9 +74,6 @@ The pipeline could be fully automated:
 
 ---?include=01_20-installing-gitlab-ci.md
 
----
-
-
 <!-- setting up runners -->
 
 ---?include=01_22-registering-our-first-runner.md
