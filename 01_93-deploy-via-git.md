@@ -4,6 +4,8 @@
 
 ## Allow "gitlab-runner" user to push to Git
 
+![img](img/deploy-git.png)
+
 Generate SSH key in 'gitlab-runner' account on GitLab runner host:
 
 ```bash
