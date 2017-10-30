@@ -9,7 +9,7 @@ Run the following pipeline to test (with phpunit in a Docker container) and
 test:
   tags:
     - docker
-  image: ubuntu
+  image: php
   script: 
   - apt-get update
   - apt install -y phpunit
