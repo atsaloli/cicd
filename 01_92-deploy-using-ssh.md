@@ -22,13 +22,12 @@ On the Runner Server, as the Runner Serve user `gitlab-runner`,
 generate a key-pair for pushing code to Stage:
 
 ```bash
-sudo su - gitlab-runner -c "ssh root@stage.example.com; ssh-keygen -f push_to_stg_docroot -N ''"
+sudo su - gitlab-runner -c "mkdir .ssh; chmod 0700 .ssh; cd .ssh; ssh-keygen -f push_to_stg_docroot -N ''"
 ```
 
 Example:
 
 ```shell_session
-ubuntu@ip-172-31-23-12:~$
 ```
 
 
