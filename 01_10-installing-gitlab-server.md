@@ -83,23 +83,16 @@ GitLab tanuki.
 The tanuki is also known as Asiatic racoon, or racoon dog.
 It's a member of the dog family (Canidae).
 
+
+Next slide shows a picture of tanuki (contributed to Wikimedia by [663highland](https://commons.wikimedia.org/wiki/File:Tanuki01_960.jpg)).
+
 ---?image=https://upload.wikimedia.org/wikipedia/commons/5/51/Tanuki01_960.jpg
 
 ---
+GitLab adopted the tanuki as its mascot, as it symbolizes GitLab vision --
+"a smart animal that works in a group to achieve a common goal". ([about.gitlab.com/about](https://about.gitlab.com/about))
 
-## Setting up your CI/CD infrastructure
-### Installing GitLab Server
-#### Note your GitLab URL
-
-Tanuki photo credit: [663highland](https://commons.wikimedia.org/wiki/File:Tanuki01_960.jpg).
-
-GitLab has adopted the tanuki as its mascot:
-
-> Our Tanuki logo symbolizes [GitLab vision] with a smart animal that works in a group to achieve a common goal.
-
--- [about.gitlab.com/about](https://about.gitlab.com/about)
 ![GitLab tanuki logo](https://about.gitlab.com/images/press/logo/wm_no_bg.svg)
-
 
 ---
 ## Setting up your CI/CD infrastructure
