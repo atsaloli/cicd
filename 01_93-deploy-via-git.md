@@ -1,8 +1,6 @@
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git
-
-## Allow "gitlab-runner" user to push to Git
+#### Allow runners to push to Prod via Git
 
 Diagram:
 
@@ -12,7 +10,8 @@ Diagram:
 
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git
+#### Allow runners to push to Prod via Git
+
 
 Generate SSH key in 'gitlab-runner' account on GitLab runner host:
 
@@ -22,7 +21,7 @@ sudo su - gitlab-runner -c "ssh-keygen -N '' -f ~/.ssh/push_to_git"
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git
+#### Allow runners to push to Prod via Git
 
 Add the public key as a Deploy Key (deploy keys allowed to access the
 git project in order to automate deployment of code):
@@ -40,7 +39,7 @@ Add the public key "push_to_git.pub" and check the "Write access allowed" checkb
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git
+#### Allow runners to push to Prod via Git
 
 Run the following as root@Prod to add GitLab Server's host key:
 
@@ -51,7 +50,7 @@ sudo su - root -c "ssh-keyscan -H <Insert_GitLab_Server_hostname_here> >> ~/.ssh
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git: set up Prod to pull from Git to Web document root
+#### Allow runners to push to Prod via Git
 
 As root on Prod web server, generate a key called "pull_from_git".
 
@@ -62,7 +61,7 @@ sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git: add Deploy Key
+#### Allow runners to push to Prod via Git
 
 Add it as a "Deploy Key" and leave the "Write access allowed"
 checkbox unchecked.
@@ -70,7 +69,7 @@ checkbox unchecked.
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
-#### Deploy via Git: add Deploy Key
+#### Allow runners to push to Prod via Git
 Test your access (and here is when you would type "yes" to accept
 the key if you were doing this on separate servers for Stage and Prod):
 
