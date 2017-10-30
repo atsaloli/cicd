@@ -94,13 +94,15 @@ The pipeline could be fully automated:
 
 
 ---
+## CI/CD pipeline basics
+"CI/CD pipeline basics" will go here
 
-## GitLab CI/CD basics
-
+<!--
 - [GitLab CI/CD basics](02-ci-basics/README.md)
+-->
 
 ---
 
 ## Would you like to know more?
 
-- [Would you like to know more?](bookmarks.md)
+---?include=bookmarks.md
