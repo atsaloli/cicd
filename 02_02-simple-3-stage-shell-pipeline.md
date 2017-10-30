@@ -19,3 +19,8 @@ test_job:
   script:
   - ls -lh /tmp/build 
 ```
+
+Check the console log for each job.
+
+Notice that with the Shell runner, the build environment is shared
+between jobs.
