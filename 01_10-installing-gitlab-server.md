@@ -68,8 +68,8 @@ Pro tip: Use "x" in your Web browser to select the code block above.
 
 Note - The above is just enough to
 get GitLab up for our tutorial. The full installation instructions are at
-https://about.gitlab.com/installation/ -- you can look at them after class
-if you need extras like outgoing email or HTTPS.
+[https://about.gitlab.com/installation](https://about.gitlab.com/installation/) 
+(and if you need to set up outgoing email for notifications, or HTTPS, it's covered there.)
 ---
 ## Setting up your CI/CD infrastructure
 ### Installing GitLab Server
