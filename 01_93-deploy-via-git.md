@@ -41,12 +41,13 @@ Add the public key "push_to_git.pub" and check the "Write access allowed" checkb
 ### Set up trust
 #### Allow runners to push to Prod via Git
 
-Run the following as root@Prod to add GitLab Server's host key:
+Run the following as root@Prod to add GitLab Server's host key (make sure you fill in the place-holder, don't just copy and paste it):
 
 ```bash
 
 sudo su - root -c "ssh-keyscan -H <Insert_GitLab_Server_hostname_here> >> ~/.ssh/known_hosts"
 ```
+
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
