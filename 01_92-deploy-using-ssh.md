@@ -18,6 +18,8 @@ There are other deployment mechanisms, e.g., there is a beta feature called Auto
 ### Set up trust
 #### Deploy to Stage via SSH
 
+We are going to generate a "push_to_stg_docroot" keypair in `gitlab-runner`'s account on Runner Server; and then we will add the public key from that keypair to the Stage environment `root`'s `authorized_keys` list:
+
 ![img](img/ssh-trust-stage.png)
 
 ---
