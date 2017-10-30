@@ -7,13 +7,13 @@ Run the following pipeline to test (with phpunit in a Docker container) and
 
 ```yaml 
 test:
+  tags:
+    - docker
   image: ubuntu
   script: 
   - apt-get update
   - apt install -y phpunit
   - phpunit UnitTest HelloTest.php
-  tags:
-    - docker
 
 deploy_to_stage:
   stage: deploy
