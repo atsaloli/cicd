@@ -82,7 +82,7 @@ The basic idea is, add `gitlab-runner`'s public key to Stage's list of trusted k
 ### Set up trust
 #### Deploy to Stage via SSH
 
-Add the public keys of Stage to `gitlab-runner`'s host keys database, so it does question the authenticity of Stage and ask "Are you sure you want to continue connecting (yes/no)?"
+Add the public keys of Stage to `gitlab-runner`'s host keys database, so it does not question the authenticity of Stage and ask "Are you sure you want to continue connecting (yes/no)?"
 
 
 ```bash
