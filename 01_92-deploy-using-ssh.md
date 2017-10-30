@@ -18,13 +18,15 @@ There are other deployment mechanisms, e.g., there is a beta feature called Auto
 ### Set up trust
 #### Deploy to Stage via SSH
 
-We are going to generate a "push_to_stg_docroot" keypair in `gitlab-runner`'s account on Runner Server; and then we will add the public key from that keypair to the Stage environment `root`'s `authorized_keys` list:
+To allow GitLab runners access to Stage to deploy changes,
+we will:
+- Generate a dedicated key-pair in `gitlab-runner`'s account on our Runner Server
+- Add the public key from that key-pair to `root`'s account on our mock Stage server
 
 ![img](img/ssh-trust-stage.png)
 
-Put another way, we'll make `/home/gitlab-runner/.ssh/push_to_stg_docroot.pub`,
-and then add it to Stage `.authorized_keys` so that GitLab runners can access the Stage environment to deploy changes.
-
+Put another way, we'll add `/home/gitlab-runner/.ssh/push_to_stg_docroot.pub`
+from the Runner Server to `/root/.ssh/.authorized_keys` on the Stage server.
 
 ---
 ## Setting up your CI/CD infrastructure
