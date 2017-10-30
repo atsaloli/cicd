@@ -57,7 +57,8 @@ Credit: https://www.sitepoint.com/getting-started-with-phpunit/
 ### Continuous Integration
 #### Testing with PHPUnit
 
-Run this pipeline:
+Run this pipeline to test Hello.php using HelloTest.php under the
+`phpunit` unit test framework:
 
 ```yaml
 test:
@@ -67,12 +68,15 @@ test:
   script: apt-get update && apt install -y phpunit && phpunit UnitTest HelloTest.php
 
 ```
+
+PHPUnit is one of the many xUnits out there.  See https://en.wikipedia.org/wiki/XUnit to learn more.
+
 ---
 ## Configuring CI/CD pipelines
 ### Continuous Integration
 #### Testing with PHPUnit
 
-Run the pipeline and it should test User.php using the "phpunit" unit test framework:
+You should see something like this:
 
 ```
 ...
@@ -86,3 +90,5 @@ OK (1 test, 1 assertion)
 Job succeeded
 ```
 
+If any of the tests don't pass, phpunit will exit with non-zero status,
+and the test job will fail.
