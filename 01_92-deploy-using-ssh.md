@@ -25,16 +25,12 @@ we will:
 
 ![img](img/ssh-trust-stage.png)
 
-Put another way, we'll add `/home/gitlab-runner/.ssh/push_to_stg_docroot.pub`
-from the Runner Server to `/root/.ssh/.authorized_keys` on the Stage server.
-
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
 #### Deploy to Stage via SSH: generate key-pair
 
-On the Runner Server, as the Runner Serve user `gitlab-runner`,
-generate a key-pair for pushing code to Stage:
+On the Runner Server, generate a key-pair for pushing code to Stage:
 
 ```bash
 sudo su - gitlab-runner -c "mkdir .ssh; chmod 0700 .ssh; cd .ssh; ssh-keygen -f push_to_stg_docroot -N ''"
@@ -73,12 +69,13 @@ ubuntu@ip-172-31-23-12:~$
 
 Add gitlab-runner@runner_server's public key to root@stage's `authorized_keys` list.  
 
-Since in our tutorial runner_server and stage one and the same, you can run:
+In this tutorial, Runner Server and Stage are the same server, so you can run:
 
 ```
 sudo cat ~gitlab-runner/.ssh/push_to_stg_docroot.pub | sudo tee -a ~root/.ssh/authorized_keys
 ```
 
+The basic idea is, add `gitlab-runner`'s public key to Stage's list of trusted keys.
 
 ---
 ## Setting up your CI/CD infrastructure
