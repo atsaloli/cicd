@@ -1,6 +1,6 @@
 ## Configuring CI/CD pipelines
 ### Continuous Integration
-#### Simple 3 stage pipeline (Shell version)
+#### Simple 2 stage pipeline (Shell version)
 
 Try running this pipeline:
 
@@ -22,5 +22,6 @@ test_job:
 
 Check the console log for each job.
 
-Notice that with the Shell runner, the build environment is shared
-between jobs.
+Why is `/tmp/build` available to the second job?
+
+Look at `/tmp/build` on your Runner Server.
