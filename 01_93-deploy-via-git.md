@@ -53,7 +53,7 @@ sudo su - root -c "ssh-keyscan -H <Insert_GitLab_Server_hostname_here> >> ~/.ssh
 ### Set up trust
 #### Allow runners to push to Prod via Git
 
-As root on Prod web server, generate a key called "pull_from_git".
+As root on Prod web server, generate a key called `pull_from_git`.
 
 ```bash
 sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
@@ -64,7 +64,7 @@ sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
 ### Set up trust
 #### Allow runners to push to Prod via Git
 
-Add it as a "Deploy Key" and leave the "Write access allowed"
+Add `pull_from_git.pub` as a "Deploy Key" and leave the "Write access allowed"
 checkbox unchecked.
 
 ---
