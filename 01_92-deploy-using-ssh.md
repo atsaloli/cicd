@@ -28,8 +28,28 @@ sudo su - gitlab-runner -c "mkdir .ssh; chmod 0700 .ssh; cd .ssh; ssh-keygen -f 
 Example:
 
 ```shell_session
+ubuntu@ip-172-31-23-12:~$ sudo su - gitlab-runner -c "mkdir .ssh; chmod 0700 .ssh; cd .ssh; ssh-keygen -f push_to_stg_docroot -N ''"
+Generating public/private rsa key pair.
+Your identification has been saved in push_to_stg_docroot.
+Your public key has been saved in push_to_stg_docroot.pub.
+The key fingerprint is:
+SHA256:BByLmE0zfxHadk5ma4gKsnRSy8U+jMZcPanpJbbvdeQ gitlab-runner@ip-172-31-23-12
+The key's randomart image is:
++---[RSA 2048]----+
+|    +.o.o.       |
+|   =.=o=..       |
+|  o.o+++= =      |
+|  = B o=.B .     |
+|.o.O O..S +.     |
+|.o+.o.=  .o      |
+|.   .o   . E     |
+|      . . .      |
+|      .o         |
++----[SHA256]-----+
+ubuntu@ip-172-31-23-12:~$ sudo ls ~gitlab-runner/.ssh
+push_to_stg_docroot  push_to_stg_docroot.pub
+ubuntu@ip-172-31-23-12:~$
 ```
-
 
 ---
 ## Setting up your CI/CD infrastructure
