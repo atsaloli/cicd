@@ -65,7 +65,7 @@ sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
 #### Allow runners to push to Prod via Git
 
 Add `pull_from_git.pub` as a "Deploy Key" and leave the "Write access allowed"
-checkbox unchecked.
+unchecked.
 
 ---
 ## Setting up your CI/CD infrastructure
@@ -80,4 +80,6 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@INSERT_YOUR_GITLAB_S
 Later, we'll use this trust relationship to download code from Git
 so that we can put it in the Web server document root.
 
-P.S. GIT_SSH_COMMAND requires Git v2.3.0 or newer. You can also specify the SSH key via `.ssh/config`.
+P.S. `GIT_SSH_COMMAND` requires Git v2.3.0 or newer.  
+
+If you have an older Git, you could specify the SSH key via `.ssh/config`.
