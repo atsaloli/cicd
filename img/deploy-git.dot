@@ -1,10 +1,12 @@
 digraph G {
   node [ shape = box ];
 
-  gitlab_runner [ label = "Runner Server\n\n/home/gitlab-runner/.ssh/push_to_stg_docroot\n/home/gitlab-runner/ssh/push_to_stg_docroot.pub"  color = green  style = filled fillcolor = white ]
+  gitlab_runner [ label = "Runner Server\n\n/home/gitlab-runner/.ssh/push_to_git\n/home/gitlab-runner/ssh/push_to_git.pub"  color = green  style = filled fillcolor = white ]
 
-  stage [ label = "Stage Server\n\n/root/.ssh/authorized_keys\n"  color = blue  style = filled fillcolor = white ]
+  gitlab [ label = "GitLab Server"  color = blue  style = filled fillcolor = white ]
+  prod [ label = "Prod Server\n\n/root/.ssh/authorized_keys\n"  color = red  style = filled fillcolor = white ]
 
 
-  gitlab_runner -> stage [constraint=false label = "SSH trust" ];
+  gitlab_runner -> git [constraint=false label = "Git push" ];
+  git -> prod [constraint=false label = "Git pull" ];
 }
