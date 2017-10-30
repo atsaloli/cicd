@@ -12,13 +12,23 @@ in "master").
 
 When CI testing passes, deployment will occur as a two-step process:
 1. The new code will be pushed to a Git branch ("stage" for Stage, and "prod" for Prod)
-2. Each environment will pull in the changes from its Git branch
+2. Each environment will pull in the changes from its respective Git branch
+
+
+Add GitLab's host key to the environments' `known_hosts` database so that we can run `git` commands under cron (non-interactive) without dealing with "I haven't seen this host before. Are you sure you want to continue connecting? (yes/no)":
+```
+root@ip-172-31-23-12:~# ssh-keyscan -H gitlab.example.com >> ~/.ssh/known_hosts
+# gitlab.example.com:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
+# gitlab.example.com:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
+# gitlab.example.com:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
+root@ip-172-31-23-12:~#
+```
 
 We can set up our Stage and Production environments to track the "stage" and "prod" branches with a cron job like this, on each server:
 
 Stage:
 ``` 
-* * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@INSERT_YOUR_HOSTNAME_HERE:root/www.git stage www/html/ 2>/dev/null| tar -x --transform s:www/html:/var/www/stg-html: -C / 2>/dev/null
+* * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@gitlab.example.com:root/www.git stage www/html/ 2>/dev/null| tar -x -C / 2>/dev/null
 
 ```
 
