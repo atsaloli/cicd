@@ -1,40 +1,20 @@
-# Set up trust relationships to deploy to Stage and Prod via Git
-
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy via Git
 
 ## Allow "gitlab-runner" user to push to Git
 
 Generate SSH key in 'gitlab-runner' account on GitLab runner host:
 
 ```bash
-sudo su - gitlab-runner
-ssh-keygen -N '' -f ~/.ssh/push_to_git
+sudo su - gitlab-runner -c "ssh-keygen -N '' -f ~/.ssh/push_to_git"
 ```
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy via Git
 
-Example:
-
-```shell_session
-gitlab-runner@alpha:~$ ssh-keygen -N '' -f ~/.ssh/push_to_git
-Generating public/private rsa key pair.
-Your identification has been saved in /home/gitlab-runner/.ssh/push_to_git.
-Your public key has been saved in /home/gitlab-runner/.ssh/push_to_git.pub.
-The key fingerprint is:
-SHA256:9UrzSOe4YacMdhL2tI+ZzHNqZWtPGp1vA5BeOqlCLxs gitlab-runner@alpha.gitlabtutorial.org
-The key's randomart image is:
-+---[RSA 2048]----+
-|                 |
-|                 |
-|          . .    |
-|         . + .   |
-|        S * B    |
-|       o * #oo . |
-|      .E= @o*.=  |
-|       +.@oX++ o.|
-|       .+.@=o...o|
-+----[SHA256]-----+
-gitlab-runner@alpha:~$
-```
-
-Let's add the public key as a Deploy Key (deploy keys allowed to access the
+Add the public key as a Deploy Key (deploy keys allowed to access the
 git project in order to automate deployment of code):
 
 Go to your "www" project,
@@ -47,6 +27,10 @@ Select "Expand" option for "Deploy Keys".
 
 Add the public key "push_to_git.pub" and check the "Write access allowed" checkbox.
 
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy via Git
 
 Run the following command to type "yes" to accept GitLab Server's host key for the first time:
 
@@ -73,42 +57,30 @@ gitlab-runner@alpha:/tmp/test1$
 ```
 GIT_SSH_COMMAND requires Git v2.3.0 or newer. You can also specify the SSH key via `.ssh/config`.
 
-## Set up Stage/Prod to pull from Git
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy via Git: set up Prod to pull from Git to Web document root
 
-As root, generate a key called "pull_from_git".
+As root on Prod web server, generate a key called "pull_from_git".
 
 ```bash
 sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
 ```
 
-Example:
 
-
-```shell_session
-root@alpha:~# ssh-keygen -N '' -f ~/.ssh/pull_from_git
-Generating public/private rsa key pair.
-Your identification has been saved in /root/.ssh/pull_from_git.
-Your public key has been saved in /root/.ssh/pull_from_git.pub.
-The key fingerprint is:
-SHA256:c3US3cNyp4Tv+je3mKLccj7HP+N4G9R1MEv+lYhTxfU root@alpha.gitlabtutorial.org
-The key's randomart image is:
-+---[RSA 2048]----+
-|            .+Boo|
-|            +=+O=|
-|           oo+*oE|
-|           ..oo.=|
-|        S .  . .o|
-|         o    o  |
-|            .. . |
-|        ...+.o+=+|
-|         o=o+==*B|
-+----[SHA256]-----+
-root@alpha:~#
-```
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy via Git: add Deploy Key
 
 Add it as a "Deploy Key" and leave the "Write access allowed"
 checkbox unchecked.
 
+---
+## Setting up your CI/CD infrastructure
+### Set up trust
+#### Deploy via Git: add Deploy Key
 Test your access (and here is when you would type "yes" to accept
 the key if you were doing this on separate servers for Stage and Prod):
 
