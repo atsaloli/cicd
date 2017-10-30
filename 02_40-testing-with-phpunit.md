@@ -2,6 +2,17 @@
 ### Continuous Integration
 #### Testing with PHPUnit
 
+We are going to add some files: source code, and a unit test.
+
+The next slide shows where to find the "New file" element in the GitLab project screen. (Select the plus sign, and then "New file" to add a file.)
+
+---?image=images/add-new-file.png
+
+---
+## Configuring CI/CD pipelines
+### Continuous Integration
+#### Testing with PHPUnit
+
 Add the following to your "www" project:
 
 Hello.php (source code):
