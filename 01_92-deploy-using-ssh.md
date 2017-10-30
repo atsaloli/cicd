@@ -22,30 +22,12 @@ On the Runner Server, as the Runner Serve user `gitlab-runner`,
 generate a key-pair for pushing code to Stage:
 
 ```bash
-sudo su - gitlab-runner -c "ssh-keygen -f push_to_stg_docroot -N ''"
+sudo su - gitlab-runner -c "ssh root@stage.example.com; ssh-keygen -f push_to_stg_docroot -N ''"
 ```
 
 Example:
 
 ```shell_session
-ubuntu@ip-172-31-23-12:~$ sudo su - gitlab-runner -c "ssh-keygen -f push_to_stg_docroot -N ''"                                                       
-Generating public/private rsa key pair.
-Your identification has been saved in push_to_stg_docroot.
-Your public key has been saved in push_to_stg_docroot.pub.
-The key fingerprint is:
-SHA256:HjYhIX4zarrOVsU1TpSnNVGX1PU97kpJg1h4mbuj69Q gitlab-runner@ip-172-31-23-12
-The key's randomart image is:
-+---[RSA 2048]----+
-|    . .....o..ooo|
-|   . . .= = o.. +|
-|    ..=+.* *   .o|
-|     oo+o.+ o . .|
-|    o.  S. o o . |
-|   o.  o o. o +  |
-|  ..    .. E o . |
-| ...    . . o .  |
-| o+     .+.  .   |
-+----[SHA256]-----+
 ubuntu@ip-172-31-23-12:~$
 ```
 
