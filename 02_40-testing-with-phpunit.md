@@ -99,6 +99,6 @@ Let's add one more file, `index.php`:
 ```php 
 <?php
 include('Hello.php');
-echo Greeting::talk();
-?>  
+echo '<h1>', Greeting::talk(), '</h1>';
+?>
 ```
