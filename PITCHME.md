@@ -95,7 +95,7 @@ The pipeline could be fully automated:
 
 ---
 ## CI/CD pipeline basics
-"CI/CD pipeline basics" will go here
+"Configuring CI/CD pipelines" section will go here
 
 <!--
 - [GitLab CI/CD basics](02-ci-basics/README.md)
