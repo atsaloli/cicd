@@ -1,4 +1,4 @@
-all: lab-pipeline.png lab-pipeline-full-auto.png ssh-trust-stage.png
+all: lab-pipeline.png lab-pipeline-full-auto.png ssh-trust-stage.png deploy-git.png
 
 lab-pipeline.png: lab-pipeline.dot
 	dot -Tpng -o $@ $<
@@ -9,5 +9,8 @@ lab-pipeline-full-auto.png: lab-pipeline-full-auto.dot
 ssh-trust-stage.png: ssh-trust-stage.dot
 	dot -Tpng -o $@ $<
 
+deploy-git.png: deploy-git.dot
+	dot -Tpng -o $@ $<
+
 clean:
-	$(RM) lab-pipeline.png lab-pipeline-full-auto.png ssh-trust-stage.png
+	$(RM) lab-pipeline.png lab-pipeline-full-auto.png ssh-trust-stage.png deploy-git.png
