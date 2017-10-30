@@ -16,10 +16,11 @@ job_1:
 job_2:
   stage: test
   script:
-  - /bin/echo This is a mock test job
   - ls -lh /tmp/build
-  - touch /tmp/test
-  - ls -lh /tmp/test
   tags:
   - docker 
 ```
+
+Look at the console log for each job.
+
+Why did the second job fail?
