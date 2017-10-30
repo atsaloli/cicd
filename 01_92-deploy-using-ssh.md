@@ -98,13 +98,11 @@ Confirm `gitlab-runner` can push files to the Stage docroot, e.g.:
 
 ```
 gitlab-runner@ip-172-31-23-12:~$ date > date.txt
-gitlab-runner@ip-172-31-23-12:~$ cat date.txt
-Mon Oct 30 03:19:31 UTC 2017
 gitlab-runner@ip-172-31-23-12:~$ scp -i ~/.ssh/push_to_stg_docroot date.txt root@stage.example.com:/var/www/stg-html/
 date.txt                                                                                                           100%   29     0.0KB/s   00:00
 gitlab-runner@ip-172-31-23-12:~$
 ```
 
-In the real world, you may want to set up a non-root user as the owner
-of the Web documents, so you don't have to give `gitlab-runner` root
+In the real world, you'd set up a non-root user that can write to
+the Web document root, so you don't have to give `gitlab-runner` root
 access to the environment.
