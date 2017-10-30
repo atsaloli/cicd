@@ -1,0 +1,10 @@
+digraph G {
+  node [ shape = box ];
+
+  gitlab_runner [ label = "gitlab-runner@Runner_Server:.ssh/push_to_stg_docroot*"  color = green  style = filled fillcolor = white ]
+
+  stage [ label = "root@Stage:.ssh/authorized_keys"  color = blue  style = filled fillcolor = white ]
+
+
+  gitlab_runner -> stage [constraint=false];
+}
