@@ -139,6 +139,14 @@ Note your GitLab URL, you *will* need it later.
 ## Setting up your CI/CD infrastructure
 ### Installing GitLab Server
 
-Go to your GitLab Server using the URL you noted in the previous step and set the password for `root`, the initial user on the system.
+![important](img/important-one-tenth.png)  
+Did you note your GitLab URL?
+
+---
+## Setting up your CI/CD infrastructure
+### Installing GitLab Server
+
+Go to your GitLab Server using the URL you noted in the previous step
+and set the password for `root`, the initial user on the system.
 
 ![login](img/login.png)
