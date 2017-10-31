@@ -34,7 +34,7 @@ Go to "Repository" sub-tab,
 
 Select "Expand" option for "Deploy Keys".
 
-Add the public key "push_to_git.pub" and check the "Write access allowed" checkbox.
+Add the public key "push_to_git.pub" (you have to add the public key and give it a title) and check the "Write access allowed" checkbox.
 
 ---
 ## Setting up your CI/CD infrastructure
@@ -63,8 +63,16 @@ sudo su - root -c "ssh-keygen -N '' -f ~root/.ssh/pull_from_git"
 ### Set up trust
 #### Allow Prod to pull from Git
 
-Add `pull_from_git.pub` as a "Deploy Key" and leave the "Write access allowed"
+Add `pull_from_git.pub` as a "Deploy Key" and leave "Write access allowed" checkbox
 unchecked.
+
+To add a deploy key:
+- Go to your "www" project,
+- Go to "Settings" tab,
+- Go to "Repository" sub-tab,
+- Select "Expand" option for "Deploy Keys".
+- Add the public key "pull_from_git.pub" (including giving it a title),
+- Select "Add key".
 
 ---
 ## Setting up your CI/CD infrastructure
