@@ -2,17 +2,8 @@
 ## Setting up your CI/CD infrastructure
 # Testing Docker runner
 
-Change your GitLab CI config (`.gitlab-ci.yml`) to display the Linux OS release id, and add the "docker" tag:
+Change your GitLab CI config (`.gitlab-ci.yml`) to display the Linux OS release id, and add the "docker" tag.  (See next slide.)
 
-```
-test_it:
-  script: cat /etc/*release
-  tags:
-  - docker
-```
-You should see "Alpine Linux" in the job's console log:
-
-(see next slide)
 
 ---
 
@@ -23,6 +14,9 @@ test_it:
   - docker
 ```
 
+You should see "Alpine Linux" in the job's console log:
+
+(see next slide)
 ---
 
 
