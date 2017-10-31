@@ -30,6 +30,34 @@ CI/CD pushes 'b' code to 'prod' branch
 ### Continuous Delivery
 #### Deploy via Git
 
+Let's initialize the "prod" branch and ensure Prod can pull from it.
+
+Initialize "prod" branch (off "master"):
+
+```console
+sudo su - gitlab-runner
+GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ss/push_to_git" git clone git@gitlab.example.com:root/www.git 
+cd www
+git checkout -b prod
+git push origin prod
+cd ..
+rm -rf www
+exit
+```
+
+
+Production environments to track the "stage" and "prod" branches with a cron job like this, on each server:
+
+```
+* * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@gitlab.example.com:root/www.git prod www/html/ 2>/dev/null| tar -x --transform s:www/html:/var/www/prod-html: -C / 2>/dev/null
+```
+
+---
+
+## Configuring CI/CD pipelines
+### Continuous Delivery
+#### Deploy via Git
+
 We can set up our Stage and Production environments to track the "stage" and "prod" branches with a cron job like this, on each server:
 
 ```
