@@ -4,7 +4,7 @@ Aleksey Tsalolikhin
 
 aleksey@verticalsysadmin.com
 
-29 Oct 2017
+31 Oct 2017
 
 Three tutorials:
 - Introduction to CI/CD
