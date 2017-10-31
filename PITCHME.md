@@ -865,10 +865,10 @@ By default, Jenkins listens on port 8080.
 Change that to 8081 due to conflict with a GitLab component:
 
 ```bash
-service jenkins stop
-sed -i /etc/init.d/jenkins -e 's:JENKINS_ARGS:JENKINS_ARGS --httpPort=8081:'
-systemctl daemon-reload
-service jenkins start
+sudo service jenkins stop
+sudo sed -i /etc/init.d/jenkins -e 's:JENKINS_ARGS:JENKINS_ARGS --httpPort=8081:'
+sudo systemctl daemon-reload
+sudo service jenkins start
 sudo gitlab-ctl start
 ```
 
