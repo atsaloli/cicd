@@ -51,8 +51,9 @@ If one of the jobs fails, the next stage is not (usually) executed.
 
 Pipelines are defined in `.gitlab-ci.yml` by specifying jobs that run in stages.
 
-Example pipeline with three stages:  Build -> Test -> Deploy
+Example pipeline with three stages: 
 
+![3-stage-pipeline](img/build-test-deploy.png)
 ---
 ## Configuring CI/CD pipelines
 ### Definitions of Key Terms

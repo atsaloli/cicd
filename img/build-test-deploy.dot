@@ -1,0 +1,9 @@
+digraph G {
+  node [ shape = box ];
+
+  build [ label = "Build"  color = black  style = filled fillcolor = white ]
+  test [ label = "Test"  color = black  style = filled fillcolor = white ]
+  deploy [ label = "Deploy"  color = black  style = filled fillcolor = white ]
+
+  build -> test -> deploy [constraint=false];
+}
