@@ -1,6 +1,3 @@
-# Continuous Deployment: Automatic Deploy to Production
-
-## CI config
 ```yaml
 stages:
   - test
