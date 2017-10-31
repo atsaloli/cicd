@@ -36,7 +36,7 @@ Initialize "prod" branch (off "master"):
 
 ```console
 sudo su - gitlab-runner
-GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ss/push_to_git" git clone git@gitlab.example.com:root/www.git 
+GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git clone git@gitlab.example.com:root/www.git 
 cd www
 git checkout -b prod
 git push origin prod
