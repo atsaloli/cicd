@@ -2,7 +2,7 @@
 ### Continuous Delivery
 #### Deploy via Git
 
-Add the following job to your `.gitlab-ci.yml`, it'll push changes to the `prod` branch in Git:
+Add the following job to your `.gitlab-ci.yml` to add a manual "Play" button to push changes to the `prod` branch in Git after UAT and our (pretend) Change Control Board give us the thumbs up after testing in the Stage/UAT environment:
 
 ```yaml 
 deploy_to_prod:
@@ -10,6 +10,7 @@ deploy_to_prod:
     - shell
   stage: deploy
   environment: production
+  when: manual
   script:
   - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@gitlab.example.com:root/www.git +HEAD:refs/heads/prod
 
