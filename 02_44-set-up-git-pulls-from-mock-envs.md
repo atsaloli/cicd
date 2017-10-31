@@ -99,8 +99,7 @@ echo '* * * * * root GIT_SSH_COMMAND="ssh -i ~root/.ssh/pull_from_git" git archi
 ---
 ## Configuring CI/CD pipelines
 ### Continuous Delivery
-#### Deploy via Git
-##### See also
+#### See also
 
 You may want to look into a tool like
 [dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html)
