@@ -1,10 +1,17 @@
 # CI Environment Variables
 
-Use [this yaml](yaml/env-vars.yaml) to peek at your CI environment
-variables.
+Use this yaml to peek at your CI environment variables:
 
-See "Predefined variables" in https://docs.gitlab.com/ce/ci/variables/README.html
 
+
+```yaml
+test:
+  script:
+  - env | egrep 'CI|GITLAB'
+```
+Reference: https://docs.gitlab.com/ce/ci/variables/README.html
+
+---
 Example dump:
 
 ```
