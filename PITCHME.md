@@ -907,6 +907,15 @@ In production, you'd want to use named accounts for administrators, for accounta
 
 Select "New item", give it a name (e.g., "shiny") and 
 a type (select "Multibranch Pipeline").
+---
+Important note
+
+If your GitLab project is private, you can make it Public so Jenkins
+can access it:
+
+Settings -> General -> Permission -> Expand -> Project Visibility -> Public
+
+(or you can use deploy keys, which we haven't covered).
 
 ---
 ### Configure Git back-end
@@ -1004,13 +1013,6 @@ main()
 ```
 
 ---
-
-If your GitLab project is private, you can make it Public so Jenkins
-can access it:
-
-Settings -> General -> Permission -> Expand -> Project Visibility -> Public
-
-(or you can use deploy keys, which we haven't covered).
 
 Select "Scan Multibranch Pipeline Now" after adding the `Jenkinsfile`, and look at the scan log:
 
