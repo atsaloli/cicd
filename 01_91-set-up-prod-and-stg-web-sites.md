@@ -19,7 +19,7 @@ sudo apt-get update; \
 sudo apt install -y apache2 php libapache2-mod-php; \
 sudo sed -i /etc/apache2/ports.conf -e 's:Listen 80:Listen 8008:'; \
 sudo service apache2 start; \
-curl http://localhost:8008/
+curl http://localhost:8008/ | grep -i welcome --max-count=1
 
 ```
 You should see the Ubuntu Apache welcome page.
@@ -28,7 +28,7 @@ You should see the Ubuntu Apache welcome page.
 ### Setting up Stage and Prod environments
 #### DNS
 
-Add `stage.example.com` and `prod.example.com` to the `localhost` record in `/etc/hosts` so we can test the vhosts from our lab Linux server. Also add `gitlab.example.com`, this will make it so that you can copy and paste my `git clone` examples later without fiddling with the hostname.
+Add `stage.example.com` and `prod.example.com` to the `localhost` record in `/etc/hosts` so we can test the vhosts from our lab Linux server. Also add `gitlab.example.com`, so that you can copy and paste my `git clone` examples later without fiddling with the hostname.
 
 Run:
 
