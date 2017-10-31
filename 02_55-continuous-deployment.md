@@ -5,7 +5,7 @@ stages:
   - test_on_stage
   - deploy_to_prod
 
-preflight_unit_testing:
+preflight_test:
   tags:
   - docker
   image: php
@@ -21,9 +21,9 @@ rsync_to_stage:
     name: stage
     url: http://stage.example.com:8008/
 
-functional_testing:
+functional_test:
   stage: test_on_stage
-  script: curl http://stage.example.com:8008/Hello.php | grep ello
+  script: curl http://stage.example.com:8008/ | grep Hello
 
 push_to_prod_branch:
   stage: deploy_to_prod
