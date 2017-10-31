@@ -99,13 +99,13 @@ echo '* * * * * root GIT_SSH_COMMAND="ssh -i ~root/.ssh/pull_from_git" git archi
 ---
 ## Configuring CI/CD pipelines
 ### Continuous Delivery
-#### See also
+#### Side notes
 
-You may want to look into a tool like
+1. You may want to look into a tool like
 [dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html)
 which can deploy to a wide variety of [service
 providers](https://github.com/travis-ci/dpl#supported-providers).
 
-The way CFEngine's [contrib/masterfiles-stage.sh](https://github.com/cfengine/core/tree/master/contrib/masterfiles-stage) handles Git is, it stages the changes in a side directory, validates them, and then does the tablecloth pull trick where it swaps out the old content and swaps in the new (with two back-to-back calls to `mv`) so you never get half old and half new.
+2. The way CFEngine's [contrib/masterfiles-stage.sh](https://github.com/cfengine/core/tree/master/contrib/masterfiles-stage) handles Git is, it stages the changes in a side directory, validates them, and then does the tablecloth pull trick where it swaps out the old content and swaps in the new (with two back-to-back calls to `mv`) so you never get half old and half new.
 
-Next best thing after that is instantiating a new environment with the new code.
+3. Next best thing after that is instantiating a new environment with the new code.

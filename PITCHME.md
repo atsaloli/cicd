@@ -132,6 +132,12 @@ First, let's go over some key definitions.
 ---?include=02_55-continuous-deployment.md
 
 <!-- Troubleshooting -->
+
+---
+## Troubleshooting
+
+This next section deals with troubleshooting.
+
 ---?include=02_90-debugging-builds.md
 ---?include=02_100-increasing-loglevel.md
 ---?include=02_110-gitlab-logs.md

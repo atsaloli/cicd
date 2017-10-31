@@ -2,19 +2,18 @@
 ### Continuous Delivery
 #### Deploy via Git
 
-Run the following job that deploys by pushing code to the `prod` branch in Git:
+Add the following job to your `.gitlab-ci.yml`, it'll push changes to the `prod` branch in Git:
 
-```yaml
-
+```yaml 
 deploy_to_prod:
   tags: 
     - shell
   stage: deploy
   environment: production
   script:
-  - scp -i ~gitlab-runner/.ssh/push_to_stg_docroot -r *.php root@gitlab.example.com:/var/www/prod-html/
-```
+  - GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@gitlab.example.com:root/www.git +HEAD:refs/heads/prod
 
+```
 ---
 ## Configuring CI/CD pipelines
 ### Continuous Delivery
@@ -22,7 +21,9 @@ deploy_to_prod:
 
 Explanation of the git command:
 
+`GIT_SSH_COMMAND="ssh -i ~gitlab-runner/.ssh/push_to_git" git push --force git@gitlab.example.com:root/www.git +HEAD:refs/heads/prod`
 
-- `--force` allows us to push from master to stage overriding the built-in safeguards (see git-push man page for details)(
-- `ref/heads/prod` means the `HEAD` of the `prod` branch
+- GIT_SSH_COMMAND to specify SSH command line options (such as `-i` to specify identity file) 
+- `--force` override built-in safeguards (see `git-push` man page if you want details)
 - `+` tells git to create the target branch if it doesn't exist
+- `HEAD:ref/heads/prod` means the `HEAD` (tip) of the `prod` branch
