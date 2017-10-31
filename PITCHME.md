@@ -1212,3 +1212,13 @@ Install the "Blue Ocean" plug-in (Manage Jenkins -> Manage Plugins).  Once it in
 - Install the [monitoring](https://wiki.jenkins.io/display/JENKINS/Monitoring) plug-in and visit /monitoring at your Jenkins UI
 
 Reference: http://www.scmgalaxy.com/tutorials/jenkins-troubleshooting
+
+---
+
+## Finished early?
+
+Finished early?
+
+Go to https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md and enjoy our bonus GitLab content.
+
+(Auto DevOps GitLab/Kubernetes integration is especially fun.)
