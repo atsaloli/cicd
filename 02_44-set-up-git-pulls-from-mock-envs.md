@@ -13,37 +13,16 @@ environment to pull from the "prod" branch (while development continues
 on the "master" branch).
 
 ```text 
-              CI/CD pushes 'b' code to 'prod' branch
-               |
-               v
-               prod
-              /
+Addition of feature 'b' triggers CI/CD 
+            \
+
          a---b---c---d  branch 'master'
-             ^
              |
-           feature addition triggers CI/CD 
-```
----
-## Configuring CI/CD pipelines
-### Continuous Delivery
-#### Deploy via Git
+             v
+    branch 'prod' 
 
-First, make sure `gitlab-runner` SSH key is allowed to write to the GitLab repo.
+CI/CD pushes 'b' code to 'prod' branch
 
-(What is the key called? How to set this up?)
-
----
-## Configuring CI/CD pipelines
-### Continuous Delivery
-#### Deploy via Git
-
-Add GitLab's host key to the environments' `known_hosts` database so that we can run `git` commands under cron (non-interactive) without dealing with "I haven't seen this host before. Are you sure you want to continue connecting? (yes/no)":
-```
-root@ip-172-31-23-12:~# ssh-keyscan -H gitlab.example.com >> ~/.ssh/known_hosts
-# gitlab.example.com:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
-# gitlab.example.com:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
-# gitlab.example.com:22 SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
-root@ip-172-31-23-12:~#
 ```
 ---
 
