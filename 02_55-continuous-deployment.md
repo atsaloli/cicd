@@ -24,6 +24,8 @@ rsync_to_stage:
 functional_test:
   stage: test_on_stage
   script: curl http://stage.example.com:8008/ | grep Hello
+  tags:
+  - shell
 
 push_to_prod_branch:
   stage: deploy_to_prod
