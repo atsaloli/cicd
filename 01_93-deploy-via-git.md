@@ -47,7 +47,7 @@ Run the following as root@Prod to add GitLab Server's host key:
 
 ```bash
 
-sudo su - root -c "ssh-keyscan -H gitlab.example.com >> ~/.ssh/known_hosts"
+sudo su - root -c "ssh-keyscan -H gitlab.example.com >> ~root/.ssh/known_hosts"
 ```
 ---
 ## Setting up your CI/CD infrastructure

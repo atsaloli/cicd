@@ -86,7 +86,7 @@ Add the public keys of Stage to `gitlab-runner`'s host keys database, so it does
 
 
 ```bash
-sudo su - gitlab-runner -c "ssh-keyscan -H stage.example.com >> ~/.ssh/known_hosts"
+sudo su - gitlab-runner -c "ssh-keyscan -H stage.example.com >> ~gitlab-runner/.ssh/known_hosts"
 ```
 
 ---
