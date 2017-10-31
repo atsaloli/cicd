@@ -24,8 +24,7 @@ Addition of feature 'b' triggers CI/CD
 CI/CD pushes 'b' code to 'prod' branch
 
 ```
----
-
+--- 
 ## Configuring CI/CD pipelines
 ### Continuous Delivery
 #### Deploy via Git
@@ -45,20 +44,12 @@ rm -rf www
 exit
 ```
 
-
-Production environments to track the "stage" and "prod" branches with a cron job like this, on each server:
-
-```
-* * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@gitlab.example.com:root/www.git prod www/html/ 2>/dev/null| tar -x --transform s:www/html:/var/www/prod-html: -C / 2>/dev/null
-```
-
----
-
+--- 
 ## Configuring CI/CD pipelines
 ### Continuous Delivery
 #### Deploy via Git
 
-We can set up our Stage and Production environments to track the "stage" and "prod" branches with a cron job like this, on each server:
+Production environment will track the "prod" branch with a cron job:
 
 ```
 * * * * * GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git archive --remote=git@gitlab.example.com:root/www.git prod www/html/ 2>/dev/null| tar -x --transform s:www/html:/var/www/prod-html: -C / 2>/dev/null
@@ -69,5 +60,7 @@ We can set up our Stage and Production environments to track the "stage" and "pr
 ### Continuous Delivery
 #### Deploy via Git
 
-For real-world use, you may want a tool like [Travis-CI dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html) 
-which can deploy to a wide variety of [service providers](https://github.com/travis-ci/dpl#supported-providers). 
+You may want to look into a tool like
+[dpl](https://docs.gitlab.com/ce/ci/examples/deployment/README.html)
+which can deploy to a wide variety of [service
+providers](https://github.com/travis-ci/dpl#supported-providers).
