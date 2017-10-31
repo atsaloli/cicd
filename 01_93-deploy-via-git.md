@@ -73,8 +73,8 @@ To add a deploy key:
 - Go to "Settings" tab,
 - Go to "Repository" sub-tab,
 - Select "Expand" option for "Deploy Keys".
-- Add the public key "pull_from_git.pub" (including giving it a title),
-- Select "Add key".
+- Add the public key "pull_from_git.pub" (including giving it a title, and unmangle the line breaks if pasting from Strigo Web terminal),
+- Select "Add key"
 
 ---
 ## Setting up your CI/CD infrastructure
