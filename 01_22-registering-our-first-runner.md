@@ -176,9 +176,10 @@ Notice that the runner checked out the code from Git and then (pretend) tested i
 ---
 
 ## Setting up your CI/CD infrastructure
-### Locking down the Shell runner
+### Registering runners
 
 We are going to set up two runners:
+
 - Shell runner (with "shell" tag) will pick up jobs to run on the Runner Server host directly. We are going to establish an SSH trust relationship from Runner Server host to UAT and Prod environments, and we'll deploy code from Runner Server to the environments.
 
 - Docker runner (with "docker" tag) will pick up test jobs which should be run in ephemeral environments (to ensure reproducibility). 
