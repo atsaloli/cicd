@@ -24,7 +24,7 @@ Go to "Settings" (gear icon in the vertical nav bar on the left), and select "CI
 ## Setting up your CI/CD infrastructure
 ### Registering runners
 
-Find and select "Runner settings" in the menu:
+Find "Runner settings" in the menu and select "Expand":
 
 ![CI/CD settings](img/runner_settings_menu.png)
 
@@ -32,10 +32,8 @@ Find and select "Runner settings" in the menu:
 ## Setting up your CI/CD infrastructure
 ### Registering runners
 
-
-There'll be no runners listed (we haven't set up any yet), 
-but notice the instructions (in the left pane) for registering
-runners with the GitLab API endpoint:
+The left pane (under "Specific runners") contains what
+we need to register runners with GitLab:
 
 ![no runners yet](img/runner_menu.png)
 
