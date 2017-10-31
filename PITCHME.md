@@ -127,7 +127,7 @@ First, let's go over some key definitions.
 <!-- Continuous Delivery -->
 ---?include=02_42-deploying-to-stage-via-ssh.md
 ---?include=02_44-set-up-git-pulls-from-mock-envs.md
----?include=02_45-deploying-to-stage-via-git.md
+---?include=02_45-deploying-via-git.md
 ---?include=02_50-manual-deploy-to-production.md
 ---?include=02_55-continuous-deployment.md
 
@@ -135,7 +135,6 @@ First, let's go over some key definitions.
 
 ---
 ## Troubleshooting
-
 This next section deals with troubleshooting.
 
 ---?include=02_90-debugging-builds.md

@@ -3,7 +3,9 @@
 ### Continuous Delivery
 #### Deploy via Git
 
-Add the following job to your `.gitlab-ci.yml` to add a manual "Play" button to push changes to the `prod` branch in Git after UAT and our (pretend) Change Control Board give us the thumbs up after testing in the Stage/UAT environment:
+Add the following job to your `.gitlab-ci.yml` to add a manual "Play" button to deploy to production.
+
+We're still dealing with "continuous delivery", not "continous deployment", so we'll only push changes to production after our (pretend) Change Control Board give us the thumbs up following successful testing in the Stage/UAT environment:
 
 ```yaml 
 deploy_to_prod:
