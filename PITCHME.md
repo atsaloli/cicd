@@ -129,6 +129,12 @@ First, let's go over some key definitions.
 ---?include=02_44-set-up-git-pulls-from-mock-envs.md
 ---?include=02_45-deploying-via-git.md
 ---?include=02_50-manual-deploy-to-production.md
+
+---
+## Continuous Deployment
+
+This next section deals with Continuous Deployment (automated end-to-end).
+
 ---?include=02_55-continuous-deployment.md
 
 <!-- Troubleshooting -->
