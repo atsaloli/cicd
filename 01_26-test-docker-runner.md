@@ -5,12 +5,11 @@
 Change your GitLab CI config (`.gitlab-ci.yml`) to display the Linux OS release id, and add the "docker" tag:
 
 ```text
-test_it:
-  script: cat /etc/*release
-  tags:
+test_it:  
+  script: cat /etc/*release  
+  tags:  
   - docker
 ```
-
 You should see "Alpine Linux" in the job's console log:
 
 (see next slide)
