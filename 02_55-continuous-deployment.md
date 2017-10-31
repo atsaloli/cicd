@@ -37,3 +37,10 @@ push_to_prod_branch:
     name: production
     url: http://prod.example.com:8008/
 ```
+---
+## Configuring CI/CD pipelines
+### Continuous Deployment
+
+Run the preceding pipeline and observe the different stages and jobs in each stage.
+
+Now change `$my_greeting` in `Hello.php` from "Hello world" to "Hello LISA world". What do you predict will happen when the pipeline runs? Observe what happens and see if you accurately predicted.
