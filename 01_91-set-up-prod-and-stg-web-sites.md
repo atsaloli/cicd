@@ -33,7 +33,7 @@ Add `stage.example.com` and `prod.example.com` to the `localhost` record in `/et
 Run:
 
 ```console
-sudo sed -e 's:^127.0.0.1.*:127.0.0.1 localhost stage.example.com prod.example.com gitlab.example.com' -i /etc/hosts
+sudo sed -e 's:^127.0.0.1.*:127.0.0.1 localhost stage.example.com prod.example.com gitlab.example.com:' -i /etc/hosts
 ```
 --- 
 ## Setting up your CI/CD infrastructure 
