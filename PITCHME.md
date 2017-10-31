@@ -1005,6 +1005,12 @@ main()
 
 ---
 
+If your Git project is private, you can make it Public so Jenkins can access it:
+
+Settings -> General -> Permission -> Expand -> Project Visibility -> Public
+
+(or you can use deploy keys, which we haven't covered).
+
 Select "Scan Multibranch Pipeline Now" after adding the `Jenkinsfile`, and look at the scan log:
 
 ```text
