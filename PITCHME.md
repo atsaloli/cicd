@@ -908,7 +908,7 @@ In production, you'd want to use named accounts for administrators, for accounta
 Select "New item", give it a name (e.g., "shiny") and 
 a type (select "Multibranch Pipeline").
 ---
-Important note
+### Important note
 
 If your GitLab project is private, you can make it Public so Jenkins
 can access it:
