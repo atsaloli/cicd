@@ -1005,7 +1005,8 @@ main()
 
 ---
 
-If your Git project is private, you can make it Public so Jenkins can access it:
+If your GitLab project is private, you can make it Public so Jenkins
+can access it:
 
 Settings -> General -> Permission -> Expand -> Project Visibility -> Public
 
