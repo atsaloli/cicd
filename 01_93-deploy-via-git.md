@@ -36,6 +36,8 @@ Select "Expand" option for "Deploy Keys".
 
 Add the public key "push_to_git.pub" (you have to add the public key and give it a title) and check the "Write access allowed" checkbox.
 
+Be careful pasting from the Strigo Web terminal, as it _will_ introduce line endings which will mangle your SSH key.
+
 ---
 ## Setting up your CI/CD infrastructure
 ### Set up trust
