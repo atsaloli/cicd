@@ -10,10 +10,10 @@ preflight_test:
   - docker
   script: phpunit UnitTest HelloTest.php
 
-deploy_to_stage:
+rsync_to_stage:
   tags:
     - shell
-  stage: deploy
+  stage: deploy_to_stage
   script:
   - rsync -av -e 'ssh -i ~gitlab-runner/.ssh/push_to_stg_docroot' *.php root@stage.example.com:/var/www/stg-html/
   environment:
@@ -24,7 +24,7 @@ test_in_stage:
   stage: test_on_stage
   script: curl http://stage.example.com:8008/Hello.php | grep ello
 
-deploy_to_prod:
+push_to_prod_branch:
   stage: deploy_to_prod
   tags:
     - shell
