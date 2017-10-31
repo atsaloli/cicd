@@ -1,10 +1,24 @@
-# Introduction to CI/CD and DevOps
+# Setting up CI/CD Pipelines
 
 Aleksey Tsalolikhin
 
 aleksey@verticalsysadmin.com
 
-28 Oct 2017
+29 Oct 2017
+
+Three tutorials:
+- Introduction to CI/CD
+- GitLab CI/CD
+- Jenkins
+
+---
+# Introduction to CI/CD
+
+Aleksey Tsalolikhin
+
+aleksey@verticalsysadmin.com
+
+29 Oct 2017
 
 ---
 
@@ -559,13 +573,14 @@ $
 A common question I get is, how does CI/CD relate to Agile?
 
 [Agile software development](https://en.wikipedia.org/wiki/Agile_software_development) values early delivery, short feedback loops and continuous improvement; the principles and technology of CI/CD enable that.
+---
 # GitLab CI/CD Tutorial
 
 Aleksey Tsalolikhin
 
 aleksey@verticalsysadmin.com
 
-28 October 2017
+29 October 2017
 
 ---
 
