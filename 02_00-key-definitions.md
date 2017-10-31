@@ -47,7 +47,7 @@ Newer ones say "jobs".
 
 A pipeline is a group of jobs that get executed in stages (batches).
 All of the jobs in a stage are executed in parallel (if there are enough concurrent runners), and, if they all succeed, the pipeline moves on to the next stage.
-If one of the jobs fails, the next stage is not (usually) executed.
+If one of the jobs fails, the next stage is not executed.
 
 Pipelines are defined in `.gitlab-ci.yml` by specifying jobs that run in stages.
 
