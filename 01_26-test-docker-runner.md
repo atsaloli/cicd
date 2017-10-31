@@ -16,6 +16,15 @@ You should see "Alpine Linux" in the job's console log:
 
 ---
 
+```
+test_it:
+  script: cat /etc/*release
+  tags:
+  - docker
+```
+
+---
+
 
 ```shell_session
 Running with gitlab-ci-multi-runner 9.5.1 (96b34cc)
