@@ -79,4 +79,4 @@ GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@gitlab.example.com:r
 Later, we'll use this trust relationship to download code from Git
 to the Web server document root.
 
-(`GIT_SSH_COMMAND` requires Git v2.3.0 or newer. If you have an older Git, specify SSH key using `.ssh/config`.)
+`GIT_SSH_COMMAND` requires Git v2.3.0 or newer. If you have an older Git, you can [specify SSH key for pulling from GitLab in your SSH client configuration file](https://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/).
