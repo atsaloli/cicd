@@ -5,7 +5,7 @@ stages:
   - test_on_stage
   - deploy_to_prod
 
-preflight_test:
+preflight_unit_testing:
   tags:
   - docker
   script: phpunit UnitTest HelloTest.php
@@ -20,7 +20,7 @@ rsync_to_stage:
     name: stage
     url: http://stage.example.com:8008/
 
-test_in_stage:
+functional_testing:
   stage: test_on_stage
   script: curl http://stage.example.com:8008/Hello.php | grep ello
 
