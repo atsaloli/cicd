@@ -101,6 +101,11 @@ Now our infrastructure is set up. We have:
 - a mock Stage environment (for User Acceptance Testing)
 - a mock Prod environment
 
+Trust relationships:
+- `gitlab-runner` user can SSH to Stage environment
+- `gitlab-runner` user can push to Git
+- Prod environment can pull from Git
+
 This next section will deal with configuring CI/CD pipelines.
 
 It's purpose is to get you more familiar with GitLab's CI syntax and capabilities.
