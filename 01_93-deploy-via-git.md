@@ -68,7 +68,7 @@ unchecked.
 
 ---
 ## Setting up your CI/CD infrastructure
-##### Allow runners to push to Prod via Git## Set up trust
+##### Allow runners to push to Prod via Git
 
 
 Test your access:
