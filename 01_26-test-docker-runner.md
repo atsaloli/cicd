@@ -4,7 +4,7 @@
 
 Change your GitLab CI config (`.gitlab-ci.yml`) to display the Linux OS release id, and add the "docker" tag:
 
-```yaml
+```text
 test_it:
   script: cat /etc/*release
   tags:
