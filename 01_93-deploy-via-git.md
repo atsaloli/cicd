@@ -84,7 +84,7 @@ To add a deploy key:
 Test your access:
 
 ```bash
-GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@gitlab.example.com:root/www.git /tmp/www
+sudo GIT_SSH_COMMAND="ssh -i ~/.ssh/pull_from_git" git clone git@gitlab.example.com:root/www.git /tmp/www
 ```
 Later, we'll use this trust relationship to download code from Git
 to the Web server document root.
