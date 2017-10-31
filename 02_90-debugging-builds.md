@@ -1,6 +1,15 @@
 # Debugging builds
 
-Add debug logging to an individual [job](yaml/job-debug.yaml) or the [whole pipeline](yaml/global-debug.yaml) by using the `CI_DEBUG_TRACE` variable.
+Add debug logging to an individual job or the whole pipeline by using the `CI_DEBUG_TRACE` variable.
+
+
+```yaml
+job1:
+  variables:
+    CI_DEBUG_TRACE: "true"
+  script: /bin/true
+```
+---
 
 Example output with tracing enabled:
 ```
