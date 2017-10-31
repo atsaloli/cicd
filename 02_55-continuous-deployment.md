@@ -7,9 +7,9 @@ stages:
 
 preflight_unit_testing:
   tags:
+  - docker
   image: php
   script: apt-get update && apt install -y phpunit && phpunit UnitTest HelloTest.php
-  - docker
 
 rsync_to_stage:
   tags:
