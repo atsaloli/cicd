@@ -2,15 +2,27 @@
 ### Continuous Delivery
 #### Deploy via Git
 
-Now, instead of _pushing_ code to the system, let's build
-a distributed system; where runners push successfully
-tested changes to special Git branches; and environment
+Now, instead of _pushing_ changes to the system,
+let's build a distributed system; where runners push successfully
+tested changes to special Git branches; and environments
 _pulls_ changes from its respective Git.
 
-Let's set up the deploy-to-prod job to push to the "prod"
-branch in Git; and let's set up the Prod environment to pull from the
-"prod" branch (while development continues on the "master" branch).
+We'll just use the Prod environment. Let's set up the deploy-to-prod
+job to push to the "prod" branch in Git; and let's set up the Prod
+environment to pull from the "prod" branch (while development continues
+on the "master" branch).
 
+```text 
+              CI/CD pushes 'b' code to 'prod' branch
+               |
+               v
+               prod
+              /
+         a---b---c---d  branch 'master'
+             ^
+             |
+           feature addition triggers CI/CD 
+```
 ---
 ## Configuring CI/CD pipelines
 ### Continuous Delivery

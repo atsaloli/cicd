@@ -3,7 +3,7 @@
 #### Deploying to Stage (via SSH)
 
 Run the following pipeline to test (with phpunit in a Docker container) and 
-(if successful), deploy to Stage (with scp push from a Shell executor).
+(if successful), deploy to Stage (with rsync push from a Shell executor).
 
 ```yaml 
 test:
