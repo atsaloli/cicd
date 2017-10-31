@@ -1223,8 +1223,6 @@ Go to https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/READM
 
 (Auto DevOps GitLab/Kubernetes integration is especially fun.)
 
----
-
 ## GitLab Users BoF
 
 GitLab Users BoF is tonight at 7:00 PM in the Marina room (Scott Murphy organizing).
