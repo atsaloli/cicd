@@ -727,3 +727,8 @@ This next section deals with troubleshooting.
 ---?include=02_120-debugging.md
 
 ---?include=bookmarks.md
+
+---
+# Jenkins
+
+(The Jenkins material will be added to the slide show tomorrow.)
