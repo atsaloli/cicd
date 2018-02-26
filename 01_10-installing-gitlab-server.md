@@ -76,11 +76,9 @@ get GitLab up for our tutorial. The full installation instructions are at
 #### Note your GitLab URL
 
 The installer will print the URL of your GitLab Server instance below the
-GitLab tanuki.
+GitLab _tanuki_.
 
-##### Tanuki?
-
-The tanuki is also known as Asiatic racoon, or racoon dog.
+The _tanuki_ is also known as Asiatic racoon, or racoon dog.
 It's a member of the dog family (Canidae).
 
 
