@@ -4,7 +4,7 @@
 
 #### Creating a host
 
-During the LISA tutorial, you'll be provided a Strigo VM (running Ubuntu
+During the tutorial, you'll be provided a Strigo VM (running Ubuntu
 16 LTS). Your Strigo VMs will be destroyed at the end of the day.
 
 To continue afterwards, you can use a host in a public cloud (e.g.,
