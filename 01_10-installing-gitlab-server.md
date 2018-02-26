@@ -10,7 +10,7 @@ During the tutorial, you'll be provided a Strigo VM (running Ubuntu
 To continue afterwards, you can use a host in a public cloud (e.g.,
 Joyent or AWS). The Joyent instance parameters I use are:
 
-- Hardware Virtual Machine (to run Docker)
+- Virtual Machine (to run Docker)
 - Ubuntu 16 LTS (ubuntu-certified-16.04)
 - High CPU with 8 GB of RAM (4 GB for GitLab Server, and 4 GB for GitLab Runner)
 
