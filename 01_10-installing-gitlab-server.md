@@ -84,8 +84,8 @@ It's a member of the dog family.
 You can see a picture of the tanuki [here](https://commons.wikimedia.org/wiki/File:Tanuki01_960.jpg).
 
 ---
-GitLab adopted the tanuki as its mascot, as it symbolizes GitLab vision --
-"a smart animal that works in a group to achieve a common goal". ([about.gitlab.com/about](https://about.gitlab.com/about))
+GitLab adopted the tanuki as its mascot because the tanuki is smart, and works in a group
+to achieve a comman goal -- and thus symbolizes GitLab vision of enabling collaboration.
 
 ![GitLab tanuki logo](https://about.gitlab.com/images/press/logo/wm_no_bg.svg)
 
