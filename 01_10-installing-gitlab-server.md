@@ -57,7 +57,7 @@ features!
 
 ### Installing GitLab Server
 
-#### Add the GitLab package repository, and install the package:
+#### Add GitLab repository definition and install GitLab EE package
 
 ```console
 curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
