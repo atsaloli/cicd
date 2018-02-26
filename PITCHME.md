@@ -340,7 +340,7 @@ Martin Fowler was involved in the work at Chrysler.
 
 #### DevOps
 
-John Willis, co-author of "The DevOps Handbook", with Los Angeles chapter of LOPSA
+John Willis, co-author of "The DevOps Handbook", with the [Los Angeles chapter of LOPSA](http://www.meetup.com/lopsala)
 ![John Willis with LA chapter of LOPSA](https://secure.meetupstatic.com/photos/event/d/9/b/highres_456903483.jpeg)
 
 ---
