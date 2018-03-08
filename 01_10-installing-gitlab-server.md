@@ -5,7 +5,7 @@
 #### Creating a host
 
 During the tutorial, you'll be provided a Strigo VM (running Ubuntu
-16 LTS). Your Strigo VMs will be destroyed at the end of the day.
+16 LTS). Your Strigo VMs will be destroyed after the workshop.
 
 To continue afterwards, you can use a host in a public cloud (e.g.,
 Joyent or AWS). The Joyent instance parameters I use are:
