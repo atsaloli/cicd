@@ -7,8 +7,8 @@
 During the tutorial, you'll be provided a Strigo VM (running Ubuntu
 16 LTS). Your Strigo VMs will be destroyed after the workshop.
 
-To continue afterwards, you can use a host in a public cloud (e.g.,
-Joyent or AWS). The Joyent instance parameters I use are:
+To continue your study after workshop, you can use a host in a public
+cloud (such as [Joyent](joyent.com) or AWS). The Joyent instance parameters I use are:
 
 - Virtual Machine (to run Docker)
 - Ubuntu 16 LTS (ubuntu-certified-16.04)
