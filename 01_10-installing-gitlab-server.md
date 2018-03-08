@@ -21,7 +21,7 @@ cloud (such as [Joyent](joyent.com) or AWS). The Joyent instance parameters I us
 
 #### Strigo VM
 
-URL:  ...
+URL:  [https://app.strigo.io/event/rrKqGKafLrApdWGw6](https://app.strigo.io/event/rrKqGKafLrApdWGw6)
  
 Code:  ...
 ---
