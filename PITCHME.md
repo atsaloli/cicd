@@ -1218,8 +1218,8 @@ Once it installs and Jenkins restarts, you can select "Open Blue Ocean" in the m
 ---
 ## Troubleshooting
 
-- Take a look at the log file on /log at your Jenkins UI
-- Take a look at /var/log/jenkins/jenkins.log
+- Add /log to your Jenkins UI URL, e.g. http://jenkins.example.com/log
+- Take a look at `/var/log/jenkins/jenkins.log`
 - Install the [monitoring](https://wiki.jenkins.io/display/JENKINS/Monitoring) plug-in and visit /monitoring at your Jenkins UI
 
 Reference: http://www.scmgalaxy.com/tutorials/jenkins-troubleshooting
