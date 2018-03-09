@@ -1211,7 +1211,9 @@ References:
 
 ## Checking Pipeline status with Jenkins Blue Ocean UI
 
-Install the "Blue Ocean" plug-in (Manage Jenkins -> Manage Plugins).  Once it installs and Jenkins restarts, you can select "Open Blue Ocean" in the main menu, and you will see a visual representation of your Pipelines and Projects.
+Install the "Blue Ocean" plug-in (Manage Jenkins -> Manage Plugins).
+
+Once it installs and Jenkins restarts, you can select "Open Blue Ocean" in the main menu, and you will see a visual representation of your Pipelines and Projects.
 
 ---
 ## Troubleshooting
