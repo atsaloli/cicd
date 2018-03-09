@@ -1230,8 +1230,6 @@ Reference: http://www.scmgalaxy.com/tutorials/jenkins-troubleshooting
 
 Finished early?
 
-Go to https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md and enjoy our bonus GitLab content.
-
-(Auto DevOps GitLab/Kubernetes integration is especially fun.)
+Go to https://gitlab.com/atsaloli/gitlab-ci-tutorial/blob/master/gitlab-ci/README.md for bonus GitLab content.
 
 GitLab CI YAML full reference is at https://docs.gitlab.com/ce/ci/yaml/README.html
