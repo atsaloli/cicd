@@ -74,9 +74,8 @@ Add a README.md file by selecting "README" in the UI:
 
 Add text and select "Commit changes" to create the `README.md` file.
 
-(see next slide)
+![commit changes](img/commit_readme.png)
 
----?image=img/commit_readme.png
 
 ---
 
