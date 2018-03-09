@@ -24,7 +24,8 @@ Go to "Settings" (gear icon in the vertical nav bar on the left), and select "CI
 ## Setting up your CI/CD infrastructure
 ### Registering runners
 
-Find "Runner settings" in the menu and select "Expand":
+Find "Runner settings" in the menu and select "Expand".
+(If you can't find "Runner settings', change your URL to go to `/admin/runners`, e.g. `http://gitlab.example.com/admin/runners`)
 
 ![CI/CD settings](img/runner_settings_menu.png)
 
