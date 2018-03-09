@@ -23,7 +23,7 @@ cloud (such as [Joyent](joyent.com) or AWS). The Joyent instance parameters I us
 
 URL:  [https://app.strigo.io/event/rrKqGKafLrApdWGw6](https://app.strigo.io/event/rrKqGKafLrApdWGw6)
  
-Code:  ...
+Code:  S65F
 ---
 ## Setting up your CI/CD infrastructure
 
@@ -60,7 +60,7 @@ features!
 #### Add GitLab repository definition and install GitLab EE package
 
 ```console
-curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash ; 
 sudo apt-get install gitlab-ee 
 ```
 
