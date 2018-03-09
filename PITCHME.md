@@ -925,7 +925,7 @@ In the "Branch Sources" pull-down menu, select "Git".
 Under "Project Repository", put the Git URL of your "www" project, e.g., 
 http://ec2-18-195-25-169.eu-central-1.compute.amazonaws.com/root/www.git
 
-Check the "Scan Multibranch Pipeline Triggers" box and set the Interval to 1 hour (these are small VMs).
+Check the "Scan Multibranch Pipeline Triggers" box and set the Interval to 1 hour (these are small VMs and if you scan more often, like every minute, the VM will go unresponsive quite often).
 
 Click Save, and you should see something like this: (next slide)
 
