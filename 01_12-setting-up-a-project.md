@@ -5,6 +5,7 @@ Login as `root`. Add a project. You will use this project to explore GitLab CI f
 
 ![new project](img/new_project.png)
 
+On the next screen, change the visibility level to "Public".
 ---
 
 ## Setting up your CI/CD infrastructure
