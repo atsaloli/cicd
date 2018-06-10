@@ -6,7 +6,7 @@ aleksey@verticalsysadmin.com
 
 31 Oct 2017
 
-Table of contents:
+There are two tutorials here:
 - Introduction to CI/CD
 - GitLab CI/CD
 
